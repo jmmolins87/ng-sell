@@ -1,0 +1,29 @@
+
+@mixin max-responsive($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin min-responsive($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin btn($bg-color, $color-text, $display) {
+    background: $bg-color;
+    color: $color-text;
+    font-weight: $txt-bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    display: $display;
+    // border-radius: $border-radius-10;
+    border: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: darken($bg-color, 10%);
+    }
+}

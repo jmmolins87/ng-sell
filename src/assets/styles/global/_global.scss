@@ -1,0 +1,51 @@
+
+// Global styles
+html {
+    font-size: 62.5%;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: $txt-h;
+    font-weight: $txt-bold;
+}
+
+h1 {
+    font-size: $h1-mob;
+    @include min-responsive($tablet) {
+        font-size: $h1-tab;
+    }
+    @include min-responsive($desktop-laptop) {
+        font-size: $h1-desk;
+    }
+}
+
+h2 {
+    font-size: $h2-mob;
+    @include min-responsive($tablet) {
+        font-size: $h2-tab;
+    }
+    @include min-responsive($desktop-laptop) {
+        font-size: $h2-desk;
+    }
+}
+
+h3 {
+    font-size: $h3-mob;
+    @include min-responsive($tablet) {
+        font-size: $h3-tab;
+    }
+    @include min-responsive($desktop-laptop) {
+        font-size: $h3-desk;
+    }
+}
+
+p, a, span {
+    font-family: $txt-p;
+    font-size: $txt-main;
+    font-weight: $txt-regular;
+}
+
+.wrap-navbar a {
+    font-size: $txt-menu;
+}

@@ -1,0 +1,85 @@
+@import "/src/styles.scss";
+
+
+.wrap-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: $white-bg;
+    box-shadow: $navbar-shadow;
+    padding: 15px;
+    .wrap-logo {
+        display: block;
+        width: fit-content;
+        width: -moz-fit-content;
+        height: fit-content;
+        height: -moz-fit-content;
+        margin-right: 25px;
+        app-wrapper-imgs {
+            display: block;
+            width: fit-content;
+            width: -moz-fit-content;
+            height: fit-content;
+            height: -moz-fit-content;
+        }
+    }
+    .navbar {
+        &-toggler {
+            border: none;
+        }
+        &-toggler-icon {
+            width: 5rem;
+            height: 3rem;
+        }
+        &-collapse {
+            @include max-responsive($mobile) {
+                margin-top: 20px;
+            }
+        }
+    }
+    .navbar-nav {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 100%;
+        &.menu {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                margin-right: 15px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+        &.end {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 100%;
+            @include min-responsive($tablet) {
+                margin-top: 0;
+                max-width: 15%;
+            }
+            .form-select {
+                font-size: $txt-main;
+            }
+            .mode-button {
+                background: red;
+                width: 100px;
+                height: 50px;
+                margin-top: 20px;
+                @include min-responsive($mobile) {
+                    margin-left: 20px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

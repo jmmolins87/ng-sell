@@ -1,0 +1,30 @@
+
+
+// Normalize
+@import "./normalize";
+
+// Colors
+@import "./colors/alerts-colors";
+@import "./colors/bg-colors";
+@import "./colors//borders-colors";
+@import "./colors/buttons-colors";
+@import "./colors/shadows";
+@import "./colors/txt-colors";
+
+// Fonts
+@import "./fonts/txt-size";
+@import "./fonts/txt-weight";
+@import "./fonts/txt-family";
+
+// Sizes
+@import "./sizes-responsive/sizes-responsive";
+
+// Shadows
+@import "./shadows/shadows";
+
+// Mixins
+@import "./mixins/mixins";
+
+// Global Styles
+@import "./global/grid";
+@import "./global/global";
