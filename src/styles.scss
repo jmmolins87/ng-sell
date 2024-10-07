@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Prime Icons
+@import "primeicons/primeicons.css";
+
 // Variables
 @import "./assets/styles/app";
+
+
+body.dark-theme {
+    background: $black-light-bg;
+}

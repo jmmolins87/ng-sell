@@ -2,6 +2,6 @@
 
 export interface NavbarInterface {
     label: string;
-    icon: string;
+    icon?: string;
     routerLink: string[];
 }

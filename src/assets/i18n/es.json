@@ -3,6 +3,11 @@
 
 {
     "NAVBAR": {
+        "LOGO": {
+            "SRC": "",
+            "ALT": "I sell my self",
+            "HEIGHT": 70
+        },
         "ABOUT": "Sobre mí",
         "TOOLS": "Herramientas",
         "CONTACT": "Contacto"

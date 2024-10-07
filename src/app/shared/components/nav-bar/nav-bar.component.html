@@ -1,6 +1,8 @@
 
 
-<nav class="wrap-navbar navbar navbar-expand-sm">
+<nav 
+    [ngClass]="darkMode ? 'dark-theme' : 'light-theme'" 
+    class="wrap-navbar navbar navbar-expand-md">
     <div class="container-fluid">
         <a 
             href="javascript:;" 
@@ -20,34 +22,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <div class="navbar-nav menu">
-                    <li class="nav-item">
+                    <li *ngFor="let item of menuItems" class="nav-item">
                         <a 
                             href="javascript:;"
                             class="nav-link" 
                             aria-current="page">
-                            {{ "NAVBAR.ABOUT" | translate }}
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a 
-                            href="javascript:;"
-                            class="nav-link" 
-                            aria-current="page">
-                            {{ "NAVBAR.TOOLS" | translate }}
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a 
-                            href="javascript:;"
-                            class="nav-link" 
-                            aria-current="page">
-                            {{ "NAVBAR.CONTACT" | translate }}
+                            {{ item.label | translate }}
+                            <span [class]="item.icon"></span>
                         </a>
                     </li>
                 </div>
                 <div class="navbar-nav end">
                     <select 
-                        #langSelect (change)="changeLang(langSelect.value)" 
+                        #langSelect 
+                        (change)="changeLang( langSelect.value )" 
                         class="form-select"
                         aria-label="Default select example">
                         <option selected disabled>Elige un idioma</option>
@@ -57,7 +45,12 @@
                             {{ lang }}
                         </option>
                     </select>
-                    <button class="mode-button"></button>
+                    <button (click)="toggleDarkMode()" class="mode-button">
+                        <span 
+                            [class]="darkMode ? 'pi-sun' : 'pi-moon'" 
+                            class="pi pi-fw">
+                        </span>
+                    </button>
                 </div>
             </ul>
         </div>
