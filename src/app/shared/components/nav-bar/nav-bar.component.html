@@ -1,7 +1,7 @@
 
 
 <nav 
-    [ngClass]="darkMode ? 'dark-theme' : 'light-theme'" 
+    [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" 
     class="wrap-navbar navbar navbar-expand-md">
     <div class="container-fluid">
         <a 
@@ -12,14 +12,15 @@
         <button 
             type="button" 
             data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" 
+            data-bs-target="#navbarSell"
+            aria-controls="navbarSell" 
             aria-expanded="false" 
             aria-label="Toggle navigation"
-            class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
+            class="navbar-toggler collapsed">
+            <span></span>
+            <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSell">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <div class="navbar-nav menu">
                     <li *ngFor="let item of menuItems" class="nav-item">
@@ -49,7 +50,7 @@
                     </select>
                     <button (click)="toggleDarkMode()" class="mode-button">
                         <span 
-                            [class]="darkMode ? 'pi-sun' : 'pi-moon'" 
+                            [class]="isDarkMode ? 'pi-sun' : 'pi-moon'" 
                             class="pi pi-fw">
                         </span>
                     </button>

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 import { navbarItems } from '../db/navbarItems.db';
 
@@ -15,11 +15,19 @@ export class SharedService {
 
   private isDarkMode: boolean = false;
 
+  // The initial theme is 'light' (false). If it is 'dark', it will be true.
+  private darkModeSubject = new BehaviorSubject<boolean>(false);
+
+  // Observable to which components can subscribe
+  darkMode$ = this.darkModeSubject.asObservable();
+
   constructor( private _http: HttpClient ) { }
 
   get itemsNavbar() {
     return new Observable<any>(observer => {
+      // Get items from db
       observer.next(navbarItems);
+      // Complete observable
       observer.complete();
     });
   }
@@ -28,8 +36,10 @@ export class SharedService {
     return this.isDarkMode;
   }
 
-  toggleDarkMode() {
+  // Change the dark mode status
+  toggleDarkMode(isDarkMode: boolean) {
     this.isDarkMode = !this.isDarkMode;
+    this.darkModeSubject.next(isDarkMode);
     if( this.isDarkMode ) {
       document.body.classList.add('dark-theme');
       document.body.classList.remove('light-theme');

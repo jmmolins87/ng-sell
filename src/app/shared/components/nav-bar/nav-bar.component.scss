@@ -17,13 +17,53 @@
             height: fit-content;
             height: -moz-fit-content;
             margin-right: 25px;
-    
             app-wrapper-imgs {
                 display: block;
                 width: fit-content;
                 width: -moz-fit-content;
                 height: fit-content;
                 height: -moz-fit-content;
+            }
+        }
+        .navbar-toggler {
+            position: relative;
+            height: 25px;
+            width: 50px;
+            padding: 5px;
+            &:focus,
+            &:focus-visible {
+                box-shadow: none;
+            }
+            span {
+                transition: transform .2s ease-in-out;
+                width: 50px;
+                height: 3px;
+                display: block;
+                margin: 5px 0;
+                background: $black-light-txt;
+                position: absolute;
+                &:first-of-type {
+                    top: 6px;
+                    right: -1px;
+                    transform: rotate(25deg);
+                }
+                &:last-of-type {
+                    top: 7px;
+                    right: -1px;
+                    transform: rotate(-25deg);
+                }
+            }
+            &.collapsed span {
+                &:first-of-type {
+                    top: 0;
+                    right: 0;
+                    transform: rotate(0deg);
+                }
+                &:last-of-type {
+                    top: 10px;
+                    right: 0;
+                    transform: rotate(0deg);
+                }
             }
         }
         .navbar {

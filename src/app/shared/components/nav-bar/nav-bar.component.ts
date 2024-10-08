@@ -24,7 +24,7 @@ export class NavBarComponent implements OnInit {
   ];
 
   // Dark Theme
-  public darkMode: boolean = false;
+  public isDarkMode: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 
@@ -46,8 +46,8 @@ export class NavBarComponent implements OnInit {
   }
 
   toggleDarkMode() {
-    this._sharedService.toggleDarkMode();
-    this.darkMode = !this.darkMode;
+    this.isDarkMode = !this.isDarkMode;
+    this._sharedService.toggleDarkMode(this.isDarkMode); // Cambia el estado del modo oscuro
   }
 
 }
