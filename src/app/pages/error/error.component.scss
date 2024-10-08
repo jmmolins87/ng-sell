@@ -4,9 +4,11 @@
 
 .wrap-error {
     text-align: center;
+    position: relative;
+    overflow: hidden;
     .wrap-animation {
         width: 100%;
-        height: 75vh;
+        height: 100vh;
         iframe {
             width: 100%;
             height: 100%;
@@ -15,6 +17,15 @@
     }
     .wrap-actions {
         margin-top: 30px;
+        position: absolute;
+        width: 75%;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        h2 {
+            color: $white-dark-txt;
+        }
     }
     .wrap-button {
         display: flex;
@@ -22,10 +33,5 @@
         justify-content: center;
         align-items: center;
         margin: 24px auto;
-    }
-    ::ng-deep {
-        .p-button.p-button-danger.p-button-outlined {
-            @extend %p-button-danger;
-        }
     }
 }

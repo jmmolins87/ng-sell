@@ -18,11 +18,10 @@ export class SharedService {
   constructor( private _http: HttpClient ) { }
 
   get itemsNavbar() {
-    return navbarItems;
-  }
-
-  get logoNavbar(): Observable<any> {
-    return this._http.get<any>( this.logoNavbarLight );
+    return new Observable<any>(observer => {
+      observer.next(navbarItems);
+      observer.complete();
+    });
   }
 
   get darkModeStatus() {

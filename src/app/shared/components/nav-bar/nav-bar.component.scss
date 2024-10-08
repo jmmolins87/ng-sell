@@ -1,7 +1,8 @@
 @import "/src/styles.scss";
 
 
-.light-theme {
+.light-theme,
+.dark-theme {
     &.wrap-navbar {
         position: sticky;
         top: 0;
@@ -75,10 +76,18 @@
                     flex-direction: row;
                     margin-top: 0;
                 }
+                .icon-lang {
+                    font-size: $icon-lang;
+                    margin-right: 10px;
+                }
                 .form-select {
                     font-size: $txt-main;
                     width: 195px;
                     padding: 10px;
+                    margin-top: 10px;
+                    @include min-responsive($tablet) {
+                        margin-top: 0;
+                    }
                 }
                 .mode-button {
                     margin-top: 20px;
@@ -86,6 +95,7 @@
                     border: none;
                     @include min-responsive($tablet) {
                         margin-top: 0;
+                        margin-left: 10px;
                     }
                     .pi {
                         font-size: $icon-mode;
@@ -98,96 +108,28 @@
 
 .dark-theme {
     &.wrap-navbar {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
         background: $black-bg;
         box-shadow: $navbar-shadow-dark;
-        padding: 15px;
-        .wrap-logo {
-            display: block;
-            width: fit-content;
-            width: -moz-fit-content;
-            height: fit-content;
-            height: -moz-fit-content;
-            margin-right: 25px;
-    
-            app-wrapper-imgs {
-                display: block;
-                width: fit-content;
-                width: -moz-fit-content;
-                height: fit-content;
-                height: -moz-fit-content;
-            }
-        }
-        .navbar {
-            &-toggler {
-                border: none;
-            }
-            &-toggler-icon {
-                width: 5rem;
-                height: 3rem;
-            }
-            &-collapse {
-                @include max-responsive($mobile) {
-                    margin-top: 20px;
-                }
-            }
-        }
         .navbar-nav {
-            display: flex;
-            box-sizing: border-box;
-            justify-content: space-between;
-            align-items: center;
-            flex: 1 1 100%;
-            &.menu {
-                display: flex;
-                box-sizing: border-box;
-                justify-content: flex-start;
-                align-items: center;
-                flex: 1 1 calc(50% - 12.5px);
-                li {
-                    margin-right: 15px;
-                    &:last-of-type {
-                        margin-right: 0;
-                    }
-                    a {
-                        color: $white-txt;
-                        &:hover {
-                            color: $white-dark-txt;
-                        }
-                    }
-                }
+            &.menu li a {
+                color: $white-txt;
+                &:hover {
+                    color: $white-dark-txt;
+                }      
             }
             &.end {
-                display: flex;
-                box-sizing: border-box;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                flex: 1 1 calc(25% - 12.5px);
-                margin-top: 20px;
-                @include min-responsive($tablet) {
-                    justify-content: flex-end;
-                    flex-direction: row;
-                    margin-top: 0;
+                .icon-lang {
+                    font-size: $icon-lang;
+                    color: $white-txt;
                 }
                 .form-select {
-                    font-size: $txt-main;
-                    width: 195px;
-                    padding: 10px;
+                    background: $black-light-bg;
+                    color: $grey-light-txt;
+                    border: 1px solid $white-dark-border;
                 }
                 .mode-button {
-                    margin-top: 20px;
                     background: transparent;
-                    border: none;
                     color: $white-txt;
-                    @include min-responsive($tablet) {
-                        margin-top: 0;
-                    }
-                    .pi {
-                        font-size: $icon-mode;
-                    }
                 }
             }
         }

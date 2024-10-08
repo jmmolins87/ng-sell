@@ -5,6 +5,16 @@ html {
     font-family: "Instrument Sans", sans-serif;
 }
 
+body.light-theme {
+    background: $white-dark-bg;
+    color: $black-light-bg;
+}
+
+body.dark-theme {
+    background: $black-light-bg;
+    color: $white-dark-bg;
+}
+
 h1, h2, h3 {
     font-family: $txt-h;
     font-weight: $txt-bold;

@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Prime NG
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 // Prime Icons
 @import "primeicons/primeicons.css";
 
 // Variables
 @import "./assets/styles/app";
 
-
-body.dark-theme {
-    background: $black-light-bg;
-}

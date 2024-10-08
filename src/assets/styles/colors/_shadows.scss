@@ -34,5 +34,8 @@ $success-light-shadows: #d3fbaa;
 $success-dark-shadows: #468a03;
 
 // Shadows
-$navbar-shadow-light: 0px 10px 6px -4px $grey-light-shadows;
-$navbar-shadow-dark: 0px 10px 6px -4px $black-shadows;
+$navbar-light: #efefef;
+$navbar-dark: #0e0e0e;
+// Navbar
+$navbar-shadow-light: 0px 10px 6px -4px $navbar-light;
+$navbar-shadow-dark: 0px 10px 6px -4px $navbar-dark;

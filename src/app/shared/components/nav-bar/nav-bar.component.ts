@@ -14,44 +14,31 @@ import { WrapperImg } from '../wrapper-imgs/interface/wrapperImg.interface';
 })
 export class NavBarComponent implements OnInit {
 
-  // Logo Menu
-  public menuItems!: MenuItem[] | any[];
   // Items Menu
-  public logoData: WrapperImg;
+  public menuItems!: MenuItem[] | any[];
 
   // Traductor
-  public langs: string[] = [];
+  public langs: { lang: string, name: string }[] = [
+    { lang: 'es', name: 'Español' },
+    { lang: 'en', name: 'English' }
+  ];
 
   // Dark Theme
   public darkMode: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 
-    private _translator: TranslatorService ) 
-  {
-    this.logoData = {
-      src: '',
-      alt: 'I sell myself',
-      height: 70
-    }
-
-    this.langs = this._translator.langs;
-    this._translator.changeLang(this.langs[0]);
-  }
+    private _translator: TranslatorService ) {}
 
   ngOnInit(): void {
-    this.logoNavbar;
     this.itemsNavbar;
   }
 
-  get logoNavbar() {
-    return this._sharedService.logoNavbar.subscribe(( data ) => {
-      this.logoData.src = data.LOGO_NAVBAR_LIGHT;
-    });
-  }
-
   get itemsNavbar() {
-    return this.menuItems = this._sharedService.itemsNavbar;
+    this._sharedService.itemsNavbar.subscribe(items => {
+      this.menuItems = items;
+    });
+    return this.menuItems;
   }
 
   changeLang( lang: string ) {
