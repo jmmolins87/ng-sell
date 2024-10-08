@@ -53,6 +53,7 @@
                 flex: 1 1 calc(50% - 12.5px);
                 li {
                     margin-right: 15px;
+                    cursor: pointer;
                     &:last-of-type {
                         margin-right: 0;
                     }

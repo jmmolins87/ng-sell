@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -20,6 +21,7 @@ import { WrapperImgsComponent } from './components/wrapper-imgs/wrapper-imgs.com
   ],
   imports: [
     CommonModule,
+    RouterModule,
     TranslateModule,
     HttpClientModule,
     PrimeNgModule

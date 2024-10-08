@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { AppRoutingModule } from './app-routing.module';
-
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
-import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
+
+import { AppComponent } from './app.component';
 
 
 export function loaderTranslatorJson( http: HttpClient ) {
@@ -32,7 +34,8 @@ export function loaderTranslatorJson( http: HttpClient ) {
       }
     }),
     PrimeNgModule,
-    SharedModule
+    SharedModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

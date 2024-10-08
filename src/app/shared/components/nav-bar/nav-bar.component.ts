@@ -22,9 +22,8 @@ export class NavBarComponent implements OnInit {
   // Traductor
   public langs: string[] = [];
 
+  // Dark Theme
   public darkMode: boolean = false;
-
-;
 
   constructor( 
     private _sharedService: SharedService, 

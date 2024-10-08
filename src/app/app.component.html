@@ -1,1 +1,5 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar *ngIf="showNavbarFooter" />
+<div [ngClass]="isFullWidth ? '' : 'container'">
+    <router-outlet />
+</div>
+<app-footer *ngIf="showNavbarFooter" />

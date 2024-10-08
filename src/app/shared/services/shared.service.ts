@@ -22,11 +22,7 @@ export class SharedService {
   }
 
   get logoNavbar(): Observable<any> {
-    if( this.isDarkMode ) {
-      return this._http.get<any>( this.logoNavbarDark )
-    } else {
-      return this._http.get<any>( this.logoNavbarLight )
-    }
+    return this._http.get<any>( this.logoNavbarLight );
   }
 
   get darkModeStatus() {
