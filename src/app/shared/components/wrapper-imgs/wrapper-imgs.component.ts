@@ -10,6 +10,6 @@ import { WrapperImg } from './interface/wrapperImg.interface';
 export class WrapperImgsComponent {
 
   @Input()
-  public navbarData!: WrapperImg;
+  public wrapperImg!: WrapperImg;
 
 }
