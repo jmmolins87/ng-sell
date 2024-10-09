@@ -8,9 +8,9 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
-
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
@@ -35,7 +35,8 @@ export function loaderTranslatorJson( http: HttpClient ) {
     }),
     PrimeNgModule,
     SharedModule,
-    PagesModule
+    PagesModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
+import { PrimeNGConfig } from 'primeng/api';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,13 +10,18 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
+  // Hide Navbar and footer component
   public showNavbarFooter: boolean = true;
+  // The container class will be applied to all pages except the home page and the error page.
   public isFullWidth: boolean = false;
+  // Change mode dark to light
   public isDarkTheme: boolean = false;
 
-  constructor( private _router: Router ) {}
+  constructor( private _router: Router, private primengConfig: PrimeNGConfig ) {}
 
   ngOnInit(): void {
+    // Ripple Effect in buttons
+    this.primengConfig.ripple = true;
     this.hideNavigation();
     this.containerCustom();
   }

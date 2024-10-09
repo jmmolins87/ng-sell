@@ -13,7 +13,6 @@ export class SharedService {
 
   private logoNavbarLight: string = "assets/img/logo/logo-sell-light.json";
   private logoNavbarDark: string = "assets/img/logo/logo-sell-dark.json";
-  // private logoJson: string = "assets/img/logo-sell.json";
 
   private isDarkMode: boolean = false;
 

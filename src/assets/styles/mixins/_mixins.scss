@@ -27,3 +27,9 @@
         background: darken($bg-color, 10%);
     }
 }
+
+@mixin grid($colummns, $space ) {
+    display: grid;
+    grid-template-columns: repeat($colummns, 1fr);
+    gap: $space;
+}

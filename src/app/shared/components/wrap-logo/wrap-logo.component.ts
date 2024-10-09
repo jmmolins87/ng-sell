@@ -1,5 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { 
+  Component, 
+  Input, 
+  OnInit 
+} from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+
 import { SharedService } from '../../services/shared.service';
 
 @Component({
@@ -7,7 +12,7 @@ import { SharedService } from '../../services/shared.service';
   templateUrl: './wrap-logo.component.html',
   styleUrls: ['./wrap-logo.component.scss']
 })
-export class WrapLogoComponent {
+export class WrapLogoComponent implements OnInit {
 
   public sanitizedImageUrl!: SafeUrl;
   @Input() 
