@@ -6,5 +6,7 @@
         [height]="height" />
 </div>
 <div *ngIf="!sanitizedImageUrl">
-    <p-skeleton width="10rem" height="4rem" />
+    <div class="wrap-skeleton">
+        <p-skeleton width="10rem" height="4rem" borderRadius="16px" class="skeleton-logo" />
+    </div>
 </div>

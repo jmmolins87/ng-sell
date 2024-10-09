@@ -22,6 +22,7 @@
             </ng-template>
         </a>
         <button 
+            *ngIf="menuItems" 
             type="button" 
             data-bs-toggle="collapse" 
             data-bs-target="#navbarSell"
@@ -32,11 +33,17 @@
             <span></span>
             <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSell">
+        <!-- Skeleton -->
+         <div *ngIf="!menuItems" class="wrap-skeleton-hamb">
+             <p-skeleton shape="circle" size="4rem" styleClass="mr-2" />
+         </div>
+        <!-- ---------------- -->
+        <div id="navbarSell" class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <div class="navbar-nav menu">
                     <li *ngFor="let item of menuItems" class="nav-item">
                         <a 
+                            *ngIf="menuItems"  
                             [routerLink]="item.routerLink"
                             [routerLinkActive]="'active'"
                             class="nav-link" 
@@ -44,9 +51,14 @@
                             {{ item.label | translate }}
                             <span [class]="item.icon"></span>
                         </a>
+                        <!-- Skeleton -->
+                        <div *ngIf="!menuItems" class="wrap-skeleton-navbar menu">
+                            <p-skeleton width="15rem" height="3rem" />
+                        </div>
+                        <!-- ---------------- -->
                     </li>
                 </div>
-                <div class="navbar-nav end">
+                <div *ngIf="menuItems"  class="navbar-nav end">
                     <span class="pi pi-fw pi-language icon-lang"></span>
                     <select 
                         #langSelect 
@@ -67,6 +79,13 @@
                         </span>
                     </button>
                 </div>
+                <!-- Skeleton -->
+                <div *ngIf="!menuItems" class="wrap-skeleton-navbar actions">
+                    <p-skeleton shape="circle" size="3rem" styleClass="mr-2" />
+                    <p-skeleton width="15rem" height="3rem" />
+                    <p-skeleton shape="circle" size="3rem" styleClass="mr-2" />
+                </div>
+                <!-- ---------------- -->
             </ul>
         </div>
     </div>

@@ -6,14 +6,30 @@
     class="wrap-footer">
     <div class="container">
         <div class="wrap-content">
-            <div class="footer-rights">
+            <div *ngIf="itemsFooter" class="footer-rights">
                 <p>{{ "FOOTER.RIGHTS" | translate }} <span>{{ year }}</span></p>
                 <p><b>{{ "FOOTER.MY_SITE" | translate }}</b>&nbsp;<i class="pi pi-heart-fill heart-icon"></i></p>
             </div>
+            <!-- Skeleton -->
+            <div *ngIf="!itemsFooter"class="wrap-skeletons-rights">
+                <p-skeleton width="30rem" height="2rem"  />
+                <p-skeleton width="25rem" height="2rem"  />
+            </div>
+            <!-- ---------------- -->
             <nav class="footer-policies">
-                <p class="m-0"><a href="javascript:;">{{ "FOOTER.LEGAL" | translate }}</a></p>
-                <p class="m-0"><a href="javascript:;">{{ "FOOTER.COOKIES" | translate }}</a></p>
-                <p class="m-0"><a href="javascript:;">{{ "FOOTER.PRIVACITY" | translate }}</a></p>
+                <p *ngFor="let footer of footerContent" class="m-0">
+                    <a  
+                        *ngIf="itemsFooter"
+                        [routerLink]="footer.routerLink" 
+                        [routerLinkActive]="'active'">
+                        {{ footer.label | translate }}
+                    </a>
+                    <!-- Skeleton -->
+                    <span *ngIf="!itemsFooter"class="wrap-skeletons-menu-footer">
+                        <p-skeleton width="15rem" height="3rem" />
+                    </span>
+                    <!-- ---------------- -->
+                </p>
             </nav>
             <a 
                 [routerLink]="['/']" 

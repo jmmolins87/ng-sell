@@ -30,7 +30,9 @@ export class NavBarComponent implements OnInit {
     private _translator: TranslatorService ) { }
 
   ngOnInit(): void {
-    this.itemsNavbar;
+    setTimeout(() => {
+      this.itemsNavbar;
+    }, 500);
   }
 
   get itemsNavbar() {

@@ -1,5 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { SharedService } from '../../services/shared.service';
+
+import { FooterInterface } from '../../interface/footer.interface';
+
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +12,8 @@ import { SharedService } from '../../services/shared.service';
 })
 export class FooterComponent implements OnInit {
 
+  // Items Menu policies
+  public footerContent!: FooterInterface[] | any[];
   // Get year
   public year = new Date().getFullYear();
   // Dark Theme
@@ -20,6 +26,17 @@ export class FooterComponent implements OnInit {
     this._sharedService.darkMode$.subscribe((isDarkMode) => {
       this.isDarkMode = isDarkMode;
     });
+
+    setTimeout(() => {
+      this.itemsFooter;
+    }, 500)
+  }
+
+  get itemsFooter() {
+    this._sharedService.itemsFooter.subscribe(items => {
+      this.footerContent = items;
+    });
+    return this.footerContent;
   }
 
 }

@@ -113,3 +113,18 @@ footer.dark-theme {
         }
     }
 }
+
+// Skeleotns
+.wrap-skeletons {
+    &-rights {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    &--menu-footer {
+        flex-direction: row;
+    }
+}
