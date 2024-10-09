@@ -92,8 +92,19 @@
                 justify-content: flex-start;
                 align-items: center;
                 flex: 1 1 calc(50% - 12.5px);
-                li {
-                    margin-right: 15px;
+                margin-right: 0;
+                min-width: 50%;
+                border-bottom: 1px solid $grey-light-border;
+                padding: 15px 0;
+                @include min-responsive($tablet) {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                    min-width: fit-content;                    
+                }
+                .nav-item {
+                    @include min-responsive($tablet) {
+                        margin-right: 15px;
+                    }
                     cursor: pointer;
                     &:last-of-type {
                         margin-right: 0;
@@ -109,16 +120,20 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                flex: 1 1 calc(25% - 12.5px);
+                min-width: 100%;
                 margin-top: 20px;
                 @include min-responsive($tablet) {
                     justify-content: flex-end;
                     flex-direction: row;
                     margin-top: 0;
+                    min-width: auto;
                 }
                 .icon-lang {
                     font-size: $icon-lang;
-                    margin-right: 10px;
+                    margin-right: 0;
+                    @include min-responsive($tablet) {
+                        margin-right: 10px;
+                    }
                 }
                 .form-select {
                     font-size: $txt-main;
@@ -133,9 +148,15 @@
                     margin-top: 20px;
                     background: transparent;
                     border: none;
+                    border-top: 1px solid $grey-light-border;
+                    padding-top: 20px;
+                    min-width: 50%;
                     @include min-responsive($tablet) {
                         margin-top: 0;
                         margin-left: 10px;
+                        min-width: auto;
+                        border-top: none;
+                        padding-top: 0;
                     }
                     .pi {
                         font-size: $icon-mode;
@@ -148,14 +169,31 @@
 
 .dark-theme {
     &.wrap-navbar {
+        .navbar-toggler {
+            span {
+                background: $white-txt;
+            }
+        }
         background: $black-bg;
         box-shadow: $navbar-shadow-dark;
         .navbar-nav {
-            &.menu li a {
-                color: $white-txt;
-                &:hover {
-                    color: $white-dark-txt;
-                }      
+            &.menu {
+                border-bottom: 1px solid $black-light-border;
+                @include min-responsive($tablet) {
+                    border-bottom: none;
+                }
+                .nav-item {
+                    margin-right: 0;
+                    @include min-responsive($tablet) {
+                        margin-right: 15px;
+                    }
+                        a {
+                            color: $white-txt;
+                            &:hover {
+                             color: $white-dark-txt;
+                        }      
+                    }
+                } 
             }
             &.end {
                 .icon-lang {
@@ -166,10 +204,18 @@
                     background: $black-light-bg;
                     color: $grey-light-txt;
                     border: 1px solid $white-dark-border;
+                    text-align: center;
+                    @include min-responsive($tablet) {
+                        text-align: start;
+                    }
                 }
                 .mode-button {
                     background: transparent;
                     color: $white-txt;
+                    border-top: 1px solid $black-light-border;
+                    @include min-responsive($tablet) {
+                        border-bottom: none;
+                    }
                 }
             }
         }
