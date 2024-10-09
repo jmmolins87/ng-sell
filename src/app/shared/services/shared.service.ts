@@ -10,8 +10,9 @@ import { navbarItems } from '../db/navbarItems.db';
 })
 export class SharedService {
 
-  private logoNavbarLight: string = "assets/img/logo-sell-light.json";
-  private logoNavbarDark: string = "assets/img/logo-sell-dark.json";
+  // private logoNavbarLight: string = "assets/img/logo-sell-light.json";
+  // private logoNavbarDark: string = "assets/img/logo-sell-dark.json";
+  // private logoJson: string = "assets/img/logo-sell.json";
 
   private isDarkMode: boolean = false;
 

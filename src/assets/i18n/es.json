@@ -2,9 +2,26 @@
 
 
 {
+    "LOGO_NAVBAR_LIGHT": {
+        "SRC": "assets/img/logo-sell-light.json",
+        "ALT": "I sell myself",
+        "HEIGHT": 70
+    },
+    "LOGO_NAVBAR_DARK": {
+        "SRC": "assets/img/logo-sell-dark.json",
+        "ALT": "I sell myself",
+        "HEIGHT": 70
+    },
     "NAVBAR": {
         "ABOUT": "Sobre mí",
         "TOOLS": "Herramientas",
         "CONTACT": "Contacto"
+    },
+    "FOOTER": {
+        "RIGHTS": "Todos los derechos reservados",
+        "MY_SITE": "Sitio creado con mucho",
+        "LEGAL": "Aviso legal",
+        "COOKIES": "Política de cookies",
+        "PRIVACITY": "Política de privacidad"
     }
 }

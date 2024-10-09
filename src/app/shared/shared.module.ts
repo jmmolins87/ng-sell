@@ -9,15 +9,13 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { WrapperImgsComponent } from './components/wrapper-imgs/wrapper-imgs.component';
 
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent,
-    WrapperImgsComponent
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -28,8 +26,7 @@ import { WrapperImgsComponent } from './components/wrapper-imgs/wrapper-imgs.com
   ],
   exports: [
     NavBarComponent,
-    FooterComponent,
-    WrapperImgsComponent
+    FooterComponent
   ]
 })
 export class SharedModule { }

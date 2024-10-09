@@ -8,9 +8,10 @@ import { SharedService } from '../../services/shared.service';
 })
 export class FooterComponent implements OnInit {
 
+  // Get year
+  public year = new Date().getFullYear();
   // Dark Theme
   public isDarkMode: boolean = false;
-  public year = new Date().getFullYear();
 
   constructor( private _sharedService: SharedService ) {}
 
