@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 
 import { ButtonModule } from 'primeng/button';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { RippleModule } from 'primeng/ripple';
-import { ScrollTopModule } from 'primeng/scrolltop';
 import { SkeletonModule } from 'primeng/skeleton';
 
 @NgModule({
   exports: [
     ButtonModule,
+    ProgressSpinnerModule,
     RippleModule,
-    ScrollTopModule,
-    SkeletonModule
+    SkeletonModule,
   ]
 })
 export class PrimeNgModule { }

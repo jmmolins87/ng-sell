@@ -9,13 +9,15 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
 
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    WrapLogoComponent
   ],
   imports: [
     CommonModule,

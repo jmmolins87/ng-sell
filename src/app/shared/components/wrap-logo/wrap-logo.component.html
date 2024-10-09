@@ -1,0 +1,10 @@
+<div *ngIf="sanitizedImageUrl">
+    <img 
+        [src]="sanitizedImageUrl" 
+        [alt]="alt" 
+        [title]="title"
+        [height]="height" />
+</div>
+<div *ngIf="!sanitizedImageUrl">
+    <p-skeleton width="10rem" height="4rem" />
+</div>

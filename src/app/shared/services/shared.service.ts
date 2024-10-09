@@ -10,8 +10,8 @@ import { navbarItems } from '../db/navbarItems.db';
 })
 export class SharedService {
 
-  // private logoNavbarLight: string = "assets/img/logo-sell-light.json";
-  // private logoNavbarDark: string = "assets/img/logo-sell-dark.json";
+  private logoNavbarLight: string = "assets/img/logo-sell-light.json";
+  private logoNavbarDark: string = "assets/img/logo-sell-dark.json";
   // private logoJson: string = "assets/img/logo-sell.json";
 
   private isDarkMode: boolean = false;
@@ -23,6 +23,14 @@ export class SharedService {
   darkMode$ = this.darkModeSubject.asObservable();
 
   constructor( private _http: HttpClient ) { }
+
+  get logoLight(): Observable<any> {
+    return this._http.get<any>(this.logoNavbarLight);
+  }
+
+  get logoDark(): Observable<any> {
+    return this._http.get<any>(this.logoNavbarDark);
+  }
 
   get itemsNavbar() {
     return new Observable<any>(observer => {

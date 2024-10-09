@@ -5,8 +5,6 @@ import { MenuItem } from 'primeng/api';
 import { SharedService } from '../../services/shared.service';
 import { TranslatorService } from './../../../services/translator.service';
 
-import { WrapperImg } from '../../interface/wrapperImg.interface';
-
 
 @Component({
   selector: 'app-nav-bar',
@@ -14,9 +12,6 @@ import { WrapperImg } from '../../interface/wrapperImg.interface';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
-  // Logo navbar
-  public logo!: WrapperImg;
 
   // Items Menu
   public menuItems!: MenuItem[] | any[];

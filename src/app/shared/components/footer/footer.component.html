@@ -15,7 +15,23 @@
                 <p class="m-0"><a href="javascript:;">{{ "FOOTER.COOKIES" | translate }}</a></p>
                 <p class="m-0"><a href="javascript:;">{{ "FOOTER.PRIVACITY" | translate }}</a></p>
             </nav>
-            <div class="wrap-logo"></div>
+            <a 
+                [routerLink]="['/']" 
+                class="footer-logo">
+                <app-wrap-logo 
+                    *ngIf="this.isDarkMode === false; else darkMode"
+                    imageKey="LOGO_NAVBAR_LIGHT" 
+                    [alt]="'I sell myself'"
+                    [title]="'I sell myself'"
+                    [height]="140" />
+                <ng-template #darkMode>
+                    <app-wrap-logo 
+                        imageKey="LOGO_NAVBAR_DARK" 
+                        [alt]="'I sell myself'"
+                        [title]="'I sell myself'"
+                        [height]="140" />
+                </ng-template>
+            </a>
         </div>
     </div>
 </footer>
