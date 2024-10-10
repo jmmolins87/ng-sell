@@ -2,7 +2,7 @@
 
 
 <div class="wrap-tools">
-    <div class="wrap-card">
-        <app-card />
+    <div *ngFor="let tool of toolsData" class="wrap-card">
+        <app-card [tool]="toolsData"></app-card>
     </div>
 </div>

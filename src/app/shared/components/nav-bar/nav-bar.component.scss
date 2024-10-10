@@ -7,7 +7,8 @@
         position: sticky;
         top: 0;
         z-index: 1000;
-        background: $white-bg;
+        background: rgba($white-bg, .7);
+        backdrop-filter: blur(15px);
         box-shadow: $navbar-shadow-light;
         padding: 15px;
         .wrap-logo {
@@ -174,7 +175,8 @@
                 background: $white-txt;
             }
         }
-        background: $black-bg;
+        background: rgba($black-bg, .7);
+        backdrop-filter: blur(15px);;
         box-shadow: $navbar-shadow-dark;
         .navbar-nav {
             &.menu {

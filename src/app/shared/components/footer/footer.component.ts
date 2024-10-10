@@ -22,10 +22,7 @@ export class FooterComponent implements OnInit {
   constructor( private _sharedService: SharedService ) {}
 
   ngOnInit() {
-    // Subscribe to the dark mode status to apply the class
-    this._sharedService.darkMode$.subscribe((isDarkMode) => {
-      this.isDarkMode = isDarkMode;
-    });
+    this.darkMode();
 
     setTimeout(() => {
       this.itemsFooter;
@@ -37,6 +34,13 @@ export class FooterComponent implements OnInit {
       this.footerContent = items;
     });
     return this.footerContent;
+  }
+
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }

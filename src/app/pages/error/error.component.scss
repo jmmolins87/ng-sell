@@ -3,6 +3,12 @@
 @import '/src/styles.scss';
 
 .wrap-error {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -16,15 +22,8 @@
         }
     }
     .wrap-actions {
-        margin-top: 30px;
-        position: absolute;
-        width: 75%;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
         h2 {
-            color: $white-dark-txt;
+            color: $black-light-txt;
         }
     }
     .wrap-button {
@@ -33,5 +32,11 @@
         justify-content: center;
         align-items: center;
         margin: 24px auto;
+    }
+    
+    ::ng-deep {
+        .p-button.p-button-danger.p-button-outlined {
+            @extend %p-button-danger;
+        }
     }
 }
