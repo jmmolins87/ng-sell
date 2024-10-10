@@ -13,6 +13,8 @@ import { Tool } from '../../interfaces/tool.interface';
 })
 export class CardComponent implements OnInit {
 
+  titleTypes!: string;
+
   @Input()
   public tool!: Tool[];
 

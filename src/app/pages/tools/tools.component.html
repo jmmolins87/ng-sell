@@ -1,6 +1,8 @@
 
 
-
+<app-title-pages 
+    [titleType]="titleType" 
+    [title]="'Mis herramientas'" />
 <div class="wrap-tools">
     <div *ngFor="let tool of toolsData" class="wrap-card">
         <app-card [tool]="toolsData"></app-card>

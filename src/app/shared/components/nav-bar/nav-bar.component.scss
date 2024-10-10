@@ -141,6 +141,7 @@
                     width: 195px;
                     padding: 10px;
                     margin-top: 10px;
+                    background: transparent;
                     @include min-responsive($tablet) {
                         margin-top: 0;
                     }
@@ -203,7 +204,7 @@
                     color: $white-txt;
                 }
                 .form-select {
-                    background: $black-light-bg;
+                    background: transparent;
                     color: $grey-light-txt;
                     border: 1px solid $white-dark-border;
                     text-align: center;
