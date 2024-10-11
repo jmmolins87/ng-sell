@@ -110,8 +110,13 @@
                     &:last-of-type {
                         margin-right: 0;
                     }
-                    a:hover {
-                        color: $black-light-txt;
+                    a {
+                        &:hover {
+                            color: $black-light-txt;
+                        }
+                        &.active {
+                            color: $primary-txt;
+                        }
                     }
                 }
             }
@@ -194,6 +199,9 @@
                             color: $white-txt;
                             &:hover {
                              color: $white-dark-txt;
+                            &.active {
+                                color: $primary-dark-txt;
+                            }
                         }      
                     }
                 } 

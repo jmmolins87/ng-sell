@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { titleTypes } from './title.config';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-title-pages',
@@ -12,6 +13,5 @@ export class TitlePagesComponent {
   @Input()
   public titleType!: titleTypes;
   @Input()
-  public title!: string;
-
+  public title!: string | TranslateModule;
 }

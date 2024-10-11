@@ -8,11 +8,17 @@ html {
 body.light-theme {
     background: $white-dark-bg;
     color: $black-light-bg;
+    h1, h2, h3 {
+        color: $primary-txt;
+    }
 }
 
 body.dark-theme {
     background: $black-light-bg;
     color: $white-dark-bg;
+    h1, h2, h3 {
+        color: $primary-dark-txt;
+    }
 }
 
 h1, h2, h3 {

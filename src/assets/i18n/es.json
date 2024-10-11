@@ -18,7 +18,10 @@
         "TITLE": "¡¡Este no es el camino correcto!!",
         "TEXT": "Volvamos a empezar"
     },
-    "TOOLS": [
+    "TOOLS": {
+        "TITLE_PAGE": "Mis Herramientas"
+    },
+    "TOOLS_TOOLS": [
         {
             "TITLE_PAGE": "Mis Herramientas"
         },
