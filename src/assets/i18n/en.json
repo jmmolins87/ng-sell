@@ -18,13 +18,8 @@
         "TITLE": "This is not the right way!!",
         "TEXT": "Let's start over"
     },
-    "TOOLS": {
-        "TITLE_PAGE": "My Tools"
-    },
-    "TOOLS_TOOLS": [
-        {
-            "TITLE_PAGE": "Mis Herramientas"
-        },
+    "TITLE_TOOLS": "My Tools",
+    "TOOLS": [
         {
             "TITLE": "Adobe Photoshop",
             "SUBTITLE": "Diseño",
