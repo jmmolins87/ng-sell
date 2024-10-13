@@ -46,7 +46,7 @@ export class NavBarComponent implements OnInit {
 
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
-    this._sharedService.toggleDarkMode(this.isDarkMode); // Cambia el estado del modo oscuro
+    this._sharedService.toggleDarkMode(this.isDarkMode); // Change mode in the service
   }
 
 }

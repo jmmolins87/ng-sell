@@ -5,39 +5,40 @@
 
 
 // Brand Colors
-$primary-shadows: #eafa02;
-$primary-shadows-hover: #e9fa026c;
-$primary-dark-shadows: #cbd807;
-$primary-dark-shadows-hover: #cad80760;
-$secondary-shadows: #abfa56;
-$secondary-shadows-hover: #abfa565e;
-$secondary-dark-shadows: #8acb44;
-$secondary-dark-shadows-hover: #8acb4468;
+$primary-shadow: #eafa02;
+$primary-shadow-hover: #e9fa026c;
+$primary-dark-shadow: #cbd807;
+$primary-dark-shadow-hover: #cad80760;
+$secondary-shadow: #abfa56;
+$secondary-shadow-hover: #abfa565e;
+$secondary-dark-shadow: #8acb44;
+$secondary-dark-shadow-hover: #8acb4468;
 
 // Main Colors
-$white-shadows: #ffffff;
-$white-dark-shadows: #f9f9f9;
-$grey-light-shadows: #ededed;
-$grey-shadows: #d0d0d0;
-$grey-dark-shadows: #9f9d9d;
-$black-light-shadows: #212830;
-$black-shadows: #1c1c1c;
+$white-shadow: #ffffff;
+$white-dark-shadow: #f9f9f9;
+$grey-light-shadow: #ededed;
+$grey-shadow: #d0d0d0;
+$grey-dark-shadow: #9f9d9d;
+$black-light-shadow: #212830;
+$black-shadow: #1c1c1c;
+$black-strong-shadow: #000000;
 
 // State Colors
-$info-shadows: #02faff;
-$info-light-shadows: #9df7f8;
-$info-dark-shadows: #03a7aa;
-$danger-shadows: #e90502;
-$danger-light-shadows: #f7a4a3;
-$danger-dark-shadows: #910603;
-$warning-shadows: #eded00;
-$warning-light-shadows: #fbfba8;
-$warning-dark-shadows: #8c8c02;
-$success-shadows: #71e002;
-$success-light-shadows: #d3fbaa;
-$success-dark-shadows: #468a03;
+$info-shadow: #02faff;
+$info-light-shadow: #9df7f8;
+$info-dark-shadow: #03a7aa;
+$danger-shadow: #e90502;
+$danger-light-shadow: #f7a4a3;
+$danger-dark-shadow: #910603;
+$warning-shadow: #eded00;
+$warning-light-shadow: #fbfba8;
+$warning-dark-shadow: #8c8c02;
+$success-shadow: #71e002;
+$success-light-shadow: #d3fbaa;
+$success-dark-shadow: #468a03;
 
-// Shadows
+// Shadow
 $navbar-light: rgba(#565656, .4) ;
 $navbar-dark: rgba(#0e0e0e, .7);
 // Navbar

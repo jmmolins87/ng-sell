@@ -3,3 +3,45 @@
 .wrap-skeleton {
     margin: 2rem 0;
 }
+
+.light-theme, 
+.dark-theme { 
+    &.wrap-title {
+        .title {
+            position: relative;
+            padding-bottom: 5px;
+    
+            /* Pseudoelement to create the underline */
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 3px;
+                background-color: $black-light-border; /* Underline color */
+                animation: underline-animation 2s ease forwards;
+            }
+        }
+    }
+}
+
+.dark-theme {
+    &.wrap-title {
+        .title {
+            &::after {
+                background-color: $grey-light-border; /* Underline color */
+            }
+        }
+    }
+}
+
+/* We define the animation with keyframes */
+@keyframes underline-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

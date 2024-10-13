@@ -1,7 +1,9 @@
 
 
 
-<article class="wrap-card">
+<article 
+    [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'"  
+    class="wrap-card">
     <p-card header="Advanced Card" subheader="Card Subheader">
         <ng-template pTemplate="header">
             <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />

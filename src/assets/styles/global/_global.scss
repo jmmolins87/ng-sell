@@ -6,13 +6,13 @@ html {
 }
 
 body.light-theme {
-    background: $white-dark-bg;
-    color: $black-light-bg;
+    background: $grey-light-bg;
+    color: $black-light-txt;
 }
 
 body.dark-theme {
     background: $black-light-bg;
-    color: $white-dark-bg;
+    color: $grey-light-txt;
 }
 
 h1, h2, h3 {

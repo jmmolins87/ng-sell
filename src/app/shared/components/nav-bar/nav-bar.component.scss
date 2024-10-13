@@ -183,7 +183,7 @@
             }
         }
         background: rgba($black-bg, .8);
-        backdrop-filter: blur(15px);;
+        backdrop-filter: blur(15px);
         box-shadow: $navbar-shadow-dark;
         .navbar-nav {
             &.menu {
@@ -220,6 +220,9 @@
                     text-align: center;
                     @include min-responsive($tablet) {
                         text-align: start;
+                    }
+                    option {
+                        color: $black-light-txt;
                     }
                 }
                 .mode-button {

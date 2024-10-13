@@ -23,6 +23,8 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   public translatedTitle$: Observable<string> | null = null;
   // Skeleton loader
   public showSkeleton: boolean = true;
+  // Dark Theme
+  public isDarkMode: boolean = false;
 
   // Title type
   @Input()
@@ -31,9 +33,10 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   @Input()
   public title!: string;
 
-  constructor( private _translate: TranslateService ) {}
+  constructor( private _translate: TranslateService, private _sharedService: SharedService ) {}
 
   ngOnInit(): void {
+    this.darkMode();
   }
 
   ngOnChanges() {
@@ -43,6 +46,13 @@ export class TitlePagesComponent implements OnInit, OnChanges {
         this.showSkeleton = false;
       });
     }
+  }
+  
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }
