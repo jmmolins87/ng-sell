@@ -1,8 +1,11 @@
 
 
-<app-title-pages [titleType]="titleType" [title]="title" />
+<app-title-pages [titleType]="titleType" [title]="'TITLE_TOOLS' | translate" />
 <div class="wrap-tools">
     <div *ngFor="let tool of toolsData" class="wrap-card">
         <app-card [tool]="toolsData"></app-card>
     </div>
+    <p-scrollTop target="parent" styleClass="custom-scrolltop" [threshold]="100" icon="pi pi-arrow-up" />
 </div>
+
+<p-scrollTop />

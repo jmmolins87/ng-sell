@@ -4,10 +4,8 @@
 
 .wrap-tools {
     width: 100%;
-    margin-top: 2rem;
-    &:first-of-type {
-        margin-top: 0;
-    }
+    display: grid;
+    @include grid(1, 2rem);
     @include min-responsive($tablet) {
         @include grid(2, 2rem);
     }

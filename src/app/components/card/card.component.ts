@@ -5,6 +5,7 @@ import {
 } from '@angular/core';
 
 import { Tool } from '../../interfaces/tool.interface';
+import { titleTypes } from '../title-pages/title.config';
 
 @Component({
   selector: 'app-card',
@@ -12,8 +13,6 @@ import { Tool } from '../../interfaces/tool.interface';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
-  titleTypes!: string;
 
   @Input()
   public tool!: Tool[];
@@ -24,3 +23,4 @@ export class CardComponent implements OnInit {
    
   }
 }
+

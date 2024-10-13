@@ -15,6 +15,7 @@ import { SharedService } from '../../services/shared.service';
 export class WrapLogoComponent implements OnInit {
 
   public sanitizedImageUrl!: SafeUrl;
+  
   @Input() 
   public imageKey!: string; // The key to access the image from the JSON
   @Input()

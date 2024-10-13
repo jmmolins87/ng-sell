@@ -1,0 +1,19 @@
+
+
+.wrap-card {
+    overflow: hidden;
+    border-radius: 10px;
+    /* Sombra 3D que parece salir de la pantalla */
+    box-shadow: 
+      0 5px 15px rgba(0, 0, 0, 0.1),   /* Sombra suave cercana */
+      0 10px 20px rgba(0, 0, 0, 0.15),  /* Sombra media */
+      0 20px 40px rgba(0, 0, 0, 0.2),   /* Sombra profunda */
+      0 30px 60px rgba(0, 0, 0, 0.25);  /* Sombra más profunda */
+    
+    transition: transform .2s ease-in-out;
+  }
+  
+  /* Efecto de hover para resaltar el 3D */
+  .wrap-card:hover {
+    transform: translateY(-5px); /* Simula que "sale" más de la pantalla */
+  }

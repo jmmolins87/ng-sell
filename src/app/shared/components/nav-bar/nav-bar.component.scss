@@ -7,7 +7,7 @@
         position: sticky;
         top: 0;
         z-index: 1000;
-        background: rgba($white-bg, .7);
+        background: rgba($white-bg, .8);
         backdrop-filter: blur(15px);
         box-shadow: $navbar-shadow-light;
         padding: 15px;
@@ -111,11 +111,12 @@
                         margin-right: 0;
                     }
                     a {
+                        transition: all .2s ease-in-out;
                         &:hover {
                             color: $black-light-txt;
                         }
-                        &.active {
-                            color: $primary-txt;
+                        &.active::before {
+                            content: '';
                         }
                     }
                 }
@@ -181,7 +182,7 @@
                 background: $white-txt;
             }
         }
-        background: rgba($black-bg, .7);
+        background: rgba($black-bg, .8);
         backdrop-filter: blur(15px);;
         box-shadow: $navbar-shadow-dark;
         .navbar-nav {
@@ -199,8 +200,9 @@
                             color: $white-txt;
                             &:hover {
                              color: $white-dark-txt;
-                            &.active {
-                                color: $primary-dark-txt;
+                            &.active::before {
+                                content: '';
+
                             }
                         }      
                     }
@@ -213,7 +215,7 @@
                 }
                 .form-select {
                     background: transparent;
-                    color: $grey-light-txt;
+                    color: $grey-txt;
                     border: 1px solid $white-dark-border;
                     text-align: center;
                     @include min-responsive($tablet) {

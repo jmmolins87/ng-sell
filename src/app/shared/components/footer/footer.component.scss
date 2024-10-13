@@ -109,6 +109,9 @@ footer.dark-theme {
                         color: $white-txt;
                     }
                 }
+                &-logo {
+                    border-top: 1px solid $black-light-border;
+                }
             }
         }
     }

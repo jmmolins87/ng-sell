@@ -1,7 +1,12 @@
 
-
-<div class="wrap-title">
-    <h1 *ngIf="titleType === 'h1'" class="wrap-title">{{ title | translate | json }}</h1>
-    <h2 *ngIf="titleType === 'h2'" class="wrap-title">{{ title | translate | json }}</h2>
-    <h3 *ngIf="titleType === 'h3'" class="wrap-title">{{ title | translate | json }}</h3>
+<div *ngIf="showSkeleton; else loadedContent" class="wrap-skeleton">
+    <p-skeleton width="50rem" height="5rem" />
 </div>
+
+<ng-template #loadedContent>
+    <div class="wrap-title">
+        <h1 *ngIf="titleType === 'h1'" class="wrap-title">{{ translatedTitle$ | async }}</h1>
+        <h2 *ngIf="titleType === 'h2'" class="wrap-title">{{ translatedTitle$ | async }}</h2>
+        <h3 *ngIf="titleType === 'h3'" class="wrap-title">{{ translatedTitle$ | async }}</h3>
+    </div>
+</ng-template>

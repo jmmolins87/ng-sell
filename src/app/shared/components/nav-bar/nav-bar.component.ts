@@ -15,13 +15,11 @@ export class NavBarComponent implements OnInit {
 
   // Items Menu
   public menuItems!: MenuItem[] | any[];
-
   // Traductor
   public langs: { lang: string, name: string }[] = [
     { lang: 'es', name: 'Español' },
     { lang: 'en', name: 'English' }
   ];
-
   // Dark Theme
   public isDarkMode: boolean = false;
 

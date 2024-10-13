@@ -1,10 +1,5 @@
-import { 
-  Component, 
-  Input, 
-  OnInit 
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { TranslateService } from '@ngx-translate/core';
 import { ToolsService } from '../../services/tools.service';
 
 import { Tool } from '../../interfaces/tool.interface';
@@ -17,28 +12,19 @@ import { titleTypes } from '../../components/title-pages/title.config';
 })
 export class ToolsComponent implements OnInit {
 
-  public toolsData!: any[];
+  public toolsData!: Tool[];
   public titleType: titleTypes = titleTypes.h1;
-  public title: string = "TITLE_TOOLS";
+  public title!: string;
 
-  constructor( private _toolsService: ToolsService, private _translate: TranslateService ) {
-    // Set the default language
-    this._translate.setDefaultLang('en');
 
-    // Use browser language if available
-    const browserLang = this._translate.getBrowserLang();
-    this._translate.use(browserLang && browserLang.match(/en|es/) ? browserLang : 'es');
+  constructor( private _toolsService: ToolsService ) {
   }
 
   ngOnInit(): void {
     this.tools;
   }
 
-  // Function to dynamically change the title
-  changeTitle(newTitleKey: string) {
-    this.title = newTitleKey;
-  }
-
+  // Function to get the tools from the service
   get tools() {
     this._toolsService.tools.subscribe((tools: Tool[]) => {
       this.toolsData = tools;
