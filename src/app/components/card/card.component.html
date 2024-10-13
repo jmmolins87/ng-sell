@@ -1,21 +1,21 @@
 
 
 
-<article 
-    [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'"  
-    class="wrap-card">
-    <p-card header="Advanced Card" subheader="Card Subheader">
+<article [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-card">
+    <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
-            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+            <img 
+                [src]="tool.image" 
+                [alt]="tool.title" 
+                [title]="tool.title" />
         </ng-template>
         <p>
             Lorem ipsum dolor sit amet...
         </p>
         <ng-template pTemplate="footer">
-            <div class="flex gap-3 mt-1">
-                <p-button pRipple label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-                <p-button label="Save" class="w-full" styleClass="w-full" />
-            </div>
+            <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
+                <p-button [label]="tool.web" [outlined]="true" severity="danger" />
+            </a>
         </ng-template>
     </p-card>
 </article>

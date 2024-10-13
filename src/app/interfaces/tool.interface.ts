@@ -11,4 +11,5 @@ export interface Tool {
     image: string;
     skill: number;
     restskill: number;
+    web: string;
 }

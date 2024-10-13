@@ -18,7 +18,7 @@
       /* Hover effect to highlight 3D */
       transform: translateY(-5px); /* Simulates that more "comes out" of the screen */
       /* Effect when we pass the mouse, the shadow intensifies */
-      box-shadow: 0px 25px 20px -8px rgba($grey-dark-shadow, 0.3), /* Larger shadow upwards */
+      box-shadow: $card-shadow-light; /* Larger shadow upwards */
     }   
   }
 }
@@ -31,8 +31,9 @@
         color: $grey-light-txt;
       }
     }
+
     &:hover {
-      box-shadow: 0px 15px 20px -8px rgba($black-strong-shadow, 0.3), /* Larger shadow upwards */
+      box-shadow: $card-shadow-dark; /* Larger shadow upwards */
     }
   }
 }

@@ -5,21 +5,10 @@
     margin-right: auto;
     margin-left: auto;
 }
-/* Extra small devices (phones, 600px and down) */
-@include max-responsive($mobile) {
-    .container {
-        max-width: 100%;
-    }
-}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@include min-responsive($mobile) {
-    .container {
-        max-width: 100%;
-    }
-}
 @media (min-width: $mobile) {
     .container {
-        max-width: 540px;
+        max-width: 100%;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */

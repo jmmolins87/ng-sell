@@ -39,8 +39,11 @@ $success-light-shadow: #d3fbaa;
 $success-dark-shadow: #468a03;
 
 // Shadow
-$navbar-light: rgba(#565656, .4) ;
-$navbar-dark: rgba(#0e0e0e, .7);
+$shadow-light: rgba(#565656, .4) ;
+$shadow-dark: rgba(#0e0e0e, .7);
 // Navbar
-$navbar-shadow-light: 0px 10px 6px -4px $navbar-light;
-$navbar-shadow-dark: 0px 10px 6px -4px $navbar-dark;
+$navbar-shadow-light: 0px 10px 6px -4px $shadow-light;
+$navbar-shadow-dark: 0px 10px 6px -4px $shadow-dark;
+// Card's
+$card-shadow-light: 0px 25px 20px -10px rgba($shadow-light, .3);
+$card-shadow-dark:  0px 15px 20px -10px rgba($shadow-dark, 1);

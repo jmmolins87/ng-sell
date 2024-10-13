@@ -1,9 +1,9 @@
 
 
-<app-title-pages [titleType]="titleType" [title]="'TITLE_TOOLS' | translate" />
+<app-title-pages [titleType]="titleType" [title]="'TITLES_PAGES.TOOLS' | translate" />
 <div class="wrap-tools">
-    <div *ngFor="let tool of toolsData" class="wrap-card">
-        <app-card [tool]="toolsData"></app-card>
+    <div *ngFor="let tool of toolsData; let i = index" class="wrap-tool">
+        <app-card [tool]="tool" />
     </div>
 </div>
 
