@@ -8,19 +8,24 @@
     border-radius: $border-radius-05;
     transition: all .2s ease-in-out;
     position: relative;
-    &::ng-deep {
-      .p-card {
-        background: $white-bg;
-        color: $black-light-txt;
-      }
-    }
-      
     &:hover {
       /* Hover effect to highlight 3D */
       transform: translateY(-5px); /* Simulates that more "comes out" of the screen */
       /* Effect when we pass the mouse, the shadow intensifies */
       box-shadow: $card-shadow-light; /* Larger shadow upwards */
     }   
+    .wrap-tags {
+      margin-top: 20px;
+    }
+    &::ng-deep {
+      .p-card {
+        background: $white-bg;
+        color: $black-light-txt;
+      }
+      .p-card-footer {
+        padding-top: 0;
+      }
+    }
   }
 }
 

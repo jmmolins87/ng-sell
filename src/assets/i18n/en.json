@@ -23,6 +23,12 @@
         "TOOLS": "My Tools",
         "CONTACT": "Contact me"
     },
+    "OTHERS": {
+        "READ_MORE": "Read more",
+        "CLOSE": "Close",
+        "WEB": "Go to site",
+        "DOWNLOAD_CV": "Download CV"
+    },
     "TOOLS": [
         {
             "TITLE": "Adobe Photoshop",

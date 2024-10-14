@@ -60,3 +60,16 @@ p, a, span {
 .wrap-navbar a {
     font-size: $txt-menu;
 }
+
+button {
+    border-radius: $border-radius-05;
+    cursor: pointer;
+}   
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}

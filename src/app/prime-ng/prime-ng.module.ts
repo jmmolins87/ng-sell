@@ -6,6 +6,7 @@ import { ChartModule } from 'primeng/chart';
 import { RippleModule } from 'primeng/ripple';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { SkeletonModule } from 'primeng/skeleton';
+import { TagModule } from 'primeng/tag';
 import { ToastModule } from 'primeng/toast';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ToastModule } from 'primeng/toast';
     RippleModule,
     ScrollTopModule,
     SkeletonModule,
+    TagModule,
     ToastModule,
   ]
 })

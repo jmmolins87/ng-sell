@@ -8,27 +8,38 @@
             class="pi pi-heart-fill">
         </i>
     </div>
-    <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
+    <p-card [header]="'TOOLS.TITLE' | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
             <img 
                 [src]="tool.image" 
                 [alt]="tool.title" 
-                [title]="tool.title" />
+                [title]="'TOOLS.TITLE' | translate" />
         </ng-template>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>{{ "TOOLS.DESCRIPTION" | translate }}</p>
         <button 
             pButton 
             pRipple 
-            label="Leer más" 
+            [label]="'OTHERS.READ_MORE' | translate"
             [outlined]="true" 
             severity="info"
             icon="pi pi-plus" 
             iconPos="right"
             [routerLink]="['/tool', tool.id]">
         </button>
+        <ul class="wrap-tags">
+            <li *ngFor="let tag of tool.tags; let i = index">
+                <p-tag severity="info" [value]="tool.tags[i]"></p-tag>
+            </li>
+        </ul>
         <ng-template pTemplate="footer">
             <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
-                <p-button [label]="tool.web" [outlined]="true" severity="danger" />
+                <button 
+                    pButton
+                    pRipple
+                    [label]="'OTHERS.WEB' | translate" 
+                    [outlined]="true" 
+                    severity="danger" >
+                </button>
             </a>
         </ng-template>
     </p-card>

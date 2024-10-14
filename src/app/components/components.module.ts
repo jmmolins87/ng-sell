@@ -7,10 +7,10 @@ import { TranslateModule } from '@ngx-translate/core';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { CardComponent } from './card/card.component';
-import { TitlePagesComponent } from './title-pages/title-pages.component';
 import { DownloadButtonComponent } from './download-button/download-button.component';
-import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
+import { TitlePagesComponent } from './title-pages/title-pages.component';
 import { WrapChartComponent } from './wrap-chart/wrap-chart.component';
+import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
 
 
 
@@ -19,8 +19,8 @@ import { WrapChartComponent } from './wrap-chart/wrap-chart.component';
     CardComponent,
     DownloadButtonComponent,
     TitlePagesComponent,
-    WrapImgsComponent,
     WrapChartComponent,
+    WrapImgsComponent,
   ],
   imports: [
     CommonModule,
@@ -32,7 +32,8 @@ import { WrapChartComponent } from './wrap-chart/wrap-chart.component';
     CardComponent,
     DownloadButtonComponent,
     TitlePagesComponent,
-    WrapImgsComponent
+    WrapChartComponent,
+    WrapImgsComponent,
   ]
 })
 export class ComponentsModule { }
