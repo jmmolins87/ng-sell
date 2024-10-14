@@ -1,0 +1,43 @@
+
+
+::ng-deep {
+    .light-theme,
+    .dark-theme {
+        // Button to top
+        .p-scrolltop {
+            background: $white-bg;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: box-shadow .2s ease-in-out;
+            &:hover {
+                box-shadow: $buttonToTop-shadow-light; 
+            }
+            .p-scrolltop-icon {
+                path {
+                    fill: $black-bg;
+                }
+            }
+        }
+        // Toast
+        .p-toast {
+            width: fit-content;
+            .p-toast-message-text {
+                font-size: $txt-main;
+            }
+        }
+    }
+    .dark-theme {
+        .p-scrolltop {
+            background: $black-bg;
+            &:hover {
+                box-shadow: $buttonToTop-shadow-dark; 
+            }
+            .p-scrolltop-icon {
+                path {
+                    fill: $white-bg;
+                }
+            }
+        }
+    }
+} 

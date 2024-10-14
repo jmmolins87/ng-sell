@@ -12,16 +12,16 @@ export class DownloadButtonComponent {
 
   public loading: boolean = false;
   public progress: number = 0;
-
+  // Content Toast
   public successsTitleToast: string = '¡¡Bien!!';
-  public successsMessageToast: string = '¡¡Descarga completada!!';
-  public errorTitleToast: string = '¡¡Error!!';
-  public errorMessageToast: string = 'Falló en la descarga!!';
+  public successsMessageToast: string = 'Descarga completada';
+  public errorTitleToast: string = '¡¡Ups!!';
+  public errorMessageToast: string = 'Falló la descarga';
 
   @Input() 
-  fileName!: string;
+  fileName!: string; // File name
   @Input() 
-  filePath!: string;
+  filePath!: string; // File path
   @Input()
   buttonText!: string; // Button text
 
@@ -50,18 +50,10 @@ export class DownloadButtonComponent {
       clearInterval(interval);
     }
   }
-
+  
   completeDownload() {
     this.loading = false;
     this._messageService.add({ severity: 'success', summary: this.successsTitleToast, detail: this.successsMessageToast });
-  }
-
-  showSuccessToast(detail: string) {
-    this._messageService.add({ severity: 'success', summary: this.successsTitleToast, detail });
-  }
-  
-  showErrorToast(detail: string) {
-    this._messageService.add({ severity: 'error', summary: this.errorTitleToast, detail });
   }
 }
 

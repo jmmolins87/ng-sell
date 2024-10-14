@@ -9,7 +9,9 @@
     [disabled]="loading"
     (click)="downloadFile()"
     [ngClass]="{ 'loading': loading }">
+    <!-- Button text -->
     <span *ngIf="!loading">{{ buttonText }}</span>
+    <!-- Progress circle -->
     <div *ngIf="loading" class="progress-circle">
       <svg viewBox="0 0 36 36">
         <path
