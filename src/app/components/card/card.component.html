@@ -2,6 +2,12 @@
 
 
 <article [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-card">
+    <div class="wrap-icon-favorite ">
+        <i 
+            [ngStyle]="{'color': tool.favorite ? 'red' : 'black'}" 
+            class="pi pi-heart-fill">
+        </i>
+    </div>
     <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
             <img 
@@ -10,6 +16,16 @@
                 [title]="tool.title" />
         </ng-template>
         <p>Lorem ipsum dolor sit amet...</p>
+        <button 
+            pButton 
+            pRipple 
+            label="Leer más" 
+            [outlined]="true" 
+            severity="info"
+            icon="pi pi-plus" 
+            iconPos="right"
+            [routerLink]="['/tool', tool.id]">
+        </button>
         <ng-template pTemplate="footer">
             <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
                 <p-button [label]="tool.web" [outlined]="true" severity="danger" />
