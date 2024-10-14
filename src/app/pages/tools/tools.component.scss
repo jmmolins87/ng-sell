@@ -9,7 +9,10 @@
     @include min-responsive($tablet) {
         @include grid(2, 2rem);
     }
-    @include min-responsive($desktop) {
+    @include min-responsive($tablet-hor) {
+        @include grid(3, 2rem);
+    }
+    @include min-responsive($desktop-laptop) {
         @include grid(4, 2rem);
     }
 }

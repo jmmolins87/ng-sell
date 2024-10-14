@@ -7,13 +7,15 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { CardComponent } from './card/card.component';
 import { TitlePagesComponent } from './title-pages/title-pages.component';
+import { DownloadButtonComponent } from './download-button/download-button.component';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    TitlePagesComponent
+    DownloadButtonComponent,
+    TitlePagesComponent,
   ],
   imports: [
     CommonModule,
@@ -22,6 +24,7 @@ import { TitlePagesComponent } from './title-pages/title-pages.component';
   ],
   exports: [
     CardComponent,
+    DownloadButtonComponent,
     TitlePagesComponent
   ]
 })

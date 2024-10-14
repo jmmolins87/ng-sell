@@ -60,3 +60,12 @@ p, a, span {
 .wrap-navbar a {
     font-size: $txt-menu;
 }
+
+::ng-deep {
+    .p-toast {
+        width: fit-content;
+    }
+    .p-toast-message-text {
+        font-size: $txt-main;
+    }
+} 

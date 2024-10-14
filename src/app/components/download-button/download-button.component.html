@@ -1,0 +1,33 @@
+
+
+<div class="wrap-button-download">
+  <button
+    pButton
+    [outlined]="true" 
+    severity="info" 
+    class="download-btn"
+    [disabled]="loading"
+    (click)="downloadFile()"
+    [ngClass]="{ 'loading': loading }">
+    <span *ngIf="!loading">{{ buttonText }}</span>
+    <div *ngIf="loading" class="progress-circle">
+      <svg viewBox="0 0 36 36">
+        <path
+        class="progress-background"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path
+          class="progress-bar"
+          [attr.stroke-dasharray]="progress + ', 100'"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+      </svg>
+    </div>
+  </button>
+</div>
+
+<p-toast></p-toast>

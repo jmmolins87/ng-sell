@@ -1,0 +1,37 @@
+
+@import "/src/styles.scss";
+
+
+.wrap-button-download {
+  .download-btn {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .download-btn.loading {
+    background-color: transparent; /* Remove background during loading */
+    color: transparent; /* Hide text during loading */
+  }
+  .progress-circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); /* Rotate to start progress at top */
+  }
+  path {
+    fill: none;
+    stroke-width: 3;
+  }
+  path.progress-background {
+    stroke: #e6e6e6; /* Light grey background for progress */
+  }
+  path.progress-bar {
+    stroke: #28a745; /* Green progress bar */
+    stroke-linecap: round; /* Round edges on progress */
+    transition: stroke-dasharray 0.3s ease; /* Smooth progress animation */
+  }
+}
