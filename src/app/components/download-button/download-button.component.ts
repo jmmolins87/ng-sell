@@ -45,7 +45,7 @@ export class DownloadButtonComponent {
       link.download = this.fileName;
       link.click();
     } catch (error) {
-      this._messageService.add({ severity: 'error', summary: this.errorTitleToast, detail: 'Download failed!' });
+      this._messageService.add({ severity: 'error', summary: this.errorTitleToast, detail: this.errorMessageToast });
       this.loading = false;
       clearInterval(interval);
     }
