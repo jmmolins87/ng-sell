@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 
+import { TranslateService } from '@ngx-translate/core';
+
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -25,7 +27,7 @@ export class DownloadButtonComponent {
   @Input()
   buttonText!: string; // Button text
 
-  constructor( private _messageService: MessageService ) {}
+  constructor( private _translateService: TranslateService, private _messageService: MessageService ) {}
 
   downloadFile() {
     this.loading = true;

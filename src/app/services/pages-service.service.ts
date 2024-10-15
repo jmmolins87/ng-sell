@@ -6,11 +6,10 @@ import { toolsContent } from './../db/tool.db';
 
 import { Tool } from '../interfaces/tool.interface';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class ToolsService {
+export class PagesService {
 
   constructor() { }
 
@@ -23,5 +22,4 @@ export class ToolsService {
       observer.complete();
     });
   }
- 
 }
