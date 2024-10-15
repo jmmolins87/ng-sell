@@ -10,10 +10,12 @@
     </div>
     <p-card [header]="'TOOLS.TITLE' | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
-            <img 
-                [src]="tool.image" 
-                [alt]="tool.title" 
-                [title]="'TOOLS.TITLE' | translate" />
+            <div class="wrap-img-tool">
+                <img 
+                    [src]="tool.image" 
+                    [alt]="tool.title" 
+                    [title]="'TOOLS.TITLE' | translate" />
+            </div>
         </ng-template>
         <p>{{ "TOOLS.DESCRIPTION" | translate }}</p>
         <button 

@@ -65,7 +65,7 @@
                         (change)="changeLang( langSelect.value )" 
                         class="form-select"
                         aria-label="Default select example">
-                        <option selected disabled class>Elige un idioma </option>
+                        <option selected disabled class>{{ "NAVBAR.LANGUAGE" | translate }}</option>
                         <option 
                             *ngFor="let lang of langs" 
                             [value]="lang.lang">

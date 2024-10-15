@@ -5,7 +5,8 @@
     "NAVBAR" : {
         "ABOUT": "About me",
         "TOOLS": "Tools",
-        "CONTACT": "Contact"
+        "CONTACT": "Contact",
+        "LANGUAGE": "Elige tu idioma"
     },
     "FOOTER": {
         "RIGHTS": "All rights reserved",

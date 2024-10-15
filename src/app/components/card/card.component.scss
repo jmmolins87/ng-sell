@@ -13,6 +13,9 @@
       transform: translateY(-5px); /* Simulates that more "comes out" of the screen */
       /* Effect when we pass the mouse, the shadow intensifies */
       box-shadow: $card-shadow-light; /* Larger shadow upwards */
+    }
+    .wrap-img-tool {
+      padding: 20px;
     }   
     .wrap-tags {
       margin-top: 20px;
