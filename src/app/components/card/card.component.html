@@ -2,13 +2,13 @@
 
 
 <article [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-card">
-    <div class="wrap-icon-favorite ">
+    <div class="wrap-icon-favorite">
         <i 
             [ngStyle]="{'color': tool.favorite ? 'red' : 'black'}" 
             class="pi pi-heart-fill">
         </i>
     </div>
-    <p-card [header]="'TOOLS.TITLE' | translate" [subheader]="tool.subtitle | translate">
+    <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
             <div class="wrap-img-tool">
                 <img 
@@ -17,17 +17,19 @@
                     [title]="'TOOLS.TITLE' | translate" />
             </div>
         </ng-template>
-        <p>{{ "TOOLS.DESCRIPTION" | translate }}</p>
-        <button 
-            pButton 
-            pRipple 
-            [label]="'OTHERS.READ_MORE' | translate"
-            [outlined]="true" 
-            severity="info"
-            icon="pi pi-plus" 
-            iconPos="right"
-            [routerLink]="['/tool', tool.id]">
-        </button>
+        <div class="wrap-description">
+            <p>{{ tool.description }}</p>
+            <button 
+                pButton 
+                pRipple 
+                [label]="'OTHERS.READ_MORE' | translate"
+                [outlined]="true" 
+                severity="info"
+                icon="pi pi-arrow-right" 
+                iconPos="right"
+                [routerLink]="['/tool', tool.id]">
+            </button>
+        </div>
         <ul class="wrap-tags">
             <li *ngFor="let tag of tool.tags; let i = index">
                 <p-tag severity="success" [value]="tool.tags[i]"></p-tag>
@@ -40,7 +42,8 @@
                     pRipple
                     [label]="'OTHERS.WEB' | translate" 
                     [outlined]="true" 
-                    severity="danger" >
+                    icon="pi pi-link" 
+                    severity="danger">
                 </button>
             </a>
         </ng-template>

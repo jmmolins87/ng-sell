@@ -3,6 +3,31 @@
 ::ng-deep {
     .light-theme,
     .dark-theme {
+        // Card
+        .p-card {
+            .p-card-body {
+                padding-top: 0;
+            }
+            &-title {
+                font-size: $h3-mob;
+                margin: 0;
+                @include min-responsive($tablet) {
+                    font-size: $h3-tab;
+                    line-height: 3rem;
+                }
+                @include min-responsive($tablet-hor) {
+                    font-size: $h3-desk;
+                    line-height: 3.5rem;
+                }
+            }
+            &-subtitle {
+                font-size: $txt-main;
+                margin: 0;
+                @include min-responsive($tablet) {
+                    margin-top: 5px;
+                }
+            }
+        }
         // Button to top
         .p-scrolltop {
             background: $white-bg;

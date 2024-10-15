@@ -5,11 +5,11 @@ import { Tool } from "../interfaces/tool.interface";
 export const toolsContent: Tool[] = [
     {
         id: 1,
-        title: "TOOLS.TITLE",
-        subtitle: "TOOLS.SUBTITLE",
+        title: "Adobe Photoshop",
+        subtitle: "Diseño",
         link: "https://www.adobe.com/products/photoshop.html",
-        description: "TOOLS.DESCRIPTION",
-        tags: ["TOOLS.TAGS"],
+        description: "Adobe Photoshop es un editor de gráficos rasterizados desarrollado y publicado por Adobe Inc. para Windows y macOS. Es ampliamente utilizado por diseñadores gráficos, fotógrafos y artistas para editar imágenes, retocar fotos, crear arte digital y más. Photoshop es conocido por su amplia gama de herramientas y capacidades, que incluyen manipulación de fotos, corrección de color, pintura digital, diseño gráfico y más. También es parte de Adobe Creative Cloud, lo que permite una integración fluida con otras aplicaciones de Adobe.",
+        tags: ["Edición de imágenes", "Diseño gráfico", "Retoque fotográfico", "Arte digital", "Manipulación fotográfica"],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
         skill: 60,

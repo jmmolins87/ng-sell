@@ -9,7 +9,7 @@
     &.wrap-title {
         .title {
             position: relative;
-            padding-bottom: 5px;
+            padding-bottom: .5rem;
     
             /* Pseudoelement to create the underline */
             &::after {
@@ -18,7 +18,7 @@
                 left: 0;
                 bottom: 0;
                 width: 0;
-                height: 3px;
+                height: .3rem;
                 background-color: $black-light-border; /* Underline color */
                 animation: underline-animation 2s ease forwards;
             }

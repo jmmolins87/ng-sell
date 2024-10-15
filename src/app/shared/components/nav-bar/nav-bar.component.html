@@ -46,6 +46,10 @@
                             *ngIf="menuItems"  
                             [routerLink]="item.routerLink"
                             [routerLinkActive]="'active'"
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#navbarSell"
+                            aria-controls="navbarSell" 
+                            aria-expanded="false" 
                             class="nav-link" 
                             aria-current="page">
                             {{ item.label | translate }}

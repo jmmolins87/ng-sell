@@ -10,15 +10,40 @@
     position: relative;
     &:hover {
       /* Hover effect to highlight 3D */
-      transform: translateY(-5px); /* Simulates that more "comes out" of the screen */
+      transform: translateY(-.5rem); /* Simulates that more "comes out" of the screen */
       /* Effect when we pass the mouse, the shadow intensifies */
       box-shadow: $card-shadow-light; /* Larger shadow upwards */
     }
+    .wrap-icon-favorite {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      i {
+        font-size: $icon-heart;
+      }
+    }
     .wrap-img-tool {
-      padding: 20px;
-    }   
+      padding: 1.25rem;
+    }
+    .wrap-description {
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 2; /* For non-webkit browsers */
+        max-height: 3em; /* Optional: depends on your line height */
+        line-height: 1.5em; /* Optional: adjust for spacing between lines */
+      }
+    }
     .wrap-tags {
-      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
     }
     &::ng-deep {
       .p-card {
