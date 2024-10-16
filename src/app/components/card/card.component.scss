@@ -20,6 +20,7 @@
       top: 1rem;
       i {
         font-size: $icon-heart;
+        color: $grey-bg;
       }
     }
     .wrap-img-tool {
@@ -67,6 +68,11 @@
     }
     &:hover {
       box-shadow: $card-shadow-dark; /* Larger shadow upwards */
+    }
+    .wrap-icon-favorite {
+      i {
+        color: $grey-light-bg;
+      }
     }
   }
 }
