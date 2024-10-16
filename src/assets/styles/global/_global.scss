@@ -57,10 +57,6 @@ p, a, span {
     font-weight: $txt-regular;
 }
 
-.wrap-navbar a {
-    font-size: $txt-menu;
-}
-
 button {
     border-radius: $border-radius-05;
     cursor: pointer;
@@ -72,4 +68,8 @@ ul {
 
 li {
     list-style: none;
+}
+
+.wrap-navbar a {
+    font-size: $txt-menu;
 }

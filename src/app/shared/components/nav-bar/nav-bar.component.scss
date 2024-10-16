@@ -9,8 +9,11 @@
         z-index: 1000;
         background: rgba($white-bg, .8);
         backdrop-filter: blur(15px);
-        box-shadow: $navbar-shadow-light;
         padding: 15px;
+        transition: box-shadow .2s ease-in-out;
+        &.scrolled {
+            box-shadow: $navbar-shadow-light;
+        }
         .wrap-logo {
             display: block;
             width: fit-content;
@@ -177,6 +180,9 @@
 
 .dark-theme {
     &.wrap-navbar {
+        &.scrolled {
+            box-shadow: $navbar-shadow-dark;
+        }
         .navbar-toggler {
             span {
                 background: $white-txt;
@@ -184,7 +190,6 @@
         }
         background: rgba($black-bg, .8);
         backdrop-filter: blur(15px);
-        box-shadow: $navbar-shadow-dark;
         .navbar-nav {
             &.menu {
                 border-bottom: 1px solid $black-light-border;

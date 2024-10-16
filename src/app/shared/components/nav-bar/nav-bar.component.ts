@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 import { MenuItem } from 'primeng/api';
 
@@ -22,6 +22,8 @@ export class NavBarComponent implements OnInit {
   ];
   // Dark Theme
   public isDarkMode: boolean = false;
+  // Scrolled
+  public isScrolled: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 
@@ -31,6 +33,12 @@ export class NavBarComponent implements OnInit {
     setTimeout(() => {
       this.itemsNavbar;
     }, 500);
+  }
+
+  // Detect scroll
+  @HostListener('window: scroll', [])
+  onWindowScroll(): void {
+    this.isScrolled = window.scrollY > 0;
   }
 
   get itemsNavbar() {

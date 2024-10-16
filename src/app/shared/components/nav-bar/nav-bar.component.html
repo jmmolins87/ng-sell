@@ -1,7 +1,7 @@
 
 
 <nav 
-    [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" 
+    [ngClass]="[isDarkMode ? 'dark-theme' : 'light-theme', isScrolled ? 'scrolled' : '']"
     class="wrap-navbar navbar navbar-expand-lg">
     <div class="container-fluid">
         <a 
