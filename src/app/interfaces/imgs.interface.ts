@@ -2,8 +2,8 @@
 
 
 export interface WrapImg {
-    src: string;
-    alt: string;
+    imageSrc: string;
+    altImg: string;
     title: string;
-    height: number;
+    height?: number;
 }

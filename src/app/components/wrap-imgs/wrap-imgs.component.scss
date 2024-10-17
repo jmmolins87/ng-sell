@@ -1,0 +1,10 @@
+
+
+.wrap-skelton-logo {
+    ::ng-deep {
+        .p-skeleton {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

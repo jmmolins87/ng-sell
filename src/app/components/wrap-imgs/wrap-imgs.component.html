@@ -1,1 +1,8 @@
-<p>wrap-imgs works!</p>
+
+
+<div class="wrap-img">
+    <div *ngIf="isLoaded" class="skeleton" [ngClass]="isLogoTool ? 'wrap-skelton-logo' : ''">
+        <p-skeleton shape="circle" size="25rem" />
+    </div>
+    <img *ngIf="safeImgUrl" [src]="safeImgUrl" (load)="onLoad()" [alt]="">
+</div>

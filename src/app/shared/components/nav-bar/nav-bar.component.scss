@@ -113,10 +113,10 @@
                     }
                     @include min-responsive($tablet) {
                         display: block;
+                        margin-right: 15px;
                         &.mobile {
                             display: none;
                         }
-                        margin-right: 15px;
                     }
                     cursor: pointer;
                     &:last-of-type {
