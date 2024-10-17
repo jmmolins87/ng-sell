@@ -11,10 +11,11 @@
     <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
         <ng-template pTemplate="header">
             <div class="wrap-img-tool">
-                <img 
-                    [src]="tool.image" 
-                    [alt]="tool.title" 
-                    [title]="tool.title" />
+                <app-wrap-imgs 
+                    [imageSrc]="tool.image"
+                    [altImg]="tool.title"
+                    [title]="tool.title"
+                    [shapeSkeleton]="shapeSkeleton" />
             </div>
         </ng-template>
         <div class="wrap-description">

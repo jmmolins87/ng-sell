@@ -1,8 +1,15 @@
 
 
 <div class="wrap-img">
-    <div *ngIf="isLoaded" class="skeleton" [ngClass]="isLogoTool ? 'wrap-skelton-logo' : ''">
-        <p-skeleton shape="circle" size="25rem" />
+    <div *ngIf="isLoaded" class="wrap-skeleton-logo">
+        <p-skeleton *ngIf="shapeSkeleton === 'circle'" shape="circle" size="25rem" />
+        <p-skeleton *ngIf="shapeSkeleton === ''" shape="" size="25rem" />
     </div>
-    <img *ngIf="safeImgUrl" [src]="safeImgUrl" (load)="onLoad()" [alt]="">
+    <img 
+        *ngIf="safeImgUrl" 
+        (load)="onLoad()"
+        [src]="safeImgUrl" 
+        [alt]="altImg"
+        [title]="altImg"
+        [height]="height">
 </div>

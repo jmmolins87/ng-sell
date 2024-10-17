@@ -7,6 +7,7 @@ import {
 import { SharedService } from './../../shared/services/shared.service';
 
 import { Tool } from '../../interfaces/tool.interface';
+import { shapeSkeleton } from '../wrap-imgs/img.config';
 
 @Component({
   selector: 'app-card',
@@ -15,13 +16,16 @@ import { Tool } from '../../interfaces/tool.interface';
 })
 export class CardComponent implements OnInit {
 
+  // Get tools
+  @Input()
+  public tool!: Tool;
+  
   // Dark Theme
   public isDarkMode: boolean = false;
   // Skeleton loader
   public showSkeleton: boolean = true;
-
-  @Input()
-  public tool!: Tool;
+  // Shape of the skeleton loader
+  public shapeSkeleton: shapeSkeleton = shapeSkeleton.CIRCLE;
 
   constructor( private _sharedService: SharedService  ) { }
 
