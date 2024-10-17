@@ -1,3 +1,2 @@
 <p>404 page work's!</p>
-
-<button pButton [routerLink]="['/']" [label]="'Volver'"></button>
+<button pButton (click)="goBack()" [label]="'ERROR_PAGE.GO_BACK' | translate"></button>

@@ -17,7 +17,7 @@
     },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",
-        "TEXT": "Let's start over"
+        "GO_BACK": "I'll leave you where you were, let's go"
     },
     "TITLES_PAGES": {
         "ABOUT": "Something about me",

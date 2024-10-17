@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 
 
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class ErrorComponent {
 
-  constructor() { }
+  constructor( private _location: Location ) { }
+
+  goBack() {
+    this._location.back();
+  }
 
 }

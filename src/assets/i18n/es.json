@@ -17,7 +17,7 @@
     },
     "ERROR_PAGE": {
         "TITLE": "¡¡Este no es el camino correcto!!",
-        "TEXT": "Volvamos a empezar"
+        "GO_BACK": "Te dejo dónde estabas, vamos"
     },
     "TITLES_PAGES": {
         "ABOUT": "Algo sobre mí",

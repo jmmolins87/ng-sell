@@ -27,7 +27,10 @@ export class ToolsComponent implements OnInit{
   constructor( private _pagesService: PagesService ) { }
 
   ngOnInit(): void {
-    this.getTools();
+    
+    setTimeout(() => {
+      this.getTools();
+    }, 500)
   }
 
   // Function to get the tools from the service
