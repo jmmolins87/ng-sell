@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { PagesService } from './../../services/pages-service.service';
 
+import { toolsContent } from 'src/app/db/tool.db';
+
 import { Tool } from '../../interfaces/tool.interface';
 import { titleTypes } from '../../components/title-pages/title.config';
 
@@ -11,14 +13,13 @@ import { titleTypes } from '../../components/title-pages/title.config';
   templateUrl: './tools.component.html',
   styleUrls: ['./tools.component.scss']
 })
-export class ToolsComponent implements OnInit {
+export class ToolsComponent implements OnInit{
 
-  public toolsData: Tool[] = [];
   public titleType: titleTypes = titleTypes.h1;
   public title!: string;
+  public toolsData: Tool[] = toolsContent;
 
-  constructor( private _pagesService: PagesService ) {
-  }
+  constructor( private _pagesService: PagesService ) { }
 
   ngOnInit(): void {
     this.tools;

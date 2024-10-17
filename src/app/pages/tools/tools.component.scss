@@ -2,17 +2,15 @@
 @import "/src/styles.scss";
 
 
+
 .wrap-tools {
     width: 100%;
-    display: grid;
-    @include grid(1, 2rem);
-    @include min-responsive($tablet) {
-        @include grid(2, 2rem);
-    }
-    @include min-responsive($tablet-hor) {
-        @include grid(3, 2rem);
-    }
-    @include min-responsive($desktop-laptop) {
-        @include grid(4, 2rem);
+    @include gridMasonry(4, 25rem, 2rem);
+    .wrap-tool {
+        break-inside: avoid;
+        margin-top: 2rem;
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 }

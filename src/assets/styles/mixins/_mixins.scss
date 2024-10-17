@@ -28,8 +28,13 @@
     }
 }
 
-@mixin grid($colummns, $space ) {
+@mixin grid($colummns, $gap ) {
     display: grid;
     grid-template-columns: repeat($colummns, 1fr);
-    gap: $space;
+    gap: $gap;
+}
+
+@mixin gridMasonry($colummns, $width, $gap ) {
+    columns: 4 25rem;
+    column-gap: 2rem;
 }
