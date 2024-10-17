@@ -94,12 +94,16 @@
                             {{ lang.name }}
                         </option>
                     </select>
-                    <button (click)="toggleDarkMode()" class="mode-button">
+                    <button (click)="toggleDarkMode()" [pTooltip]="tooltipContent"  tooltipPosition="left"  class="mode-button">
                         <span 
                             [class]="isDarkMode ? 'pi-sun' : 'pi-moon'" 
                             class="pi pi-fw">
                         </span>
                     </button>
+                    <ng-template #tooltipContent>
+                        <span *ngIf="isDarkMode">{{ "OTHERS.BUTTON_THEME_LIGHT" | translate }}</span>
+                        <span *ngIf="!isDarkMode">{{ "OTHERS.BUTTON_THEME_DARK" | translate }}</span>
+                    </ng-template>
                 </div>
                 <!-- Skeleton -->
                 <div *ngIf="!menuItems" class="wrap-skeleton-navbar actions">

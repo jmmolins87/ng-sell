@@ -28,32 +28,337 @@
         "READ_MORE_TOOL": "Continue reading",
         "CLOSE": "Close",
         "GO_WEB_TOOL": "Go to site",
-        "DOWNLOAD_CV": "Download CV"
+        "DOWNLOAD_CV": "Download CV",
+        "BUTTON_THEME_LIGHT": "Change to light theme",
+        "BUTTON_THEME_DARK": "Change to dark theme"
     },
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "TITLE": "Adobe Photoshop",
             "SUBTITLE": "Design",
             "DESCRIPTION": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It is widely used by graphic designers, photographers, and artists to edit images, retouch photos, create digital art, and more. Photoshop is known for its wide range of tools and capabilities, including photo manipulation, color correction, digital painting, graphic design, and more. It is also part of Adobe Creative Cloud, allowing seamless integration with other Adobe applications.",
-            "TAGS": ["Image Editing", "Graphic Design", "Photo Retouching", "Digital Art", "Photo Manipulation"]
+            "TAGS": {
+                "EDIT_IMG": "Image editing",
+                "DESIGN": "Graphic design",
+                "PHOTO_RET": "Photo retouching",
+                "DIGITAL_ART": "Digital art",
+                "PHOTO_MANIP": "Photo manipulation"
+            }
         },
         "ADOBE_ILLUSTRATOR": {
             "TITLE": "Adobe Illustrator",
             "SUBTITLE": "Design",
             "DESCRIPTION": "Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc. It is widely used by graphic designers and artists to create and edit vector graphics. Unlike raster images, vector graphics can be scaled to any size without losing quality. Illustrator is known for its powerful drawing and tracing tools, its ability to create logos and typography, and its integration with other Adobe applications.",
-            "TAGS": ["Vector Graphics", "Illustration", "Graphic Design", "Logo Design", "Typography", "Tracing Tools", "Shapes and Lines"]
+            "TAGS": {
+                "VECTOR_GRAPHICS": "Vector Graphics",
+                "ILLUSTRATION": "Illustration",
+                "GRAPHIC_DESIGN": "Graphic Design",
+                "LOGO_DESIGN": "Logo Design",
+                "TYPOGRAPHY": "Typography",
+                "TRACING_TOOLS": "Tracing Tools",
+                "SHAPES_LINES": "Shapes and Lines"
+            }
         },
         "ADOBE_INDESIGN": {
             "TITLE": "Adobe Indesign",
             "SUBTITLE": "Design",
             "DESCRIPTION": "InDesign is a software from Adobe that is primarily used for the design of publications and marketing materials. It allows users to create page layouts for print or digital distribution with a wealth of tools and features. Users can design brochures, magazines, books, posters, and more, with full control over typography, color, images, objects, and everything else that goes into a page layout. InDesign also integrates with other Adobe applications, allowing for a smoother workflow between programs.",
-            "TAGS": ["Desktop publishing", "Page layout", "Typography", "Graphic design", "Editing", "Print design", "Digital publishing", "Interactive documents"]
+            "TAGS": {
+                "DESKTOP_PUBLISHING": "Desktop publishing",
+                "PAGE_DESIGN": "Page layout",
+                "TYPOGRAPHY": "Typography",
+                "GRAPHIC_DESIGN": "Graphic design",
+                "EDITING": "Editing",
+                "PRINT_DESIGN": "Print design",
+                "DIGITAL_PUBLISHING": "Digital publishing",
+                "INTERACTIVE_DOCUMENTS": "Interactive documents"
+            }
         },
         "ADOBE_XD": {
             "TITLE": "Adobe XD",
             "SUBTITLE": "Design",
             "DESCRIPTION": "Adobe XD is a vector-based user experience design tool for web and mobile applications developed and published by Adobe Inc. It allows designers to create wireframes, interactive prototypes, and design mockups. Adobe XD also facilitates collaboration across teams, allowing multiple users to work on the same project at the same time. It is part of Adobe Creative Cloud, allowing seamless integration with other Adobe applications.",
-            "TAGS": ["UI Design", "UX Design", "Prototyping", "Wireframing", "Collaboration", "Responsive Design"]
+            "TAGS": {
+                "UI_DESIGN": "UI Design",
+                "UX_DESIGN": "UX Design",
+                "PROTOTYPES": "Prototyping",
+                "WIREFRAMING": "Wireframing",
+                "COLLABORATION": "Collaboration",
+                "RESPONSIVE_DESIGN": "Responsive Design"
+            }
+        },
+        "FIGMA": {
+            "TITLE": "Figma",
+            "SUBTITLE": "Design",
+            "DESCRIPTION": "Figma is a vector graphics editing and prototyping tool that is primarily web-based, with additional offline features enabled by desktop apps for macOS and Windows. Figma is known for its focus on real-time collaboration, allowing multiple users to work on the same design at the same time. Designers can create user interfaces, interactive prototypes, and more, all within Figma. It also offers tools for systems design, allowing teams to create and maintain coherent design libraries.",
+            "TAGS": {
+                "UI_DESIGN": "User Interface Design",
+                "UX_DESIGN": "User Experience Design",
+                "PROTOTYPES": "Prototyping",
+                "WEB_DESIGN": "Web Design",
+                "GRAPHIC_DESIGN": "Graphic Design",
+                "VECTOR_GRAPHICS": "Vector Graphics",
+                "COLLABORATIVE_DESIGN": "Collaborative Design",
+                "DESIGN_SYSTEMS": "Design Systems",
+                "INTERACTIVE_PROTOTYPES": "Interactive Prototyping"
+            }
+        },
+        "VSC": {
+            "TITLE": "Visual Studio Code",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux, and macOS. It offers features such as syntax highlighting, code auto-completion, code snippets, multi-cursor editing, code navigation, IntelliSense, and code refactoring. It is widely used by developers for a variety of programming languages ​​and frameworks. Visual Studio Code also supports a wide range of extensions to enhance its functionality.",
+            "TAGS": {
+                "EDIT_CODE": "Code Editing",
+                "SYNTAX_HIGHLIGHT": "Syntax Highlighting",
+                "AUTO_COMPLETION": "Auto-Completion",
+                "CODE_SNIPPETS": "Code Snippets",
+                "MULTI_CURSOR": "Multi-Cursor Editing",
+                "CODE_NAVIGATION": "Code Navigation",
+                "INTELLISENSE": "IntelliSense",
+                "CODE_REFACTOR": "Code Refactoring"
+            }
+        },
+        "NOTION": {
+            "TITLE": "Notion",
+            "SUBTITLE": "Organization",
+            "DESCRIPTION": "Notion is an application that provides components such as databases, kanban boards, wikis, calendars, and reminders. It is a productivity tool that allows users to organize their work and personal life in one place. Notion is known for its flexibility and customization, allowing users to create their own management system for tasks, notes, documents, and more. It also facilitates team collaboration, allowing multiple users to work in the same workspace.",
+            "TAGS": {
+                "PRODUCTIVITY": "Productivity",
+                "PROJECT_MANAGEMENT": "Project Management",
+                "DATABASE": "Database",
+                "KNOWLEDGE_MANAGEMENT": "Knowledge Management",
+                "COLLABORATION": "Collaboration",
+                "NOTE_TAKING": "Note Taking",
+                "TASK_MANAGEMENT": "Task Management"
+            }
+        },
+        "TRELLO":{
+            "TITLE": "Trello",
+            "SUBTITLE": "Organization",
+            "DESCRIPTION": "Trello is a web-based task management and project management application based on the Kanban method. Users can create boards, on which lists with cards can be added. These cards represent tasks that move between lists representing the progress of the project. Trello is known for its simplicity and flexibility, allowing users to customize their boards and cards to fit a variety of workflows and projects. It also facilitates team collaboration, allowing multiple users to work on the same board.",
+            "TAGS": {
+                "ORGANIZATION": "Organization",
+                "NOTES": "Notes",
+                "TO_DO": "To Do",
+                "IN_PROGRESS": "In Process",
+                "COMPLETED": "Completed",
+                "ON_HOLD": "On Hold",
+                "BLOCKED": "Locked",
+                "REVIEW_REQUIRED": "Review Required"
+            }
+        },
+        "JIRA": {
+            "TITLE": "Jira",
+            "SUBTITLE": "Organization",
+            "DESCRIPTION": "Jira is an issue tracking product developed by Atlassian that enables bug tracking and agile project management. Users can create and assign tasks, track project progress, and collaborate with their team in one place. Jira is known for its ability to adapt to a variety of workflows and projects, from software development to enterprise project management. It also offers a variety of features and tools for project management, including Kanban boards, Gantt charts, project reports, and more.",
+            "TAGS": {
+                "ORGANIZATION": "Organization",
+                "NOTES": "Notes",
+                "PRIORITY_SEVERITY": "Priority and Severity",
+                "WORK_TYPE": "Type of Work",
+                "WORKFLOW_STATUS": "Status and Workflow",
+                "COMPONENTS_MODULES": "Components and Modules",
+                "RELEASE_VERSIONS": "Release and Versions",
+                "TEAMS_ROLES": "Teams and Roles",
+                "PROJECTS_CLIENTS": "Projects and Clients",
+                "TIME_SCHEDULE": "Time and Schedule",
+                "TECHNICAL_TAGS": "Technical Tags",
+                "MISC": "Miscellaneous"
+            }
+        },
+        "HTML": {
+            "TITLE": "Html",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "HTML5 is the fifth and current version of HTML (HyperText Markup Language), the standard markup language for creating web pages. HTML5 introduces a number of new tags and attributes that reflect typical usage of modern websites. Some of these new features include multimedia elements such as <video> and <audio>, as well as semantic elements such as <article>, <section>, <header>, and <footer>. HTML5 also offers improvements to forms, graphics, and APIs for creating rich web applications.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "HTML": "Html"
+            }
+        },
+        "CSS": {
+            "TITLE": "CSS",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in a markup language such as HTML. CSS is used to control the design and appearance of web pages, including layout, colors, fonts, and animations. It also allows designers to adapt the presentation to different types of devices, such as large screens, tablets, or mobile phones. CSS is one of the three fundamental languages ​​for creating web content, along with HTML and JavaScript.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "CSS": "CSS"
+            }
+        },
+        "SASS": {
+            "TITLE": "Sass",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that helps simplify and improve the writing of CSS. It allows the use of variables, nesting, mixins, inheritance, and other features not available in pure CSS. Sass has two syntaxes: indented syntax (similar to Haml) and SCSS syntax (similar to CSS). Sass code is compiled into standard CSS before being served to the browser.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "SASS": "Scss"
+            }
+        },
+        "JAVASCRIPT": {
+            "TITLE": "Javascript",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "JavaScript is a programming language that conforms to the ECMAScript specification. It is one of the three fundamental languages ​​for creating web content, along with HTML and CSS. JavaScript allows developers to create dynamic interactions on web pages, including manipulating the DOM, handling events, creating animations, and more. It is also used in the development of server and backend applications through environments such as Node.js.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "JAVASCRIPT": "JavaScript"
+            }
+        },
+        "ANGULAR": {
+            "TITLE": "Angular",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Angular is an open-source web application framework based on TypeScript led by the Angular team at Google and a community of individuals and corporations. Angular is known for its focus on building single-page applications (SPAs) and offers features such as two-way data binding, dependency injection, and a component-based architecture. It also provides tools for unit and end-to-end testing, making it easy to develop high-quality applications.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "ANGULAR": "Angular"
+            }
+        },
+        "REACT": {
+            "TITLE": "React",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "React is an open-source JavaScript library for building user interfaces or UI components. It was developed by Facebook and is widely used to develop user interfaces for single-page web applications. React allows developers to create reusable UI components and handle UI state and logic efficiently. It also uses a virtual DOM to improve performance when updating and rendering components.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "REACT": "React"
+            }
+        },
+        "GITHUB": {
+            "TITLE": "GitHub",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "GitHub is an Internet-based hosting provider for software development and version control using Git. It is a platform where developers can collaborate on projects, track issues, make pull requests, and review code. GitHub also offers features such as GitHub Actions for continuous integration and continuous delivery (CI/CD), GitHub Pages for hosting websites, and much more.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "GITHUB": "GitHub"
+            }
+        },
+        "NODE": {
+            "TITLE": "Node.js",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Node.js is an open-source, cross-platform JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside of a web browser. Node.js allows developers to build servers and server-side scripting tools. It is known for its non-blocking, event-driven I/O model, which makes it efficient and suitable for real-time applications running on distributed devices.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "NODE": "Node.js"
+            }
+        },
+        "POSTMAN": {
+            "TITLE": "Postman",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Postman is a collaborative platform for API development. It enables developers to efficiently test, document, and monitor APIs. Postman offers an intuitive user interface that makes it easy to construct requests and read responses, handle authentication, and reuse variables. It also enables teams to collaborate on API development, share collections, and set up automated tests.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "POSTMAN": "Postman"
+            }
+        },
+        "GIT": {
+            "TITLE": "Git",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Git is a distributed version control system that allows you to track changes to source code during software development. It was designed by Linus Torvalds, the creator of Linux, to handle projects efficiently and quickly. Git is known for its robustness, performance, and flexibility. It allows developers to work on different development branches simultaneously, merge changes between branches, and collaborate on projects with other developers.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "GIT": "Git"
+            }
+        },
+        "BOOTSTRAP": {
+            "TITLE": "Bootstrap",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Bootstrap is a free and open-source CSS framework aimed at responsive and mobile-friendly front-end web development. It provides HTML and CSS-based layout templates for typography, forms, buttons, tables, navigation, modals, carousels, and many other UI components. It also has optional JavaScript support for building interactive components. Bootstrap is known for its flexible and responsive grid system, and its broad compatibility with all modern browsers and devices.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "BOOTSTRAP": "Bootstrap"
+            }
+        },
+        "MATERIAL": {
+            "TITLE": "Angular Material",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Angular Material is a library of user interface components for Angular developers. It provides a set of pre-built UI components based on Material Design, a design language developed by Google. Angular Material components include buttons, menus, toolbars, dialogs, cards, and more. It also provides tools for UI layout, such as a flexible grid system and tools for list manipulation.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "MATERIAL": "Angular Material"
+            }
+        },
+        "PRIMENG": {
+            "TITLE": "PrimeNg",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "PrimeNG is a collection of rich UI components for Angular. It provides a variety of pre-built UI components including data tables, dialogs, panels, menus, and many others. PrimeNG is known for its flexibility and customizability, allowing developers to tailor components to their needs. It also supports Angular design themes, allowing for seamless integration with the rest of your Angular application.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "PRIMENG": "PrimeNg"
+            }
+        },
+        "MONGO": {
+            "TITLE": "MongoDB",
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "MongoDB is a document-oriented, source-based, cross-platform database program. Instead of storing data in tables like traditional relational databases, MongoDB stores data in flexible document-like structures in BSON format (a variant of JSON), allowing for the integration of data of different types and the ability to change schemas over time. MongoDB is known for its scalability, performance, and flexibility.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "MONGO": "MongoDB"
+            }
+        },
+        "WORDPRESS": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "WordPress is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database. It allows users to create and manage websites easily and efficiently. WordPress is known for its flexibility and ease of use, with thousands of themes and plugins available that allow users to customize their websites and add functionality. It is widely used for blogs, business websites, e-commerce, and more.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "WORDPRESS": "Wordpress"
+            }
+        },
+        "DOCKER": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Docker is a service platform that uses operating system-level virtualization to deliver software in packages called containers. Containers are isolated from each other and bundle their own software, libraries, and system configurations; they can communicate with each other through well-defined channels. Docker is known for its efficiency, portability, and speed, allowing developers to build, test, and deploy applications quickly.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "DOCKER": "Docker"
+            }
+        },
+        "TAILWIND": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Tailwind CSS is a utility-first CSS framework for quickly building custom user interfaces. Rather than predefining component styles, Tailwind provides low-level utility classes that allow you to build custom layouts without leaving your HTML. Utility classes include margin, padding, font-size, color, position, and more. Tailwind is also highly customizable, allowing developers to tailor the system to their own needs.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "TAILWIND": "Tailwind"
+            }
+        },
+        "STENCIL": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "StencilJS is a tool for building reusable and scalable design systems. It is a compiler that generates standard web components. Stencil combines the best ideas from the most popular frameworks into a simple build tool. Stencil components are just web components, so they work on any major framework and can be used without a framework because they are just web standards.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "STENCIL": "StencilJS"
+            }
+        },
+        "STORYBOOK": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "Storybook is an open-source tool for developing UI components in isolation for React, Vue, Angular, and other frameworks. It provides a component development environment where developers can interactively explore, test, and document components. Storybook is known for its support for story-driven development, where each state of a component is represented as an individual story.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "STORYBOOK": "Storybook"
+            }
+        },
+        "NEST": {
+            "SUBTITLE": "Development",
+            "DESCRIPTION": "NestJS es un marco de trabajo para construir aplicaciones de servidor eficientes y escalables en Node.js. Está construido con TypeScript y combina elementos de programación orientada a objetos, programación funcional y programación funcional reactiva. NestJS proporciona una arquitectura de aplicación out-of-the-box que permite a los desarrolladores crear aplicaciones altamente testables, escalables y fácilmente mantenibles.",
+            "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB": "Web",
+                "NEST": "Nest JS"
+            }
         }
     }
 }
