@@ -107,7 +107,15 @@
                     min-width: fit-content;                    
                 }
                 .nav-item {
+                    display: none;
+                    &.mobile {
+                        display: block;
+                    }
                     @include min-responsive($tablet) {
+                        display: block;
+                        &.mobile {
+                            display: none;
+                        }
                         margin-right: 15px;
                     }
                     cursor: pointer;

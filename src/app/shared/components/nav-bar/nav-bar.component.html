@@ -41,7 +41,8 @@
         <div id="navbarSell" class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <div class="navbar-nav menu">
-                    <li *ngFor="let item of menuItems" class="nav-item">
+                    <!-- Menu for < tablet -->
+                    <li *ngFor="let item of menuItems" class="nav-item mobile">
                         <a 
                             *ngIf="menuItems"  
                             [routerLink]="item.routerLink"
@@ -50,6 +51,23 @@
                             data-bs-target="#navbarSell"
                             aria-controls="navbarSell" 
                             aria-expanded="false" 
+                            class="nav-link" 
+                            aria-current="page">
+                            {{ item.label | translate }}
+                            <span [class]="item.icon"></span>
+                        </a>
+                        <!-- Skeleton -->
+                        <div *ngIf="!menuItems" class="wrap-skeleton-navbar menu">
+                            <p-skeleton width="15rem" height="3rem" />
+                        </div>
+                        <!-- ---------------- -->
+                    </li>
+                    <!-- Menu for > tablet -->
+                    <li *ngFor="let item of menuItems" class="nav-item">
+                        <a 
+                            *ngIf="menuItems"  
+                            [routerLink]="item.routerLink"
+                            [routerLinkActive]="'active'"
                             class="nav-link" 
                             aria-current="page">
                             {{ item.label | translate }}
