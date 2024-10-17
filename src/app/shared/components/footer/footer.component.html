@@ -37,14 +37,14 @@
                 <app-wrap-logo 
                     *ngIf="this.isDarkMode === false; else darkMode"
                     imageKey="LOGO_NAVBAR_LIGHT" 
-                    [alt]="'I sell myself'"
-                    [title]="'I sell myself'"
+                    [alt]="'OTHERS.ALT_TITLE_LOGO' | translate"
+                    [title]="'OTHERS.ALT_TITLE_LOGO' | translate"
                     [height]="140" />
                 <ng-template #darkMode>
                     <app-wrap-logo 
                         imageKey="LOGO_NAVBAR_DARK" 
-                        [alt]="'I sell myself'"
-                        [title]="'I sell myself'"
+                        [alt]="'OTHERS.ALT_TITLE_LOGO' | translate"
+                        [title]="'OTHERS.ALT_TITLE_LOGO' | translate"
                         [height]="140" />
                 </ng-template>
             </a>

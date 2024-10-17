@@ -3,6 +3,10 @@
 
 .light-theme, 
 .dark-theme {
+  .wrap-img-tool {
+    width: 50%;
+    height: auto;
+  }
   &.wrap-card {
     overflow: hidden;
     border-radius: $border-radius-05;

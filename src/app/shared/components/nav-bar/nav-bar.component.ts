@@ -30,6 +30,8 @@ export class NavBarComponent implements OnInit {
     private _translator: TranslatorService ) { }
 
   ngOnInit(): void {
+    this.darkMode();
+    
     setTimeout(() => {
       this.itemsNavbar;
     }, 500);
@@ -55,6 +57,13 @@ export class NavBarComponent implements OnInit {
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
     this._sharedService.toggleDarkMode(this.isDarkMode); // Change mode in the service
+  }
+
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }

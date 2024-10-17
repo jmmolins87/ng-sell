@@ -32,6 +32,12 @@
         "BUTTON_THEME_LIGHT": "Cambiar tema a claro",
         "BUTTON_THEME_DARK": "Cambiar tema a oscuro"
     },
+    "TOAST": {
+        "SUCCESS_TITLE": "¡¡Bien!!",
+        "SUCCESS_TEXT": "Descarga correcta",
+        "ERROR_TITLE": "¡¡Ups!!",
+        "ERROR_TEXT": "Error en la descarga"
+    },
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "SUBTITLE": "Diseño",

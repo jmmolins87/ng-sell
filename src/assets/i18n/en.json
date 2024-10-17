@@ -32,6 +32,12 @@
         "BUTTON_THEME_LIGHT": "Change to light theme",
         "BUTTON_THEME_DARK": "Change to dark theme"
     },
+    "TOAST": {
+        "SUCCESS_TITLE": "Good!!",
+        "SUCCESS_TEXT": "Download success",
+        "ERROR_TITLE": "Oops!!",
+        "ERROR_TEXT": "Download error"
+    },
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "TITLE": "Adobe Photoshop",
