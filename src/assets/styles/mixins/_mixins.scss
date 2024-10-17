@@ -35,6 +35,6 @@
 }
 
 @mixin gridMasonry($colummns, $width, $gap ) {
-    columns: 4 25rem;
-    column-gap: 2rem;
+    columns: $colummns $width;
+    column-gap: $gap;
 }
