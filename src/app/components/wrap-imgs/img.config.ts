@@ -2,5 +2,5 @@
 
 export enum shapeSkeleton {
     CIRCLE = 'circle',
-    SQUARE = ''
+    SQUARE = 'square'
 }

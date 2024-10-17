@@ -14,6 +14,7 @@ import { shapeSkeleton } from './img.config';
 })
 export class WrapImgsComponent implements OnInit {
 
+  // Input properties
   @Input()
   public imageSrc!: string;
   @Input()

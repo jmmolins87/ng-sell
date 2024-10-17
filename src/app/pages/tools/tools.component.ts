@@ -15,22 +15,27 @@ import { titleTypes } from '../../components/title-pages/title.config';
 })
 export class ToolsComponent implements OnInit{
 
+  // Title type
   public titleType: titleTypes = titleTypes.h1;
+  // Title
   public title!: string;
+  // Get tools
   public toolsData: Tool[] = toolsContent;
+  // Skeleton loader
+  public showSkeleton: boolean = true;
 
   constructor( private _pagesService: PagesService ) { }
 
   ngOnInit(): void {
-    this.tools;
+    this.getTools();
   }
 
   // Function to get the tools from the service
-  get tools() {
+  getTools() {
     this._pagesService.tools.subscribe((tools: Tool[]) => {
       this.toolsData = tools;
+      this.showSkeleton = false;
     });
-    return this.toolsData;
   }
 
 }

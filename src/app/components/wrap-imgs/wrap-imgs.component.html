@@ -2,8 +2,8 @@
 
 <div class="wrap-img">
     <div *ngIf="isLoaded" class="wrap-skeleton-logo">
-        <p-skeleton *ngIf="shapeSkeleton === 'circle'" shape="circle" size="25rem" />
-        <p-skeleton *ngIf="shapeSkeleton === ''" shape="" size="25rem" />
+        <p-skeleton *ngIf="shapeSkeleton === 'circle'" shape="circle" size="10rem" />
+        <p-skeleton *ngIf="shapeSkeleton === 'square'" shape="square" size="25rem" />
     </div>
     <img 
         *ngIf="safeImgUrl" 

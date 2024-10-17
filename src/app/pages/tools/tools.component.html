@@ -4,7 +4,7 @@
 
 <div class="wrap-tools">
     <div *ngFor="let tool of toolsData" class="wrap-tool">
-        <app-card [tool]="tool"></app-card>
+        <app-card [tool]="tool" [showSkeleton]="showSkeleton"></app-card>
     </div>
 </div>
 

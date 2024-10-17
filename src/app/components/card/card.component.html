@@ -8,7 +8,7 @@
             class="pi pi-heart-fill">
         </i>
     </div>
-    <p-card [header]="tool.title | translate" [subheader]="tool.subtitle | translate">
+    <p-card>
         <ng-template pTemplate="header">
             <div class="wrap-img-tool">
                 <app-wrap-imgs 
@@ -18,24 +18,42 @@
                     [shapeSkeleton]="shapeSkeleton" />
             </div>
         </ng-template>
-        <div class="wrap-description">
-            <p>{{ tool.description | translate }}</p>
-            <button 
-                pButton 
-                pRipple 
-                [label]="'OTHERS.READ_MORE_TOOL' | translate"
-                [outlined]="true" 
-                severity="info"
-                icon="pi pi-arrow-right" 
-                iconPos="right"
-                [routerLink]="['/tool', tool.id]">
-            </button>
+        <div *ngIf="!showSkeleton; else showContent">
+            <div class="wrap-description">
+                <div class="wrap-description--header">
+                    <h3>{{ tool.title | translate }}</h3>
+                    <p class="subtitle">{{ tool.subtitle | translate }}</p>
+                </div>
+                <div class="wrap-description--body">
+                    <p>{{ tool.description | translate }}</p>
+                    <button 
+                        pButton 
+                        pRipple 
+                        [label]="'OTHERS.READ_MORE_TOOL' | translate"
+                        [outlined]="true" 
+                        severity="info"
+                        icon="pi pi-arrow-right" 
+                        iconPos="right"
+                        [routerLink]="['/tool', tool.id]">
+                    </button>
+                </div>
+                <div class="wrap-description--footer">
+                    <ul class="wrap-tags">
+                        <li *ngFor="let tag of tool.tags; let i = index">
+                            <p-tag severity="success" [value]="tag | translate"></p-tag>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <ul class="wrap-tags">
-            <li *ngFor="let tag of tool.tags; let i = index">
-                <p-tag severity="success" [value]="tag | translate"></p-tag>
-            </li>
-        </ul>
+        <ng-template #showContent class="wrap-skeleton">
+            <p-skeleton styleClass="mb-2" />
+            <p-skeleton width="10rem" styleClass="mb-2" />
+            <p-skeleton width="5rem" styleClass="mb-2" />
+            <p-skeleton height="2rem" styleClass="mb-2" />
+            <p-skeleton width="10rem" height="4rem" />
+        </ng-template>
         <!-- Button to go Site -->
         <!-- <ng-template pTemplate="footer">
             <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
