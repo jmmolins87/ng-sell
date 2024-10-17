@@ -13,17 +13,17 @@
             <div class="wrap-img-tool">
                 <app-wrap-imgs 
                     [imageSrc]="tool.image"
-                    [altImg]="tool.title"
-                    [title]="tool.title"
+                    [altImg]="tool.title | translate"
+                    [title]="tool.title | translate"
                     [shapeSkeleton]="shapeSkeleton" />
             </div>
         </ng-template>
         <div class="wrap-description">
-            <p>{{ tool.description }}</p>
+            <p>{{ tool.description | translate }}</p>
             <button 
                 pButton 
                 pRipple 
-                [label]="'OTHERS.READ_MORE' | translate"
+                [label]="'OTHERS.READ_MORE_TOOL' | translate"
                 [outlined]="true" 
                 severity="info"
                 icon="pi pi-arrow-right" 
@@ -33,7 +33,7 @@
         </div>
         <ul class="wrap-tags">
             <li *ngFor="let tag of tool.tags; let i = index">
-                <p-tag severity="success" [value]="tool.tags[i]"></p-tag>
+                <p-tag severity="success" [value]="tag | translate"></p-tag>
             </li>
         </ul>
         <ng-template pTemplate="footer">
@@ -41,7 +41,7 @@
                 <button 
                     pButton
                     pRipple
-                    [label]="'OTHERS.WEB' | translate" 
+                    [label]="'OTHERS.GO_WEB_TOOL' | translate" 
                     [outlined]="true" 
                     icon="pi pi-link" 
                     severity="danger">
