@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NoImagePipe } from './no-image.pipe';
 
-import { TranslateToolPipe } from './translate-tool.pipe';
 
 
 @NgModule({
   declarations: [
-    TranslateToolPipe
+    NoImagePipe
   ],
   imports: [
     CommonModule
   ], 
   exports: [
-    TranslateToolPipe
+    NoImagePipe
   ]
 })
 export class PipesModule { }

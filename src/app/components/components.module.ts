@@ -31,7 +31,7 @@ import { TabsComponent } from './tabs/tabs.component';
     RouterModule,
     PrimeNgModule,
     TranslateModule
-  ],
+],
   exports: [
     CardComponent,
     DownloadButtonComponent,
