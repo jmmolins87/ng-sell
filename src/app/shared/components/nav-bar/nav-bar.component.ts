@@ -30,8 +30,9 @@ export class NavBarComponent implements OnInit {
     private _translator: TranslatorService ) { }
 
   ngOnInit(): void {
+    // Get the current route to apply the class
     this.darkMode();
-    
+    // Get the current route to apply the class
     setTimeout(() => {
       this.itemsNavbar;
     }, 500);

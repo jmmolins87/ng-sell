@@ -17,17 +17,17 @@
 }  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $grey-bg; 
+    background: $grey-dark-bg; 
     border-radius: 1rem;
 } 
 ::-moz-scrollbar-thumb {
-    background: $grey-bg; 
+    background: $grey-dark-bg; 
     border-radius: 1rem;
 } 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: $grey-dark-bg; 
+    background: $black-bg; 
 }
 ::-moz-scrollbar-thumb:hover {
-    background: $grey-dark-bg; 
+    background: $black-bg; 
 }

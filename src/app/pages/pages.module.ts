@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { AboutComponent } from './about/about.component';
     PagesRoutingModule,
     TranslateModule,
     PrimeNgModule,
+    SharedModule,
     ComponentsModule,
     PipesModule
   ]
