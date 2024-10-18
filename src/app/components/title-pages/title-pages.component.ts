@@ -18,7 +18,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./title-pages.component.scss']
 })
 export class TitlePagesComponent implements OnInit, OnChanges {
-
+  
+  // Title type
+  @Input()
+  public titleType!: titleTypes;
+  // Title
+  @Input()
+  public title!: string;
+  @Input()
+  withUnderline: boolean = true;
+  
   // Title translated
   public translatedTitle$: Observable<string> | null = null;
   // Skeleton loader
@@ -26,12 +35,6 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // Dark Theme
   public isDarkMode: boolean = false;
 
-  // Title type
-  @Input()
-  public titleType!: titleTypes;
-  // Title
-  @Input()
-  public title!: string;
 
   constructor( private _translate: TranslateService, private _sharedService: SharedService ) {}
 

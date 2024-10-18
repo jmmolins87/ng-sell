@@ -12,15 +12,17 @@
             padding-bottom: .5rem;
     
             /* Pseudoelement to create the underline */
-            &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 0;
-                height: .3rem;
-                background-color: $black-light-border; /* Underline color */
-                animation: underline-animation 2s ease forwards;
+            &.with-underline {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: .1rem;
+                    background-color: $black-light-border; /* Underline color */
+                    animation: underline-animation 2s ease forwards;
+                }
             }
         }
     }
@@ -29,9 +31,11 @@
 .dark-theme {
     &.wrap-title {
         .title {
-            &::after {
-                background-color: $grey-light-border; /* Underline color */
-            }
+            &.with-underline {
+                &::after {
+                    background-color: $grey-light-border; /* Underline color */
+                }
+            } 
         }
     }
 }

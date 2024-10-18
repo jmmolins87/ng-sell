@@ -11,6 +11,5 @@ export class AboutComponent {
 
   public title!: string;
   public titleType: titleTypes = titleTypes.h1;
-  // public buttonText: string = "Descargar CV";
 
 }

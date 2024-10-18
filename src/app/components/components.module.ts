@@ -6,6 +6,8 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+import { BackgroundGradientComponent } from './backgrounds/background-gradient/background-gradient.component';
+import { BackgroundLinesComponent } from './backgrounds/background-lines/background-lines.component';
 import { CardComponent } from './card/card.component';
 import { DownloadButtonComponent } from './download-button/download-button.component';
 import { TitlePagesComponent } from './title-pages/title-pages.component';
@@ -16,15 +18,18 @@ import { TabsComponent } from './tabs/tabs.component';
 
 
 
+
 @NgModule({
   declarations: [
+    BackgroundGradientComponent,
+    BackgroundLinesComponent,
     CardComponent,
     DownloadButtonComponent,
     TitlePagesComponent,
     WrapChartComponent,
     WrapImgsComponent,
     SkeletonCardDirective,
-    TabsComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +38,8 @@ import { TabsComponent } from './tabs/tabs.component';
     TranslateModule
 ],
   exports: [
+    BackgroundGradientComponent,
+    BackgroundLinesComponent,
     CardComponent,
     DownloadButtonComponent,
     TitlePagesComponent,

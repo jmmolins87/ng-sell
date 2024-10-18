@@ -10,7 +10,6 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
-import { BackgroundComponent } from './components/background/background.component';
 
 
 
@@ -18,8 +17,7 @@ import { BackgroundComponent } from './components/background/background.componen
   declarations: [
     NavBarComponent,
     FooterComponent,
-    WrapLogoComponent,
-    BackgroundComponent
+    WrapLogoComponent
   ],
   imports: [
     CommonModule,
@@ -30,8 +28,7 @@ import { BackgroundComponent } from './components/background/background.componen
   ],
   exports: [
     NavBarComponent,
-    FooterComponent,
-    BackgroundComponent
+    FooterComponent
   ]
 })
 export class SharedModule { }

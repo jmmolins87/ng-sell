@@ -1,12 +1,14 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { SharedService } from './../../../shared/services/shared.service';
 
 @Component({
-  selector: 'app-background',
-  templateUrl: './background.component.html',
-  styleUrls: ['./background.component.scss']
+  selector: 'app-background-gradient',
+  templateUrl: './background-gradient.component.html',
+  styleUrls: ['./background-gradient.component.scss']
 })
-export class BackgroundComponent implements OnInit {
+export class BackgroundGradientComponent implements OnInit {
 
+  // Background
   public colors: string[] = [
     '#FF6B6B', // Light red
     '#F8D210', // Yellow
@@ -14,8 +16,12 @@ export class BackgroundComponent implements OnInit {
     '#4D96FF', // Light blue
     '#835AFD'  // Purple
   ];
+  // Current color index
   public currentColorIndex: number = 0;
+  // Next color index
   public nextColorIndex: number = 1;
+  // Dark Theme
+  public isDarkMode: boolean = false;
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
@@ -24,8 +30,13 @@ export class BackgroundComponent implements OnInit {
     this.colors[this.currentColorIndex] = `rgb(${Math.floor(255 * x)}, ${Math.floor(255 * y)}, 150)`;
   }
 
+  constructor( private _sharedService: SharedService ) {}
+
   ngOnInit(): void {
+    // Start the background transition
     this.startBackgroundTransition();
+    // Get the current route to apply the class
+    this.darkMode();
   }
 
   startBackgroundTransition() {
@@ -37,6 +48,13 @@ export class BackgroundComponent implements OnInit {
 
   getCurrentBackground() {
     return `linear-gradient(135deg, ${this.colors[this.currentColorIndex]} 0%, ${this.colors[this.nextColorIndex]} 100%)`;
+  }
+
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }
