@@ -15,7 +15,8 @@
                     [imageSrc]="tool.image"
                     [altImg]="tool.title | translate"
                     [title]="tool.title | translate"
-                    [shapeSkeleton]="shapeSkeleton" />
+                    [shapeSkeleton]="shapeSkeleton"
+                    [showSkeleton]="showSkeleton" />
             </div>
         </ng-template>
         <div *ngIf="!showSkeleton; else showContent">

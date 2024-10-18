@@ -15,25 +15,32 @@ import { shapeSkeleton } from './img.config';
 export class WrapImgsComponent implements OnInit {
 
   // Input properties
+  // Image source
   @Input()
   public imageSrc!: string;
+  // Alt image
   @Input()
   public altImg!: string;
+  // Height of the image
   @Input()
   public height!: number;
+  // When is logo or not
   @Input()
   public isLogo!: boolean;
+  // Shape of the skeleton loader
   @Input()
   public shapeSkeleton!: shapeSkeleton;
-
+  // Show the skeleton loader
+  @Input()
+  public showSkeleton: boolean = true;
+  
   public safeImgUrl: SafeUrl | undefined;
-  public isLoaded: boolean = true;
 
   constructor( private _sanitizer: DomSanitizer ) {}
 
   ngOnInit(): void {
     // Sanitize image URL
-    this.safeImgUrl = this.sanitizeUrl(this.imageSrc);    
+    this.safeImgUrl = this.sanitizeUrl(this.imageSrc);
   }
 
   sanitizeUrl(url: string): SafeUrl {
@@ -42,7 +49,7 @@ export class WrapImgsComponent implements OnInit {
 
   onLoad(): void {
     // Hidden loading skeleton
-    this.isLoaded = false;
+    this.showSkeleton = false;
   }
 
 }

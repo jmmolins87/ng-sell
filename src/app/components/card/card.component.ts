@@ -19,14 +19,15 @@ export class CardComponent implements OnInit {
   // Get tools
   @Input()
   public tool!: Tool;
-  @Input()
   // Skeleton loader
-  public showSkeleton: boolean = true;
+  @Input()
+  public showSkeleton!: boolean;
   
   // Dark Theme
   public isDarkMode: boolean = false;
   // Shape of the skeleton loader
   public shapeSkeleton: shapeSkeleton = shapeSkeleton.CIRCLE;
+
 
   constructor( private _sharedService: SharedService  ) { }
 
