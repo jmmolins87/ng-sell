@@ -38,6 +38,27 @@
         "ERROR_TITLE": "Oops!!",
         "ERROR_TEXT": "Download error"
     },
+    "CATEGORIES_TOOLS": {
+        "EDITING": "Editing",
+        "DESIGN": "Design",
+        "TYPOGRAPHY": "Typography",
+        "COLLABORATION": "Collaboration",
+        "PROTOTYPING": "Prototyping",
+        "DEVELOPMENT": "Development",
+        "PRODUCTIVITY": "Productivity",
+        "MANAGEMENT": "Management",
+        "LABELING": "Labeling",
+        "FRONTEND": "Frontend",
+        "STYLES": "Styles",
+        "PROGRAMMING": "Programming",
+        "FUNCTIONALITY": "Functionality",
+        "FRAMEWORK": "Framework",
+        "COMPONENTS": "Components",
+        "VERSION_CONTROL": "Version Control",
+        "DATABASE": "Database",
+        "BACKEND": "BackEnd",
+        "WEB_FUNCTIONALITY": "Web Functionality"
+    },
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "TITLE": "Adobe Photoshop",

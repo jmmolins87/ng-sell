@@ -20,7 +20,7 @@ export class SharedService {
   private darkModeSubject = new BehaviorSubject<boolean>(false);
 
   // Observable to which components can subscribe
-  darkMode$ = this.darkModeSubject.asObservable();
+  public darkMode$ = this.darkModeSubject.asObservable();
 
   constructor( private _http: HttpClient ) { }
 

@@ -38,6 +38,27 @@
         "ERROR_TITLE": "¡¡Ups!!",
         "ERROR_TEXT": "Error en la descarga"
     },
+    "CATEGORIES_TOOLS": {
+        "EDITING": "Edición",
+        "DESIGN": "Diseño",
+        "TYPOGRAPHY": "Tipografía",
+        "COLLABORATION": "Colaboración",
+        "PROTOTYPING": "Prototipos",
+        "DEVELOPMENT": "Desarrollo",
+        "PRODUCTIVITY": "Productividad",
+        "MANAGEMENT": "Gestión",
+        "LABELING": "Etiquetado",
+        "FRONTEND": "FrontEnd",
+        "STYLES": "Estilos",
+        "PROGRAMMING": "Programación",
+        "FUNCTIONALITY": "Funcionalidad",
+        "FRAMEWORK": "Framework",
+        "COMPONENTS": "Componentes",
+        "VERSION_CONTROL": "Control de versiones",
+        "DATABASE": "Base de datos",
+        "BACKEND": "BackEnd",
+        "WEB_FUNCTIONALITY": "Funcionalidad web"
+    },
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "SUBTITLE": "Diseño",
