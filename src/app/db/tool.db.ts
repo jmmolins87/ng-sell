@@ -33,9 +33,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_ILLUSTRATOR.TAGS.ILLUSTRATION",
             "TOOLS.ADOBE_ILLUSTRATOR.TAGS.GRAPHIC_DESIGN",
             "TOOLS.ADOBE_ILLUSTRATOR.TAGS.LOGO_DESIGN",
-            "TOOLS.ADOBE_ILLUSTRATOR.TAGS.TYPOGRAPHY",
-            "TOOLS.ADOBE_ILLUSTRATOR.TAGS.TRACING_TOOLS",
-            "TOOLS.ADOBE_ILLUSTRATOR.TAGS.SHAPES_LINES"
+            "TOOLS.ADOBE_ILLUSTRATOR.TAGS.TYPOGRAPHY"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png",
@@ -50,14 +48,10 @@ export const toolsContent: Tool[] = [
         link: "https://www.adobe.com/products/indesign.html",
         description: "TOOLS.ADOBE_INDESIGN.DESCRIPTION",
         tags: [
-            "TOOLS.ADOBE_INDESIGN.TAGS.DESKTOP_PUBLISHING",
-            "TOOLS.ADOBE_INDESIGN.TAGS.PAGE_DESIGN",
             "TOOLS.ADOBE_INDESIGN.TAGS.TYPOGRAPHY",
             "TOOLS.ADOBE_INDESIGN.TAGS.GRAPHIC_DESIGN",
-            "TOOLS.ADOBE_INDESIGN.TAGS.EDITING",
             "TOOLS.ADOBE_INDESIGN.TAGS.PRINT_DESIGN",
-            "TOOLS.ADOBE_INDESIGN.TAGS.DIGITAL_PUBLISHING",
-            "TOOLS.ADOBE_INDESIGN.TAGS.INTERACTIVE_DOCUMENTS"
+            "TOOLS.ADOBE_INDESIGN.TAGS.DIGITAL_PUBLISHING"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png",
@@ -75,9 +69,9 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_XD.TAGS.UI_DESIGN",
             "TOOLS.ADOBE_XD.TAGS.UX_DESIGN",
             "TOOLS.ADOBE_XD.TAGS.PROTOTYPES",
-            "TOOLS.ADOBE_XD.TAGS.WIREFRAMING",
-            "TOOLS.ADOBE_XD.TAGS.COLLABORATION",
-            "TOOLS.ADOBE_XD.TAGS.RESPONSIVE_DESIGN"
+            "TOOLS.ADOBE_XD.TAGS.COLLABORATIVE_DESIGN",
+            "TOOLS.ADOBE_XD.TAGS.GRAPHIC_DESIGN",
+            "TOOLS.ADOBE_XD.TAGS.WEB_DESIGN",
         ],
         favorite: true,
         image: "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg",
@@ -97,10 +91,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.FIGMA.TAGS.PROTOTYPES",
             "TOOLS.FIGMA.TAGS.WEB_DESIGN",
             "TOOLS.FIGMA.TAGS.GRAPHIC_DESIGN",
-            "TOOLS.FIGMA.TAGS.VECTOR_GRAPHICS",
-            "TOOLS.FIGMA.TAGS.COLLABORATIVE_DESIGN",
-            "TOOLS.FIGMA.TAGS.DESIGN_SYSTEMS",
-            "TOOLS.FIGMA.TAGS.INTERACTIVE_PROTOTYPES"
+            "TOOLS.FIGMA.TAGS.COLLABORATIVE_DESIGN"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png",
@@ -116,13 +107,7 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.VSC.DESCRIPTION",
         tags:[
             "TOOLS.VSC.TAGS.EDIT_CODE",
-            "TOOLS.VSC.TAGS.SYNTAX_HIGHLIGHT",
-            "TOOLS.VSC.TAGS.AUTO_COMPLETION",
-            "TOOLS.VSC.TAGS.CODE_SNIPPETS",
-            "TOOLS.VSC.TAGS.MULTI_CURSOR",
-            "TOOLS.VSC.TAGS.CODE_NAVIGATION",
-            "TOOLS.VSC.TAGS.INTELLISENSE",
-            "TOOLS.VSC.TAGS.CODE_REFACTOR"
+            "TOOLS.VSC.TAGS.DEVELOPMENT",
         ],
         favorite: true,
         image: "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png",
@@ -139,11 +124,9 @@ export const toolsContent: Tool[] = [
         tags: [
             "TOOLS.NOTION.TAGS.PRODUCTIVITY",
             "TOOLS.NOTION.TAGS.PROJECT_MANAGEMENT",
-            "TOOLS.NOTION.TAGS.DATABASE",
-            "TOOLS.NOTION.TAGS.KNOWLEDGE_MANAGEMENT",
-            "TOOLS.NOTION.TAGS.COLLABORATION",
-            "TOOLS.NOTION.TAGS.NOTE_TAKING",
+            "TOOLS.NOTION.TAGS.COLLABORATIVE",
             "TOOLS.NOTION.TAGS.TASK_MANAGEMENT",
+            "TOOLS.NOTION.TAGS.LABELED"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
@@ -158,14 +141,11 @@ export const toolsContent: Tool[] = [
         link: "https://trello.com/",
         description: "TOOLS.TRELLO.DESCRIPTION",
         tags: [
-            "TOOLS.TRELLO.TAGS.ORGANIZATION",
-            "TOOLS.TRELLO.TAGS.NOTES",
-            "TOOLS.TRELLO.TAGS.TO_DO",
-            "TOOLS.TRELLO.TAGS.IN_PROGRESS",
-            "TOOLS.TRELLO.TAGS.COMPLETED",
-            "TOOLS.TRELLO.TAGS.ON_HOLD",
-            "TOOLS.TRELLO.TAGS.BLOCKED",
-            "TOOLS.TRELLO.TAGS.REVIEW_REQUIRED"
+            "TOOLS.NOTION.TAGS.PRODUCTIVITY",
+            "TOOLS.NOTION.TAGS.PROJECT_MANAGEMENT",
+            "TOOLS.NOTION.TAGS.COLLABORATIVE",
+            "TOOLS.NOTION.TAGS.TASK_MANAGEMENT",
+            "TOOLS.NOTION.TAGS.LABELED"
         ],
         favorite: false,
         image: "https://cdn.worldvectorlogo.com/logos/trello-logo.svg",
@@ -180,18 +160,11 @@ export const toolsContent: Tool[] = [
         link: "https://www.atlassian.com/software/jira",
         description: "TOOLS.JIRA.DESCRIPTION",
         tags: [
-            "TOOLS.JIRA.TAGS.ORGANIZATION",
-            "TOOLS.JIRA.TAGS.NOTES",
-            "TOOLS.JIRA.TAGS.PRIORITY_SEVERITY",
-            "TOOLS.JIRA.TAGS.WORK_TYPE",
-            "TOOLS.JIRA.TAGS.WORKFLOW_STATUS",
-            "TOOLS.JIRA.TAGS.COMPONENTS_MODULES",
-            "TOOLS.JIRA.TAGS.RELEASE_VERSIONS",
-            "TOOLS.JIRA.TAGS.TEAMS_ROLES",
-            "TOOLS.JIRA.TAGS.PROJECTS_CLIENTS",
-            "TOOLS.JIRA.TAGS.TIME_SCHEDULE",
-            "TOOLS.JIRA.TAGS.TECHNICAL_TAGS",
-            "TOOLS.JIRA.TAGS.MISC"
+            "TOOLS.JIRA.TAGS.PRODUCTIVITY",
+            "TOOLS.JIRA.TAGS.PROJECT_MANAGEMENT",
+            "TOOLS.JIRA.TAGS.COLLABORATIVE",
+            "TOOLS.JIRA.TAGS.TASK_MANAGEMENT",
+            "TOOLS.JIRA.TAGS.LABELED"
         ],
         favorite: true,
         image: "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
@@ -207,8 +180,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.HTML.DESCRIPTION",
         tags: [
             "TOOLS.HTML.TAGS.DEVELOPMENT",
-            "TOOLS.HTML.TAGS.WEB",
-            "TOOLS.HTML.TAGS.HTML"
+            "TOOLS.HTML.TAGS.LABELED",
+            "TOOLS.HTML.TAGS.CONTENT_STRUCTURE",
+            "TOOLS.HTML.TAGS.FRONTEND"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
@@ -224,8 +198,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.CSS.DESCRIPTION",
         tags: [
             "TOOLS.CSS.TAGS.DEVELOPMENT",
-            "TOOLS.CSS.TAGS.WEB",
-            "TOOLS.CSS.TAGS.CSS"
+            "TOOLS.CSS.TAGS.STYLES",
+            "TOOLS.CSS.TAGS.WEB_DESIGN",
+            "TOOLS.CSS.TAGS.FRONTEND"
         ],
         favorite: true,
         image: "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png",
@@ -241,8 +216,10 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.SASS.DESCRIPTION",
         tags: [
             "TOOLS.SASS.TAGS.DEVELOPMENT",
-            "TOOLS.SASS.TAGS.WEB",
-            "TOOLS.SASS.TAGS.SASS"
+            "TOOLS.SASS.TAGS.STYLES",
+            "TOOLS.SASS.TAGS.WEB_DESIGN",
+            "TOOLS.SASS.TAGS.FRONTEND",
+            "TOOLS.SASS.TAGS.PROGRAMMING"
         ],
         favorite: true,
         "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
@@ -258,8 +235,10 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.JAVASCRIPT.DESCRIPTION",
         tags: [
             "TOOLS.JAVASCRIPT.TAGS.DEVELOPMENT",
-            "TOOLS.JAVASCRIPT.TAGS.WEB",
-            "TOOLS.JAVASCRIPT.TAGS.JAVASCRIPT"
+            "TOOLS.JAVASCRIPT.TAGS.PROGRAMMING",
+            "TOOLS.JAVASCRIPT.TAGS.FRONTEND",
+            "TOOLS.JAVASCRIPT.TAGS.AUTOMATION",
+            "TOOLS.JAVASCRIPT.TAGS.WEB_FUNCTIONALITY"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png",
@@ -275,8 +254,12 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.ANGULAR.DESCRIPTION",
         tags: [
             "TOOLS.ANGULAR.TAGS.DEVELOPMENT",
-            "TOOLS.ANGULAR.TAGS.WEB",
-            "TOOLS.ANGULAR.TAGS.ANGULAR"
+            "TOOLS.ANGULAR.TAGS.PROGRAMMING",
+            "TOOLS.ANGULAR.TAGS.FRAMEWORK",
+            "TOOLS.ANGULAR.TAGS.FRONTEND",
+            "TOOLS.ANGULAR.TAGS.WEB_FUNCTIONALITY",
+            "TOOLS.ANGULAR.TAGS.ANGULAR",
+            "TOOLS.ANGULAR.TAGS.COMPONENTS"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
@@ -292,8 +275,12 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.REACT.DESCRIPTION",
         tags: [
             "TOOLS.REACT.TAGS.DEVELOPMENT",
-            "TOOLS.REACT.TAGS.WEB",
-            "TOOLS.REACT.TAGS.REACT"
+            "TOOLS.REACT.TAGS.PROGRAMMING",
+            "TOOLS.REACT.TAGS.FRAMEWORK",
+            "TOOLS.REACT.TAGS.FRONTEND",
+            "TOOLS.REACT.TAGS.WEB_FUNCTIONALITY",
+            "TOOLS.REACT.TAGS.REACT",
+            "TOOLS.REACT.TAGS.COMPONENTS"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
@@ -308,9 +295,12 @@ export const toolsContent: Tool[] = [
         link: "https://github.com/",
         description: "TOOLS.GITHUB.DESCRIPTION",
         tags: [
-            "TOOLS.GITHUB.TAGS.DEVELOPMENT",
-            "TOOLS.GITHUB.TAGS.WEB",
-            "TOOLS.GITHUB.TAGS.GITHUB"
+            "TOOLS.GITHUB.TAGS.REPOSITORY",
+            "TOOLS.GITHUB.TAGS.PRODUCTIVITY",
+            "TOOLS.GITHUB.TAGS.PROJECT_MANAGEMENT",
+            "TOOLS.GITHUB.TAGS.COLLABORATIVE",
+            "TOOLS.GITHUB.TAGS.TASK_MANAGEMENT",
+            "TOOLS.GITHUB.TAGS.VERSION_CONTROL"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
@@ -326,8 +316,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.NODE.DESCRIPTION",
         tags: [
             "TOOLS.NODE.TAGS.DEVELOPMENT",
-            "TOOLS.NODE.TAGS.WEB",
-            "TOOLS.NODE.TAGS.NODE"
+            "TOOLS.NODE.TAGS.BACKEND",
+            "TOOLS.NODE.TAGS.PROGRAMMING",
+            "TOOLS.NODE.TAGS.API"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
@@ -343,8 +334,8 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.POSTMAN.DESCRIPTION",
         tags: [
             "TOOLS.POSTMAN.TAGS.DEVELOPMENT",
-            "TOOLS.POSTMAN.TAGS.WEB",
-            "TOOLS.POSTMAN.TAGS.POSTMAN"
+            "TOOLS.POSTMAN.TAGS.BACKEND",
+            "TOOLS.POSTMAN.TAGS.API"
         ],
         favorite: false,
         image: "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
@@ -360,8 +351,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.GIT.DESCRIPTION",
         tags: [
             "TOOLS.GIT.TAGS.DEVELOPMENT",
-            "TOOLS.GIT.TAGS.WEB",
-            "TOOLS.GIT.TAGS.GIT"
+            "TOOLS.GIT.TAGS.VERSION_CONTROL",
+            "TOOLS.GIT.TAGS.PRODUCTIVITY",
+            "TOOLS.GIT.TAGS.PROGRAMMING"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png",
@@ -377,8 +369,11 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.BOOTSTRAP.DESCRIPTION",
         tags: [
             "TOOLS.BOOTSTRAP.TAGS.DEVELOPMENT",
-            "TOOLS.BOOTSTRAP.TAGS.WEB",
-            "TOOLS.BOOTSTRAP.TAGS.BOOTSTRAP"
+            "TOOLS.BOOTSTRAP.TAGS.WEB_DESIGN",
+            "TOOLS.BOOTSTRAP.TAGS.FRONTEND",
+            "TOOLS.BOOTSTRAP.TAGS.STYLES",
+            "TOOLS.BOOTSTRAP.TAGS.COMPONENTS",
+            "TOOLS.BOOTSTRAP.TAGS.FRAMEWORK"
         ],
         favorite: true,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
@@ -394,8 +389,14 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.MATERIAL.DESCRIPTION",
         tags: [
             "TOOLS.MATERIAL.TAGS.DEVELOPMENT",
-            "TOOLS.MATERIAL.TAGS.WEB",
-            "TOOLS.MATERIAL.TAGS.MATERIAL"
+            "TOOLS.MATERIAL.TAGS.WEB_DESIGN",
+            "TOOLS.MATERIAL.TAGS.FRAMEWORK",
+            "TOOLS.MATERIAL.TAGS.FRONTEND",
+            "TOOLS.MATERIAL.TAGS.STYLES",
+            "TOOLS.MATERIAL.TAGS.PROGRAMMING",
+            "TOOLS.MATERIAL.TAGS.COMPONENTS",
+            "TOOLS.MATERIAL.TAGS.ANGULAR",
+            "TOOLS.MATERIAL.TAGS.REACT"
         ],
         favorite: false,
         image: "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png",
@@ -411,8 +412,14 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.PRIMENG.DESCRIPTION",
         tags: [
             "TOOLS.PRIMENG.TAGS.DEVELOPMENT",
-            "TOOLS.PRIMENG.TAGS.WEB",
-            "TOOLS.PRIMENG.TAGS.PRIMENG"
+            "TOOLS.PRIMENG.TAGS.WEB_DESIGN",
+            "TOOLS.PRIMENG.TAGS.FRONTEND",
+            "TOOLS.PRIMENG.TAGS.STYLES",
+            "TOOLS.PRIMENG.TAGS.PROGRAMMING",
+            "TOOLS.PRIMENG.TAGS.COMPONENTS",
+            "TOOLS.PRIMENG.TAGS.FRAMEWORK",
+            "TOOLS.PRIMENG.TAGS.ANGULAR",
+            "TOOLS.PRIMENG.TAGS.REACT"
         ],
         favorite: true,
         image: "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png",
@@ -428,8 +435,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.MONGO.DESCRIPTION",
         tags: [
             "TOOLS.MONGO.TAGS.DEVELOPMENT",
-            "TOOLS.MONGO.TAGS.WEB",
-            "TOOLS.MONGO.TAGS.MONGO"
+            "TOOLS.MONGO.TAGS.DATA_BASE",
+            "TOOLS.MONGO.TAGS.BACKEND",
+            "TOOLS.MONGO.TAGS.PROGRAMMING"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png",
@@ -445,8 +453,10 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.WORDPRESS.DESCRIPTION",
         tags: [
             "TOOLS.WORDPRESS.TAGS.DEVELOPMENT",
-            "TOOLS.WORDPRESS.TAGS.WEB",
-            "TOOLS.WORDPRESS.TAGS.WORDPRESS"
+            "TOOLS.WORDPRESS.TAGS.CMS",
+            "TOOLS.WORDPRESS.TAGS.FRONTEND",
+            "TOOLS.WORDPRESS.TAGS.BACKEND",
+            "TOOLS.WORDPRESS.TAGS.WEB_FUNCTIONALITY"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png",
@@ -462,8 +472,8 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.DOCKER.DESCRIPTION",
         tags: [
             "TOOLS.DOCKER.TAGS.DEVELOPMENT",
-            "TOOLS.DOCKER.TAGS.WEB",
-            "TOOLS.DOCKER.TAGS.DOCKER"
+            "TOOLS.DOCKER.TAGS.VIRTUALIZATION",
+            "TOOLS.DOCKER.TAGS.BACKEND"
         ],
         favorite: false,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png",
@@ -479,8 +489,11 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.TAILWINDD.DESCRIPTION",
         tags: [
             "TOOLS.TAILWIND.TAGS.DEVELOPMENT",
-            "TOOLS.TAILWIND.TAGS.WEB",
-            "TOOLS.TAILWIND.TAGS.TAILWIND"
+            "TOOLS.TAILWIND.TAGS.WEB_DESIGN",
+            "TOOLS.TAILWIND.TAGS.FRONTEND",
+            "TOOLS.TAILWIND.TAGS.STYLES",
+            "TOOLS.TAILWIND.TAGS.FRAMEWORK",
+            "TOOLS.TAILWIND.TAGS.COMPONENTS"
         ],
         favorite: false,
         image: "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg",
@@ -496,8 +509,10 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.STENCIL.DESCRIPTION",
         tags: [
             "TOOLS.STENCIL.TAGS.DEVELOPMENT",
-            "TOOLS.STENCIL.TAGS.WEB",
-            "TOOLS.STENCIL.TAGS.STENCIL"
+            "TOOLS.STENCIL.TAGS.FRONTEND",
+            "TOOLS.STENCIL.TAGS.COMPONENTS",
+            "TOOLS.STENCIL.TAGS.WEB_FUNCTIONALITY",
+            "TOOLS.STENCIL.TAGS.FRAMEWORK"
         ],
         favorite: true,
         image: "https://stenciljs.com/stencil-og.png",
@@ -513,8 +528,9 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.STORYBOOK.DESCRIPTION",
         tags: [
             "TOOLS.STORYBOOK.TAGS.DEVELOPMENT",
-            "TOOLS.STORYBOOK.TAGS.WEB",
-            "TOOLS.STORYBOOK.TAGS.STORYBOOK"
+            "TOOLS.STORYBOOK.TAGS.FRONTEND",
+            "TOOLS.STORYBOOK.TAGS.COMPONENTS",
+            "TOOLS.STORYBOOK.TAGS.FRAMEWORK"
         ],
         favorite: true,
         image: "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png",
@@ -530,8 +546,11 @@ export const toolsContent: Tool[] = [
         description: "TOOLS.NEST.DESCRIPTION",
         tags: [
             "TOOLS.NEST.TAGS.DEVELOPMENT",
-            "TOOLS.NEST.TAGS.WEB",
-            "TOOLS.NEST.TAGS.NEST"
+            "TOOLS.NEST.TAGS.BACKEND",
+            "TOOLS.NEST.TAGS.API",
+            "TOOLS.NEST.TAGS.FRAMEWORK",
+            "TOOLS.NEST.TAGS.PROGRAMMING",
+            "TOOLS.NEST.TAGS.DATA_BASE"
         ],
         favorite: false,
         image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png",

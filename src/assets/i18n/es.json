@@ -58,50 +58,41 @@
                 "ILLUSTRATION": "Ilustración",
                 "GRAPHIC_DESIGN": "Diseño gráfico",
                 "LOGO_DESIGN": "Diseño de logotipos",
-                "TYPOGRAPHY": "Tipografía",
-                "TRACING_TOOLS": "Herramientas de trazado",
-                "SHAPES_LINES": "Formas y líneas"
+                "TYPOGRAPHY": "Tipografía"
             }
         },
         "ADOBE_INDESIGN": {
             "SUBTITLE": "Diseño",
             "DESCRIPTION": "InDesign es un software de Adobe que se utiliza principalmente para el diseño de publicaciones y materiales de marketing. Permite a los usuarios crear diseños de página para impresión o distribución digital con una gran cantidad de herramientas y características. Los usuarios pueden diseñar folletos, revistas, libros, carteles y más, con control total sobre la tipografía, el color, las imágenes, los objetos y todo lo demás que se incluye en un diseño de página. InDesign también se integra con otras aplicaciones de Adobe, lo que permite un flujo de trabajo más fluido entre programas.",
             "TAGS": {
-                "DESKTOP_PUBLISHING": "Autoedición",
-                "PAGE_DESIGN": "Diseño de páginas",
                 "TYPOGRAPHY": "Tipografía",
                 "GRAPHIC_DESIGN": "Diseño gráfico",
-                "EDITING": "Edición",
                 "PRINT_DESIGN": "Diseño de impresión",
-                "DIGITAL_PUBLISHING": "Edición digital",
-                "INTERACTIVE_DOCUMENTS": "Documentos interactivos"
+                "DIGITAL_PUBLISHING": "Edición digital"
             }
         },
         "ADOBE_XD": {
             "SUBTITLE": "Diseño",
             "DESCRIPTION": "Adobe XD es una herramienta de diseño de experiencia de usuario basada en vectores para aplicaciones web y aplicaciones móviles, desarrollada y publicada por Adobe Inc. Permite a los diseñadores crear wireframes, prototipos interactivos y maquetas de diseño. Adobe XD también facilita la colaboración entre equipos, permitiendo a múltiples usuarios trabajar en el mismo proyecto al mismo tiempo. Es parte de Adobe Creative Cloud, lo que permite una integración fluida con otras aplicaciones de Adobe.",
             "TAGS": {
-                "UI_DESIGN": "Diseño de interfaz de usuario",
-                "UX_DESIGN": "Diseño de experiencia de usuario",
+                "UI_DESIGN": "Diseño UI",
+                "UX_DESIGN": "Diseño de UX",
                 "PROTOTYPES": "Prototipos",
-                "WIREFRAMING": "Wireframing",
-                "COLLABORATION": "Colaboración",
-                "RESPONSIVE_DESIGN": "Diseño responsivo"
+                "COLLABORATIVE_DESIGN": "Diseño colaborativo",
+                "GRAPHIC_DESIGN": "Diseño gráfico",
+                "WEB_DESIGN": "Diseño web"
             }
         },
         "FIGMA": {
             "SUBTITLE": "Diseño",
             "DESCRIPTION": "Figma es una herramienta de edición de gráficos vectoriales y prototipado que es principalmente basada en la web, con características adicionales fuera de línea habilitadas por aplicaciones de escritorio para macOS y Windows. Figma es conocido por su enfoque en la colaboración en tiempo real, lo que permite a múltiples usuarios trabajar en el mismo diseño al mismo tiempo. Los diseñadores pueden crear interfaces de usuario, prototipos interactivos, y más, todo dentro de Figma. También ofrece herramientas para el diseño de sistemas, permitiendo a los equipos crear y mantener bibliotecas de diseño coherentes.",
             "TAGS": {
-                "UI_DESIGN": "Diseño de interfaz de usuario",
-                "UX_DESIGN": "Diseño de experiencia de usuario",
+                "UI_DESIGN": "Diseño UI",
+                "UX_DESIGN": "Diseño UX",
                 "PROTOTYPES": "Prototipos",
                 "WEB_DESIGN": "Diseño web",
                 "GRAPHIC_DESIGN": "Diseño gráfico",
-                "VECTOR_GRAPHICS": "Gráficos vectoriales",
-                "COLLABORATIVE_DESIGN": "Diseño colaborativo",
-                "DESIGN_SYSTEMS": "Sistemas de diseño",
-                "INTERACTIVE_PROTOTYPES": "Prototipos interactivos"
+                "COLLABORATIVE_DESIGN": "Diseño colaborativo"
             }
         },
         "VSC": {
@@ -109,13 +100,7 @@
             "DESCRIPTION": "Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Ofrece características como resaltado de sintaxis, autocompletado de código, fragmentos de código, edición con varios cursores, navegación de código, IntelliSense y refactorización de código. Es ampliamente utilizado por los desarrolladores para una variedad de lenguajes de programación y marcos de trabajo. Visual Studio Code también admite una amplia gama de extensiones para mejorar su funcionalidad.",
             "TAGS": {
                 "EDIT_CODE": "Edición de código",
-                "SYNTAX_HIGHLIGHT": "Resaltado de sintaxis",
-                "AUTO_COMPLETION": "Autocompletado",
-                "CODE_SNIPPETS": "Fragmentos de código",
-                "MULTI_CURSOR": "Edición con varios cursores",
-                "CODE_NAVIGATION": "Navegación de código",
-                "INTELLISENSE": "IntelliSense",
-                "CODE_REFACTOR": "Refactorización de código"
+                "DEVELOPMENT": "Desarrollo"
             }
         },
         "NOTION": {
@@ -124,43 +109,31 @@
             "TAGS": {
                 "PRODUCTIVITY": "Productividad",
                 "PROJECT_MANAGEMENT": "Gestión de proyectos",
-                "DATABASE": "Base de datos",
-                "KNOWLEDGE_MANAGEMENT": "Gestión del conocimiento",
-                "COLLABORATION": "Colaboración",
-                "NOTE_TAKING": "Toma de notas",
-                "TASK_MANAGEMENT": "Gestión de tareas"
+                "TASK_MANAGEMENT": "Gestión de tareas",
+                "COLLABORATIVE": "Colaborativo",
+                "LABELED": "Etiquetado"
             }
         },
         "TRELLO": {
             "SUBTITLE": "Organization",
             "DESCRIPTION": "Trello es una aplicación web para la gestión de tareas y la gestión de proyectos basada en el método Kanban. Los usuarios pueden crear tableros, en los que se pueden agregar listas con tarjetas. Estas tarjetas representan tareas que se mueven entre las listas que representan el progreso del proyecto. Trello es conocido por su simplicidad y flexibilidad, permitiendo a los usuarios personalizar sus tableros y tarjetas para adaptarse a una variedad de flujos de trabajo y proyectos. También facilita la colaboración en equipo, permitiendo a múltiples usuarios trabajar en el mismo tablero.",
             "TAGS": {
-                "ORGANIZATION": "Organización",
-                "NOTES": "Notas",
-                "TO_DO": "Por hacer",
-                "IN_PROGRESS": "En proceso",
-                "COMPLETED": "Completado",
-                "ON_HOLD": "En espera",
-                "BLOCKED": "Bloqueado",
-                "REVIEW_REQUIRED": "Revisión requerida"
+                "PRODUCTIVITY": "Productividad",
+                "PROJECT_MANAGEMENT": "Gestión de proyectos",
+                "TASK_MANAGEMENT": "Gestión de tareas",
+                "COLLABORATIVE": "Colaborativo",
+                "LABELED": "Etiquetado"
             }
         },
         "JIRA": {
             "SUBTITLE": "Organización",
             "DESCRIPTION": "Jira es un producto de seguimiento de problemas desarrollado por Atlassian que permite el seguimiento de errores y la gestión de proyectos ágiles. Los usuarios pueden crear y asignar tareas, seguir el progreso del proyecto y colaborar con su equipo en un solo lugar. Jira es conocido por su capacidad para adaptarse a una variedad de flujos de trabajo y proyectos, desde el desarrollo de software hasta la gestión de proyectos empresariales. También ofrece una variedad de características y herramientas para la gestión de proyectos, incluyendo tableros Kanban, gráficos de Gantt, informes de proyectos y más.",
             "TAGS": {
-                "ORGANIZATION": "Organización",
-                "NOTES": "Notas",
-                "PRIORITY_SEVERITY": "Prioridad y gravedad",
-                "WORK_TYPE": "Tipo de trabajo",
-                "WORKFLOW_STATUS": "Estado y flujo de trabajo",
-                "COMPONENTS_MODULES": "Componentes y módulos",
-                "RELEASE_VERSIONS": "Lanzamiento y versiones",
-                "TEAMS_ROLES": "Equipos y roles",
-                "PROJECTS_CLIENTS": "Proyectos y clientes",
-                "TIME_SCHEDULE": "Tiempo y programación",
-                "TECHNICAL_TAGS": "Etiquetas técnicas",
-                "MISC": "Varios"
+                "PRODUCTIVITY": "Productividad",
+                "PROJECT_MANAGEMENT": "Gestión de proyectos",
+                "TASK_MANAGEMENT": "Gestión de tareas",
+                "COLLABORATIVE": "Colaborativo",
+                "LABELED": "Etiquetado"
             }
         },
         "HTML": {
@@ -168,8 +141,9 @@
             "DESCRIPTION": "HTML5 es la quinta y actual versión de HTML (HyperText Markup Language), el lenguaje de marcado estándar para la creación de páginas web. HTML5 introduce una serie de nuevas etiquetas y atributos que reflejan el uso típico de los sitios web modernos. Algunas de estas nuevas características incluyen elementos para multimedia como <video> y <audio>, así como elementos semánticos como <article>, <section>, <header> y <footer>. HTML5 también ofrece mejoras en formularios, gráficos y API para la creación de aplicaciones web ricas.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "HTML": "Html"
+                "LABELED": "Etiquetado",
+                "CONTENT_STRUCTURE": "Estructura de contenido",
+                "FRONTEND": "Frontend"
             }
         },
         "CSS": {
@@ -177,8 +151,9 @@
             "DESCRIPTION": "CSS (Cascading Style Sheets) es un lenguaje de hoja de estilos que se utiliza para describir la presentación de un documento escrito en un lenguaje de marcado como HTML. CSS se utiliza para controlar el diseño y la apariencia de las páginas web, incluyendo el diseño, los colores, las fuentes y las animaciones. También permite a los diseñadores adaptar la presentación a diferentes tipos de dispositivos, como pantallas grandes, tablets, o teléfonos móviles. CSS es uno de los tres lenguajes fundamentales para la creación de contenido web, junto con HTML y JavaScript.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "CSS": "CSS"
+                "STYLES": "Estilos",
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend"
             }
         },
         "SASS": {
@@ -186,8 +161,10 @@
             "DESCRIPTION": "Sass (Syntactically Awesome Stylesheets) es un preprocesador de CSS que ayuda a simplificar y mejorar la escritura de CSS. Permite el uso de variables, anidamiento, mixins, herencia y otras características que no están disponibles en CSS puro. Sass tiene dos sintaxis: la sintaxis indented (similar a Haml) y la sintaxis SCSS (similar a CSS). El código Sass se compila en CSS estándar antes de ser servido al navegador.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "SASS": "Scss"
+                "STYLES": "Estilos",
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programación"
             }
         },
         "JAVASCRIPT": {
@@ -195,8 +172,10 @@
             "DESCRIPTION": "JavaScript es un lenguaje de programación que se ajusta a la especificación ECMAScript. Es uno de los tres lenguajes fundamentales para la creación de contenido web, junto con HTML y CSS. JavaScript permite a los desarrolladores crear interacciones dinámicas en las páginas web, incluyendo la manipulación del DOM, el manejo de eventos, la creación de animaciones y mucho más. También se utiliza en el desarrollo de servidores y aplicaciones de backend a través de entornos como Node.js.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "JAVASCRIPT": "JavaScript"
+                "PROGRAMMING": "Programación",
+                "FRONTEND": "Frontend",
+                "AUTOMATION": "Automatización",
+                "WEB_FUNCTIONALITY": "Funcionalidad web"
             }
         },
         "ANGULAR": {
@@ -204,8 +183,12 @@
             "DESCRIPTION": "Angular es un marco de aplicación web de código abierto basado en TypeScript dirigido por el equipo de Angular en Google y por una comunidad de individuos y corporaciones. Angular es conocido por su enfoque en la creación de aplicaciones de una sola página (SPA) y ofrece características como enlace de datos bidireccional, inyección de dependencias, y una arquitectura basada en componentes. También proporciona herramientas para pruebas unitarias y de extremo a extremo, lo que facilita el desarrollo de aplicaciones de alta calidad.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "ANGULAR": "Angular"
+                "PROGRAMMING": "Programación",
+                "FRAMEWORK": "Framework",
+                "FRONTEND": "Frontend",
+                "WEB_FUNCTIONALITY": "Funcionalidad web",
+                "ANGULAR": "Angular",
+                "COMPONENTS": "Componentes"
             }
         },
         "REACT": {
@@ -213,17 +196,24 @@
             "DESCRIPTION": "React es una biblioteca de JavaScript de código abierto para construir interfaces de usuario o componentes de UI. Fue desarrollada por Facebook y es ampliamente utilizada para desarrollar interfaces de usuario para aplicaciones web de una sola página. React permite a los desarrolladores crear componentes reutilizables de UI y manejar el estado y la lógica de la UI de manera eficiente. También utiliza un DOM virtual para mejorar el rendimiento al actualizar y renderizar componentes.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "ANGULAR": "React"
+                "PROGRAMMING": "Programación",
+                "FRAMEWORK": "Framework",
+                "WEB_FUNCTIONALITY": "Funcionalidad web",
+                "REACT": "React",
+                "FRONTEND": "Frontend",
+                "COMPONENTS": "Componentes"
             }
         },
         "GITHUB": {
             "SUBTITLE": "Desarrollo",
             "DESCRIPTION": "GitHub es un proveedor de alojamiento en Internet para el desarrollo de software y el control de versiones utilizando Git. Es una plataforma donde los desarrolladores pueden colaborar en proyectos, realizar un seguimiento de los problemas, hacer solicitudes de extracción y revisar el código. GitHub también ofrece características como acciones de GitHub para la integración continua y la entrega continua (CI/CD), GitHub Pages para alojar sitios web, y mucho más.",
             "TAGS": {
-                "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "GITHUB": "GitHub"
+                "REPOSITORY": "Repositorio",
+                "PRODUCTIVITY": "Productividad",
+                "PROJECT_MANAGEMENT": "Gestión de proyectos",
+                "COLLABORATIVE": "Colaborativo",
+                "TASK_MANAGEMENT": "Gestión de tareas",
+                "VERSION_CONTROL": "Control de versiones"
             }
         },
         "NODE": {
@@ -231,8 +221,9 @@
             "DESCRIPTION": "Node.js es un entorno de ejecución de JavaScript de código abierto y multiplataforma que se ejecuta en el motor V8 y ejecuta código JavaScript fuera de un navegador web. Node.js permite a los desarrolladores crear servidores y herramientas de desarrollo de scripts del lado del servidor. Es conocido por su modelo de E/S sin bloqueo y orientado a eventos, que lo hace eficiente y adecuado para aplicaciones en tiempo real que se ejecutan en dispositivos distribuidos.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "NODE": "Node.js"
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programación",
+                "API": "API"
             }
         },
         "POSTMAN": {
@@ -240,8 +231,8 @@
             "DESCRIPTION": "Postman es una plataforma de colaboración para el desarrollo de API. Permite a los desarrolladores probar, documentar y monitorizar las API de manera eficiente. Postman ofrece una interfaz de usuario intuitiva que facilita la construcción de solicitudes y la lectura de respuestas, el manejo de autenticación, y la reutilización de variables. También permite a los equipos colaborar en el desarrollo de API, compartir colecciones y establecer pruebas automatizadas.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "POSTMAN": "Postman"
+                "BACKEND": "Backend",
+                "API": "API"
             }
         },
         "GIT": {
@@ -249,8 +240,9 @@
             "DESCRIPTION": "Git es un sistema de control de versiones distribuido que permite realizar un seguimiento de los cambios en el código fuente durante el desarrollo de software. Fue diseñado por Linus Torvalds, el creador de Linux, para manejar proyectos con eficiencia y velocidad. Git es conocido por su robustez, su rendimiento y su flexibilidad. Permite a los desarrolladores trabajar en diferentes ramas de desarrollo simultáneamente, fusionar cambios entre ramas y colaborar en proyectos con otros desarrolladores.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "GIT": "Git"
+                "VERSION_CONTROL": "Control de versiones",
+                "PRODUCTIVITY": "Productividad",
+                "PROGRAMMING": "Programación"
             }
         },
         "BOOTSTRAP": {
@@ -258,8 +250,11 @@
             "DESCRIPTION": "Bootstrap es un marco de CSS gratuito y de código abierto dirigido al desarrollo web de front-end responsivo y orientado a dispositivos móviles. Proporciona plantillas de diseño basadas en HTML y CSS para tipografía, formularios, botones, tablas, navegación, modales, carruseles y muchos otros componentes de la interfaz de usuario. También tiene soporte opcional para JavaScript para crear componentes interactivos. Bootstrap es conocido por su sistema de cuadrícula flexible y responsivo, y por su amplia compatibilidad con todos los navegadores y dispositivos modernos.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "BOOTSTRAP": "Bootstrap"
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "COMPONENTS": "Componentes",
+                "FRAMEWORK": "Framework"
             }
         },
         "MATERIAL": {
@@ -267,8 +262,14 @@
             "DESCRIPTION": "Angular Material es una biblioteca de componentes de interfaz de usuario para los desarrolladores de Angular. Proporciona un conjunto de componentes de UI preconstruidos basados en Material Design, un lenguaje de diseño desarrollado por Google. Los componentes de Angular Material incluyen botones, menús, barras de herramientas, cuadros de diálogo, tarjetas y más. También proporciona herramientas para la disposición de la interfaz de usuario, como un sistema de cuadrícula flexible y herramientas para la manipulación de listas.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "MATERIAL": "Angular Material"
+                "WEB_DESIGN": "Diseño web",
+                "FRAMEWORK": "Framework",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "PROGRAMMING": "Programación",
+                "COMPONENTS": "Componentes",
+                "ANGULAR": "Angular",
+                "REACT": "React"
             }
         },
         "PRIMENG": {
@@ -276,8 +277,14 @@
             "DESCRIPTION": "PrimeNG es una colección de componentes de interfaz de usuario ricos para Angular. Proporciona una variedad de componentes de UI preconstruidos que incluyen tablas de datos, diálogos, paneles, menús y muchos otros. PrimeNG es conocido por su flexibilidad y personalización, permitiendo a los desarrolladores adaptar los componentes a sus necesidades. También es compatible con los temas de diseño de Angular, lo que permite una integración fluida con el resto de su aplicación Angular.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "PRIMENG": "PrimeNg"
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "PROGRAMMING": "Programación",
+                "COMPONENTS": "Componentes",
+                "FRAMEWORK": "Framework",
+                "ANGULAR": "Angular",
+                "REACT": "React"
             }
         },
         "MONGO": {
@@ -285,8 +292,9 @@
             "DESCRIPTION": "MongoDB es un programa de base de datos orientado a documentos, disponible en código fuente, y multiplataforma. En lugar de almacenar los datos en tablas como las bases de datos relacionales tradicionales, MongoDB almacena los datos en estructuras tipo documentos flexibles en formato BSON (una variante de JSON), lo que permite la integración de datos de diferentes tipos y la capacidad de cambiar los esquemas con el tiempo. MongoDB es conocido por su escalabilidad, rendimiento y flexibilidad.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "MONGO": "MongoDB"
+                "DATA_BASE": "Base de datos",
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programación"
             }
         },
         "WORDPRESS": {
@@ -294,8 +302,10 @@
             "DESCRIPTION": "WordPress es un sistema de gestión de contenido (CMS) gratuito y de código abierto escrito en PHP y emparejado con una base de datos MySQL o MariaDB. Permite a los usuarios crear y gestionar sitios web de manera fácil y eficiente. WordPress es conocido por su flexibilidad y facilidad de uso, con miles de temas y plugins disponibles que permiten a los usuarios personalizar sus sitios web y añadir funcionalidades. Es ampliamente utilizado para blogs, sitios web de empresas, comercio electrónico y más.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "WORDPRESS": "Wordpress"
+                "CMS": "Sistema de gestión de contenido",
+                "FRONTEND": "Frontend",
+                "BACKEND": "Backend",
+                "WEB_FUNCTIONALITY": "Funcionalidad web"
             }
         },
         "DOCKER": {
@@ -303,8 +313,8 @@
             "DESCRIPTION": "Docker es una plataforma de servicio que utiliza la virtualización a nivel de sistema operativo para entregar software en paquetes llamados contenedores. Los contenedores son aislados entre sí y agrupan sus propios software, bibliotecas y configuraciones de sistema; pueden comunicarse entre sí a través de canales bien definidos. Docker es conocido por su eficiencia, portabilidad y rapidez, lo que permite a los desarrolladores construir, probar y desplegar aplicaciones rápidamente.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "DOCKER": "Docker"
+                "VIRTUALIZATION": "Virtualización",
+                "BACKEND": "Backend"
             }
         },
         "TAILWIND": {
@@ -312,8 +322,11 @@
             "DESCRIPTION": "Tailwind CSS es un marco de CSS de utilidad primero para la construcción rápida de interfaces de usuario personalizadas. En lugar de predefinir estilos de componentes, Tailwind proporciona clases de utilidad de bajo nivel que permiten construir diseños personalizados sin salir de tu HTML. Las clases de utilidad incluyen margen, relleno, tamaño de fuente, color, posición y más. Tailwind también es altamente personalizable, permitiendo a los desarrolladores adaptar el sistema a sus propias necesidades.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "TAILWIND": "Tailwind"
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Componentes"
             }
         },
         "STENCIL": {
@@ -321,8 +334,10 @@
             "DESCRIPTION": "StencilJS es una herramienta para construir sistemas de diseño reutilizables y escalables. Es un compilador que genera componentes web estándar. Stencil combina las mejores ideas de los marcos de trabajo más populares en una herramienta de compilación sencilla. Los componentes Stencil son solo componentes web, por lo que funcionan en cualquier marco importante y pueden ser usados sin un marco porque son solo estándares web.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "STENCIL": "StencilJS"
+                "FRONTEND": "Frontend",
+                "COMPONENTS": "Componentes",
+                "WEB_FUNCTIONALITY": "Funcionalidad web",
+                "FRAMEWORK": "Framework"
             }
         },
         "STORYBOOK": {
@@ -330,8 +345,9 @@
             "DESCRIPTION": "Storybook es una herramienta de código abierto para desarrollar componentes de interfaz de usuario en aislamiento para React, Vue, Angular y otros marcos. Proporciona un entorno de desarrollo de componentes donde los desarrolladores pueden explorar, probar y documentar componentes de manera interactiva. Storybook es conocido por su soporte para el desarrollo impulsado por historias, donde cada estado de un componente se representa como una historia individual.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "STORYBOOK": "Storybook"
+                "FRONTEND": "Frontend",
+                "COMPONENTS": "Componentes",
+                "FRAMEWORK": "Framework"
             }
         },
         "NEST": {
@@ -339,8 +355,11 @@
             "DESCRIPTION": "NestJS es un marco de trabajo para construir aplicaciones de servidor eficientes y escalables en Node.js. Está construido con TypeScript y combina elementos de programación orientada a objetos, programación funcional y programación funcional reactiva. NestJS proporciona una arquitectura de aplicación out-of-the-box que permite a los desarrolladores crear aplicaciones altamente testables, escalables y fácilmente mantenibles.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "WEB": "Web",
-                "NEST": "Nest JS"
+                "BACKEND": "Backend",
+                "API": "API",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programación",
+                "DATA_BASE": "Base de datos"
             }
         }
     }
