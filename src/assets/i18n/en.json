@@ -70,6 +70,10 @@
                 "PHOTO_RET": "Photo retouching",
                 "DIGITAL_ART": "Digital art",
                 "PHOTO_MANIP": "Photo manipulation"
+            },
+            "CATEGORIES": {
+                "EDITING": "Editing",
+                "DESIGN": "Design"
             }
         },
         "ADOBE_ILLUSTRATOR": {
@@ -82,6 +86,10 @@
                 "GRAPHIC_DESIGN": "Graphic Design",
                 "LOGO_DESIGN": "Logo Design",
                 "TYPOGRAPHY": "Typography"
+            },
+            "CATEGORIES": {
+                "TYPOGRAPHY": "Typography",
+                "DESIGN": "Design"
             }
         },
         "ADOBE_INDESIGN": {
@@ -94,6 +102,11 @@
                 "EDITING": "Editing",
                 "PRINT_DESIGN": "Print design",
                 "DIGITAL_PUBLISHING": "Digital publishing"
+            },
+            "CATEGORIES": {
+                "TYPOGRAPHY": "Typography",
+                "DESIGN": "Design",
+                "EDITING": "Editing"
             }
         },
         "ADOBE_XD": {
@@ -107,6 +120,11 @@
                 "COLLABORATIVE_DESIGN": "Collaborative Design",
                 "GRAPHIC_DESIGN": "Graphic Design",
                 "WEB_DESIGN": "Web Design"
+            },
+            "CATEGORIES": {
+                "DESIGN": "Design",
+                "PROTOTYPING": "Prototyping",
+                "COLLABORATION": "Collaboration"
             }
         },
         "FIGMA": {
@@ -121,6 +139,11 @@
                 "GRAPHIC_DESIGN": "Graphic Design",
                 "VECTOR_GRAPHICS": "Vector Graphics",
                 "COLLABORATIVE_DESIGN": "Collaborative Design"
+            },
+            "CATEGORIES": {
+                "DESIGN": "Design",
+                "PROTOTYPING": "Prototyping",
+                "COLLABORATION": "Collaboration"
             }
         },
         "VSC": {
@@ -130,6 +153,10 @@
             "TAGS": {
                 "EDIT_CODE": "Code Editing",
                 "DEVELOPMENT": "Development"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "EDITING": "Editing"
             }
         },
         "NOTION": {
@@ -142,6 +169,12 @@
                 "COLLABORATION": "Collaboration",
                 "TASK_MANAGEMENT": "Task Management",
                 "LABELED": "Labeled"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productivity",
+                "MANAGEMENT": "Management",
+                "LABELING": "Labeling",
+                "COLLABORATION": "Collaboration"
             }
         },
         "TRELLO":{
@@ -154,6 +187,12 @@
                 "COLLABORATION": "Collaboration",
                 "TASK_MANAGEMENT": "Task Management",
                 "LABELED": "Labeled"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productivity",
+                "MANAGEMENT": "Management",
+                "LABELING": "Labeling",
+                "COLLABORATION": "Collaboration"
             }
         },
         "JIRA": {
@@ -166,6 +205,12 @@
                 "COLLABORATION": "Collaboration",
                 "TASK_MANAGEMENT": "Task Management",
                 "LABELED": "Labeled"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productivity",
+                "MANAGEMENT": "Management",
+                "LABELING": "Labeling",
+                "COLLABORATION": "Collaboration"
             }
         },
         "HTML": {
@@ -176,6 +221,11 @@
                 "DEVELOPMENT": "Development",
                 "LABELED": "Labeled",
                 "CONTENT_STRUCTURE": "Content structure",
+                "FRONTEND": "Frontend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "LABELING": "Labeling",
                 "FRONTEND": "Frontend"
             }
         },
@@ -188,6 +238,12 @@
                 "STYLES": "Styles",
                 "WEB_DESIGN": "Web Design",
                 "FRONTEND": "Frontend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "STYLES": "Styles",
+                "DESIGN": "Design",
+                "FRONTEND": "Frontend"
             }
         },
         "SASS": {
@@ -195,6 +251,13 @@
             "SUBTITLE": "Development",
             "DESCRIPTION": "Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that helps simplify and improve the writing of CSS. It allows the use of variables, nesting, mixins, inheritance, and other features not available in pure CSS. Sass has two syntaxes: indented syntax (similar to Haml) and SCSS syntax (similar to CSS). Sass code is compiled into standard CSS before being served to the browser.",
             "TAGS": {
+                "DEVELOPMENT": "Development",
+                "STYLES": "Styles",
+                "WEB_DESIGN": "Web Design",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programming"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Development",
                 "STYLES": "Styles",
                 "WEB_DESIGN": "Web Design",
@@ -212,6 +275,12 @@
                 "FRONTEND": "Frontend",
                 "AUTOMATION": "Automation",
                 "WEB_FUNCTIONALITY": "Web Functionality"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programming",
+                "FUNCTIONALITY": "Functionality"
             }
         },
         "ANGULAR": {
@@ -225,6 +294,14 @@
                 "FRONTEND": "Frontend",
                 "WEB_FUNCTIONALITY": "Web Functionality",
                 "ANGULAR": "Angular",
+                "COMPONENTS": "Components"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programming",
+                "FRAMEWORK": "Framework",
+                "FUNCTIONALITY": "Functionality",
                 "COMPONENTS": "Components"
             }
         },
@@ -240,6 +317,14 @@
                 "REACT": "React",
                 "FRONTEND": "Frontend",
                 "COMPONENTS": "Components"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programming",
+                "FRAMEWORK": "Framework",
+                "FUNCTIONALITY": "Functionality",
+                "COMPONENTS": "Components"
             }
         },
         "GITHUB": {
@@ -253,6 +338,12 @@
                 "COLLABORATIVE": "Collaborative",
                 "TASK_MANAGEMENT": "Task Management",
                 "VERSION_CONTROL": "Version Control"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productivity",
+                "MANAGEMENT": "Management",
+                "COLLABORATION": "Collaboration",
+                "VERSION_CONTROL": "Version Control"
             }
         },
         "NODE": {
@@ -264,6 +355,11 @@
                 "BACKEND": "Backend",
                 "PROGRAMMING": "Programming",
                 "API": "API"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programming"
             }
         },
         "POSTMAN": {
@@ -274,6 +370,10 @@
                 "DEVELOPMENT": "Development",
                 "BACKEND": "Backend",
                 "API": "API"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "BACKEND": "Backend"
             }
         },
         "GIT": {
@@ -281,6 +381,12 @@
             "SUBTITLE": "Development",
             "DESCRIPTION": "Git is a distributed version control system that allows you to track changes to source code during software development. It was designed by Linus Torvalds, the creator of Linux, to handle projects efficiently and quickly. Git is known for its robustness, performance, and flexibility. It allows developers to work on different development branches simultaneously, merge changes between branches, and collaborate on projects with other developers.",
             "TAGS": {
+                "DEVELOPMENT": "Development",
+                "VERSION_CONTROL": "Version Control",
+                "PRODUCTIVITY": "Productivity",
+                "PROGRAMMING": "Programming"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Development",
                 "VERSION_CONTROL": "Version Control",
                 "PRODUCTIVITY": "Productivity",
@@ -294,6 +400,14 @@
             "TAGS": {
                 "DEVELOPMENT": "Development",
                 "WEB_DESIGN": "Web Design",
+                "FRONTEND": "Frontend",
+                "STYLES": "Styles",
+                "COMPONENTS": "Components",
+                "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "DESIGN": "Design",
                 "FRONTEND": "Frontend",
                 "STYLES": "Styles",
                 "COMPONENTS": "Components",
@@ -314,6 +428,15 @@
                 "COMPONENTS": "Components",
                 "ANGULAR": "Angular",
                 "REACT": "React"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "DESIGN": "Design",
+                "FRONTEND": "Frontend",
+                "STYLES": "Styles",
+                "COMPONENTS": "Components",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programming"
             }
         },
         "PRIMENG": {
@@ -330,7 +453,15 @@
                 "FRAMEWORK": "Framework",
                 "ANGULAR": "Angular",
                 "REACT": "React"
-
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "DESIGN": "Design",
+                "FRONTEND": "Frontend",
+                "STYLES": "Styles",
+                "COMPONENTS": "Components",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programming"
             }
         },
         "MONGO": {
@@ -338,6 +469,12 @@
             "SUBTITLE": "Development",
             "DESCRIPTION": "MongoDB is a document-oriented, source-based, cross-platform database program. Instead of storing data in tables like traditional relational databases, MongoDB stores data in flexible document-like structures in BSON format (a variant of JSON), allowing for the integration of data of different types and the ability to change schemas over time. MongoDB is known for its scalability, performance, and flexibility.",
             "TAGS": {
+                "DEVELOPMENT": "Development",
+                "DATA_BASE": "Database",
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programming"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Development",
                 "DATA_BASE": "Database",
                 "BACKEND": "Backend",
@@ -353,6 +490,12 @@
                 "FRONTEND": "Frontend",
                 "BACKEND": "Backend",
                 "WEB_FUNCTIONALITY": "Web Functionality"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "FrontEnd",
+                "BACKEND": "Backend",
+                "FUNCTIONALITY": "Functionality"
             }
         },
         "DOCKER": {
@@ -362,12 +505,24 @@
                 "DEVELOPMENT": "Development",
                 "VIRTUALIZATION": "Virtualization",
                 "BACKEND": "Backend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "BACKEND": "Backend"
             }
         },
         "TAILWIND": {
             "SUBTITLE": "Development",
             "DESCRIPTION": "Tailwind CSS is a utility-first CSS framework for quickly building custom user interfaces. Rather than predefining component styles, Tailwind provides low-level utility classes that allow you to build custom layouts without leaving your HTML. Utility classes include margin, padding, font-size, color, position, and more. Tailwind is also highly customizable, allowing developers to tailor the system to their own needs.",
             "TAGS": {
+                "DEVELOPMENT": "Development",
+                "WEB_DESIGN": "Web Design",
+                "FRONTEND": "Frontend",
+                "STYLES": "Styles",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Components"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Development",
                 "WEB_DESIGN": "Web Design",
                 "FRONTEND": "Frontend",
@@ -385,12 +540,25 @@
                 "COMPONENTS": "Components",
                 "WEB_FUNCTIONALITY": "Web Functionality",
                 "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "Frontend",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Components",
+                "FUNCTIONALITY": "Functionality"
             }
         },
         "STORYBOOK": {
             "SUBTITLE": "Development",
             "DESCRIPTION": "Storybook is an open-source tool for developing UI components in isolation for React, Vue, Angular, and other frameworks. It provides a component development environment where developers can interactively explore, test, and document components. Storybook is known for its support for story-driven development, where each state of a component is represented as an individual story.",
             "TAGS": {
+                "DEVELOPMENT": "Development",
+                "FRONTEND": "Frontend",
+                "COMPONENTS": "Components",
+                "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Development",
                 "FRONTEND": "Frontend",
                 "COMPONENTS": "Components",
@@ -404,6 +572,13 @@
                 "DEVELOPMENT": "Development",
                 "BACKEND": "Backend",
                 "API": "API",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programming",
+                "DATA_BASE": "Database"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Development",
+                "BACKEND": "Backend",
                 "FRAMEWORK": "Framework",
                 "PROGRAMMING": "Programming",
                 "DATA_BASE": "Database"

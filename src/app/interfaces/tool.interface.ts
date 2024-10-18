@@ -7,6 +7,7 @@ export interface Tool {
     link: string;
     description: string;
     tags: string[];
+    categories: string[];
     favorite: boolean;
     image: string;
     skill: number;

@@ -69,6 +69,10 @@
                 "PHOTO_RET": "Retoque",
                 "DIGITAL_ART": "Arte digital",
                 "PHOTO_MANIP": "Manipulación fotográfica"
+            },
+            "CATEGORIES": {
+                "EDITING": "Edición",
+                "DESIGN": "Diseño"
             }
         },
         "ADOBE_ILLUSTRATOR": {
@@ -80,6 +84,10 @@
                 "GRAPHIC_DESIGN": "Diseño gráfico",
                 "LOGO_DESIGN": "Diseño de logotipos",
                 "TYPOGRAPHY": "Tipografía"
+            },
+            "CATEGORIES": {
+                "TYPOGRAPHY": "Tipografía",
+                "DESIGN": "Diseño"
             }
         },
         "ADOBE_INDESIGN": {
@@ -90,6 +98,11 @@
                 "GRAPHIC_DESIGN": "Diseño gráfico",
                 "PRINT_DESIGN": "Diseño de impresión",
                 "DIGITAL_PUBLISHING": "Edición digital"
+            },
+            "CATEGORIES": {
+                "TYPOGRAPHY": "Tipografía",
+                "DESIGN": "Diseño",
+                "EDITING": "Edición"
             }
         },
         "ADOBE_XD": {
@@ -102,6 +115,11 @@
                 "COLLABORATIVE_DESIGN": "Diseño colaborativo",
                 "GRAPHIC_DESIGN": "Diseño gráfico",
                 "WEB_DESIGN": "Diseño web"
+            },
+            "CATEGORIES": {
+                "DESIGN": "Diseño",
+                "PROTOTYPING": "Prototipos",
+                "COLLABORATION": "Colaboración"
             }
         },
         "FIGMA": {
@@ -114,6 +132,11 @@
                 "WEB_DESIGN": "Diseño web",
                 "GRAPHIC_DESIGN": "Diseño gráfico",
                 "COLLABORATIVE_DESIGN": "Diseño colaborativo"
+            },
+            "CATEGORIES": {
+                "DESIGN": "Diseño",
+                "PROTOTYPING": "Prototipos",
+                "COLLABORATION": "Colaboración"
             }
         },
         "VSC": {
@@ -121,6 +144,10 @@
             "DESCRIPTION": "Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Ofrece características como resaltado de sintaxis, autocompletado de código, fragmentos de código, edición con varios cursores, navegación de código, IntelliSense y refactorización de código. Es ampliamente utilizado por los desarrolladores para una variedad de lenguajes de programación y marcos de trabajo. Visual Studio Code también admite una amplia gama de extensiones para mejorar su funcionalidad.",
             "TAGS": {
                 "EDIT_CODE": "Edición de código",
+                "DEVELOPMENT": "Desarrollo"
+            },
+            "CATEGORIES": {
+                "EDITING": "Edición",
                 "DEVELOPMENT": "Desarrollo"
             }
         },
@@ -133,6 +160,12 @@
                 "TASK_MANAGEMENT": "Gestión de tareas",
                 "COLLABORATIVE": "Colaborativo",
                 "LABELED": "Etiquetado"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productividad",
+                "MANAGEMENT": "Gestión",
+                "LABELING": "Etiquetado",
+                "COLLABORATION": "Colaboración"
             }
         },
         "TRELLO": {
@@ -144,6 +177,12 @@
                 "TASK_MANAGEMENT": "Gestión de tareas",
                 "COLLABORATIVE": "Colaborativo",
                 "LABELED": "Etiquetado"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Prpductividad",
+                "MANAGEMENT": "Gestión",
+                "LABELING": "Etiquetado",
+                "COLLABORATION": "Colaboración"
             }
         },
         "JIRA": {
@@ -155,6 +194,12 @@
                 "TASK_MANAGEMENT": "Gestión de tareas",
                 "COLLABORATIVE": "Colaborativo",
                 "LABELED": "Etiquetado"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Prpductividad",
+                "MANAGEMENT": "Gestión",
+                "LABELING": "Etiquetado",
+                "COLLABORATION": "Colaboración"
             }
         },
         "HTML": {
@@ -164,6 +209,11 @@
                 "DEVELOPMENT": "Desarrollo",
                 "LABELED": "Etiquetado",
                 "CONTENT_STRUCTURE": "Estructura de contenido",
+                "FRONTEND": "Frontend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "LABELING": "Etiquetado",
                 "FRONTEND": "Frontend"
             }
         },
@@ -175,6 +225,12 @@
                 "STYLES": "Estilos",
                 "WEB_DESIGN": "Diseño web",
                 "FRONTEND": "Frontend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "STYLES": "Estilos",
+                "DESIGN": "Diseño",
+                "FRONTEND": "Frontend"
             }
         },
         "SASS": {
@@ -184,6 +240,13 @@
                 "DEVELOPMENT": "Desarrollo",
                 "STYLES": "Estilos",
                 "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programación"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "STYLES": "Estilos",
+                "DESIGN": "Diseño",
                 "FRONTEND": "Frontend",
                 "PROGRAMMING": "Programación"
             }
@@ -197,6 +260,12 @@
                 "FRONTEND": "Frontend",
                 "AUTOMATION": "Automatización",
                 "WEB_FUNCTIONALITY": "Funcionalidad web"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programación",
+                "FUNCTIONALITY": "Funcionalidad"
             }
         },
         "ANGULAR": {
@@ -209,6 +278,14 @@
                 "FRONTEND": "Frontend",
                 "WEB_FUNCTIONALITY": "Funcionalidad web",
                 "ANGULAR": "Angular",
+                "COMPONENTS": "Componentes"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programación",
+                "FRAMEWORK": "Framework",
+                "FUNCTIONALITY": "Funcionalidad",
                 "COMPONENTS": "Componentes"
             }
         },
@@ -223,6 +300,14 @@
                 "REACT": "React",
                 "FRONTEND": "Frontend",
                 "COMPONENTS": "Componentes"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "Frontend",
+                "PROGRAMMING": "Programación",
+                "FRAMEWORK": "Framework",
+                "FUNCTIONALITY": "Funcionalidad",
+                "COMPONENTS": "Componentes"
             }
         },
         "GITHUB": {
@@ -235,6 +320,12 @@
                 "COLLABORATIVE": "Colaborativo",
                 "TASK_MANAGEMENT": "Gestión de tareas",
                 "VERSION_CONTROL": "Control de versiones"
+            },
+            "CATEGORIES": {
+                "PRODUCTIVITY": "Productividad",
+                "MANAGEMENT": "Gestión",
+                "COLLABORATION": "Colaboración",
+                "VERSION_CONTROL": "Control de versiones"
             }
         },
         "NODE": {
@@ -245,6 +336,11 @@
                 "BACKEND": "Backend",
                 "PROGRAMMING": "Programación",
                 "API": "API"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programación"
             }
         },
         "POSTMAN": {
@@ -254,12 +350,22 @@
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend",
                 "API": "API"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "BACKEND": "Backend"
             }
         },
         "GIT": {
             "SUBTITLE": "Desarrollo",
             "DESCRIPTION": "Git es un sistema de control de versiones distribuido que permite realizar un seguimiento de los cambios en el código fuente durante el desarrollo de software. Fue diseñado por Linus Torvalds, el creador de Linux, para manejar proyectos con eficiencia y velocidad. Git es conocido por su robustez, su rendimiento y su flexibilidad. Permite a los desarrolladores trabajar en diferentes ramas de desarrollo simultáneamente, fusionar cambios entre ramas y colaborar en proyectos con otros desarrolladores.",
             "TAGS": {
+                "DEVELOPMENT": "Desarrollo",
+                "VERSION_CONTROL": "Control de versiones",
+                "PRODUCTIVITY": "Productividad",
+                "PROGRAMMING": "Programación"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Desarrollo",
                 "VERSION_CONTROL": "Control de versiones",
                 "PRODUCTIVITY": "Productividad",
@@ -272,6 +378,14 @@
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
                 "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "COMPONENTS": "Componentes",
+                "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "DESIGN": "Diseño",
                 "FRONTEND": "Frontend",
                 "STYLES": "Estilos",
                 "COMPONENTS": "Componentes",
@@ -291,6 +405,15 @@
                 "COMPONENTS": "Componentes",
                 "ANGULAR": "Angular",
                 "REACT": "React"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "DESIGN": "Diseño",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "COMPONENTS": "Componentws",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programación"
             }
         },
         "PRIMENG": {
@@ -306,12 +429,27 @@
                 "FRAMEWORK": "Framework",
                 "ANGULAR": "Angular",
                 "REACT": "React"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "DESIGN": "Diseño",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "COMPONENTS": "Componentws",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programación"
             }
         },
         "MONGO": {
             "SUBTITLE": "Desarrollo",
             "DESCRIPTION": "MongoDB es un programa de base de datos orientado a documentos, disponible en código fuente, y multiplataforma. En lugar de almacenar los datos en tablas como las bases de datos relacionales tradicionales, MongoDB almacena los datos en estructuras tipo documentos flexibles en formato BSON (una variante de JSON), lo que permite la integración de datos de diferentes tipos y la capacidad de cambiar los esquemas con el tiempo. MongoDB es conocido por su escalabilidad, rendimiento y flexibilidad.",
             "TAGS": {
+                "DEVELOPMENT": "Desarrollo",
+                "DATA_BASE": "Base de datos",
+                "BACKEND": "Backend",
+                "PROGRAMMING": "Programación"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Desarrollo",
                 "DATA_BASE": "Base de datos",
                 "BACKEND": "Backend",
@@ -327,6 +465,12 @@
                 "FRONTEND": "Frontend",
                 "BACKEND": "Backend",
                 "WEB_FUNCTIONALITY": "Funcionalidad web"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "FrontEnd",
+                "BACKEND": "Backend",
+                "FUNCTIONALITY": "Funcionalidad"
             }
         },
         "DOCKER": {
@@ -336,12 +480,24 @@
                 "DEVELOPMENT": "Desarrollo",
                 "VIRTUALIZATION": "Virtualización",
                 "BACKEND": "Backend"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "BACKEND": "Backend"
             }
         },
         "TAILWIND": {
             "SUBTITLE": "Desarrollo",
             "DESCRIPTION": "Tailwind CSS es un marco de CSS de utilidad primero para la construcción rápida de interfaces de usuario personalizadas. En lugar de predefinir estilos de componentes, Tailwind proporciona clases de utilidad de bajo nivel que permiten construir diseños personalizados sin salir de tu HTML. Las clases de utilidad incluyen margen, relleno, tamaño de fuente, color, posición y más. Tailwind también es altamente personalizable, permitiendo a los desarrolladores adaptar el sistema a sus propias necesidades.",
             "TAGS": {
+                "DEVELOPMENT": "Desarrollo",
+                "WEB_DESIGN": "Diseño web",
+                "FRONTEND": "Frontend",
+                "STYLES": "Estilos",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Componentes"
+            },
+            "CATEGORIES": {
                 "DEVELOPMENT": "Desarrollo",
                 "WEB_DESIGN": "Diseño web",
                 "FRONTEND": "Frontend",
@@ -359,6 +515,13 @@
                 "COMPONENTS": "Componentes",
                 "WEB_FUNCTIONALITY": "Funcionalidad web",
                 "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "Frontend",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Componentes",
+                "FUNCTIONALITY": "Funcionalidad"
             }
         },
         "STORYBOOK": {
@@ -369,6 +532,12 @@
                 "FRONTEND": "Frontend",
                 "COMPONENTS": "Componentes",
                 "FRAMEWORK": "Framework"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "FRONTEND": "Frontend",
+                "FRAMEWORK": "Framework",
+                "COMPONENTS": "Componentes"
             }
         },
         "NEST": {
@@ -378,6 +547,13 @@
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend",
                 "API": "API",
+                "FRAMEWORK": "Framework",
+                "PROGRAMMING": "Programación",
+                "DATA_BASE": "Base de datos"
+            },
+            "CATEGORIES": {
+                "DEVELOPMENT": "Desarrollo",
+                "BACKEND": "Backend",
                 "FRAMEWORK": "Framework",
                 "PROGRAMMING": "Programación",
                 "DATA_BASE": "Base de datos"
