@@ -38,6 +38,7 @@ import { TabsComponent } from './tabs/tabs.component';
     TitlePagesComponent,
     WrapChartComponent,
     WrapImgsComponent,
+    TabsComponent
   ]
 })
 export class ComponentsModule { }

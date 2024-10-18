@@ -39,6 +39,7 @@
         "ERROR_TEXT": "Error en la descarga"
     },
     "CATEGORIES_TOOLS": {
+        "ALL": "Todas",
         "EDITING": "Edición",
         "DESIGN": "Diseño",
         "TYPOGRAPHY": "Tipografía",
@@ -71,6 +72,7 @@
                 "PHOTO_MANIP": "Manipulación fotográfica"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "EDITING": "Edición",
                 "DESIGN": "Diseño"
             }
@@ -86,6 +88,7 @@
                 "TYPOGRAPHY": "Tipografía"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "TYPOGRAPHY": "Tipografía",
                 "DESIGN": "Diseño"
             }
@@ -100,6 +103,7 @@
                 "DIGITAL_PUBLISHING": "Edición digital"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "TYPOGRAPHY": "Tipografía",
                 "DESIGN": "Diseño",
                 "EDITING": "Edición"
@@ -117,6 +121,7 @@
                 "WEB_DESIGN": "Diseño web"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DESIGN": "Diseño",
                 "PROTOTYPING": "Prototipos",
                 "COLLABORATION": "Colaboración"
@@ -134,6 +139,7 @@
                 "COLLABORATIVE_DESIGN": "Diseño colaborativo"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DESIGN": "Diseño",
                 "PROTOTYPING": "Prototipos",
                 "COLLABORATION": "Colaboración"
@@ -147,6 +153,7 @@
                 "DEVELOPMENT": "Desarrollo"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "EDITING": "Edición",
                 "DEVELOPMENT": "Desarrollo"
             }
@@ -162,6 +169,7 @@
                 "LABELED": "Etiquetado"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "PRODUCTIVITY": "Productividad",
                 "MANAGEMENT": "Gestión",
                 "LABELING": "Etiquetado",
@@ -179,6 +187,7 @@
                 "LABELED": "Etiquetado"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "PRODUCTIVITY": "Prpductividad",
                 "MANAGEMENT": "Gestión",
                 "LABELING": "Etiquetado",
@@ -196,6 +205,7 @@
                 "LABELED": "Etiquetado"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "PRODUCTIVITY": "Prpductividad",
                 "MANAGEMENT": "Gestión",
                 "LABELING": "Etiquetado",
@@ -212,6 +222,7 @@
                 "FRONTEND": "Frontend"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "LABELING": "Etiquetado",
                 "FRONTEND": "Frontend"
@@ -227,6 +238,7 @@
                 "FRONTEND": "Frontend"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "STYLES": "Estilos",
                 "DESIGN": "Diseño",
@@ -244,6 +256,7 @@
                 "PROGRAMMING": "Programación"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "STYLES": "Estilos",
                 "DESIGN": "Diseño",
@@ -262,6 +275,7 @@
                 "WEB_FUNCTIONALITY": "Funcionalidad web"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "Frontend",
                 "PROGRAMMING": "Programación",
@@ -281,6 +295,7 @@
                 "COMPONENTS": "Componentes"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "Frontend",
                 "PROGRAMMING": "Programación",
@@ -302,6 +317,7 @@
                 "COMPONENTS": "Componentes"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "Frontend",
                 "PROGRAMMING": "Programación",
@@ -322,6 +338,7 @@
                 "VERSION_CONTROL": "Control de versiones"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "PRODUCTIVITY": "Productividad",
                 "MANAGEMENT": "Gestión",
                 "COLLABORATION": "Colaboración",
@@ -338,6 +355,7 @@
                 "API": "API"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend",
                 "PROGRAMMING": "Programación"
@@ -352,6 +370,7 @@
                 "API": "API"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend"
             }
@@ -366,6 +385,7 @@
                 "PROGRAMMING": "Programación"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "VERSION_CONTROL": "Control de versiones",
                 "PRODUCTIVITY": "Productividad",
@@ -384,6 +404,7 @@
                 "FRAMEWORK": "Framework"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "DESIGN": "Diseño",
                 "FRONTEND": "Frontend",
@@ -407,6 +428,7 @@
                 "REACT": "React"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "DESIGN": "Diseño",
                 "FRONTEND": "Frontend",
@@ -431,6 +453,7 @@
                 "REACT": "React"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "DESIGN": "Diseño",
                 "FRONTEND": "Frontend",
@@ -450,6 +473,7 @@
                 "PROGRAMMING": "Programación"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "DATA_BASE": "Base de datos",
                 "BACKEND": "Backend",
@@ -467,6 +491,7 @@
                 "WEB_FUNCTIONALITY": "Funcionalidad web"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "FrontEnd",
                 "BACKEND": "Backend",
@@ -482,6 +507,7 @@
                 "BACKEND": "Backend"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend"
             }
@@ -498,6 +524,7 @@
                 "COMPONENTS": "Componentes"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "WEB_DESIGN": "Diseño web",
                 "FRONTEND": "Frontend",
@@ -517,6 +544,7 @@
                 "FRAMEWORK": "Framework"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "Frontend",
                 "FRAMEWORK": "Framework",
@@ -534,6 +562,7 @@
                 "FRAMEWORK": "Framework"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "FRONTEND": "Frontend",
                 "FRAMEWORK": "Framework",
@@ -552,6 +581,7 @@
                 "DATA_BASE": "Base de datos"
             },
             "CATEGORIES": {
+                "ALL": "Todas",
                 "DEVELOPMENT": "Desarrollo",
                 "BACKEND": "Backend",
                 "FRAMEWORK": "Framework",

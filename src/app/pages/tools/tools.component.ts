@@ -30,7 +30,7 @@ export class ToolsComponent implements OnInit{
     
     setTimeout(() => {
       this.getTools();
-    }, 500)
+    }, 500);
   }
 
   // Function to get the tools from the service

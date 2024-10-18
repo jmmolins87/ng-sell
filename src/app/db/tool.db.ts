@@ -17,6 +17,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_PHOTOSHOP.TAGS.PHOTO_MANIP",
         ],
         categories: [
+            "TOOLS.ADOBE_PHOTOSHOP.CATEGORIES.ALL",
             "TOOLS.ADOBE_PHOTOSHOP.CATEGORIES.EDITING",
             "TOOLS.ADOBE_PHOTOSHOP.CATEGORIES.DESIGN"
         ],
@@ -40,6 +41,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_ILLUSTRATOR.TAGS.TYPOGRAPHY"
         ],
         categories: [
+            "TOOLS.ADOBE_ILLUSTRATOR.CATEGORIES.ALL",
             "TOOLS.ADOBE_ILLUSTRATOR.CATEGORIES.TYPOGRAPHY",
             "TOOLS.ADOBE_ILLUSTRATOR.CATEGORIES.DESIGN"
         ],
@@ -62,6 +64,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_INDESIGN.TAGS.DIGITAL_PUBLISHING"
         ],
         categories: [
+            "TOOLS.ADOBE_INDESIGN.CATEGORIES.ALL",
             "TOOLS.ADOBE_INDESIGN.CATEGORIES.TYPOGRAPHY",
             "TOOLS.ADOBE_INDESIGN.CATEGORIES.DESIGN",
             "TOOLS.ADOBE_INDESIGN.CATEGORIES.EDITING"
@@ -87,6 +90,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_XD.TAGS.WEB_DESIGN",
         ],
         categories: [
+            "TOOLS.ADOBE_XD.CATEGORIES.ALL",
             "TOOLS.ADOBE_XD.CATEGORIES.PROTOTYPING",
             "TOOLS.ADOBE_XD.CATEGORIES.DESIGN",
             "TOOLS.ADOBE_XD.CATEGORIES.COLLABORATION"
@@ -112,6 +116,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.FIGMA.TAGS.COLLABORATIVE_DESIGN"
         ],
         categories: [
+            "TOOLS.FIGMA.CATEGORIES.ALL",
             "TOOLS.FIGMA.CATEGORIES.PROTOTYPING",
             "TOOLS.FIGMA.CATEGORIES.DESIGN",
             "TOOLS.FIGMA.CATEGORIES.COLLABORATION"
@@ -133,6 +138,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.VSC.TAGS.DEVELOPMENT",
         ],
         categories: [
+            "TOOLS.VSC.CATEGORIES.ALL",
             "TOOLS.VSC.CATEGORIES.EDITING",
             "TOOLS.VSC.CATEGORIES.DEVELOPMENT"
         ],
@@ -156,6 +162,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NOTION.TAGS.LABELED"
         ],
         categories: [
+            "TOOLS.NOTION.CATEGORIES.ALL",
             "TOOLS.NOTION.CATEGORIES.PRODUCTIVITY",
             "TOOLS.NOTION.CATEGORIES.MANAGEMENT",
             "TOOLS.NOTION.CATEGORIES.LABELING",
@@ -181,6 +188,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.TRELLO.TAGS.LABELED"
         ],
         categories: [
+            "TOOLS.TRELLO.CATEGORIES.ALL",
             "TOOLS.TRELLO.CATEGORIES.PRODUCTIVITY",
             "TOOLS.TRELLO.CATEGORIES.MANAGEMENT",
             "TOOLS.TRELLO.CATEGORIES.LABELING",
@@ -206,6 +214,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.JIRA.TAGS.LABELED"
         ],
         categories: [
+            "TOOLS.JIRA.CATEGORIES.ALL",
             "TOOLS.JIRA.CATEGORIES.PRODUCTIVITY",
             "TOOLS.JIRA.CATEGORIES.MANAGEMENT",
             "TOOLS.JIRA.CATEGORIES.LABELING",
@@ -230,6 +239,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.HTML.TAGS.FRONTEND"
         ],
         categories: [
+            "TOOLS.HTML.CATEGORIES.ALL",
             "TOOLS.HTML.CATEGORIES.DEVELOPMENT",
             "TOOLS.HTML.CATEGORIES.LABELING",
             "TOOLS.HTML.CATEGORIES.FRONTEND"
@@ -253,6 +263,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.CSS.TAGS.FRONTEND"
         ],
         categories: [
+            "TOOLS.CSS.CATEGORIES.ALL",
             "TOOLS.CSS.CATEGORIES.DEVELOPMENT",
             "TOOLS.CSS.CATEGORIES.STYLES",
             "TOOLS.CSS.CATEGORIES.DESIGN",
@@ -278,6 +289,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.SASS.TAGS.PROGRAMMING"
         ],
         categories: [
+            "TOOLS.SASS.CATEGORIES.ALL",
             "TOOLS.SASS.CATEGORIES.DEVELOPMENT",
             "TOOLS.SASS.CATEGORIES.STYLES",
             "TOOLS.SASS.CATEGORIES.DESIGN",
@@ -304,6 +316,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.JAVASCRIPT.TAGS.WEB_FUNCTIONALITY"
         ],
         categories: [
+            "TOOLS.JAVASCRIPT.CATEGORIES.ALL",
             "TOOLS.JAVASCRIPT.CATEGORIES.DEVELOPMENT",
             "TOOLS.JAVASCRIPT.CATEGORIES.FRONTEND",
             "TOOLS.JAVASCRIPT.CATEGORIES.PROGRAMMING",
@@ -331,6 +344,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ANGULAR.TAGS.COMPONENTS"
         ],
         categories: [
+            "TOOLS.ANGULAR.CATEGORIES.ALL",
             "TOOLS.ANGULAR.CATEGORIES.DEVELOPMENT",
             "TOOLS.ANGULAR.CATEGORIES.FRONTEND",
             "TOOLS.ANGULAR.CATEGORIES.PROGRAMMING",
@@ -360,6 +374,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.REACT.TAGS.COMPONENTS"
         ],
         categories: [
+            "TOOLS.REACT.CATEGORIES.ALL",
             "TOOLS.REACT.CATEGORIES.DEVELOPMENT",
             "TOOLS.REACT.CATEGORIES.FRONTEND",
             "TOOLS.REACT.CATEGORIES.PROGRAMMING",
@@ -388,6 +403,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.GITHUB.TAGS.VERSION_CONTROL"
         ],
         categories: [
+            "TOOLS.GITHUB.CATEGORIES.ALL",
             "TOOLS.GITHUB.CATEGORIES.PRODUCTIVITY",
             "TOOLS.GITHUB.CATEGORIES.MANAGEMENT",
             "TOOLS.GITHUB.CATEGORIES.COLLABORATION",
@@ -412,6 +428,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NODE.TAGS.API"
         ],
         categories: [
+            "TOOLS.NODE.CATEGORIES.ALL",
             "TOOLS.NODE.CATEGORIES.DEVELOPMENT",
             "TOOLS.NODE.CATEGORIES.BACKEND",
             "TOOLS.NODE.CATEGORIES.PROGRAMMING"
@@ -434,6 +451,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.POSTMAN.TAGS.API"
         ],
         categories: [
+            "TOOLS.POSTMAN.CATEGORIES.ALL",
             "TOOLS.POSTMAN.CATEGORIES.DEVELOPMENT",
             "TOOLS.POSTMAN.CATEGORIES.BACKEND"
         ],
@@ -456,6 +474,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.GIT.TAGS.PROGRAMMING"
         ],
         categories: [
+            "TOOLS.GIT.CATEGORIES.ALL",
             "TOOLS.GIT.CATEGORIES.DEVELOPMENT",
             "TOOLS.GIT.CATEGORIES.VERSION_CONTROL",
             "TOOLS.GIT.CATEGORIES.PRODUCTIVITY",
@@ -482,6 +501,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.BOOTSTRAP.TAGS.FRAMEWORK"
         ],
         categories: [
+            "TOOLS.BOOTSTRAP.CATEGORIES.ALL",
             "TOOLS.BOOTSTRAP.CATEGORIES.DEVELOPMENT",
             "TOOLS.BOOTSTRAP.CATEGORIES.DESIGN",
             "TOOLS.BOOTSTRAP.CATEGORIES.FRONTEND",
@@ -513,6 +533,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.MATERIAL.TAGS.REACT"
         ],
         categories: [
+            "TOOLS.MATERIAL.CATEGORIES.ALL",
             "TOOLS.MATERIAL.CATEGORIES.DEVELOPMENT",
             "TOOLS.MATERIAL.CATEGORIES.DESIGN",
             "TOOLS.MATERIAL.CATEGORIES.FRONTEND",
@@ -545,6 +566,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.PRIMENG.TAGS.REACT"
         ],
         categories: [
+            "TOOLS.PRIMENG.CATEGORIES.ALL",
             "TOOLS.PRIMENG.CATEGORIES.DEVELOPMENT",
             "TOOLS.PRIMENG.CATEGORIES.DESIGN",
             "TOOLS.PRIMENG.CATEGORIES.FRONTEND",
@@ -572,6 +594,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.MONGO.TAGS.PROGRAMMING"
         ],
         categories: [
+            "TOOLS.MONGO.CATEGORIES.ALL",
             "TOOLS.MONGO.CATEGORIES.DEVELOPMENT",
             "TOOLS.MONGO.CATEGORIES.DATA_BASE",
             "TOOLS.MONGO.CATEGORIES.BACKEND",
@@ -597,6 +620,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.WORDPRESS.TAGS.WEB_FUNCTIONALITY"
         ],
         categories: [
+            "TOOLS.WORDPRESS.CATEGORIES.ALL",
             "TOOLS.WORDPRESS.CATEGORIES.DEVELOPMENT",
             "TOOLS.WORDPRESS.CATEGORIES.FRONTEND",
             "TOOLS.WORDPRESS.CATEGORIES.BACKEND",
@@ -620,6 +644,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.DOCKER.TAGS.BACKEND"
         ],
         categories: [
+            "TOOLS.DOCKER.CATEGORIES.ALL",
             "TOOLS.DOCKER.CATEGORIES.DEVELOPMENT",
             "TOOLS.DOCKER.CATEGORIES.BACKEND"
         ],
@@ -644,6 +669,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.TAILWIND.TAGS.COMPONENTS"
         ],
         categories: [
+            "TOOLS.TAILWIND.CATEGORIES.ALL",
             "TOOLS.TAILWIND.CATEGORIES.DEVELOPMENT",
             "TOOLS.TAILWIND.CATEGORIES.DESIGN",
             "TOOLS.TAILWIND.CATEGORIES.FRONTEND",
@@ -671,6 +697,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.STENCIL.TAGS.FRAMEWORK"
         ],
         categories: [
+            "TOOLS.STENCIL.CATEGORIES.ALL",
             "TOOLS.STENCIL.CATEGORIES.DEVELOPMENT",
             "TOOLS.STENCIL.CATEGORIES.FRONTEND",
             "TOOLS.STENCIL.CATEGORIES.COMPONENTS",
@@ -696,6 +723,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.STORYBOOK.TAGS.FRAMEWORK"
         ],
         categories: [
+            "TOOLS.STORYBOOK.CATEGORIES.ALL",
             "TOOLS.STORYBOOK.CATEGORIES.DEVELOPMENT",
             "TOOLS.STORYBOOK.CATEGORIES.FRONTEND",
             "TOOLS.STORYBOOK.CATEGORIES.COMPONENTS",
@@ -722,6 +750,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NEST.TAGS.DATA_BASE"
         ],
         categories: [
+            "TOOLS.NEST.CATEGORIES.ALL",
             "TOOLS.NEST.CATEGORIES.DEVELOPMENT",
             "TOOLS.NEST.CATEGORIES.BACKEND",
             "TOOLS.NEST.CATEGORIES.FRAMEWORK",
