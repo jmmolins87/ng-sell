@@ -24,6 +24,15 @@
                     animation: underline-animation 2s ease forwards;
                 }
             }
+            &.sizes-home {
+                font-size: 8rem;
+                @include min-responsive($tablet) {
+                    font-size: 16rem;
+                }
+                @include min-responsive($tablet-hor) {
+                    font-size: 25rem;
+                }
+            }
         }
     }
 }

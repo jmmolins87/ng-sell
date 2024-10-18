@@ -5,8 +5,26 @@
 
 <ng-template #loadedContent>
     <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-title">
-        <h1 *ngIf="titleType === 'h1'" [ngClass]="withUnderline ? 'with-underline' : ''" class="title">{{ translatedTitle$ | async }}</h1>
-        <h2 *ngIf="titleType === 'h2'" [ngClass]="withUnderline ? 'with-underline' : ''" class="title">{{ translatedTitle$ | async }}</h2>
-        <h3 *ngIf="titleType === 'h3'" [ngClass]="withUnderline ? 'with-underline' : ''" class="title">{{ translatedTitle$ | async }}</h3>
+        <h1 
+            *ngIf="titleType === 'home'" 
+            [ngClass]="[withUnderline ? 'with-underline' : '', titleHome ? 'sizes-home' : '']" 
+            
+            class="title">{{ translatedTitle$ | async }}
+        </h1>
+        <h1 
+            *ngIf="titleType === 'h1'" 
+            [ngClass]="withUnderline ? 'with-underline' : ''" 
+            class="title">{{ translatedTitle$ | async }}
+        </h1>
+        <h2 
+            *ngIf="titleType === 'h2'" 
+            [ngClass]="withUnderline ? 'with-underline' : ''" 
+            class="title">{{ translatedTitle$ | async }}
+        </h2>
+        <h3 
+            *ngIf="titleType === 'h3'" 
+            [ngClass]="withUnderline ? 'with-underline' : ''" 
+            class="title">{{ translatedTitle$ | async }}
+        </h3>
     </div>
 </ng-template>

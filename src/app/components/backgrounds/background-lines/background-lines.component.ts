@@ -9,8 +9,8 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
   @ViewChild('grayscaleCanvas', { static: true }) canvasRef!: ElementRef<HTMLCanvasElement>;
   private ctx!: CanvasRenderingContext2D;
   private shapes: any[] = [];
-  private maxShapes = 10;           // Max number of shapes at any time
-  private speed = 0.0001;           // Very slow drawing speed
+  private maxShapes = 5;           // Max number of shapes at any time
+  private speed = 0.0005;          // Very slow drawing speed
   private canvasWidth!: number;
   private canvasHeight!: number;
 
@@ -173,11 +173,11 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
       );
 
     } else if (shape.type === 'circle') {
-      // Circle (use arc to animate the drawing)
+      // Circle (draw progressively)
       ctx.arc(shape.centerX, shape.centerY, shape.radius * shape.progress, 0, Math.PI * 2);
     
     } else if (shape.type === 'rect') {
-      // Rectangle (draw progressively based on progress)
+      // Rectangle (draw progressively)
       ctx.rect(
         shape.x, shape.y,
         shape.width * shape.progress, shape.height * shape.progress

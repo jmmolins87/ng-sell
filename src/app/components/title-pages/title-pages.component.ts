@@ -25,8 +25,11 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // Title
   @Input()
   public title!: string;
+  // With underline
   @Input()
   withUnderline: boolean = true;
+  @Input()
+  titleHome: boolean = false;
   
   // Title translated
   public translatedTitle$: Observable<string> | null = null;
