@@ -51,6 +51,13 @@
                 font-size: $txt-main;
             }
         }
+        // Skeleton
+        .p-skeleton {
+            background: $grey-light-bg;
+            &::after {
+                background: linear-gradient(90deg, rgba($grey-bg, 0), rgba($grey-bg, 0.4), rgba($grey-bg, 0));
+            }
+        }
     }
     .dark-theme {
         .p-scrolltop {
@@ -67,5 +74,12 @@
         .p-toast {
             opacity: 1;
         }
+        .p-skeleton {
+            background: $black-light-bg;
+            &::after {
+                background: linear-gradient(90deg, rgba($black-bg, 0), rgba($black-bg, 0.4), rgba($black-bg, 0));
+            }
+        }
+        
     }
 } 
