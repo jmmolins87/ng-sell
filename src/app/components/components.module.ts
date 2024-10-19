@@ -13,7 +13,6 @@ import { DownloadButtonComponent } from './download-button/download-button.compo
 import { TitlePagesComponent } from './title-pages/title-pages.component';
 import { WrapChartComponent } from './wrap-chart/wrap-chart.component';
 import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
-import { SkeletonCardDirective } from './card/skeleton-card.directive';
 import { TabsComponent } from './tabs/tabs.component';
 
 
@@ -28,7 +27,6 @@ import { TabsComponent } from './tabs/tabs.component';
     TitlePagesComponent,
     WrapChartComponent,
     WrapImgsComponent,
-    SkeletonCardDirective,
     TabsComponent
   ],
   imports: [

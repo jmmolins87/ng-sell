@@ -2,7 +2,7 @@
 
 import { AboutPage } from "../interfaces/about-page.interface";
 
-export const aboutPageContent: AboutPage = {
+export const IaboutPageContent: AboutPage = {
     title: "ABOUT_PAGE.TITLE",
     subtitle: "ABOUT_PAGE.SUBTITLE",
     myDescription: "ABOUT_PAGE.DESCRIPTION",
