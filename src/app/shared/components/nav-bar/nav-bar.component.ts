@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { MenuItem } from 'primeng/api';
 
@@ -24,10 +25,13 @@ export class NavBarComponent implements OnInit {
   public isDarkMode: boolean = false;
   // Scrolled
   public isScrolled: boolean = false;
+  // < Tablet
+  public isTablet: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 
-    private _translator: TranslatorService ) { }
+    private _translator: TranslatorService,
+    private _breakpointObserver: BreakpointObserver ) { }
 
   ngOnInit(): void {
     // Get the current route to apply the class
@@ -36,12 +40,20 @@ export class NavBarComponent implements OnInit {
     setTimeout(() => {
       this.itemsNavbar;
     }, 500);
+    this.removeAttr();
   }
 
   // Detect scroll
   @HostListener('window: scroll', [])
   onWindowScroll(): void {
     this.isScrolled = window.scrollY > 0;
+  }
+
+  removeAttr() {
+    this._breakpointObserver.observe([Breakpoints.Web])
+      .subscribe(result => {
+        this.isTablet = result.matches;
+      });
   }
 
   get itemsNavbar() {
