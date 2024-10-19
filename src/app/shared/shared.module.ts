@@ -10,6 +10,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
+import { CookiesBannerComponent } from './components/cookies-banner/cookies-banner.component';
 
 
 
@@ -17,7 +18,8 @@ import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
   declarations: [
     NavBarComponent,
     FooterComponent,
-    WrapLogoComponent
+    WrapLogoComponent,
+    CookiesBannerComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
   ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    CookiesBannerComponent
   ]
 })
 export class SharedModule { }

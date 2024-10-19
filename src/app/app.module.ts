@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CookieService } from 'ngx-cookie-service';
 
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
@@ -41,7 +42,7 @@ export function loaderTranslatorJson( http: HttpClient ) {
     PagesModule,
     ComponentsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

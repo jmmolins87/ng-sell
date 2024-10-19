@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
+import { CookieService } from 'ngx-cookie-service';
+
 import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
@@ -17,13 +19,14 @@ export class AppComponent implements OnInit {
   // Change mode dark to light
   public isDarkTheme: boolean = false;
 
-  constructor( private _router: Router, private primengConfig: PrimeNGConfig ) {}
+  constructor( private _router: Router, private cookieService: CookieService, private primengConfig: PrimeNGConfig ) {}
 
   ngOnInit(): void {
     // Ripple Effect in buttons
     this.primengConfig.ripple = true;
     this.hideNavigation();
     this.containerCustom();
+    this.getCookies();
   }
 
   hideNavigation() {
@@ -33,6 +36,17 @@ export class AppComponent implements OnInit {
         this.showNavbarFooter = !['/404'].includes(event.urlAfterRedirects);
       }
     });
+  }
+
+  getCookies() {
+     // Set a cookie
+     this.cookieService.set('user-visited', 'true', 7); // Cookie expires in 7 days
+     // Get a cookie
+     const userVisited = this.cookieService.get('user-visited');
+     console.log('User visited:', userVisited);
+     // Check if a cookie exists
+     const hasVisited = this.cookieService.check('user-visited');
+     console.log('Has visited:', hasVisited);
   }
 
   containerCustom() {
