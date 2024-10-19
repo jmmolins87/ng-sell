@@ -38,6 +38,10 @@
         },
         "MORE_ME": "If you are interested, you can take a look at my CV"
     },
+    "CONTACT_PAGE": {
+        "TITLE": "Contact",
+        "DESCRIPTION": "If you have any questions, suggestions, or just want to say hello, feel free to contact me. I am here to help you with whatever you need."
+    },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",
         "GO_BACK": "We rewind!!"

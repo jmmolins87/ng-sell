@@ -16,8 +16,6 @@ export class AboutPageComponent implements OnInit {
 
   // Dark Theme
   public isDarkMode: boolean = false;
-  // Get title Page
-  public title!: string;
   // Get type title Page
   public titlePageType: titleTypes = titleTypes.h1;
   // Get title Skills

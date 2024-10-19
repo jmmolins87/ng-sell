@@ -38,6 +38,10 @@
         },
         "MORE_ME": "Si está, intersado puede echar un ojo a mi CV"
     },
+    "CONTACT_PAGE": {
+        "TITLE": "Contacto",
+        "DESCRIPTION": "Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte en lo que necesites."
+    },
     "ERROR_PAGE": {
         "TITLE": "¡¡Este no es el camino correcto!!",
         "GO_BACK": "¡¡Rebobinamos!!"

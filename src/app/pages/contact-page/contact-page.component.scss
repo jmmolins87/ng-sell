@@ -1,3 +1,94 @@
 
 @import "/src/styles.scss";
 
+.wrap-form {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    @include min-responsive($tablet-hor) {
+        max-width: 75%;
+        margin: 30px auto;    
+    }
+    .wrapper-form {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        @include min-responsive($tablet) {
+            gap: 40px 20px;
+            margin-top: 40px;
+        }
+        .form-group {
+            flex: 1 1 100%;
+            margin-top: 35px;
+            @include min-responsive($tablet) {
+                flex: 1 1 calc(50% - 20px);
+                margin-top: 0;
+            }
+            &.textarea {
+                flex: 1 1 100%;
+                textarea {
+                    resize: none;
+                }
+            }
+            .p-float-label,
+            input,
+            label,
+            textarea {
+                width: 100%;
+                .required {
+                    color: var(--brand-color-red, #f53a3a);
+                }
+                .counter-characters {
+                    margin: 0;
+                }
+                &.success {
+                    border-radius: 4px;
+                    border: 2px solid var(--border-success, #28a745);
+                    background: var(--bg-border-success, #20a53f2f)
+                }
+            }
+            .wrap-alert {
+                width: 100%;
+            }
+        }
+    }
+    ::ng-deep .wrap-buttons {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        gap: 16px;
+        @include min-responsive($tablet) {
+            justify-content: flex-end;
+            flex-direction: row;
+            gap: 0;
+        }
+        .wrap-button-reset {
+            order: 2;
+            width: 100%;
+            @include min-responsive($tablet) {
+                margin-right: 14px;
+                order: 1;
+                order: 2;
+                width: fit-content;
+            }
+        }
+        .wrap-button-send {
+            order: 1;
+            width: 100%;
+            @include min-responsive($tablet) {
+                order: 2;
+                width: fit-content;
+            }
+        }
+    }
+}

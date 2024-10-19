@@ -25,7 +25,7 @@ export class WrapLogoComponent implements OnInit {
   @Input()
   public height!: number;
 
-  constructor( private imageService: SharedService, private sanitizer: DomSanitizer ) {}
+  constructor( private _imageService: SharedService, private _sanitizer: DomSanitizer ) {}
 
   ngOnInit(): void {
     this.getLogoLight();
@@ -33,19 +33,19 @@ export class WrapLogoComponent implements OnInit {
   }
 
   getLogoLight() {
-    this.imageService.logoLight.subscribe((data) => {
+    this._imageService.logoLight.subscribe((data) => {
       if (data && this.imageKey in data) {
         const base64Image = data[this.imageKey];
-        this.sanitizedImageUrl = this.sanitizer.bypassSecurityTrustUrl(base64Image);
+        this.sanitizedImageUrl = this._sanitizer.bypassSecurityTrustUrl(base64Image);
       }
     });
   }
 
   getLogoDark() {
-    this.imageService.logoDark.subscribe((data) => {
+    this._imageService.logoDark.subscribe((data) => {
       if (data && this.imageKey in data) {
         const base64Image = data[this.imageKey];
-        this.sanitizedImageUrl = this.sanitizer.bypassSecurityTrustUrl(base64Image);
+        this.sanitizedImageUrl = this._sanitizer.bypassSecurityTrustUrl(base64Image);
       }
     });
   }
