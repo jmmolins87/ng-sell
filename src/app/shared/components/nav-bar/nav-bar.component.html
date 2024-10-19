@@ -100,11 +100,15 @@
                     </select>
                     <button 
                         (click)="toggleDarkMode()" 
-                        [pTooltip]="tooltipContent"  
-                        tooltipPosition="left" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSell"
+                        aria-controls="navbarSell" 
+                        aria-expanded="false" 
                         class="mode-button">
                         <span 
                             [class]="isDarkMode ? 'pi-sun' : 'pi-moon'" 
+                            [pTooltip]="tooltipContent" 
+                            tooltipPosition="left" 
                             class="pi pi-fw">
                         </span>
                     </button>

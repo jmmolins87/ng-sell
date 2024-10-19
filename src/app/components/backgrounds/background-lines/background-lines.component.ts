@@ -52,6 +52,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
         endX: Math.random() * this.canvasWidth,
         endY: Math.random() * this.canvasHeight,
         progress: 0,
+        opacity: 0,
         strokeStyle: this.getRandomGrayscale()
       };
     } else if (shapeType < 0.5) {
@@ -65,6 +66,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
         endX: Math.random() * this.canvasWidth,
         endY: Math.random() * this.canvasHeight,
         progress: 0,
+        opacity: 0,
         strokeStyle: this.getRandomGrayscale()
       };
     } else if (shapeType < 0.75) {
@@ -80,6 +82,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
         endX: Math.random() * this.canvasWidth,
         endY: Math.random() * this.canvasHeight,
         progress: 0,
+        opacity: 0,
         strokeStyle: this.getRandomGrayscale()
       };
     } else {
@@ -92,6 +95,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
             centerY: Math.random() * this.canvasHeight,
             radius: Math.random() * (this.canvasWidth / 10), // Circle size relative to canvas
             progress: 0,
+            opacity: 0,
             strokeStyle: this.getRandomGrayscale()
           }
         : {
@@ -101,6 +105,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
             width: Math.random() * (this.canvasWidth / 5),
             height: Math.random() * (this.canvasHeight / 5),
             progress: 0,
+            opacity: 0,
             strokeStyle: this.getRandomGrayscale()
           };
     }
@@ -128,11 +133,12 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
     // Draw each shape and update its progress
     this.shapes.forEach((shape, index) => {
       shape.progress += this.speed; // Very slow progress
+      shape.opacity = Math.min(shape.opacity + this.speed, 1); // Gradually increase opacity
 
       this.drawShape(ctx, shape); // Draw shape based on its progress
 
-      // Remove shape once it's fully drawn
-      if (shape.progress >= 1) {
+      // Remove shape once it's fully drawn and faded out
+      if (shape.progress >= 1 && shape.opacity <= 0) {
         this.shapes.splice(index, 1);
       }
     });
@@ -143,6 +149,8 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
 
   // Draw a shape (straight line, quadratic curve, cubic curve, circle, rectangle)
   drawShape(ctx: CanvasRenderingContext2D, shape: any): void {
+    ctx.save();
+    ctx.globalAlpha = shape.opacity; // Apply opacity
     ctx.strokeStyle = shape.strokeStyle;
     ctx.lineWidth = 1.5;
     ctx.beginPath();
@@ -185,5 +193,11 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
     }
 
     ctx.stroke();
+    ctx.restore();
+
+    // Fade out the shape after it is fully drawn
+    if (shape.progress >= 1) {
+      shape.opacity = Math.max(shape.opacity - this.speed, 0); // Gradually decrease opacity
+    }
   }
 }
