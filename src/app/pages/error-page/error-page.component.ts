@@ -21,6 +21,8 @@ export class ErrorPageComponent implements OnInit {
     this._pageService.errorAnimation.subscribe((data: any) => {
       this.linkAnimation = data;
     });
+    // Scroll to the top when the component is initialized
+    window.scrollTo(0, 0);
   }
 
   scrollDown(): void {
