@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
@@ -14,7 +15,9 @@ import { Skill } from '../interfaces/skills.interface';
 })
 export class PagesService {
 
-  constructor() { }
+  private errorJon!: string;
+
+  constructor( private _http: HttpClient ) { }
 
   // Get tools
   get tools() {
@@ -34,5 +37,9 @@ export class PagesService {
       // Complete observable
       observer.complete();
     });
+  }
+
+  get errorAnimation() {
+    return this._http.get('assets/img/404/animation_error.json');
   }
 }

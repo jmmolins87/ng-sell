@@ -305,7 +305,7 @@ export const toolsContent: Tool[] = [
     {
         id: 13,
         title: "JavaScript",
-        subtitle: "TOOLS.JAVASCRIPT.SUVTITLE",
+        subtitle: "TOOLS.JAVASCRIPT.SUBTITLE",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         description: "TOOLS.JAVASCRIPT.DESCRIPTION",
         tags: [

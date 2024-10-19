@@ -1,3 +1,61 @@
 
 
 @import '/src/styles.scss';
+
+
+.wrap-error {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    .wrap-animation {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        // @include min-responsive($tablet) {
+        //     height: 100vh;
+        // }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 1.5rem 1.5rem 0;
+            background: none;
+            border: none;
+            color: $white-dark-txt; // Cambia el color según
+            .pi-arrow-down {
+                font-size: 2.5rem;
+                animation: bounce 2s infinite;
+            }
+        }
+    }
+    .wrap-button {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+} 
