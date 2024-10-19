@@ -22,12 +22,8 @@
             height: fit-content;
             height: -moz-fit-content;
             margin-right: 25px;
-            app-wrapper-imgs {
-                display: block;
-                width: fit-content;
-                width: -moz-fit-content;
-                height: fit-content;
-                height: -moz-fit-content;
+            .navbar-collapse.collapse.show {
+                background: red;
             }
         }
         .navbar-toggler {
