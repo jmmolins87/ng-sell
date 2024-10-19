@@ -1,6 +1,6 @@
 
 
 
-<div class="wrap-skill-component">
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-skill-component">
     <h3 class="skill-title">{{ skill.title | translate }}</h3>
 </div>

@@ -10,7 +10,7 @@ export class BackgroundLinesComponent implements OnInit, AfterViewInit {
   private ctx!: CanvasRenderingContext2D;
   private shapes: any[] = [];
   private maxShapes = 5;           // Max number of shapes at any time
-  private speed = 0.0005;          // Very slow drawing speed
+  private speed = 0.0015;          // Very slow drawing speed
   private canvasWidth!: number;
   private canvasHeight!: number;
 

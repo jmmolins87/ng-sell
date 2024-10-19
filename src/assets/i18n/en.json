@@ -52,6 +52,7 @@
         "CLOSE": "Close",
         "GO_WEB_TOOL": "Go to site",
         "DOWNLOAD_CV": "Download CV",
+        "ALT_TITLE_LOGO": "I sell myself",
         "BUTTON_THEME_LIGHT": "Change to light theme",
         "BUTTON_THEME_DARK": "Change to dark theme"
     },

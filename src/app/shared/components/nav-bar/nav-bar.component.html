@@ -6,6 +6,10 @@
     <div class="container-fluid">
         <a 
             [routerLink]="['/']" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSell"
+            aria-controls="navbarSell" 
+            aria-expanded="false" 
             class="wrap-logo">
             <app-wrap-logo 
                 *ngIf="this.isDarkMode === false; else darkMode"
@@ -94,7 +98,11 @@
                             {{ lang.name }}
                         </option>
                     </select>
-                    <button (click)="toggleDarkMode()" [pTooltip]="tooltipContent"  tooltipPosition="left"  class="mode-button">
+                    <button 
+                        (click)="toggleDarkMode()" 
+                        [pTooltip]="tooltipContent"  
+                        tooltipPosition="left" 
+                        class="mode-button">
                         <span 
                             [class]="isDarkMode ? 'pi-sun' : 'pi-moon'" 
                             class="pi pi-fw">
