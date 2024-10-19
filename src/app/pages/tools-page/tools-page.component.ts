@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PagesService } from './../../services/pages-service.service';
+import { PagesService } from '../../services/pages-service.service';
 
 import { toolsContent } from 'src/app/db/tool.db';
 
@@ -9,11 +9,11 @@ import { titleTypes } from '../../components/title-pages/title.config';
 
 
 @Component({
-  selector: 'app-tools',
-  templateUrl: './tools.component.html',
-  styleUrls: ['./tools.component.scss']
+  selector: 'app-tools-page',
+  templateUrl: './tools-page.component.html',
+  styleUrls: ['./tools-page.component.scss']
 })
-export class ToolsComponent implements OnInit{
+export class ToolsPageComponent implements OnInit{
 
   // Title type
   public titleType: titleTypes = titleTypes.h1;

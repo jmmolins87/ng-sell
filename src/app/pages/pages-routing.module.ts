@@ -1,38 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { ErrorComponent } from './error/error.component';
-import { AboutComponent } from './about/about.component';
-import { ToolsComponent } from './tools/tools.component';
-import { ToolComponent } from './tool/tool.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { ToolsPageComponent } from './tools-page/tools-page.component';
+import { ToolPageComponent } from './tool-page/tool-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomePageComponent,
     pathMatch: 'full'
   },
   {
     path: '404',
-    component: ErrorComponent
+    component: ErrorPageComponent
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutPageComponent
   },
   {
     path: 'tools',
-    component: ToolsComponent
+    component: ToolsPageComponent
   },
   {
     path: 'tool/:id',
-    component: ToolComponent
+    component: ToolPageComponent
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactPageComponent
   },
   {
     path: '**',

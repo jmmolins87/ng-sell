@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { EmailService } from './../../services/email-serivce.service';
+import { EmailService } from '../../services/email-serivce.service';
 
 import { MessageService } from 'primeng/api';
 
-import { titleTypes } from './../../components/title-pages/title.config';
+import { titleTypes } from '../../components/title-pages/title.config';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  selector: 'app-contact-page',
+  templateUrl: './contact-page.component.html',
+  styleUrls: ['./contact-page.component.scss'],
   providers: [MessageService]
 })
-export class ContactComponent {
+export class ContactPageComponent {
 
   public isFullWidth: boolean = false;
   public titleType: titleTypes = titleTypes.h1;

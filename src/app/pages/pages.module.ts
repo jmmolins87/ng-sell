@@ -11,23 +11,23 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { ComponentsModule } from '../components/components.module';
 import { PipesModule } from '../pipes/pipes.module';
 
-import { ToolsComponent } from './tools/tools.component';
-import { ToolComponent } from './tool/tool.component';
-import { HomeComponent } from './home/home.component';
-import { ErrorComponent } from './error/error.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { ToolPageComponent } from './tool-page/tool-page.component';
+import { ToolsPageComponent } from './tools-page/tools-page.component';
 
 
 @NgModule({
   declarations: [
-    ToolsComponent,
-    ToolComponent,
-    HomeComponent,
-    ErrorComponent,
-    ContactComponent,
-    AboutComponent
+    AboutPageComponent,
+    ContactPageComponent,
+    ErrorPageComponent,
+    HomePageComponent,
+    ToolPageComponent,
+    ToolsPageComponent
   ],
   imports: [
     CommonModule,

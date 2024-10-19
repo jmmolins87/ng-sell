@@ -4,17 +4,17 @@ import {
   OnInit 
 } from '@angular/core';
 
-import { SharedService } from './../../shared/services/shared.service';
+import { SharedService } from '../../shared/services/shared.service';
 
 import { Tool } from '../../interfaces/tool.interface';
 import { shapeSkeleton } from '../wrap-imgs/img.config';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'app-tool',
+  templateUrl: './tool.component.html',
+  styleUrls: ['./tool.component.scss']
 })
-export class CardComponent implements OnInit {
+export class ToolComponent implements OnInit {
 
   // Get tools
   @Input()

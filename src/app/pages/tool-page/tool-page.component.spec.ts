@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToolComponent } from './tool.component';
+import { ToolComponent } from './tool-page.component';
 
 describe('ToolComponent', () => {
   let component: ToolComponent;

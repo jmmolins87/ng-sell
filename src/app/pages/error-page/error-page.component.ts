@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'app-error',
-  templateUrl: './error.component.html',
-  styleUrls: ['./error.component.scss']
+  selector: 'app-error-page',
+  templateUrl: './error-page.component.html',
+  styleUrls: ['./error-page.component.scss']
 })
-export class ErrorComponent {
+export class ErrorPageComponent {
 
   constructor( private _location: Location ) { }
 
