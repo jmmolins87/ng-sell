@@ -35,7 +35,8 @@
             "DATABASES": {
                 "TITLE": "Databases"
             }
-        }
+        },
+        "MORE_ME": "If you are interested, you can take a look at my CV"
     },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",

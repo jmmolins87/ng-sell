@@ -10,14 +10,45 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 2rem;
+        min-width: 100%;
         background: rgba($white-dark-bg, .4);
         backdrop-filter: blur(7.5px);
         border-radius: $border-radius-10;
         box-shadow: $skill-shadow-light;
         padding: 2rem;
-        .skill-title {
-            font-size: 2rem;
-            margin: 0;
+        .skill-content {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: .5rem;
+            min-width: 100%;
+            .skill {
+                &-title {
+                    font-size: $txt-menu;
+                    margin: 0;
+                }
+                &-subtitle {
+                    color: $grey-dark-txt;
+                    margin: 0;
+                }
+                &-description {
+                    margin: 0;
+                    margin-top: 1rem;
+                }
+                &-animation {
+                    display: flex;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 25%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }

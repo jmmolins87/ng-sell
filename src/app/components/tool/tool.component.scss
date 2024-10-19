@@ -91,7 +91,9 @@
     }
     &::ng-deep {
       .p-card {
-        background: $white-bg;
+        background: rgba($white-bg, .2);
+        backdrop-filter: blur(10px);
+        border: 1px solid $grey-border;
         color: $black-light-txt;
         .p-card-content {
           padding-bottom: 0;
@@ -108,8 +110,9 @@
   &.wrap-tool-component {
     &::ng-deep {
       .p-card {
-        background: $black-bg;
+        background: rgba($black-bg, .4);
         color: $grey-light-txt;
+        border: 1px solid $black-border;
       }
     }
     &:hover {

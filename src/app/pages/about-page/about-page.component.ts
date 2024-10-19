@@ -24,11 +24,17 @@ export class AboutPageComponent implements OnInit {
   public titleSkillsType: titleTypes = titleTypes.h2;
   // Get skill
   public skillData: Skill[] = skillContent;
+  // Skeleton loader
+  public showSkeleton: boolean = true;
 
   constructor( private _sharedService: SharedService, private _pagesService: PagesService ) {}
 
   ngOnInit(): void {
     this.darkMode();
+    
+    setTimeout(() => {
+      this.getSkills();
+    }, 500);
   }
 
   // Function to get the dark mode status
@@ -43,6 +49,7 @@ export class AboutPageComponent implements OnInit {
   getSkills() {
     this._pagesService.skills.subscribe((skills: Skill[]) => {
       this.skillData = skills;
+      this.showSkeleton = false;
     });
   }
 

@@ -28,13 +28,15 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // With underline
   @Input()
   withUnderline: boolean = true;
+  // Home title
   @Input()
   titleHome: boolean = false;
+  // Skeleton loader
+  @Input()
+  public showSkeleton: boolean = true;
   
   // Title translated
   public translatedTitle$: Observable<string> | null = null;
-  // Skeleton loader
-  public showSkeleton: boolean = true;
   // Dark Theme
   public isDarkMode: boolean = false;
 
