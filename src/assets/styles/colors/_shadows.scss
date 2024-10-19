@@ -44,9 +44,12 @@ $shadow-dark: rgba(#0e0e0e, .7);
 // Navbar
 $navbar-shadow-light: 0px 10px 6px -4px $shadow-light;
 $navbar-shadow-dark: 0px 10px 6px -4px $shadow-dark;
-// Card's
-$card-shadow-light: 0px 25px 20px -10px rgba($shadow-light, .3);
-$card-shadow-dark:  0px 15px 20px -10px rgba($shadow-dark, 1);
+// Tool's
+$tool-shadow-light: 0px 25px 20px -10px rgba($shadow-light, .3);
+$tool-shadow-dark:  0px 15px 20px -10px rgba($shadow-dark, 1);
+// Slkill's
+$skill-shadow-light: 0px 0px 20px 0px rgba($shadow-light, .5);
+$skill-shadow-dark:  0px 0px 20px 0px rgba($shadow-dark, 1);
 // Button to top
 $buttonToTop-shadow-light: 0px 10px 20px 0 rgba($shadow-light, .3);
 $buttonToTop-shadow-dark: 0px 10px 20px 0 rgba($shadow-dark, 1);

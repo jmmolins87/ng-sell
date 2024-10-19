@@ -1,0 +1,19 @@
+
+@import "/src/styles.scss";
+
+.wrap-skill-component {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    background: rgba($white-dark-bg, .4);
+    backdrop-filter: blur(5px);
+    border-radius: $border-radius-10;
+    padding: 2rem;
+    .skill-title {
+        font-size: 2rem;
+        margin: 0;
+    }
+}

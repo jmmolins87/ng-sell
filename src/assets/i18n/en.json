@@ -22,11 +22,19 @@
         "TITLE": "Something about me",
         "DESCRIPTION": "I am a web developer passionate about technology and programming. I love learning new things and sharing my knowledge with others. My goal is to create innovative and high-quality web applications that improve people's lives. I am always looking for new challenges and opportunities to grow as a professional.",
         "SKILLS_TITLE": "My skills",
-        "SKILLS": {
-            "DESIGN": "Design",
-            "DEVELOPMENT": "Development",
-            "APIS": "APIs",
-            "DATABASES": "Databases"
+        "SKILLS": { 
+            "DESIGN": {
+                "TITLE": "Design"
+            },
+            "DEVELOPMENT": {
+                "TITLE": "Development"
+            },
+            "APIS": {
+                "TITLE": "API's"
+            },
+            "DATABASES": {
+                "TITLE": "Databases"
+            }
         }
     },
     "ERROR_PAGE": {

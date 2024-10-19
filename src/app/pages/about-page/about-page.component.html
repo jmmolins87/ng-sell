@@ -1,7 +1,20 @@
 <app-background-gradient />
 <app-background-lines />
 
-<app-title-pages [titleType]="titleType" [title]="'ABOUT_PAGE.TITLE' | translate" />
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'"  class="wrap-about-page">
+    <app-title-pages [titleType]="titlePageType" [title]="'ABOUT_PAGE.TITLE' | translate" />
+    <div class="wrap-description">
+        <p>{{ "ABOUT_PAGE.DESCRIPTION" | translate }}</p>
+    </div>
+    <div class="title-skills">
+        <app-title-pages [withUnderline]="false" [titleType]="titleSkillsType" [title]="'ABOUT_PAGE.SKILLS_TITLE' | translate" />
+    </div>
+    <div class="wrap-skills">
+        <div *ngFor="let skill of skillData" class="wrap-skill">
+            <app-skill [skill]="skill" />
+        </div>
+    </div>    
+</div>
 
 <app-download-button 
     fileName="CV.pdf" 
