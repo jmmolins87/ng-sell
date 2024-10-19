@@ -26,7 +26,7 @@
         .wrap-skills {
             width: 100%;
             @include min-responsive($tablet) {
-                @include grid(2, 2.5rem);
+                @include grid(4, 2.5rem);
             }
             .wrap-skill {
                 margin-top: 2rem;
