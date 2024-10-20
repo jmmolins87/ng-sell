@@ -1,62 +1,42 @@
-
-
-@import "/src//styles.scss";
-
-.light-theme,
-.dark-theme {
-    &.wrap-about-page {
-        .wrap-description {
-            padding: 2rem;
-            border-radius: 10px;
-            background: rgba($white-bg, .2);
-            backdrop-filter: blur(7.5px);
-            box-shadow: $skill-shadow-light;
-            p {
-                margin: 0;
-            }
-        }
-        .title-skills {
-            margin-top: 3rem;
-            display: flex;
-            box-sizing: border-box;
-            justify-content: center;
-            align-items: center;
-            min-width: 100%;
-        }
-        .wrap-skills {
-            width: 100%;
-            @include min-responsive($tablet) {
-                @include grid(4, 2.5rem);
-            }
-            .wrap-skill {
-                margin-top: 2rem;
-                @include min-responsive($tablet) {
-                    margin-top: 0;
-                }
-            }
-        }
-        .wrap-download-button {
-            display: flex;
-            box-sizing: border-box;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            @include min-responsive($tablet) {
-                justify-content: flex-end;
-            }
-            p {
-                margin: 0;
-            }
-        }
-    }
-}
-
-.dark-theme {
-    &.wrap-about-page {
-        .wrap-description {
-            background: rgba($black-bg, .4);
-            box-shadow: $skill-shadow-dark;
-        }
-    }
-}
+.swiper-container {
+  height: calc(100vh - 200px);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 200px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .swiper-slide {
+    height: calc(100vh - 200px);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .swiper-pagination div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .swiper-pagination div.active {
+    background-color: black;
+  }
