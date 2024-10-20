@@ -12,7 +12,7 @@ export class ContactPageComponent {
 
   // Show or hide the skeleton loader
   public showSkeleton: boolean = false;
-
+  // Show or hide the form
   public messageCharactres: string = '';
   // Initialize the character count to 0
   public characterCount: number = 0;
@@ -20,9 +20,7 @@ export class ContactPageComponent {
   public maxCharacters: number = 1000;
   // Set the title of the page
   public titleType: titleTypes = titleTypes.h1;
-
-  
-
+  // Set the title of the page
   public formContact: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     surname: [''],
