@@ -6,10 +6,11 @@
     <div class="container-fluid">
         <a 
             [routerLink]="['/']" 
-            [attr.data-bs-toggle]="isTablet ? null : 'collapse'"
-            [attr.data-bs-target]="isTablet ? null : '#navbarSell'"
-            [attr.aria-controls]="isTablet ? null : 'navbarSell'"
-            [attr.aria-expanded]="isTablet ? null : 'false'"
+            [attr.data-bs-toggle]="isTablet ? '' : 'collapse'"
+            [attr.data-bs-target]="isTablet ? '' : '#navbarSell'"
+            [attr.aria-controls]="isTablet ? '' : 'navbarSell'"
+            [attr.aria-expanded]="isTablet ? '' : 'false'"
+            [ngClass]="{'disabled': !isMenuOpen}"
             class="wrap-logo">
             <app-wrap-logo 
                 *ngIf="this.isDarkMode === false; else darkMode"

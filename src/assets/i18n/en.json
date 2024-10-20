@@ -51,6 +51,10 @@
         "TOOLS": "My Tools",
         "CONTACT": "Contact me"
     },
+    "COOKIES": {
+        "TEXT": "We use cookies to improve your experience. By using our site, you agree to our use of cookies.",
+        "BUTTON": "Accept"
+    },
     "OTHERS": {
         "HELLO_HOME": "Hello!!",
         "READ_MORE_TOOL": "Continue reading",

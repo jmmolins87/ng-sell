@@ -27,6 +27,8 @@ export class NavBarComponent implements OnInit {
   public isScrolled: boolean = false;
   // < Tablet
   public isTablet: boolean = false;
+  // Mobile
+  public isMenuOpen: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 

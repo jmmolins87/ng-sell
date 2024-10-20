@@ -43,10 +43,8 @@ export class AppComponent implements OnInit {
      this.cookieService.set('user-visited', 'true', 7); // Cookie expires in 7 days
      // Get a cookie
      const userVisited = this.cookieService.get('user-visited');
-     console.log('User visited:', userVisited);
      // Check if a cookie exists
      const hasVisited = this.cookieService.check('user-visited');
-     console.log('Has visited:', hasVisited);
   }
 
   containerCustom() {

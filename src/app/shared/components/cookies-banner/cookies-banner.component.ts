@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CookieService } from 'ngx-cookie-service';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-cookies-banner',
@@ -10,21 +11,34 @@ import { CookieService } from 'ngx-cookie-service';
 export class CookiesBannerComponent implements OnInit {
 
   public showBanner: boolean = true;
+  // Dark Theme
+  public isDarkMode: boolean = false;
 
-  constructor( private _cookieService: CookieService ) { }
+  constructor( private _sharedService: SharedService, private _cookieService: CookieService ) { }
 
   ngOnInit(): void {
-    // Check if the user has already accepted cookies
-    const hasAccepted = this._cookieService.check('cookies-accepted');
-    if (hasAccepted) {
-      this.showBanner = true;
+    this.checkCookiesAccepted();
+    this.darkMode();
+  }
+
+  checkCookiesAccepted(): void {
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+    if (cookiesAccepted) {
+      this.showBanner = false;
     }
   }
 
   acceptCookies(): void {
-    // Set a cookie to remember the user's acceptance
-    this._cookieService.set('cookies-accepted', 'true', 365); // Cookie expires in 1 year
-    this.showBanner = true;
+    localStorage.setItem('cookiesAccepted', 'true');
+    this.showBanner = false;
+  }
+
+
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }
