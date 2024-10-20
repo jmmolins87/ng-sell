@@ -40,7 +40,7 @@ export class NavBarComponent implements OnInit {
     this.darkMode();
     // Get the current route to apply the class
     setTimeout(() => {
-      this.itemsNavbar;
+      this.getItemsNavbar();
     }, 500);
     this.removeAttr();
   }
@@ -58,7 +58,7 @@ export class NavBarComponent implements OnInit {
       });
   }
 
-  get itemsNavbar() {
+  getItemsNavbar() {
     this._sharedService.itemsNavbar.subscribe(items => {
       this.menuItems = items;
     });
