@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -22,7 +22,7 @@ export class SharedService {
   // Observable to which components can subscribe
   public darkMode$ = this.darkModeSubject.asObservable();
 
-  constructor( private _http: HttpClient ) { }
+  constructor( @Inject(HttpClient) private _http: HttpClient ) { }
 
   get logoLight(): Observable<any> {
     return this._http.get<any>(this.logoNavbarLight);
