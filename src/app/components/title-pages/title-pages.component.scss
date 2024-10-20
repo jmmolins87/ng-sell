@@ -10,7 +10,9 @@
         .title {
             position: relative;
             padding-bottom: .5rem;
-    
+            &.center-text {
+                text-align: center;
+            }
             /* Pseudoelement to create the underline */
             &.with-underline {
                 &::after {

@@ -34,6 +34,9 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // Skeleton loader
   @Input()
   public showSkeleton: boolean = true;
+  // Center text
+  @Input()
+  public centerText: boolean = false;
   
   // Title translated
   public translatedTitle$: Observable<string> | null = null;
