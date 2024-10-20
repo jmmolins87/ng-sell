@@ -1,6 +1,6 @@
 [build]
   publish = "dist/ng-sell"
-  command = "npm install --force && npm run build"
+  command = "npm install --force && npm run build --force"
 
 [build.environment]
   NODE_VERSION = "16.13.0"
