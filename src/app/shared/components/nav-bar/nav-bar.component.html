@@ -4,7 +4,9 @@
     [ngClass]="[isDarkMode ? 'dark-theme' : 'light-theme', isScrolled ? 'scrolled' : '']"
     class="wrap-navbar navbar navbar-expand-lg">
     <div class="container-fluid">
-        <div (click)="goHome()" class="wrap-button-logo ">
+        <button 
+            (click)="goHome()" 
+            class="wrap-button-logo">
             <a 
                 [routerLink]="['/']" 
                 [attr.data-bs-toggle]="isTablet ? '' : 'collapse'"
@@ -26,7 +28,7 @@
                         [height]="70" />
                 </ng-template>
             </a>
-        </div>
+        </button>
         <button 
             *ngIf="menuItems" 
             type="button" 

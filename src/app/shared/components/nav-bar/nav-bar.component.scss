@@ -15,15 +15,19 @@
             backdrop-filter: blur(15px);
             box-shadow: $navbar-shadow-light;
         }
-        .wrap-logo {
-            display: block;
-            width: fit-content;
-            width: -moz-fit-content;
-            height: fit-content;
-            height: -moz-fit-content;
-            margin-right: 25px;
-            &.collapsed {
-                pointer-events: none;
+        .wrap-button-logo {
+            background: transparent;
+            border: none;
+            .wrap-logo {
+                display: block;
+                width: fit-content;
+                width: -moz-fit-content;
+                height: fit-content;
+                height: -moz-fit-content;
+                margin-right: 25px;
+                &.collapsed {
+                    pointer-events: none;
+                }
             }
         }
         .navbar-toggler {
