@@ -22,8 +22,8 @@
             height: fit-content;
             height: -moz-fit-content;
             margin-right: 25px;
-            .navbar-collapse.collapse.show {
-                background: red;
+            &.collapsed {
+                pointer-events: none;
             }
         }
         .navbar-toggler {

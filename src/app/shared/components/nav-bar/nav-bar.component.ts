@@ -5,6 +5,7 @@ import { MenuItem } from 'primeng/api';
 
 import { SharedService } from '../../services/shared.service';
 import { TranslatorService } from './../../../services/translator.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -27,13 +28,12 @@ export class NavBarComponent implements OnInit {
   public isScrolled: boolean = false;
   // < Tablet
   public isTablet: boolean = false;
-  // Mobile
-  public isMenuOpen: boolean = false;
 
   constructor( 
     private _sharedService: SharedService, 
     private _translator: TranslatorService,
-    private _breakpointObserver: BreakpointObserver ) { }
+    private _breakpointObserver: BreakpointObserver,
+    private _router: Router ) { }
 
   ngOnInit(): void {
     // Get the current route to apply the class
@@ -79,6 +79,10 @@ export class NavBarComponent implements OnInit {
     this._sharedService.darkMode$.subscribe((isDarkMode) => {
       this.isDarkMode = isDarkMode;
     });
+  }
+
+  goHome() {
+    this._router.navigate(['/']);
   }
 
 }

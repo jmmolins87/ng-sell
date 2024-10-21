@@ -4,28 +4,29 @@
     [ngClass]="[isDarkMode ? 'dark-theme' : 'light-theme', isScrolled ? 'scrolled' : '']"
     class="wrap-navbar navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a 
-            [routerLink]="['/']" 
-            [attr.data-bs-toggle]="isTablet ? '' : 'collapse'"
-            [attr.data-bs-target]="isTablet ? '' : '#navbarSell'"
-            [attr.aria-controls]="isTablet ? '' : 'navbarSell'"
-            [attr.aria-expanded]="isTablet ? '' : 'false'"
-            [ngClass]="{'disabled': !isMenuOpen}"
-            class="wrap-logo">
-            <app-wrap-logo 
-                *ngIf="this.isDarkMode === false; else darkMode"
-                imageKey="LOGO_NAVBAR_LIGHT" 
-                [alt]="'OTHERS.ALT_TITLE_LOGO' | translate"
-                [title]="'OTHERS.ALT_TITLE_LOGO' | translate"
-                [height]="70" />
-            <ng-template #darkMode>
+        <div (click)="goHome()" class="wrap-button-logo ">
+            <a 
+                [routerLink]="['/']" 
+                [attr.data-bs-toggle]="isTablet ? '' : 'collapse'"
+                [attr.data-bs-target]="isTablet ? '' : '#navbarSell'"
+                [attr.aria-controls]="isTablet ? '' : 'navbarSell'"
+                [attr.aria-expanded]="isTablet ? '' : 'false'"
+                class="wrap-logo collapsed">
                 <app-wrap-logo 
-                    imageKey="LOGO_NAVBAR_DARK" 
+                    *ngIf="this.isDarkMode === false; else darkMode"
+                    imageKey="LOGO_NAVBAR_LIGHT" 
                     [alt]="'OTHERS.ALT_TITLE_LOGO' | translate"
                     [title]="'OTHERS.ALT_TITLE_LOGO' | translate"
                     [height]="70" />
-            </ng-template>
-        </a>
+                <ng-template #darkMode>
+                    <app-wrap-logo 
+                        imageKey="LOGO_NAVBAR_DARK" 
+                        [alt]="'OTHERS.ALT_TITLE_LOGO' | translate"
+                        [title]="'OTHERS.ALT_TITLE_LOGO' | translate"
+                        [height]="70" />
+                </ng-template>
+            </a>
+        </div>
         <button 
             *ngIf="menuItems" 
             type="button" 
