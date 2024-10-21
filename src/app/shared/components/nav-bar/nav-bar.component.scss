@@ -179,6 +179,7 @@
                         padding-top: 0;
                     }
                     .pi {
+                        color: $black-light-txt;
                         font-size: $icon-mode;
                     }
                 }
@@ -242,10 +243,12 @@
                 }
                 .mode-button {
                     background: transparent;
-                    color: $white-txt;
                     border-top: 1px solid $black-light-border;
                     @include min-responsive($tablet) {
                         border-bottom: none;
+                    }
+                    .pi {
+                        color: $white-txt;
                     }
                 }
             }

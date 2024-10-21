@@ -44,6 +44,7 @@ export class ErrorPageComponent implements OnInit {
       top: window.innerHeight,
       behavior: 'smooth'
     });
+    console.log('Scroll down');
   }
 
   goBack() {
