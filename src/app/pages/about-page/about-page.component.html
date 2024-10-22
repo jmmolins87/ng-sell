@@ -2,33 +2,5 @@
 <app-background-lines></app-background-lines>
 
 <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-about-page">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div *ngFor="let slide of slides" class="swiper-slide">
-        <ng-container [ngSwitch]="slide.type">
-          <div *ngSwitchCase="'title'" class="title-section">
-            <app-title-pages [titleType]="titlePageType" [title]="slide.content | translate"></app-title-pages>
-          </div>
-          <div *ngSwitchCase="'skills'" class="skills-section">
-            <app-title-pages [withUnderline]="false" [titleType]="titleSkillsType" [title]="slide.content | translate"></app-title-pages>
-            <div class="wrap-skills">
-              <div *ngFor="let skill of skillData" class="wrap-skill">
-                <app-skill [skill]="skill" [showSkeleton]="showSkeleton"></app-skill>
-              </div>
-            </div>
-          </div>
-          <div *ngSwitchCase="'download'" class="download-section">
-            <app-title-pages [titleType]="titlePageType" [title]="slide.content | translate"></app-title-pages>
-            <div class="wrap-download-button">
-              <p>* {{ slide.content | translate }}</p>
-              <app-download-button fileName="CV.pdf" filePath="assets/docs/dummy.pdf" [buttonText]="'OTHERS.DOWNLOAD_CV' | translate"></app-download-button>
-            </div>
-          </div>
-        </ng-container>
-      </div>
-    </div>
-    <div class="swiper-pagination">
-      <div *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide" (click)="goToSlide(i)"></div>
-    </div>
-  </div>
+  
 </div>
