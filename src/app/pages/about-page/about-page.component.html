@@ -2,5 +2,19 @@
 <app-background-lines></app-background-lines>
 
 <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-about-page">
+  <div class="swiper-container" (wheel)="onMouseWheel($event)" (mousedown)="onDragStart($event)" (mousemove)="onDragMove($event)" (mouseup)="onDragEnd()" (mouseleave)="onDragEnd()">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let slide of slides; let i = index">
+        <div class="slide-content">
+          <h3>{{ slide.title }}</h3>
+          <p>{{ slide.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <div class="swiper-pagination">
+    <div class="swiper-bullet" *ngFor="let slide of slides; let i = index" [class.active]="i === activeIndex" (click)="goToSlide(i)">
+    </div>
+  </div>
 </div>
