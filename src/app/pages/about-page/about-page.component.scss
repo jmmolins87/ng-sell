@@ -1,62 +1,92 @@
 
 
-@import "/src//styles.scss";
+@import "/src/styles.scss";
 
 .light-theme,
 .dark-theme {
-    &.wrap-about-page {
-        .wrap-description {
-            padding: 2rem;
-            border-radius: 10px;
-            background: rgba($white-bg, .2);
-            backdrop-filter: blur(7.5px);
-            box-shadow: $skill-shadow-light;
-            p {
-                margin: 0;
-            }
+  &.wrap-about-page {
+    .swiper {
+      &-container {
+        height: 100vh;
+        max-width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include min-responsive($tablet) {
+          height: calc(100vh - 200px);
+          margin: 0 auto;
         }
-        .title-skills {
-            margin-top: 3rem;
-            display: flex;
-            box-sizing: border-box;
-            justify-content: center;
-            align-items: center;
-            min-width: 100%;
+      }
+      &-wrapper {
+        height: 100%;
+        transition: transform .2s ease-in-out;
+      }
+      &-slide {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $txt-main;
+        border-bottom: 1px solid $grey-border;
+        @include min-responsive($tablet) {
+          font-size: calc($txt-main - .5rem);
         }
-        .wrap-skills {
-            width: 100%;
-            @include min-responsive($tablet) {
-                @include grid(4, 2.5rem);
-            }
-            .wrap-skill {
-                margin-top: 2rem;
-                @include min-responsive($tablet) {
-                    margin-top: 0;
-                }
-            }
+      }
+      &-pagination {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid $white-dark-border;
+        cursor: pointer;
+        transition: background-color .2s;
+        @include min-responsive($tablet) {
+          width: 10px;
+          height: 10px;
         }
-        .wrap-download-button {
-            display: flex;
-            box-sizing: border-box;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            @include min-responsive($tablet) {
-                justify-content: flex-end;
-            }
-            p {
-                margin: 0;
-            }
-        }
+      }
+      &-bullet.active {
+        background-color: $grey-light-bg;
+      }
     }
+    
+    // Content each slide
+    .slide-content {
+      position: relative;
+      top: -100px;
+      width: 100%;
+      height: calc(100% - 200px);
+      padding: 20px 0;
+      @include min-responsive($tablet) {
+        padding: 50px 0;
+      }
+    }
+  }
 }
 
+
 .dark-theme {
-    &.wrap-about-page {
-        .wrap-description {
-            background: rgba($black-bg, .4);
-            box-shadow: $skill-shadow-dark;
-        }
+  &.wrap-about-page {
+    .swiper {
+      &-slide {
+        border-bottom: 1px solid $black-light-border;
+      }
+      &-bullet {
+        border: 1px solid $black-border;
+      }
+      &-bullet.active {
+        background-color: $black-light-bg;
+      }
     }
+  }
 }

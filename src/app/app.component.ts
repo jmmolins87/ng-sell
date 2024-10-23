@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
   containerCustom() {
     // The container class will be applied to all pages except the home page and the error page.
     this._router.events.subscribe(() => {
-      this.isFullWidth = this._router.url === '/' || this._router.url === '/404';
+      this.isFullWidth = this._router.url === '/' || this._router.url === '/404' || this._router.url === '/about';
     })
   }
 

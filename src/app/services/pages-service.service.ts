@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 import { toolsContent } from './../db/tool.db';
 import { skillContent } from '../db/skills.db';
@@ -41,5 +41,16 @@ export class PagesService {
 
   get errorAnimation() {
     return this._http.get('assets/img/404/animation_error.json');
+  }
+
+  getSlides(): Observable<any[]> {
+    // Simula una llamada a la base de datos
+    const slides = [
+      { type: 'title', content: 'Slide 1' },
+      { type: 'title', content: 'Slide 2' },
+      { type: 'title', content: 'Slide 3' },
+      { type: 'title', content: 'Slide 4' }
+    ];
+    return of(slides);
   }
 }

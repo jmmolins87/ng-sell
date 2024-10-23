@@ -1,33 +1,32 @@
 <app-background-gradient />
 <app-background-lines />
 
-<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'"  class="wrap-about-page">
-    <app-title-pages [titleType]="titlePageType" [title]="'ABOUT_PAGE.TITLE' | translate" />
-    <div class="wrap-description">
-        <p *ngIf="!showSkeleton">{{ "ABOUT_PAGE.DESCRIPTION" | translate }}</p>
-        <!-- Skeleton description -->
-        <div *ngIf="showSkeleton" style="display: flex; flex-direction: column; gap: 1rem;">
-            <p-skeleton />
-            <p-skeleton styleClass="mt-2" />
-            <p-skeleton width="15rem" styleClass="mt-2" />
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-about-page">
+  <div 
+    (wheel)="onMouseWheel($event)" 
+    (mousedown)="onDragStart($event)" 
+    (mousemove)="onDragMove($event)" 
+    (mouseup)="onDragEnd()" 
+    (mouseleave)="onDragEnd()" 
+    class="swiper-container">
+    <div class="swiper-wrapper">
+      <div 
+        *ngFor="let slide of numberSlides; let i = index"
+        class="swiper-slide">
+        <div class="slide-content">
+          <h3>{{ slide.title }}</h3>
+          <p>{{ slide.description }}</p>
         </div>
+      </div>
     </div>
-    <div class="title-skills">
-        <app-title-pages [withUnderline]="false" [titleType]="titleSkillsType" [title]="'ABOUT_PAGE.SKILLS_TITLE' | translate" />
+  </div>
+  
+  <div class="swiper-pagination">
+    <div 
+      *ngFor="let slide of numberSlides; let i = index" 
+      (click)="goToSlide(i)"
+      [class.active]="i === activeIndex" 
+      class="swiper-bullet">
     </div>
-    <div class="wrap-skills">
-        <div *ngFor="let skill of skillData" class="wrap-skill">
-            <app-skill [skill]="skill" [showSkeleton]="showSkeleton" />
-        </div>
-    </div>    
-    <div class="wrap-download-button">
-        <p>* {{ "ABOUT_PAGE.MORE_ME" | translate }}</p>
-        <app-download-button 
-            fileName="CV.pdf" 
-            filePath="assets/docs/dummy.pdf" 
-            [buttonText]="'OTHERS.DOWNLOAD_CV' | translate" />
-    </div>
+  </div>
 </div>
-
-
-
