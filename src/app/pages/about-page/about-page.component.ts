@@ -25,7 +25,7 @@ export class AboutPageComponent implements OnInit {
   // Skeleton loader
   public showSkeleton: boolean = true;
 
-  slides = [
+  numberSlides = [
     { title: 'Slide 1', description: 'Description 1' },
     { title: 'Slide 2', description: 'Description 2' },
     { title: 'Slide 3', description: 'Description 3' },
@@ -103,7 +103,7 @@ export class AboutPageComponent implements OnInit {
   }
 
   nextSlide() {
-    if (this.activeIndex < this.slides.length - 1) {
+    if (this.activeIndex < this.numberSlides.length - 1) {
       this.goToSlide(this.activeIndex + 1);
     }
   }

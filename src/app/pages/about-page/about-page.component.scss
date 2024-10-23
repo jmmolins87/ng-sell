@@ -1,60 +1,92 @@
-.swiper-container {
-  height: calc(100vh - 200px);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+
+
+@import "/src/styles.scss";
+
+.light-theme,
+.dark-theme {
+  &.wrap-about-page {
+    .swiper {
+      &-container {
+        height: 100vh;
+        max-width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include min-responsive($tablet) {
+          height: calc(100vh - 200px);
+          margin: 0 auto;
+        }
+      }
+      &-wrapper {
+        height: 100%;
+        transition: transform .2s ease-in-out;
+      }
+      &-slide {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $txt-main;
+        border-bottom: 1px solid $grey-border;
+        @include min-responsive($tablet) {
+          font-size: calc($txt-main - .5rem);
+        }
+      }
+      &-pagination {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid $white-dark-border;
+        cursor: pointer;
+        transition: background-color .2s;
+        @include min-responsive($tablet) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      &-bullet.active {
+        background-color: $grey-light-bg;
+      }
+    }
+    
+    // Content each slide
+    .slide-content {
+      position: relative;
+      top: -100px;
+      width: 100%;
+      height: calc(100% - 200px);
+      padding: 20px 0;
+      @include min-responsive($tablet) {
+        padding: 50px 0;
+      }
+    }
+  }
 }
 
-.swiper-wrapper {
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
 
-.swiper-slide {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  background-color: #f4f4f4;
-  border-bottom: 5px solid black;
-}
-
-.slide-content {
-  position: relative;
-  top: -100px;
-  // background: red;
-  width: 100%;
-  height: calc(100% - 200px);
-}
-
-.swiper-pagination {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.swiper-bullet {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #bbb;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.swiper-bullet.active {
-  background-color: #000;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .swiper-slide {
-    font-size: 1.5rem;
+.dark-theme {
+  &.wrap-about-page {
+    .swiper {
+      &-slide {
+        border-bottom: 1px solid $black-light-border;
+      }
+      &-bullet {
+        border: 1px solid $black-border;
+      }
+      &-bullet.active {
+        background-color: $black-light-bg;
+      }
+    }
   }
 }
