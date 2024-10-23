@@ -104,7 +104,8 @@
                 @include min-responsive($tablet) {
                     border-bottom: none;
                     padding-bottom: 0;
-                    min-width: fit-content;                    
+                    min-width: fit-content;   
+                    padding: 0;                 
                 }
                 .nav-item {
                     display: none;
