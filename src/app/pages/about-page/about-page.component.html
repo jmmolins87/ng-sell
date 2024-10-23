@@ -12,6 +12,7 @@
     <div class="swiper-wrapper">
       <div 
         *ngFor="let slide of numberSlides; let i = index"
+        [ngClass]="'slide-' + i"
         class="swiper-slide">
         <div class="slide-content">
           <h3>{{ slide.title }}</h3>

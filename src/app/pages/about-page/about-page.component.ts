@@ -35,6 +35,7 @@ export class AboutPageComponent implements OnInit {
   isDragging = false;
   startY = 0;
   currentTranslate = 0;
+  currentSlide = this.numberSlides[this.activeIndex];
 
   constructor( private _sharedService: SharedService, private _pagesService: PagesService ) {}
 
