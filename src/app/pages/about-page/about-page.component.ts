@@ -24,18 +24,23 @@ export class AboutPageComponent implements OnInit {
   public skillData: Skill[] = skillContent;
   // Skeleton loader
   public showSkeleton: boolean = true;
-
-  numberSlides = [
+  // Slides number
+  public numberSlides = [
     { title: 'Slide 1', description: 'Description 1' },
     { title: 'Slide 2', description: 'Description 2' },
     { title: 'Slide 3', description: 'Description 3' },
     // Puedes añadir más slides aquí
   ];
-  activeIndex = 0;
-  isDragging = false;
-  startY = 0;
-  currentTranslate = 0;
-  currentSlide = this.numberSlides[this.activeIndex];
+  // Slide active
+  public activeIndex = 0;
+  // Slide dragging
+  public isDragging = false;
+  // Start Y position
+  public startY = 0;
+  // Current translate
+  public currentTranslate = 0;
+  // Current slide
+  public currentSlide = this.numberSlides[this.activeIndex];
 
   constructor( private _sharedService: SharedService, private _pagesService: PagesService ) {}
 
@@ -124,6 +129,20 @@ export class AboutPageComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.updateSlidePosition();
+  }
+
+  onTouchStart(event: TouchEvent) {
+    const touch = event.touches[0];
+    this.onDragStart({ clientY: touch.clientY } as MouseEvent);
+  }
+  
+  onTouchMove(event: TouchEvent) {
+    const touch = event.touches[0];
+    this.onDragMove({ clientY: touch.clientY } as MouseEvent);
+  }
+  
+  onTouchEnd(event: TouchEvent) {
+    this.onDragEnd();
   }
 
 }

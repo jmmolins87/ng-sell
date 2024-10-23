@@ -8,6 +8,9 @@
     (mousemove)="onDragMove($event)" 
     (mouseup)="onDragEnd()" 
     (mouseleave)="onDragEnd()" 
+    (touchstart)="onTouchStart($event)" 
+    (touchmove)="onTouchMove($event)" 
+    (touchend)="onDragEnd()"
     class="swiper-container">
     <div class="swiper-wrapper">
       <div 
