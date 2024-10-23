@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         @include min-responsive($tablet) {
-          height: calc(100vh - 200px);
+          height: calc(100vh - 202px);
           margin: 0 auto;
         }
       }
@@ -47,7 +47,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        border: 1px solid $white-dark-border;
+        border: 1px solid $grey-dark-border;
         cursor: pointer;
         transition: background-color .2s;
         @include min-responsive($tablet) {
@@ -82,10 +82,10 @@
         border-bottom: 1px solid $black-light-border;
       }
       &-bullet {
-        border: 1px solid $black-border;
+        border: 1px solid $white-border;
       }
       &-bullet.active {
-        background-color: $black-light-bg;
+        background-color: $grey-dark-bg;
       }
     }
   }
