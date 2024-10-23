@@ -659,7 +659,7 @@ export const toolsContent: Tool[] = [
         title: "Tailwind",
         subtitle: "TOOLS.TAILWIND.SUBTITLE",
         link: "https://tailwindcss.com/",
-        description: "TOOLS.TAILWINDD.DESCRIPTION",
+        description: "TOOLS.TAILWIND.DESCRIPTION",
         tags: [
             "TOOLS.TAILWIND.TAGS.DEVELOPMENT",
             "TOOLS.TAILWIND.TAGS.WEB_DESIGN",
