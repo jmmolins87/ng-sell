@@ -51,12 +51,13 @@
         cursor: pointer;
         transition: background-color .2s;
         @include min-responsive($tablet) {
-          width: 10px;
-          height: 10px;
+          width: 15px;
+          height: 15px;
         }
       }
       &-bullet.active {
-        background-color: $grey-light-bg;
+        background-color: rgba($grey-light-bg, .4);
+        backdrop-filter: blur(15px);
       }
     }
     
@@ -85,7 +86,7 @@
         border: 1px solid $white-border;
       }
       &-bullet.active {
-        background-color: $grey-dark-bg;
+        background-color: rgba($grey-dark-bg, .4);
       }
     }
   }
