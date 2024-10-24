@@ -517,7 +517,7 @@
             "DESCRIPTION": "WordPress es un sistema de gestión de contenido (CMS) gratuito y de código abierto escrito en PHP y emparejado con una base de datos MySQL o MariaDB. Permite a los usuarios crear y gestionar sitios web de manera fácil y eficiente. WordPress es conocido por su flexibilidad y facilidad de uso, con miles de temas y plugins disponibles que permiten a los usuarios personalizar sus sitios web y añadir funcionalidades. Es ampliamente utilizado para blogs, sitios web de empresas, comercio electrónico y más.",
             "TAGS": {
                 "DEVELOPMENT": "Desarrollo",
-                "CMS": "Sistema de gestión de contenido",
+                "CMS": "CMS",
                 "FRONTEND": "Frontend",
                 "BACKEND": "Backend",
                 "WEB_FUNCTIONALITY": "Funcionalidad web"
