@@ -14,7 +14,6 @@
         flex-direction: column;
         @include min-responsive($tablet) {
           height: calc(100vh - 202px);
-          background-color: red;
         }
       }
       &-wrapper {
@@ -60,11 +59,17 @@
     }
 
       // Custom swiper pagination
-      .slide {
-        &-0 {
-          background-color: blue;
-        }
-      }
+      // .slide {
+      //   &-0 {
+      //     background-color: blue;
+      //   }
+      //   &-1 {
+      //     background-color: green;
+      //   }
+      //   &-2 {
+      //     background-color: purple;
+      //   }
+      // }
     
     // Content each slide
     .slide-content {
