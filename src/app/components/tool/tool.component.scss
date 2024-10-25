@@ -110,7 +110,7 @@
   &.wrap-tool-component {
     &::ng-deep {
       .p-card {
-        background: linear-gradient(0deg, rgba($black-bg, .2) 0%, rgba($black-light-bg, .2) 100%);
+        background: linear-gradient(0deg, rgba($black-bg, .2) 0%, rgba($grey-dark-bg, .2) 100%);
         color: $grey-light-txt;
         border: 1px solid $black-border;
       }
