@@ -68,6 +68,7 @@ export class AboutPageComponent implements OnInit {
     });
   }
 
+  // Work's wheel mouse to change slide
   onMouseWheel(event: WheelEvent) {
     if (event.deltaY > 0) {
       this.nextSlide();
@@ -76,11 +77,13 @@ export class AboutPageComponent implements OnInit {
     }
   }
 
+  // Work's drag to start slide
   onDragStart(event: MouseEvent) {
     this.isDragging = true;
     this.startY = event.clientY;
   }
 
+  // Work's drag to change slide
   onDragMove(event: MouseEvent) {
     if (!this.isDragging) return;
     const distance = event.clientY - this.startY;
@@ -89,6 +92,7 @@ export class AboutPageComponent implements OnInit {
     swiperWrapper.style.transform = `translateY(${this.currentTranslate}px)`;
   }
 
+  // Work's drag to end slide
   onDragEnd() {
     if (!this.isDragging) return;
     this.isDragging = false;
@@ -102,35 +106,41 @@ export class AboutPageComponent implements OnInit {
     }
   }
 
+  // Work's change slide
   goToSlide(index: number) {
     this.activeIndex = index;
     const swiperWrapper = document.querySelector('.swiper-wrapper') as HTMLElement;
     swiperWrapper.style.transform = `translateY(-${index * window.innerHeight}px)`;
   }
 
+  // Go to next slide
   nextSlide() {
     if (this.activeIndex < this.numberSlides.length - 1) {
       this.goToSlide(this.activeIndex + 1);
     }
   }
 
+  // Go to previous slide
   prevSlide() {
     if (this.activeIndex > 0) {
       this.goToSlide(this.activeIndex - 1);
     }
   }
 
+  // Update slide position
   updateSlidePosition() {
     const swiperWrapper = document.querySelector('.swiper-wrapper') as HTMLElement;
     const offset = this.currentTranslate * -100;
     swiperWrapper.style.transform = `translateY(${offset}vh)`;
   }
 
+  // Resize
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.updateSlidePosition();
   }
 
+  // Touch events
   onTouchStart(event: TouchEvent) {
     const touch = event.touches[0];
     this.onDragStart({ clientY: touch.clientY } as MouseEvent);

@@ -91,7 +91,7 @@
     }
     &::ng-deep {
       .p-card {
-        background: linear-gradient(0deg, rgba($white-bg, .2) 0%, rgba($grey-dark-bg, .2) 100%);
+        background: linear-gradient(0deg, rgba($grey-dark-bg, .2) 0%, rgba($white-bg, .2) 100%);
         backdrop-filter: blur(10px);
         border: 1px solid $grey-border;
         color: $black-light-txt;
@@ -110,7 +110,7 @@
   &.wrap-tool-component {
     &::ng-deep {
       .p-card {
-        background: linear-gradient(0deg, rgba($black-light-bg, .2) 0%, rgba($black-bg, .2) 100%);
+        background: linear-gradient(0deg, rgba($black-bg, .2) 0%, rgba($black-light-bg, .2) 100%);
         color: $grey-light-txt;
         border: 1px solid $black-border;
       }
