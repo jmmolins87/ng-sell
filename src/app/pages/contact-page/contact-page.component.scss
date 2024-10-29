@@ -42,15 +42,15 @@
             textarea {
                 width: 100%;
                 .required {
-                    color: var(--brand-color-red, #f53a3a);
+                    color: #f53a3a;
                 }
                 .counter-characters {
                     margin: 0;
                 }
                 &.success {
                     border-radius: 4px;
-                    border: 2px solid var(--border-success, #28a745);
-                    background: var(--bg-border-success, #20a53f2f)
+                    border: 2px solid #28a745;
+                    background: rgba(32, 165, 63, 0.184)
                 }
             }
             .wrap-alert {

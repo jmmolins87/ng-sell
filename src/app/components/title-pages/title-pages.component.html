@@ -4,7 +4,7 @@
 </div>
 
 <ng-template #loadedContent>
-    <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-title">
+    <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-title animate__animated animate__fadeIn">
         <h1 
             *ngIf="titleType === 'home'" 
             [ngClass]="[withUnderline ? 'with-underline' : '', titleHome ? 'sizes-home' : '', centerText ? 'center-text' : '']" 
