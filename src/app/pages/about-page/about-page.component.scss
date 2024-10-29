@@ -53,7 +53,7 @@
         }
       }
       &-bullet.active {
-        background-color: rgba($grey-light-bg, .4);
+        background-color: rgba($grey-bg, .4);
         backdrop-filter: blur(15px);
       }
     }
