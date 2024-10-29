@@ -40,11 +40,22 @@
     },
     "CONTACT_PAGE": {
         "TITLE": "Contacto",
-        "DESCRIPTION": "Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte en lo que necesites."
+        "DESCRIPTION": "Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte en lo que necesites.",
+        "LABEL_NAME": "Nombre",
+        "LABEL_SURNAME": "Apellido",
+        "LABEL_COMPANY": "Empresa",
+        "LABEL_EMAIL": "Correo electrónico",
+        "LABEL_PHONE": "Teléfono de contacto",
+        "LABEL_SUBJECT": "Asunto",
+        "LABEL_MESSAGE": "Escriba aquí su comentario,",
+        "NUMBER_CHARACTERS": "Número de cáracteres",
+        "OF": "de",
+        "RESET_BUTTON": "Resetear formulario",
+        "SEND_BUTTON": "Enviar formulario"
     },
     "ERROR_PAGE": {
         "TITLE": "¡¡Este no es el camino correcto!!",
-        "GO_BACK": "¡¡Rebobinamos!!"
+        "GO_BACK": "¿Rebobinamos?"
     },
     "TITLES_PAGES": {
         "ABOUT": "Algo sobre mí",

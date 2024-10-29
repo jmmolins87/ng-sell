@@ -40,11 +40,22 @@
     },
     "CONTACT_PAGE": {
         "TITLE": "Contact",
-        "DESCRIPTION": "If you have any questions, suggestions, or just want to say hello, feel free to contact me. I am here to help you with whatever you need."
+        "DESCRIPTION": "If you have any questions, suggestions, or just want to say hello, feel free to contact me. I am here to help you with whatever you need.",
+        "LABEL_NAME": "Name",
+        "LABEL_SURNAME": "Surname",
+        "LABEL_COMPANY": "Company",
+        "LABEL_EMAIL": "Email",
+        "LABEL_PHONE": "Phone",
+        "LABEL_SUBJECT": "Subject",
+        "LABEL_MESSAGE": "Message",
+        "NUMBER_CHARACTERS": "Number of characters",
+        "OF": "of",
+        "RESET_BUTTON": "Reset form",
+        "SEND_BUTTON": "Send form"
     },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",
-        "GO_BACK": "We rewind!!"
+        "GO_BACK": "We rewind?"
     },
     "TITLES_PAGES": {
         "ABOUT": "Something about me",

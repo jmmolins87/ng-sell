@@ -3,7 +3,7 @@
 <app-title-pages [titleType]="titleType" [title]="'TITLES_PAGES.TOOLS' | translate" />
 
 <div class="wrap-tools">
-    <div *ngFor="let tool of toolsData" class="wrap-tool">
+    <div *ngFor="let tool of toolsData" class="wrap-tool box">
         <app-tool [tool]="tool" [showSkeleton]="showSkeleton"></app-tool>
     </div>
 </div>

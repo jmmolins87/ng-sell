@@ -10,10 +10,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CookieService } from 'ngx-cookie-service';
 
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
-import { PagesModule } from './pages/pages.module';
-import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
@@ -37,10 +34,7 @@ export function loaderTranslatorJson( http: HttpClient ) {
         deps: [ HttpClient ]
       }
     }),
-    PrimeNgModule,
-    SharedModule,
-    PagesModule,
-    ComponentsModule
+    SharedModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
