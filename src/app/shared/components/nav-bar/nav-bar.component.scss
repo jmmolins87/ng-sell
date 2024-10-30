@@ -101,7 +101,7 @@
                 min-width: 50%;
                 border-bottom: 1px solid $grey-light-border;
                 padding: 15px 0;
-                @include min-responsive($tablet) {
+                @include min-responsive($tablet-hor) {
                     border-bottom: none;
                     padding-bottom: 0;
                     min-width: fit-content;   
@@ -142,7 +142,7 @@
                 align-items: center;
                 min-width: 100%;
                 margin-top: 20px;
-                @include min-responsive($tablet) {
+                @include min-responsive($tablet-hor) {
                     justify-content: flex-end;
                     flex-direction: row;
                     margin-top: 0;
@@ -161,7 +161,7 @@
                     padding: 10px;
                     margin-top: 10px;
                     background: transparent;
-                    @include min-responsive($tablet) {
+                    @include min-responsive($tablet-hor) {
                         margin-top: 0;
                     }
                 }
@@ -172,7 +172,7 @@
                     border-top: 1px solid $grey-light-border;
                     padding-top: 20px;
                     min-width: 50%;
-                    @include min-responsive($tablet) {
+                    @include min-responsive($tablet-hor) {
                         margin-top: 0;
                         margin-left: 10px;
                         min-width: auto;

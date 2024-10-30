@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { titleTypes } from '../../components/title-pages/title.config';
 import { SharedService } from '../../shared/services/shared.service';
+import { PagesService } from '../../services/pages-service.service';
+
+import { titleTypes } from '../../components/title-pages/title.config';
 
 @Component({
   selector: 'app-contact-page',
@@ -23,6 +25,8 @@ export class ContactPageComponent {
   public maxCharacters: number = 1000;
   // Set the title of the page
   public titleType: titleTypes = titleTypes.h1;
+  // Text error fields
+  public textError: string = 'Este campo es requerido';
   // Set the title of the page
   public formContact: FormGroup = this._fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
@@ -34,7 +38,10 @@ export class ContactPageComponent {
     message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(this.maxCharacters)]]
   });
   
-  constructor ( private _sharedService: SharedService, private _fb: FormBuilder ) { }
+  constructor ( 
+    private _sharedService: SharedService, 
+    private _fb: FormBuilder,
+    private _validatorsService: PagesService ) { }
 
   ngOnInit() {
     this.resetFormError();
@@ -60,5 +67,28 @@ export class ContactPageComponent {
 
   resetFormError() { this.formContact.reset(); }
   updateCounter() { this.characterCount = this.messageCharactres.length; }
+
+  isValidField( field: string ): boolean | null {
+    return this._validatorsService.isValidField(this.formContact, field);
+  }
+
+  getFieldError( field: string ): string | null {
+
+    if(!this.formContact.controls[field]) return null;
+    const errors = this.formContact.controls[field].errors || {};
+    for ( const key of Object.keys( errors ) ) {
+      switch (key) {
+        case 'required':
+          return 'Este campo es requerido';
+          break;
+        case 'minlength':
+          return `Mínimo ${ errors['minlength'].requiredLength } carácteres`;
+          break;
+        default:
+          break;
+      }
+    }
+    return null;
+  }
 
 }

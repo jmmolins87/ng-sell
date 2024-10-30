@@ -13,6 +13,11 @@
                         {{ "CONTACT_PAGE.LABEL_NAME" | translate }} <span class="required">*</span>
                     </label>
                 </span>
+                <span 
+                    *ngIf="isValidField('name')" 
+                    class="label-error">
+                    {{ getFieldError('name') }}
+                </span>
             </div>
             <!-- Surname camp -->
             <div class="form-group">
@@ -35,6 +40,11 @@
                         {{ "CONTACT_PAGE.LABEL_COMPANY" | translate }} <span class="required">*</span>
                     </label>
                 </span>
+                <span 
+                    *ngIf="isValidField('company')" 
+                    class="label-error">
+                    {{ getFieldError('company') }}
+                </span>
             </div>
             <!-- E-mail camp -->
             <div class="form-group">
@@ -46,6 +56,11 @@
                     <label htmlFor="e-mail">
                         {{ "CONTACT_PAGE.LABEL_EMAIL" | translate }} <span class="required">*</span>
                     </label>
+                </span>
+                <span 
+                    *ngIf="isValidField('email')" 
+                    class="label-error">
+                    {{ getFieldError('email') }}
                 </span>
             </div>
             <!-- Phone camp -->
@@ -69,6 +84,11 @@
                         {{ "CONTACT_PAGE.LABEL_SUBJECT" | translate }} <span class="required">*</span>
                     </label>
                 </span>
+                <span 
+                    *ngIf="isValidField('subject')" 
+                    class="label-error">
+                    {{ getFieldError('subject') }}
+                </span>
             </div>
             <!-- Message camp -->
             <div class="form-group textarea">
@@ -85,9 +105,16 @@
                     <label for="textarea">
                         {{ "CONTACT_PAGE.LABEL_MESSAGE" | translate }} <span class="required">*</span>
                     </label>
-                    <p class="counter-characters">
-                        {{ "CONTACT_PAGE.NUMBER_CHARACTERS" | translate }}: {{ characterCount }} {{ "CONTACT_PAGE.OF" | translate }} {{ maxCharacters }}
-                    </p>
+                    <div class="wrap-info-textarea">
+                        <p class="counter-characters">
+                            {{ "CONTACT_PAGE.NUMBER_CHARACTERS" | translate }}: {{ characterCount }} {{ "CONTACT_PAGE.OF" | translate }} {{ maxCharacters }}
+                        </p>
+                        <span 
+                            *ngIf="isValidField('message')" 
+                            class="label-error textarea">
+                            {{ getFieldError('message') }}
+                        </span>
+                    </div>
                 </span>
             </div>
         </div>
