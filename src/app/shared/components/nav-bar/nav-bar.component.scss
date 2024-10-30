@@ -112,7 +112,7 @@
                     &.mobile {
                         display: block;
                     }
-                    @include min-responsive($tablet) {
+                    @include min-responsive($tablet-hor) {
                         display: block;
                         margin-right: 15px;
                         &.mobile {
@@ -205,12 +205,12 @@
         .navbar-nav {
             &.menu {
                 border-bottom: 1px solid $black-light-border;
-                @include min-responsive($tablet) {
+                @include min-responsive($tablet-hor) {
                     border-bottom: none;
                 }
                 .nav-item {
                     margin-right: 0;
-                    @include min-responsive($tablet) {
+                    @include min-responsive($tablet-hor) {
                         margin-right: 15px;
                     }
                         a {

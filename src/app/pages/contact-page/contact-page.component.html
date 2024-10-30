@@ -1,97 +1,125 @@
+
 <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-contact">
     <app-title-pages [titleType]="titleType" [title]="'CONTACT_PAGE.TITLE' | translate"></app-title-pages>
     <form [formGroup]="formContact" autocomplete="off" class="wrap-form animate__animated animate__fadeIn">
         <div class="wrapper-form">
             <!-- Name camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="text"
                         formControlName="name" 
                         id="username" >
                     <label htmlFor="username">
                         {{ "CONTACT_PAGE.LABEL_NAME" | translate }} <span class="required">*</span>
                     </label>
                 </span>
-                <span 
-                    *ngIf="isValidField('name')" 
-                    class="label-error">
-                    {{ getFieldError('name') }}
-                </span>
+                <div *ngIf="formContact.get('name')?.invalid && formContact.get('name')?.touched" class="error-message">
+                    <span *ngIf="formContact.get('name')?.errors?.['required']">{{ "CONTACT_PAGE.ERROR_NAME_REQUIRED" | translate }}</span>
+                    <span *ngIf="formContact.get('name')?.errors?.['minlength']">{{ "CONTACT_PAGE.ERROR_MINLENGTH_THREE" | translate }}</span>
+                </div>
+            </div>
+            <!-- Skeleton name -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
             <!-- Surname camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="text"
                         formControlName="surname" 
                         id="surname" />
                     <label htmlFor="surname">{{ "CONTACT_PAGE.LABEL_SURNAME" | translate }}</label>
                 </span>
             </div>
+            <!-- Skeleton surname -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
+            </div>
             <!-- Company camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="text"
                         formControlName="company" 
                         id="company" >
                     <label htmlFor="company">
                         {{ "CONTACT_PAGE.LABEL_COMPANY" | translate }} <span class="required">*</span>
                     </label>
                 </span>
-                <span 
-                    *ngIf="isValidField('company')" 
-                    class="label-error">
-                    {{ getFieldError('company') }}
-                </span>
+                <div *ngIf="formContact.get('company')?.invalid && formContact.get('company')?.touched" class="error-message">
+                    <span *ngIf="formContact.get('company')?.errors?.['required']">{{ "CONTACT_PAGE.ERROR_COMPANY_REQUIRED" | translate }}</span>
+                    <span *ngIf="formContact.get('company')?.errors?.['minlength']">{{ "CONTACT_PAGE.ERROR_MINLENGTH_FIVE" | translate }}</span>
+                </div>
+            </div>
+            <!-- Skeleton company -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
             <!-- E-mail camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="email"
                         formControlName="email" 
                         id="e-mail" >
                     <label htmlFor="e-mail">
                         {{ "CONTACT_PAGE.LABEL_EMAIL" | translate }} <span class="required">*</span>
                     </label>
                 </span>
-                <span 
-                    *ngIf="isValidField('email')" 
-                    class="label-error">
-                    {{ getFieldError('email') }}
-                </span>
+                <div *ngIf="formContact.get('email')?.invalid && formContact.get('email')?.touched" class="error-message">
+                    <span *ngIf="formContact.get('email')?.errors?.['required']">{{ "CONTACT_PAGE.ERROR_EMAIL_REQUIRED" | translate }}</span>
+                    <span *ngIf="formContact.get('email')?.errors?.['email']">{{ "CONTACT_PAGE.ERROR_EMAIL_INVALID" | translate }}</span>
+                    <span *ngIf="formContact.get('email')?.errors?.['customEmail']">{{ "CONTACT_PAGE.ERROR_EMAIL_CUSTOM" | translate }}</span>
+                </div>
+            </div>
+            <!-- Skeleton email -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
             <!-- Phone camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="tel"
                         formControlName="phone" 
                         id="phone" />
                     <label htmlFor="phone">{{ "CONTACT_PAGE.LABEL_PHONE" | translate }}</label>
                 </span>
+            </div>            
+            <!-- Skeleton phone -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
             <!-- Subject camp -->
-            <div class="form-group">
+            <div *ngIf="!showSkeleton" class="form-group">
                 <span class="p-float-label">
                     <input 
                         pInputText 
+                        type="text"
                         formControlName="subject" 
                         id="subject" >
                     <label htmlFor="subject">
                         {{ "CONTACT_PAGE.LABEL_SUBJECT" | translate }} <span class="required">*</span>
                     </label>
                 </span>
-                <span 
-                    *ngIf="isValidField('subject')" 
-                    class="label-error">
-                    {{ getFieldError('subject') }}
-                </span>
+                <div *ngIf="formContact.get('subject')?.invalid && formContact.get('subject')?.touched" class="error-message">
+                    <span *ngIf="formContact.get('subject')?.errors?.['required']">{{ "CONTACT_PAGE.ERROR_SUBJECT_REQUIRED" | translate }}</span>
+                    <span *ngIf="formContact.get('subject')?.errors?.['minlength']">{{ "CONTACT_PAGE.ERROR_MINLENGTH_THREE" | translate }}</span>
+                </div>
+            </div>          
+            <!-- Skeleton subject -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
             <!-- Message camp -->
-            <div class="form-group textarea">
+            <div *ngIf="!showSkeleton" class="form-group textarea">
                 <span class="p-float-label">
                     <textarea 
                         pInputText 
@@ -106,32 +134,44 @@
                         {{ "CONTACT_PAGE.LABEL_MESSAGE" | translate }} <span class="required">*</span>
                     </label>
                     <div class="wrap-info-textarea">
-                        <p class="counter-characters">
+                        <p *ngIf="!showSkeleton" class="counter-characters">
                             {{ "CONTACT_PAGE.NUMBER_CHARACTERS" | translate }}: {{ characterCount }} {{ "CONTACT_PAGE.OF" | translate }} {{ maxCharacters }}
                         </p>
-                        <span 
-                            *ngIf="isValidField('message')" 
-                            class="label-error textarea">
-                            {{ getFieldError('message') }}
-                        </span>
+                        <div *ngIf="formContact.get('message')?.invalid && formContact.get('message')?.touched" class="label-error error-message">
+                            <span *ngIf="formContact.get('message')?.errors?.['required']">{{ "CONTACT_PAGE.ERROR_MESSAGE_REQUIRED" | translate }}</span>
+                            <span *ngIf="formContact.get('message')?.errors?.['minlength']">{{ "CONTACT_PAGE.ERROR_MINLENGTH_TEN" | translate }}</span>
+                        </div>
                     </div>
                 </span>
+            </div>         
+            <!-- Skeleton message -->
+            <div *ngIf="showSkeleton" class="form-group">
+                <p-skeleton width="100%" height="20rem"></p-skeleton>
             </div>
         </div>
         <div class="wrapper-buttons">
-            <div class="wrap-button-reset">
+            <div *ngIf="!showSkeleton" class="wrap-button-reset">
                 <p-button 
+                    (click)="resetForm()"
                     [label]="'CONTACT_PAGE.RESET_BUTTON' | translate"
                     [outlined]="true" 
                     severity="danger" />
+            </div>        
+            <!-- Skeleton reset button -->
+            <div *ngIf="showSkeleton" class="wrap-button-reset skeleton">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
-            <div class="wrap-button-send">
+            <div *ngIf="!showSkeleton" class="wrap-button-send">
                 <p-button 
                     type="submit" 
                     [disabled]="formContact.invalid" 
                     [label]="'CONTACT_PAGE.SEND_BUTTON' | translate" 
                     [outlined]="true"
                     severity="info" />
+            </div>
+            <!-- Skeleton send button -->
+            <div *ngIf="showSkeleton" class="wrap-button-send skeleton">
+                <p-skeleton width="100%" height="4rem"></p-skeleton>
             </div>
         </div>
     </form>
