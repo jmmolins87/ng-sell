@@ -1,11 +1,14 @@
-<div class="wrap-contact">
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-contact">
     <app-title-pages [titleType]="titleType" [title]="'CONTACT_PAGE.TITLE' | translate"></app-title-pages>
     <form [formGroup]="formContact" autocomplete="off" class="wrap-form animate__animated animate__fadeIn">
         <div class="wrapper-form">
             <!-- Name camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="name" pInputText id="username" [ngClass]="{ success: name?.valid }" />
+                    <input 
+                        pInputText 
+                        formControlName="name" 
+                        id="username" >
                     <label htmlFor="username">
                         {{ "CONTACT_PAGE.LABEL_NAME" | translate }} <span class="required">*</span>
                     </label>
@@ -14,16 +17,20 @@
             <!-- Surname camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="surname" pInputText id="surname" />
-                    <label htmlFor="surname">
-                        {{ "CONTACT_PAGE.LABEL_SURNAME" | translate}}
-                    </label>
+                    <input 
+                        pInputText 
+                        formControlName="surname" 
+                        id="surname" />
+                    <label htmlFor="surname">{{ "CONTACT_PAGE.LABEL_SURNAME" | translate }}</label>
                 </span>
             </div>
             <!-- Company camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="company" pInputText id="company" [ngClass]="{ success: company?.valid }" />
+                    <input 
+                        pInputText 
+                        formControlName="company" 
+                        id="company" >
                     <label htmlFor="company">
                         {{ "CONTACT_PAGE.LABEL_COMPANY" | translate }} <span class="required">*</span>
                     </label>
@@ -32,7 +39,10 @@
             <!-- E-mail camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="email" pInputText id="e-mail" [ngClass]="{ success: email?.valid }" />
+                    <input 
+                        pInputText 
+                        formControlName="email" 
+                        id="e-mail" >
                     <label htmlFor="e-mail">
                         {{ "CONTACT_PAGE.LABEL_EMAIL" | translate }} <span class="required">*</span>
                     </label>
@@ -41,16 +51,20 @@
             <!-- Phone camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="phone" pInputText id="phone" />
-                    <label htmlFor="phone">
-                        {{ "CONTACT_PAGE.LABEL_PHONE" | translate }}
-                    </label>
+                    <input 
+                        pInputText 
+                        formControlName="phone" 
+                        id="phone" />
+                    <label htmlFor="phone">{{ "CONTACT_PAGE.LABEL_PHONE" | translate }}</label>
                 </span>
             </div>
             <!-- Subject camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input formControlName="subject" pInputText id="subject" [ngClass]="{ success: subject?.valid }" />
+                    <input 
+                        pInputText 
+                        formControlName="subject" 
+                        id="subject" >
                     <label htmlFor="subject">
                         {{ "CONTACT_PAGE.LABEL_SUBJECT" | translate }} <span class="required">*</span>
                     </label>
@@ -59,9 +73,14 @@
             <!-- Message camp -->
             <div class="form-group textarea">
                 <span class="p-float-label">
-                    <textarea formControlName="message" id="textarea" rows="5" cols="30" pInputTextarea
-                        [(ngModel)]="messageCharactres" (input)="updateCounter()"
-                        [ngClass]="{ success: message?.valid }">
+                    <textarea 
+                        pInputText 
+                        formControlName="message" 
+                        id="textarea" 
+                        rows="10" 
+                        cols="30" 
+                        [(ngModel)]="messageCharactres" 
+                        (input)="updateCounter()">
                     </textarea>
                     <label for="textarea">
                         {{ "CONTACT_PAGE.LABEL_MESSAGE" | translate }} <span class="required">*</span>
@@ -72,7 +91,7 @@
                 </span>
             </div>
         </div>
-        <div class="wrap-buttons">
+        <div class="wrapper-buttons">
             <div class="wrap-button-reset">
                 <p-button 
                     [label]="'CONTACT_PAGE.RESET_BUTTON' | translate"

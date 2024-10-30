@@ -47,7 +47,7 @@
         "LABEL_EMAIL": "Correo electrónico",
         "LABEL_PHONE": "Teléfono de contacto",
         "LABEL_SUBJECT": "Asunto",
-        "LABEL_MESSAGE": "Escriba aquí su comentario,",
+        "LABEL_MESSAGE": "Escriba aquí su comentario",
         "NUMBER_CHARACTERS": "Número de cáracteres",
         "OF": "de",
         "RESET_BUTTON": "Resetear formulario",

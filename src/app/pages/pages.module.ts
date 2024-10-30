@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -39,6 +39,9 @@ import { ToolsPageComponent } from './tools-page/tools-page.component';
     SharedModule,
     ComponentsModule,
     PipesModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA 
   ]
 })
 export class PagesModule { }
