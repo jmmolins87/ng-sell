@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class EmailService {
 
-  private apiUrl = 'https://your-email-api-endpoint.com/send'; // Replace with your email API endpoint
+  private apiUrl = 'http://localhost:3000/send-email';
 
-  constructor(private _http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   sendEmail(data: any): Observable<any> {
-    return this._http.post(this.apiUrl, data);
+    return this.http.post(this.apiUrl, data);
   }
 }

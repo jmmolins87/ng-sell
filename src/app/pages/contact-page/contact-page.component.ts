@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { SharedService } from '../../shared/services/shared.service';
-import { PagesService } from '../../services/pages-service.service';
+import { EmailService } from '../../services/email-serivce.service';
 
 import { titleTypes } from '../../components/title-pages/title.config';
 import { customEmailValidator } from './email.validator';
@@ -37,7 +37,10 @@ export class ContactPageComponent {
     message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(this.maxCharacters)]]
   });
   
-  constructor ( private _sharedService: SharedService, private _fb: FormBuilder ) { }
+  constructor ( 
+    private _sharedService: SharedService, 
+    private _fb: FormBuilder, 
+    private _emailService: EmailService ) { }
 
   ngOnInit() {
     this.darkMode();
@@ -45,6 +48,19 @@ export class ContactPageComponent {
     setTimeout(() => {
       this.showSkeleton = false;
     }, 500)
+  }
+
+  onSubmit() {
+    if (this.formContact.valid) {
+      this._emailService.sendEmail(this.formContact.value).subscribe(
+        response => {
+          console.log('Email enviado', response);
+        },
+        error => {
+          console.error('Error al enviar el email', error);
+        }
+      );
+    }
   }
 
   // Function to get the dark mode status
