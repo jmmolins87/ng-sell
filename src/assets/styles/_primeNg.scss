@@ -56,7 +56,7 @@
         .p-skeleton {
             background: $grey-light-bg;
             &::after {
-                background: linear-gradient(90deg, rgba($grey-bg, 0), rgba($grey-bg, 0.4), rgba($grey-bg, 0));
+                background: $bg-skeleton-light;
             }
         }
         // Dial
@@ -96,12 +96,13 @@
                 }
             }
             ul {
-                gap: 1rem;
                 li a {
                     color: $black-bg;
+                    width: 5rem;
+                    height: 5rem;
+                    text-decoration: none;
                     span {
                         font-size: $icon-dial;
-                        text-decoration: none;
                     }
                 }
             } 
@@ -128,7 +129,7 @@
         .p-skeleton {
             background: $black-light-bg;
             &::after {
-                background: linear-gradient(90deg, rgba($black-bg, 0), rgba($black-bg, 0.4), rgba($black-bg, 0));
+                background: $bg-skeleton-dark;
             }
         }
         // Dial

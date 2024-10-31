@@ -50,19 +50,6 @@ export class ContactPageComponent {
     }, 500)
   }
 
-  onSubmit() {
-    if (this.formContact.valid) {
-      this._emailService.sendEmail(this.formContact.value).subscribe(
-        response => {
-          console.log('Email enviado', response);
-        },
-        error => {
-          console.error('Error al enviar el email', error);
-        }
-      );
-    }
-  }
-
   // Function to get the dark mode status
   darkMode(): void {
     // Subscribe to the dark mode status to apply the class

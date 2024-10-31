@@ -33,3 +33,7 @@ $warning-dark-bg: #8c8c02;
 $success-bg: #71e002;
 $success-light-bg: #d2fbaa40;
 $success-dark-bg: #468a03;
+
+
+$bg-skeleton-light: linear-gradient(90deg, rgba($grey-bg, 0), rgba($grey-bg, 0.4), rgba($grey-bg, 0));;
+$bg-skeleton-dark: linear-gradient(90deg, rgba($black-bg, 0), rgba($black-bg, 0.4), rgba($black-bg, 0));
