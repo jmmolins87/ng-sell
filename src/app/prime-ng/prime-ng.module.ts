@@ -9,6 +9,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { RippleModule } from 'primeng/ripple';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { SkeletonModule } from 'primeng/skeleton';
+import { SpeedDialModule } from 'primeng/speeddial';
 import { TagModule } from 'primeng/tag';
 import { ToastModule } from 'primeng/toast';
 import { TooltipModule } from 'primeng/tooltip';
@@ -23,6 +24,7 @@ import { TooltipModule } from 'primeng/tooltip';
     RippleModule,
     ScrollTopModule,
     SkeletonModule,
+    SpeedDialModule, // TODO: in all pages
     TagModule,
     ToastModule,
     TooltipModule

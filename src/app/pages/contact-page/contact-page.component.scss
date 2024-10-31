@@ -5,6 +5,7 @@
 .light-theme,
 .dark-theme {
     &.wrap-contact {
+        overflow-x: hidden;
         .wrap-form {
             margin-top: 30px;
             @include min-responsive($desktop-laptop) {
@@ -104,6 +105,7 @@
                 .counter-characters {
                     margin: 0;
                     order: 2;
+                    color: $grey-dark-txt;
                 }
                 @include min-responsive($tablet-hor) {
                     flex-direction: row-reverse;
@@ -129,6 +131,7 @@
             align-items: center;
             gap: 20px;
             margin-top: 30px;
+            overflow: hidden;
             @include min-responsive($tablet-hor) {
                 flex-direction: row;
                 justify-content: flex-end;

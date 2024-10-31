@@ -230,7 +230,7 @@
             }
         },
         "TRELLO": {
-            "SUBTITLE": "Organization",
+            "SUBTITLE": "Organización",
             "DESCRIPTION": "Trello es una aplicación web para la gestión de tareas y la gestión de proyectos basada en el método Kanban. Los usuarios pueden crear tableros, en los que se pueden agregar listas con tarjetas. Estas tarjetas representan tareas que se mueven entre las listas que representan el progreso del proyecto. Trello es conocido por su simplicidad y flexibilidad, permitiendo a los usuarios personalizar sus tableros y tarjetas para adaptarse a una variedad de flujos de trabajo y proyectos. También facilita la colaboración en equipo, permitiendo a múltiples usuarios trabajar en el mismo tablero.",
             "TAGS": {
                 "PRODUCTIVITY": "Productividad",

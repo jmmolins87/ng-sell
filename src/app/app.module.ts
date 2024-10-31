@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CookieService } from 'ngx-cookie-service';
 
 import { SharedModule } from './shared/shared.module';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 import { AppComponent } from './app.component';
 
@@ -34,7 +35,8 @@ export function loaderTranslatorJson( http: HttpClient ) {
         deps: [ HttpClient ]
       }
     }),
-    SharedModule
+    SharedModule,
+    PrimeNgModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
