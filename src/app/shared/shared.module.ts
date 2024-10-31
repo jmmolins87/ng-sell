@@ -11,6 +11,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
 import { CookiesBannerComponent } from './components/cookies-banner/cookies-banner.component';
+import { DownloadCvComponent } from './components/download-cv/download-cv.component';
 
 
 
@@ -19,7 +20,8 @@ import { CookiesBannerComponent } from './components/cookies-banner/cookies-bann
     NavBarComponent,
     FooterComponent,
     WrapLogoComponent,
-    CookiesBannerComponent
+    CookiesBannerComponent,
+    DownloadCvComponent
   ],
   imports: [
     CommonModule,

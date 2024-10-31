@@ -111,7 +111,8 @@
     .dark-theme {
         // Button to top
         .p-scrolltop {
-            background: $black-bg;
+            background: rgba($black-bg, .4);
+            box-shadow: rgba($grey-shadow, .5);
             &:hover {
                 box-shadow: $buttonToTop-shadow-dark; 
             }
@@ -135,7 +136,7 @@
         // Dial
         .speeddial-tooltip {
             button {
-                background: $black-bg;
+                background: rgba($black-bg, .4);
                 &:hover {
                     box-shadow: $buttonToTop-shadow-dark; 
                 }
