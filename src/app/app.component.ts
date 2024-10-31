@@ -19,10 +19,14 @@ export class AppComponent implements OnInit {
   public isFullWidth: boolean = false;
   // Change mode dark to light
   public isDarkTheme: boolean = false;
-
+  // Get items dial
   public itemDial: MenuItem[] | undefined;
 
-  constructor( private _router: Router, private _sharedService: SharedService,  private cookieService: CookieService, private primengConfig: PrimeNGConfig ) {}
+  constructor( 
+    private _router: Router, 
+    private _sharedService: SharedService,  
+    private cookieService: CookieService, 
+    private primengConfig: PrimeNGConfig ) {}
 
   ngOnInit(): void {
     // Ripple Effect in buttons
@@ -41,15 +45,15 @@ export class AppComponent implements OnInit {
     return this.itemDial;
   }
 
+  // Subscribe to the dark mode status to apply the class
   darkMode(): void {
-    // Subscribe to the dark mode status to apply the class
     this._sharedService.darkMode$.subscribe((isDarkMode) => {
       this.isDarkTheme = isDarkMode;
     });
   }
 
+  // Hide navigation bar and footer on 404 page
   hideNavigation() {
-    // Hide navigation bar and footer on 404 page
     this._router.events.subscribe((event) => {
       if(event instanceof NavigationEnd) {
         this.showNavbarFooter = !['/404'].includes(event.urlAfterRedirects);
@@ -66,8 +70,8 @@ export class AppComponent implements OnInit {
      const hasVisited = this.cookieService.check('user-visited');
   }
 
+  // The container class will be applied to all pages except the home page and the error page.
   containerCustom() {
-    // The container class will be applied to all pages except the home page and the error page.
     this._router.events.subscribe(() => {
       this.isFullWidth = this._router.url === '/' || this._router.url === '/404' || this._router.url === '/about';
     })
