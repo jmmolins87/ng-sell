@@ -36,7 +36,7 @@
                 }
             }
             .error-message {
-                color: $danger-txt;
+                color: $danger-dark-txt;
                 span {
                     display: block;
                 }
@@ -50,10 +50,10 @@
             textarea {
                 width: 100%;
                 padding: 10px;
-                background: rgba($white-dark-bg, .9);
+                background: rgba($white-bg, .9);
                 backdrop-filter: blur(15px);
                 border-radius: $border-radius-05;
-                border: 1px solid $grey-dark-border;
+                border: .1rem solid $grey-dark-border;
                 ~ label {
                     top: 1.5rem;
                 }
@@ -62,8 +62,7 @@
                     background: $success-light-bg;
                     color: $success-dark-txt;
                 }
-                &.ng-invalid.ng-touched,
-                .error-message {
+                &.ng-invalid.ng-touched {
                     border: 2px solid $danger-border;
                     background: $danger-light-bg;
                     color: $danger-dark-txt;
@@ -174,13 +173,28 @@
 }
 .dark-theme {
     &.wrap-contact .wrap-form .wrapper-form {
-        .form-group .p-float-label {
-            input,
-            textarea {
-                background: rgba($black-lighten-bg, .9);
-                border: 1px solid $black-border;
-                color: $white-dark-txt;
+        .form-group {
+            .error-message {
+                color: $danger-light-txt;
             }
+            .p-float-label {
+               input,
+               textarea {
+                   background: rgba($black-bg, .9);
+                   border: .1rem solid $grey-dark-border;
+                   color: $white-dark-txt;
+                   &.ng-valid.ng-touched {
+                       border: 2px solid $success-border;
+                       background: $success-light-bg;
+                       color: $success-txt;
+                   }
+                   &.ng-invalid.ng-touched {
+                       border: 2px solid $danger-border;
+                       background: $danger-light-bg;
+                       color: $danger-light-txt;
+                   }
+               }
+           }
         }
     }
 }
