@@ -3,4 +3,15 @@
 <div [ngClass]="isFullWidth ? '' : 'container my-5'">
     <router-outlet />
 </div>
+<div class="wrap-dial">
+    <div [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'" class="speeddial-tooltip">
+        <p-speedDial 
+            [model]="leftTooltipItems || null" 
+            direction="up" 
+            transitionDelay="80" 
+            showIcon="pi pi-bars" 
+            hideIcon="pi pi-times" 
+            buttonClassName="p-button-outlined" />
+    </div>
+</div>
 <app-footer *ngIf="showNavbarFooter" />

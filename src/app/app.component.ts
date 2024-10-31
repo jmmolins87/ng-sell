@@ -3,7 +3,8 @@ import { NavigationEnd, Router } from '@angular/router';
 
 import { CookieService } from 'ngx-cookie-service';
 
-import { PrimeNGConfig } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
+import { SharedService } from './shared/services/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,9 @@ export class AppComponent implements OnInit {
   // Change mode dark to light
   public isDarkTheme: boolean = false;
 
-  constructor( private _router: Router, private cookieService: CookieService, private primengConfig: PrimeNGConfig ) {}
+  leftTooltipItems: MenuItem[] | undefined;
+
+  constructor( private _router: Router, private _sharedService: SharedService,  private cookieService: CookieService, private primengConfig: PrimeNGConfig ) {}
 
   ngOnInit(): void {
     // Ripple Effect in buttons
@@ -27,6 +30,14 @@ export class AppComponent implements OnInit {
     this.hideNavigation();
     this.containerCustom();
     this.getCookies();
+    this.itemsDial();
+  }
+
+  darkMode(): void {
+    // Subscribe to the dark mode status to apply the class
+    this._sharedService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkTheme = isDarkMode;
+    });
   }
 
   hideNavigation() {
@@ -62,6 +73,22 @@ export class AppComponent implements OnInit {
     } else {
       document.body.classList.remove('dark');
     }
+  }
+
+  // Get items dial
+  itemsDial() {
+    this.leftTooltipItems = [
+      {
+          icon: 'pi pi-github',
+          target: '_blank',
+          url: 'https://github.com/jmmolins87'
+      },
+      {
+        icon: 'pi pi-linkedin',
+        target: '_blank',
+        url: 'https://www.linkedin.com/in/juan-maria-molins-cortes-5065a072/'
+      }
+  ];
   }
   
 }
