@@ -5,6 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 
 import { navbarItems } from '../db/navbarItems.db';
 import { footerContent } from '../db/footer.db';
+import { dialContent } from '../db/dial.db';
 
 @Injectable({
   providedIn: 'root'
@@ -45,6 +46,15 @@ export class SharedService {
     return new Observable<any>(observer => {
       // Get items from db
       observer.next(footerContent);
+      // Complete observable
+      observer.complete();
+    });
+  }
+
+  get itemsDial() {
+    return new Observable<any>(observer => {
+      // Get items from db
+      observer.next(dialContent);
       // Complete observable
       observer.complete();
     });

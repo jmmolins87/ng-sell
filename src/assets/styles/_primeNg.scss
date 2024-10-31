@@ -30,9 +30,10 @@
         }
         // Button to top
         .p-scrolltop {
-            background: $white-bg;
-            width: 50px;
-            height: 50px;
+            background: rgba($white-bg, .2);
+            backdrop-filter: blur(1.5rem);
+            width: 5rem;
+            height: 5rem;
             border-radius: 50%;
             transition: box-shadow .2s ease-in-out;
             &:hover {
@@ -58,8 +59,56 @@
                 background: linear-gradient(90deg, rgba($grey-bg, 0), rgba($grey-bg, 0.4), rgba($grey-bg, 0));
             }
         }
+        // Dial
+        .speeddial-tooltip {
+            &.p-speeddial-direction-down-left {
+                left: 0;
+                bottom: 0;
+            }
+            button {
+                border-radius: $border-radius-50;
+                border: none;
+                background: rgba($white-bg, .2);
+                backdrop-filter: blur(1.5rem);
+                width: 5rem;
+                height: 5rem;
+                z-index: 1002;
+                box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+                transition: box-shadow .2s ease-in-out;
+                &:hover {
+                    box-shadow: $buttonToTop-shadow-light; 
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                .pi {
+                    color: $black-bg;
+                }
+                @include min-responsive($tablet-hor) {
+                    width: 5rem;
+                    height: 5rem;
+                    .pi {
+                        &.pi-icon {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+            }
+            ul {
+                gap: 1rem;
+                li a {
+                    color: $black-bg;
+                    span {
+                        font-size: $icon-dial;
+                        text-decoration: none;
+                    }
+                }
+            } 
+        }
     }
     .dark-theme {
+        // Button to top
         .p-scrolltop {
             background: $black-bg;
             &:hover {
@@ -71,15 +120,33 @@
                 }
             }
         }
+        // Toast
         .p-toast {
             opacity: 1;
         }
+        // Skeleton
         .p-skeleton {
             background: $black-light-bg;
             &::after {
                 background: linear-gradient(90deg, rgba($black-bg, 0), rgba($black-bg, 0.4), rgba($black-bg, 0));
             }
         }
-        
+        // Dial
+        .speeddial-tooltip {
+            button {
+                background: $black-bg;
+                &:hover {
+                    box-shadow: $buttonToTop-shadow-dark; 
+                }
+                .pi {
+                    color: $white-bg;
+                }
+            }
+            ul {
+                li a {
+                    color: $white-bg;
+                }
+            } 
+        }
     }
 } 

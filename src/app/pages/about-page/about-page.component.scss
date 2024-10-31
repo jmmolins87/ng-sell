@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         @include min-responsive($tablet) {
-          height: calc(100vh - 202px);
+          height: calc(100vh - 20.2rem);
         }
       }
       &-wrapper {
@@ -26,35 +26,35 @@
         align-items: center;
         justify-content: center;
         font-size: $txt-main;
-        border-bottom: 1px solid $grey-border;
+        border-bottom: .1rem solid $grey-border;
         @include min-responsive($tablet) {
           font-size: calc($txt-main - .5rem);
         }
       }
       &-pagination {
         position: absolute;
-        right: 10px;
+        right: 1rem;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 1rem;
       }
       &-bullet {
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         border-radius: 50%;
-        border: 1px solid $grey-dark-border;
+        border: .1rem solid $grey-dark-border;
         cursor: pointer;
         transition: background-color .2s;
         @include min-responsive($tablet) {
-          width: 15px;
-          height: 15px;
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
       &-bullet.active {
         background-color: rgba($grey-bg, .4);
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(1.5rem);
       }
     }
 
@@ -74,9 +74,9 @@
     // Content each slide
     .slide-content {
       position: relative;
-      top: -100px;
+      top: -10rem;
       width: 100%;
-      height: calc(100% - 200px);
+      height: calc(100% - 20rem);
     }
   }
 }

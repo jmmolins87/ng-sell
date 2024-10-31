@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   // Change mode dark to light
   public isDarkTheme: boolean = false;
 
-  leftTooltipItems: MenuItem[] | undefined;
+  public itemDial: MenuItem[] | undefined;
 
   constructor( private _router: Router, private _sharedService: SharedService,  private cookieService: CookieService, private primengConfig: PrimeNGConfig ) {}
 
@@ -30,7 +30,15 @@ export class AppComponent implements OnInit {
     this.hideNavigation();
     this.containerCustom();
     this.getCookies();
-    this.itemsDial();
+    this.itemsDial;
+  }
+
+  // Get items dial
+  get itemsDial() {
+    this._sharedService.itemsDial.subscribe(items => {
+      this.itemDial = items;
+    });
+    return this.itemDial;
   }
 
   darkMode(): void {
@@ -73,22 +81,6 @@ export class AppComponent implements OnInit {
     } else {
       document.body.classList.remove('dark');
     }
-  }
-
-  // Get items dial
-  itemsDial() {
-    this.leftTooltipItems = [
-      {
-          icon: 'pi pi-github',
-          target: '_blank',
-          url: 'https://github.com/jmmolins87'
-      },
-      {
-        icon: 'pi pi-linkedin',
-        target: '_blank',
-        url: 'https://www.linkedin.com/in/juan-maria-molins-cortes-5065a072/'
-      }
-  ];
   }
   
 }

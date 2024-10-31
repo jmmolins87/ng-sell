@@ -4,9 +4,9 @@
     <router-outlet />
 </div>
 <div class="wrap-dial">
-    <div [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'" class="speeddial-tooltip">
+    <div class="speeddial-tooltip">
         <p-speedDial 
-            [model]="leftTooltipItems || null" 
+            [model]="itemDial || null" 
             direction="up" 
             transitionDelay="80" 
             showIcon="pi pi-bars" 

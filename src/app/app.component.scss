@@ -1,53 +1,8 @@
 
 
 
-@import "/src/styles.scss";
-
-:host ::ng-deep {
-    .speeddial-tooltip {
-        &.p-speeddial-direction-down-left {
-            left: 0;
-            bottom: 0;
-        }
-        button {
-            border-radius: 50%;
-            background: rgba($white-bg, .2);
-            border: none;
-            backdrop-filter: blur(15px);
-            width: 5rem;
-            height: 5rem;
-            z-index: 1002;
-            &:focus {
-                box-shadow: none;
-            }
-            @include min-responsive($tablet-hor) {
-                width: 5rem;
-                height: 5rem;
-                .pi-icon {
-                    width: 2rem;
-                    height: 2rem;
-                }
-            }
-        }
-        ul {
-            gap: 10px;
-            li a {
-                color: $black-bg;
-                span {
-                    font-size: $icon-dial;
-                    text-decoration: none;
-                }
-            }
-        } 
-    }
-}
-
 .wrap-dial {
     position: fixed;
-    left: 5px;
-    bottom: 300px;
-    @include min-responsive($desktop) {
-        left: 25px;
-        bottom: 300px;
-    }
+    right: 7rem;
+    bottom: 24rem;
 }
