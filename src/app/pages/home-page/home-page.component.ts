@@ -12,4 +12,6 @@ export class HomePageComponent {
   public titleType: titleTypes = titleTypes.home;
   public title!: string;
 
+  public textMatrix="Texto de ejemplo en efecto Matrix...";
+
 }

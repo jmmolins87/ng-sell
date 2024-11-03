@@ -15,6 +15,7 @@ import { TitlePagesComponent } from './title-pages/title-pages.component';
 import { ToolComponent } from './tool/tool.component';
 import { WrapChartComponent } from './wrap-chart/wrap-chart.component';
 import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
+import { AntdMatrixTextComponent } from './animations/antd-matrix-text/antd-matrix-text.component';
 
 
 
@@ -29,6 +30,7 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
     ToolComponent,
     WrapChartComponent,
     WrapImgsComponent,
+    AntdMatrixTextComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,7 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
     ToolComponent,
     WrapChartComponent,
     WrapImgsComponent,
+    AntdMatrixTextComponent
   ]
 })
 export class ComponentsModule { }

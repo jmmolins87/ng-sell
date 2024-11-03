@@ -1,0 +1,5 @@
+<div class="matrix-container">
+  <span *ngFor="let character of text; let i = index" [ngStyle]="{ 'animation-delay': i * 0.3 + 's' }">
+    {{ character }}
+  </span>
+</div>

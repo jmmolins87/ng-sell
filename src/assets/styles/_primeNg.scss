@@ -97,6 +97,9 @@
                     width: 5rem;
                     height: 5rem;
                     text-decoration: none;
+                    padding: .75rem;
+                    background: rgba($white-bg, .2);
+                    backdrop-filter: blur(1.5rem);
                     span {
                         font-size: $icon-dial;
                     }
@@ -144,6 +147,7 @@
             ul {
                 li a {
                     color: $white-txt;
+                    background: rgba($black-bg, .2);
                 }
             } 
         }

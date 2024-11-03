@@ -1,0 +1,23 @@
+.matrix-container {
+  font-family: monospace;
+  color: #0f0;
+  background-color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.matrix-container span {
+  opacity: 0;
+  animation: typeEffect 0.5s forwards;
+}
+
+@keyframes typeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
