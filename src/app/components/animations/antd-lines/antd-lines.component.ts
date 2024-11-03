@@ -1,11 +1,11 @@
 import { Component, ElementRef, OnInit, AfterViewInit, ViewChild, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-background-lines',
-  templateUrl: './background-lines.component.html',
-  styleUrls: ['./background-lines.component.scss']
+  selector: 'app-antd-lines',
+  templateUrl: './antd-lines.component.html',
+  styleUrls: ['./antd-lines.component.scss']
 })
-export class BackgroundLinesComponent implements OnInit, AfterViewInit {
+export class AntdLinesComponent implements OnInit, AfterViewInit {
   @ViewChild('grayscaleCanvas', { static: true }) canvasRef!: ElementRef<HTMLCanvasElement>;
   private ctx!: CanvasRenderingContext2D;
   private shapes: any[] = [];

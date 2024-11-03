@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundComponent } from './background-gradient.component';
+import { BackgroundComponent } from './antd-gradient.component';
 
 describe('BackgroundComponent', () => {
   let component: BackgroundComponent;

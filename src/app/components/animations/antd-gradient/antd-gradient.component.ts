@@ -1,12 +1,12 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { SharedService } from './../../../shared/services/shared.service';
+import { SharedService } from '../../../shared/services/shared.service';
 
 @Component({
-  selector: 'app-background-gradient',
-  templateUrl: './background-gradient.component.html',
-  styleUrls: ['./background-gradient.component.scss']
+  selector: 'app-antd-gradient',
+  templateUrl: './antd-gradient.component.html',
+  styleUrls: ['./antd-gradient.component.scss']
 })
-export class BackgroundGradientComponent implements OnInit {
+export class AntdGradientComponent implements OnInit {
 
   // Background
   public colors: string[] = [

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundLinesComponent } from './background-lines.component';
+import { AntdLinesComponent } from './antd-lines.component';
 
 describe('BackgroundLinesComponent', () => {
-  let component: BackgroundLinesComponent;
-  let fixture: ComponentFixture<BackgroundLinesComponent>;
+  let component: AntdLinesComponent;
+  let fixture: ComponentFixture<AntdLinesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BackgroundLinesComponent]
+      declarations: [AntdLinesComponent]
     });
-    fixture = TestBed.createComponent(BackgroundLinesComponent);
+    fixture = TestBed.createComponent(AntdLinesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
