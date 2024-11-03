@@ -8,7 +8,6 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { BackgroundGradientComponent } from './backgrounds/background-gradient/background-gradient.component';
 import { BackgroundLinesComponent } from './backgrounds/background-lines/background-lines.component';
-import { DownloadButtonComponent } from './download-button/download-button.component';
 import { SkillComponent } from './skill/skill.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TitlePagesComponent } from './title-pages/title-pages.component';
@@ -23,7 +22,6 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
   declarations: [
     BackgroundGradientComponent,
     BackgroundLinesComponent,
-    DownloadButtonComponent,
     TabsComponent,
     SkillComponent,
     TitlePagesComponent,
@@ -40,7 +38,6 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
   exports: [
     BackgroundGradientComponent,
     BackgroundLinesComponent,
-    DownloadButtonComponent,
     TabsComponent,
     SkillComponent,
     TitlePagesComponent,

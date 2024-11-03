@@ -14,4 +14,10 @@
             buttonClassName="p-button-outlined" />
     </div>
 </div>
+<div class="wrap-cv-button">
+    <app-download-cv 
+        [buttonText]="buttonDownloadText"
+        [fileName]="nameFileDownload" 
+        [filePath]="pathFileDownload" />
+</div>
 <app-footer *ngIf="showNavbarFooter" />

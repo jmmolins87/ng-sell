@@ -7,21 +7,21 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
 import { CookiesBannerComponent } from './components/cookies-banner/cookies-banner.component';
 import { DownloadCvComponent } from './components/download-cv/download-cv.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { WrapLogoComponent } from './components/wrap-logo/wrap-logo.component';
 
 
 
 @NgModule({
   declarations: [
-    NavBarComponent,
-    FooterComponent,
-    WrapLogoComponent,
     CookiesBannerComponent,
-    DownloadCvComponent
+    DownloadCvComponent,
+    FooterComponent,
+    NavBarComponent,
+    WrapLogoComponent,
   ],
   imports: [
     CommonModule,
@@ -31,9 +31,10 @@ import { DownloadCvComponent } from './components/download-cv/download-cv.compon
     PrimeNgModule
   ],
   exports: [
-    NavBarComponent,
+    CookiesBannerComponent,
+    DownloadCvComponent,
     FooterComponent,
-    CookiesBannerComponent
+    NavBarComponent,
   ]
 })
 export class SharedModule { }

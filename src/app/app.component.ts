@@ -21,6 +21,12 @@ export class AppComponent implements OnInit {
   public isDarkTheme: boolean = false;
   // Get items dial
   public itemDial: MenuItem[] | undefined;
+  // Button download text
+  public buttonDownloadText: string = 'CV';
+  // Button name file download
+  public nameFileDownload: string = 'dummy.pdf';
+  // Button path file
+  public pathFileDownload: string = '../assets/docs/dummy.pdf';
 
   constructor( 
     private _router: Router, 

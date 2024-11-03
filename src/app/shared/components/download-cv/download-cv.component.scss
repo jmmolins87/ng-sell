@@ -1,0 +1,84 @@
+
+
+
+
+
+@import "/src/styles.scss";
+
+
+.light-theme,
+.dark-theme {
+  &.wrap-button-download {
+    .download-btn {
+      background: rgba($white-bg, .2);
+      backdrop-filter: blur(1.5rem);
+      border-radius: $border-radius-50;
+      width: 5rem;
+      height: 5rem;
+      z-index: 1002;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      transition: box-shadow .2s ease-in-out;
+      border: none;
+      &:hover, &:focus {
+          box-shadow: $skill-shadow-light; 
+      }
+      .text-button {
+        color: $black-txt;
+      }
+      i {
+        font-size: $icon-download;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $black-txt;
+      }
+      &.loading {
+        background-color: transparent; /* Remove background during loading */
+        color: transparent; /* Hide text during loading */
+      }
+    }
+    .progress-circle {
+      position: fixed;
+      width: 5rem;
+      height: 5rem;
+      left: 0;
+      bottom: 0;
+    }
+    svg {
+      width: 5rem;
+      height: 5rem;
+      transform: rotate(-90deg); /* Rotate to start progress at top */
+    }
+    path {
+      fill: none;
+      stroke-width: 3;
+    }
+    path.progress-background {
+      stroke: $white-bg; /* Light grey background for progress */
+    }
+    path.progress-bar {
+      stroke: $success-border; /* Green progress bar */
+      stroke-linecap: round; /* Round edges on progress */
+      transition: stroke-dasharray 0.3s ease; /* Smooth progress animation */
+    }
+  }
+}
+
+.dark-theme {
+  &.wrap-button-download {
+    .download-btn {
+      background: rgba($black-bg, .4);
+      box-shadow: $button-fix-dark;
+      &:hover, &:focus {
+        box-shadow: $button-fix-shadow-dark-hover; 
+      }
+      .text-button {
+        color: $white-txt;
+      }
+      i {
+        color: $white-txt;
+      }
+    }
+  }
+}

@@ -1,1 +1,35 @@
-<p>download-cv works!</p>
+<div 
+  [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" 
+  class="wrap-button-download">
+  <button
+    pButton
+    class="download-btn"
+    [disabled]="loading"
+    (click)="downloadFile()"
+    [ngClass]="{ loading: loading }"
+  >
+    <!-- Button text -->
+    <span *ngIf="!loading" class="text-button">{{ buttonText }}</span>
+    <span *ngIf="loading"><i class="pi pi-arrow-circle-down"></i></span>
+    <!-- Progress circle -->
+    <div *ngIf="loading" class="progress-circle">
+      <svg viewBox="0 0 36 36">
+        <path
+          class="progress-background"
+          d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path
+          class="progress-bar"
+          [attr.stroke-dasharray]="progress + ', 100'"
+          d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+
+<p-toast />
