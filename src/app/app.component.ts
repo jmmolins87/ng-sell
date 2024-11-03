@@ -34,11 +34,11 @@ export class AppComponent implements OnInit {
     this.hideNavigation();
     this.containerCustom();
     this.getCookies();
-    this.itemsDial;
+    this.getItemsDial();
   }
 
   // Get items dial
-  get itemsDial() {
+  getItemsDial() {
     this._sharedService.itemsDial.subscribe(items => {
       this.itemDial = items;
     });

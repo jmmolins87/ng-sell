@@ -74,11 +74,8 @@
                 z-index: 1002;
                 box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
                 transition: box-shadow .2s ease-in-out;
-                &:hover {
+                &:hover, &:focus {
                     box-shadow: $skill-shadow-light; 
-                }
-                &:focus {
-                    box-shadow: none;
                 }
                 .pi {
                     color: $black-bg;
@@ -137,7 +134,7 @@
             button {
                 background: rgba($black-bg, .4);
                 box-shadow: $button-fix-dark;
-                &:hover {
+                &:hover, &:focus {
                     box-shadow: $button-fix-shadow-dark-hover; 
                 }
                 .pi {
