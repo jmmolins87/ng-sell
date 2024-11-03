@@ -37,6 +37,9 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // Center text
   @Input()
   public centerText: boolean = false;
+  // Animated text
+  @Input()
+  animatedText: boolean = false;
   
   // Title translated
   public translatedTitle$: Observable<string> | null = null;

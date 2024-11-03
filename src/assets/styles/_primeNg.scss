@@ -1,8 +1,7 @@
 
 
 ::ng-deep {
-    .light-theme,
-    .dark-theme {
+    .light-theme, .dark-theme {
         // Card
         .p-card {
             .p-card-body {
@@ -37,7 +36,7 @@
             border-radius: 50%;
             transition: box-shadow .2s ease-in-out;
             &:hover {
-                box-shadow: $buttonToTop-shadow-light; 
+                box-shadow: $skill-shadow-light; 
             }
             .p-scrolltop-icon {
                 path {
@@ -76,7 +75,7 @@
                 box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
                 transition: box-shadow .2s ease-in-out;
                 &:hover {
-                    box-shadow: $buttonToTop-shadow-light; 
+                    box-shadow: $skill-shadow-light; 
                 }
                 &:focus {
                     box-shadow: none;
@@ -112,9 +111,9 @@
         // Button to top
         .p-scrolltop {
             background: rgba($black-bg, .4);
-            box-shadow: rgba($grey-shadow, .5);
+            box-shadow: $button-fix-dark;
             &:hover {
-                box-shadow: $buttonToTop-shadow-dark; 
+                box-shadow: $button-fix-shadow-dark-hover; 
             }
             .p-scrolltop-icon {
                 path {
@@ -137,8 +136,9 @@
         .speeddial-tooltip {
             button {
                 background: rgba($black-bg, .4);
+                box-shadow: $button-fix-dark;
                 &:hover {
-                    box-shadow: $buttonToTop-shadow-dark; 
+                    box-shadow: $button-fix-shadow-dark-hover; 
                 }
                 .pi {
                     color: $white-bg;
