@@ -149,6 +149,9 @@
                     height: auto;
                     ::ng-deep .p-button {
                         width: 100%;
+                        &:focus {
+                            box-shadow: none;
+                        }
                     }
                 }
                 &.skeleton {

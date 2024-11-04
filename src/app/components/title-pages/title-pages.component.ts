@@ -1,8 +1,10 @@
 import { 
   Component, 
+  ElementRef, 
   Input, 
   OnChanges, 
-  OnInit 
+  OnInit, 
+  ViewChild
 } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -37,9 +39,6 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   // Center text
   @Input()
   public centerText: boolean = false;
-  // Animated text
-  @Input()
-  animatedText: boolean = false;
   
   // Title translated
   public translatedTitle$: Observable<string> | null = null;
