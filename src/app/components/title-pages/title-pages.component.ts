@@ -26,7 +26,7 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   public titleType!: titleTypes;
   // Title
   @Input()
-  public title!: string;
+  public text!: string;
   // With underline
   @Input()
   withUnderline: boolean = true;
@@ -53,8 +53,8 @@ export class TitlePagesComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    if (this.title) {
-      this.translatedTitle$ = this._translate.get(this.title);
+    if (this.text) {
+      this.translatedTitle$ = this._translate.get(this.text);
       this.translatedTitle$.subscribe(() => {
         this.showSkeleton = false;
       });

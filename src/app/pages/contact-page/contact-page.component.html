@@ -1,6 +1,6 @@
 
 <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-contact">
-    <app-title-pages [titleType]="titleType" [title]="'CONTACT_PAGE.TITLE' | translate"></app-title-pages>
+    <app-title-pages [titleType]="titleType" [text]="'CONTACT_PAGE.TITLE' | translate"></app-title-pages>
     <form
         [formGroup]="formContact" 
         autocomplete="off" 
