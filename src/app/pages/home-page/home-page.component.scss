@@ -10,6 +10,9 @@
         @include min-responsive($tablet) {
             height: calc(100vh - 20.2rem);
         }
+        .wrap-forms span, .wrap-title, .wrap-text {
+            transform: translateY(-50%);
+        }
         .wrap-forms {
             width: 100%;
             height: 100%;
@@ -18,7 +21,6 @@
             span {
                 position: absolute;
                 backdrop-filter: blur(1rem);
-                transform: translateY(-50%);
                 &:first-of-type {
                     background: rgba($primary-bg, .3);
                     width: 15.5%;
@@ -60,8 +62,14 @@
         .wrap-title {
             position: absolute;
             right: 5rem;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 25%;
+            @include min-responsive($tablet)
+        }
+        .wrap-text {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            z-index: 2;
         }
     }
 }

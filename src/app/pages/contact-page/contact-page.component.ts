@@ -37,10 +37,7 @@ export class ContactPageComponent {
     message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(this.maxCharacters)]]
   });
   
-  constructor ( 
-    private _sharedService: SharedService, 
-    private _fb: FormBuilder, 
-    private _emailService: EmailService ) { }
+  constructor ( private _sharedService: SharedService, private _fb: FormBuilder ) { }
 
   ngOnInit() {
     this.darkMode();
