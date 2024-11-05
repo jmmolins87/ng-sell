@@ -20,21 +20,23 @@
                 backdrop-filter: blur(1rem);
                 transform: translateY(-50%);
                 &:first-of-type {
-                    background: rgba($primary-bg, .4);
-                    width: 3.5rem;
+                    background: rgba($primary-bg, .3);
+                    width: 15.5%;
                     height: 60%;
                     left: 0;
                     top: 45%;
                     @include min-responsive($tablet) {
                         top: 50%;
                         height: 70%;
+                        width: 25%;
                     }
-                    @include min-responsive($desktop) {
-                        width: 62.5rem;
+                    @include min-responsive($desktop-laptop) {
+                        top: 45%;
+                        width: 65.5%;
                     }
                 }
                 &:nth-of-type(2) {
-                    background: rgba($primary-bg, .8);
+                    background: rgba($primary-bg, .6);
                     width: 35%;
                     height: 2%;
                     right: 12%;

@@ -137,11 +137,14 @@ export class NavBarComponent implements OnInit, AfterViewInit {
       return;
     }
 
+    // Update the active indicator
     if (this.navItems && this.navItems.length > 0) {
       const activeIndicator = this.renderer.selectRootElement('.active-indicator', true);
       const activeItem = this.navItems.toArray()[this.activeIndex];
+
       const offsetLeft = activeItem.nativeElement.offsetLeft;
       const offsetWidth = activeItem.nativeElement.offsetWidth;
+
       this.renderer.setStyle(activeIndicator, 'transform', `translateX(${offsetLeft}px)`);
       this.renderer.setStyle(activeIndicator, 'width', `${offsetWidth}px`);
       this.renderer.setStyle(activeIndicator, 'display', 'block');

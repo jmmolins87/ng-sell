@@ -53,7 +53,7 @@
                 background: rgba($white-bg, .9);
                 backdrop-filter: blur(15px);
                 border-radius: $border-radius-05;
-                border: .1rem solid $grey-dark-border;
+                border: .1rem solid $primary-dark-border;
                 ~ label {
                     top: 1.5rem;
                 }
@@ -104,7 +104,7 @@
                 .counter-characters {
                     margin: 0;
                     order: 2;
-                    color: $grey-dark-txt;
+                    color: $primary-dark-txt;
                 }
                 @include min-responsive($tablet-hor) {
                     flex-direction: row-reverse;
@@ -184,7 +184,7 @@
                input,
                textarea {
                    background: rgba($black-bg, .9);
-                   border: .1rem solid $grey-dark-border;
+                   border: .1rem solid $primary-border;
                    color: $white-dark-txt;
                    &.ng-valid.ng-touched {
                        border: 2px solid $success-border;
@@ -197,6 +197,11 @@
                        color: $danger-light-txt;
                    }
                }
+           }
+           .wrap-info-textarea {
+                .counter-characters {
+                    color: $primary-txt;
+                }
            }
         }
     }
