@@ -94,7 +94,7 @@
                         <!-- ---------------- -->
                     </li>
                     <!-- Underline selector in < tablet -->
-                    <div class="active-indicator"></div>
+                    <div [ngClass]="isScrolled ? 'scrolled' : ''" class="active-indicator"></div>
                 </div>
                 <div *ngIf="menuItems"  class="navbar-nav end">
                     <span class="pi pi-fw pi-language icon-lang"></span>

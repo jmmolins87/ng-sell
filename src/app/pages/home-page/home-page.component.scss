@@ -28,11 +28,11 @@
                     @include min-responsive($tablet) {
                         top: 50%;
                         height: 70%;
-                        width: 25%;
+                        width: 46%;
                     }
                     @include min-responsive($desktop-laptop) {
                         top: 45%;
-                        width: 65.5%;
+                        width: 60.5%;
                     }
                 }
                 &:nth-of-type(2) {
