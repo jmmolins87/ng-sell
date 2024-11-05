@@ -39,11 +39,11 @@
                 box-shadow: $skill-shadow-light; 
             }
             .pi {
-                color: $black-bg;
+                color: $primary-dark-bg;
             }
             .p-scrolltop-icon {
                 path {
-                    fill: $black-bg;
+                    fill: $primary-dark-bg;
                 }
             }
         }
@@ -81,7 +81,7 @@
                     box-shadow: $skill-shadow-light; 
                 }
                 .pi {
-                    color: $black-bg;
+                    color: $primary-dark-bg;
                 }
                 @include min-responsive($tablet-hor) {
                     width: 5rem;
@@ -119,11 +119,11 @@
                 box-shadow: $button-fix-shadow-dark-hover; 
             }
             .pi {
-                color: $white-bg;
+                color: $primary-bg;
             }
             .p-scrolltop-icon {
                 path {
-                    fill: $white-bg;
+                    fill: $primary-bg;
                 }
             }
         }
@@ -147,7 +147,7 @@
                     box-shadow: $button-fix-shadow-dark-hover; 
                 }
                 .pi {
-                    color: $white-txt;
+                    color:  $primary-bg;
                 }
             }
             ul {

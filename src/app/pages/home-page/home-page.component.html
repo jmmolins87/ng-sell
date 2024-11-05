@@ -2,7 +2,12 @@
 <app-antd-lines />
 
 
-<div class="wrap-home">
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-home">
+    <div class="wrap-forms">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="wrap-title">
         <app-title-pages 
             [titleType]="titleType" 

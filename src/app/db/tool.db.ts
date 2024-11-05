@@ -562,8 +562,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.PRIMENG.TAGS.PROGRAMMING",
             "TOOLS.PRIMENG.TAGS.COMPONENTS",
             "TOOLS.PRIMENG.TAGS.FRAMEWORK",
-            "TOOLS.PRIMENG.TAGS.ANGULAR",
-            "TOOLS.PRIMENG.TAGS.REACT"
+            "TOOLS.PRIMENG.TAGS.ANGULAR"
         ],
         categories: [
             "TOOLS.PRIMENG.CATEGORIES.ALL",

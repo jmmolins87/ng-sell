@@ -527,8 +527,7 @@
                 "PROGRAMMING": "Programming",
                 "COMPONENTS": "Components",
                 "FRAMEWORK": "Framework",
-                "ANGULAR": "Angular",
-                "REACT": "React"
+                "ANGULAR": "Angular"
             },
             "CATEGORIES": {
                 "ALL": "All",

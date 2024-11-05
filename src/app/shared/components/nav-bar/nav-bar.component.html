@@ -71,11 +71,16 @@
                         <!-- ---------------- -->
                     </li>
                     <!-- Menu for > tablet -->
-                    <li *ngFor="let item of menuItems" class="nav-item">
+                    <li 
+                        (click)="setActive(i)" 
+                        #navItem
+                        *ngFor="let item of menuItems; let i = index" 
+                        class="nav-item">
                         <a 
                             *ngIf="menuItems"  
                             [routerLink]="item.routerLink"
                             [routerLinkActive]="'active'"
+                            [ngClass]="{'active': activeIndex === i}"
                             class="nav-link" 
                             aria-current="page">
                             {{ item.label | translate }}
@@ -87,6 +92,8 @@
                         </div>
                         <!-- ---------------- -->
                     </li>
+                    <!-- Underline selector in < tablet -->
+                    <div class="active-indicator"></div>
                 </div>
                 <div *ngIf="menuItems"  class="navbar-nav end">
                     <span class="pi pi-fw pi-language icon-lang"></span>
