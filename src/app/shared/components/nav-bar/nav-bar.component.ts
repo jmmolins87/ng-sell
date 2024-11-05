@@ -6,12 +6,13 @@ import {
   OnInit, 
   QueryList, 
   Renderer2, 
-  ViewChildren 
+  ViewChildren,
+  ViewChild  
 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
-import { filter } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 import { MenuItem } from 'primeng/api';
 
@@ -42,9 +43,12 @@ export class NavBarComponent implements OnInit, AfterViewInit {
   // Active Index
   public activeIndex: number = 0;
  
-  // ViewChildren
+  // View Children Navbar Items 
   @ViewChildren('navItem') 
   public navItems!: QueryList<ElementRef>;
+  // View Child Navbar Container 
+  @ViewChild('navbarContainer') 
+  public navbarContainer!: ElementRef;
 
   constructor( 
     private _sharedService: SharedService, 
@@ -137,14 +141,20 @@ export class NavBarComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    // Update the active indicator
-    if (this.navItems && this.navItems.length > 0) {
+    // Ensure navItems is initialized and activeIndex is within bounds
+    if (this.navItems && this.navItems.length > 0 && this.activeIndex < this.navItems.length) {
+      // Get the active indicator element and the active item
       const activeIndicator = this.renderer.selectRootElement('.active-indicator', true);
+      // Get the active item and the navbar container elements to calculate the offset left and width of the active indicator element 
       const activeItem = this.navItems.toArray()[this.activeIndex];
-
-      const offsetLeft = activeItem.nativeElement.offsetLeft;
+      // Get the navbar container element to calculate the offset left of the active indicator element
+      const navbarRect = this.navbarContainer.nativeElement.getBoundingClientRect();
+      // Calculate the offset left and width of the active indicator element based on the active item and navbar container elements 
+      const offsetLeft = (activeItem.nativeElement.getBoundingClientRect().left - 144) - navbarRect.left; // 144 is the padding of the navbar container
+      // Get the offset width of the active item element to set the width of the active indicator element
       const offsetWidth = activeItem.nativeElement.offsetWidth;
 
+      // Add styles to the active indicator element
       this.renderer.setStyle(activeIndicator, 'transform', `translateX(${offsetLeft}px)`);
       this.renderer.setStyle(activeIndicator, 'width', `${offsetWidth}px`);
       this.renderer.setStyle(activeIndicator, 'display', 'block');
