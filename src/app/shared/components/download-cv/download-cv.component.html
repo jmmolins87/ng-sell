@@ -9,7 +9,7 @@
     [ngClass]="{ loading: loading }"
   >
     <!-- Button text -->
-    <span *ngIf="!loading" class="text-button">{{ buttonText }}</span>
+    <span *ngIf="!loading"><i class="pi pi pi-file-o"></i></span>
     <span *ngIf="loading"><i class="pi pi-arrow-circle-down"></i></span>
     <!-- Progress circle -->
     <div *ngIf="loading" class="progress-circle">

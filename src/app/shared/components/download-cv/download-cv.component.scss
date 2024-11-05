@@ -33,6 +33,10 @@
         transform: translate(-50%, -50%);
         color: $black-txt;
       }
+      &::ng-deep .pi::before {
+        font-size: $icon-download;
+        color: $black-txt;
+      }
       &.loading {
         background-color: transparent; /* Remove background during loading */
         color: transparent; /* Hide text during loading */
@@ -77,6 +81,10 @@
         color: $white-txt;
       }
       i {
+        color: $white-txt;
+      }
+      &::ng-deep .pi::before {
+        font-size: $icon-download;
         color: $white-txt;
       }
     }
