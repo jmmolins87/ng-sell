@@ -109,6 +109,14 @@
                 }
             } 
         }
+        // Input contact
+        .p-inputtext {
+            border-radius: 0;
+            border: none;
+            &:enabled:focus {
+                box-shadow: none;
+            }
+        }
     }
     .dark-theme {
         // Button to top

@@ -1,0 +1,10 @@
+
+
+
+
+.light-theme, .dark-theme {
+    &.wrap-tool {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+}
