@@ -49,6 +49,9 @@
                     @include min-responsive($tablet-hor) {
                         top: 65.5%;
                     }
+                    @include min-responsive($desktop) {
+                        top: 75.5%;
+                    }
                 }
                 &:nth-of-type(3) {
                     background: rgba($primary-bg, .6);
@@ -63,13 +66,29 @@
             position: absolute;
             right: 5rem;
             top: 25%;
-            @include min-responsive($tablet)
+            @include min-responsive($desktop-laptop) {
+                top: 50%;
+                width: 50%;
+            }
+            @include min-responsive($desktop) {
+                top: 62%;   
+                text-align: right;
+            }
         }
         .wrap-text {
             position: absolute;
-            right: 5rem;
+            width: 85%;
+            left: 2.5rem;
             top: 55%;
             z-index: 2;
+            @include min-responsive($tablet) {
+                top: 65%;
+            }
+            @include min-responsive($desktop-laptop) {
+                top: 50%;
+                width: 45%;
+                left: 5%;
+            }
         }
     }
 }
