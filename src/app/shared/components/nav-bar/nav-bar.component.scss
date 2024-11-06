@@ -7,13 +7,15 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        height: 10rem;
         background: rgba($white-bg, 1);
         padding: 15px;
-        transition: box-shadow .2s ease-in-out;
+        transition: all .2s ease-in-out;
         &.scrolled {
             background: rgba($white-bg, .8);
             backdrop-filter: blur(15px);
             box-shadow: $navbar-shadow-light;
+            height: 8rem;
         }
         .wrap-button-logo {
             background: transparent;
@@ -154,8 +156,11 @@
                         height: .5rem;
                         bottom: 2.5rem;
                         background: $primary-dark-bg;
-                        transition: transform .3s ease-in-out, width .3s ease-in-out;
+                        transition: all .3s ease-in-out, width .3s ease-in-out;
                         transform: translateX(0); /* Initially at the first item */
+                    }
+                    &.scrolled {
+                        height: .1rem;
                     }
                 }
             }
