@@ -11,7 +11,7 @@
         align-items: center;
         flex-direction: column;
         background: $white-bg;
-        padding: 24px;
+        padding: 2.4rem;
         text-align: center;
         @include min-responsive($tablet) {
             flex-direction: row;
@@ -27,7 +27,7 @@
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
-            gap: 20px;
+            gap: 2rem;
             @include min-responsive($tablet) {
                 flex-direction: row;
                 gap: 0;
@@ -36,7 +36,7 @@
                 &-rights {
                     color: $black-light-txt;
                     min-width: 50%;
-                    padding-bottom: 15px;
+                    padding-bottom: 1.5rem;
                     order: 1;
                     @include min-responsive($tablet) {
                         padding-bottom: 0;
@@ -56,15 +56,15 @@
                     box-sizing: border-box;
                     justify-content: space-between;
                     align-items: center;
-                    gap: 10px;
-                    padding-top: 15px;
+                    gap: 1rem;
+                    padding-top: 1.5rem;
                     min-width: 50%;
-                    border-top: 1px solid $grey-light-border;
+                    border-top: .1rem solid $grey-light-border;
                     order: 3;
                     @include min-responsive($tablet) {
                         flex-direction: row;
                         justify-content: flex-end;
-                        gap: 20px;
+                        gap: 2rem;
                         padding-top: 0;
                         min-width: 50%;
                         border-top: none;
@@ -76,9 +76,9 @@
                     }
                 }
                 &-logo {
-                    padding-top: 15px;
+                    padding-top: 1.5rem;
                     min-width: 50%;
-                    border-top: 1px solid $grey-light-border;
+                    border-top: .1rem solid $grey-light-border;
                     order: 2;
                     @include min-responsive($tablet) {
                         padding-top: 0;
@@ -89,7 +89,7 @@
                 }
             }
         }
-        }
+    }
 }
 
 footer.dark-theme {
@@ -101,7 +101,7 @@ footer.dark-theme {
                     color: $white-txt;
                 }
                 &-policies {                
-                    border-top: 1px solid $black-light-border;
+                    border-top: .1rem solid $black-light-border;
                     @include min-responsive($tablet) {
                         border-top: none;
                     }
@@ -110,7 +110,7 @@ footer.dark-theme {
                     }
                 }
                 &-logo {
-                    border-top: 1px solid $black-light-border;
+                    border-top: .1rem solid $black-light-border;
                 }
             }
         }
@@ -125,7 +125,7 @@ footer.dark-theme {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 15px;
+        gap: 1.5rem;
     }
     &--menu-footer {
         flex-direction: row;

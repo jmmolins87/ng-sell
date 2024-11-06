@@ -7,15 +7,19 @@
         position: sticky;
         top: 0;
         z-index: 1000;
-        height: 10rem;
         background: rgba($white-bg, 1);
-        padding: 15px;
+        padding: 1.5rem;
         transition: all .2s ease-in-out;
+        @include min-responsive($tablet-hor) {
+            height: 10rem;
+        }
         &.scrolled {
             background: rgba($white-bg, .8);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(1.5rem);
             box-shadow: $navbar-shadow-light;
-            height: 8rem;
+            @include min-responsive($tablet-hor) {
+                height: 8rem;
+            }
         }
         .wrap-button-logo {
             background: transparent;
@@ -26,7 +30,7 @@
                 width: -moz-fit-content;
                 height: fit-content;
                 height: -moz-fit-content;
-                margin-right: 25px;
+                margin-right: 2.5rem;
                 &.collapsed {
                     pointer-events: none;
                 }
@@ -34,29 +38,29 @@
         }
         .navbar-toggler {
             position: relative;
-            height: 25px;
-            width: 50px;
-            padding: 5px;
+            height: 2.5rem;
+            width: 5rem;
+            padding: .5rem;
             &:focus,
             &:focus-visible {
                 box-shadow: none;
             }
             span {
                 transition: transform .2s ease-in-out;
-                width: 50px;
-                height: 3px;
+                width: 5rem;
+                height: .3rem;
                 display: block;
-                margin: 5px 0;
+                margin: .5rem 0;
                 background: $black-light-txt;
                 position: absolute;
                 &:first-of-type {
-                    top: 6px;
-                    right: -1px;
+                    top: .6rem;
+                    right: -.1rem;
                     transform: rotate(25deg);
                 }
                 &:last-of-type {
-                    top: 7px;
-                    right: -1px;
+                    top: .7rem;
+                    right: -.1rem;
                     transform: rotate(-25deg);
                 }
             }
@@ -67,7 +71,7 @@
                     transform: rotate(0deg);
                 }
                 &:last-of-type {
-                    top: 10px;
+                    top: 1rem;
                     right: 0;
                     transform: rotate(0deg);
                 }
@@ -83,7 +87,7 @@
             }
             &-collapse {
                 @include max-responsive($mobile) {
-                    margin-top: 20px;
+                    margin-top: 2rem;
                 }
             }
         }
@@ -98,11 +102,11 @@
                 box-sizing: border-box;
                 justify-content: flex-start;
                 align-items: center;
-                flex: 1 1 calc(50% - 12.5px);
+                flex: 1 1 calc(50% - 1.25rem);
                 margin-right: 0;
                 min-width: 50%;
                 border-bottom: 1px solid $grey-light-border;
-                padding: 15px 0;
+                padding: 1.5rem 0;
                 @include min-responsive($tablet-hor) {
                     border-bottom: none;
                     padding-bottom: 0;
@@ -116,7 +120,7 @@
                     }
                     @include min-responsive($tablet-hor) {
                         display: block;
-                        margin-right: 15px;
+                        margin-right: 1.5rem;
                         &.mobile {
                             display: none;
                         }
@@ -171,7 +175,7 @@
                 justify-content: center;
                 align-items: center;
                 min-width: 100%;
-                margin-top: 20px;
+                margin-top: 2rem;
                 @include min-responsive($tablet-hor) {
                     justify-content: flex-end;
                     flex-direction: row;
@@ -183,29 +187,29 @@
                     margin-right: 0;
                     color: $primary-dark-txt;
                     @include min-responsive($tablet) {
-                        margin-right: 10px;
+                        margin-right: 1rem;
                     }
                 }
                 .form-select {
                     font-size: $txt-main;
-                    width: 195px;
-                    padding: 10px;
-                    margin-top: 10px;
+                    width: 19.5rem;
+                    padding: 1rem;
+                    margin-top: 1rem;
                     background: transparent;
                     @include min-responsive($tablet-hor) {
                         margin-top: 0;
                     }
                 }
                 .mode-button {
-                    margin-top: 20px;
+                    margin-top: 2rem;
                     background: transparent;
                     border: none;
-                    border-top: 1px solid $grey-light-border;
-                    padding-top: 20px;
+                    border-top: .1rem solid $grey-light-border;
+                    padding-top: 2rem;
                     min-width: 50%;
                     @include min-responsive($tablet-hor) {
                         margin-top: 0;
-                        margin-left: 10px;
+                        margin-left: 1rem;
                         min-width: auto;
                         border-top: none;
                         padding-top: 0;
@@ -223,7 +227,7 @@
 .dark-theme {
     &.wrap-navbar {
         background: rgba($black-bg, 1);
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(1.5rem);
         &.scrolled {
             box-shadow: $navbar-shadow-dark;
             background: rgba($black-bg, .7);
@@ -235,14 +239,14 @@
         }
         .navbar-nav {
             &.menu {
-                border-bottom: 1px solid $black-light-border;
+                border-bottom: .1rem solid $black-light-border;
                 @include min-responsive($tablet-hor) {
                     border-bottom: none;
                 }
                 .nav-item {
                     margin-right: 0;
                     @include min-responsive($tablet-hor) {
-                        margin-right: 15px;
+                        margin-right: 1.5rem;
                     }
                         a {
                             color: $white-txt;
@@ -268,7 +272,7 @@
                 .form-select {
                     background: transparent;
                     color: $grey-txt;
-                    border: 1px solid $white-dark-border;
+                    border: .1rem solid $white-dark-border;
                     text-align: center;
                     @include min-responsive($tablet) {
                         text-align: start;
@@ -279,7 +283,7 @@
                 }
                 .mode-button {
                     background: transparent;
-                    border-top: 1px solid $black-light-border;
+                    border-top: .1rem solid $black-light-border;
                     @include min-responsive($tablet) {
                         border-bottom: none;
                     }
@@ -299,5 +303,5 @@
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
