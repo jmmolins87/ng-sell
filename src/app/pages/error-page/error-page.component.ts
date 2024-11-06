@@ -2,8 +2,9 @@ import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 import { PagesService } from '../../services/pages-service.service';
-import { titleTypes } from '../../components/title-pages/title.config';
 import { SharedService } from '../../shared/services/shared.service';
+
+import { titleTypes } from '../../components/title-pages/title.config';
 
 
 @Component({
@@ -20,7 +21,11 @@ export class ErrorPageComponent implements OnInit {
   // Dark Theme
   public isDarkMode: boolean = false;
 
-  constructor( private _sharedService: SharedService, private _location: Location, private _pageService: PagesService ) { }
+  constructor( 
+    private _sharedService: SharedService, 
+    private _location: Location, 
+    private _pageService: PagesService 
+  ) { }
 
   ngOnInit(): void {
     this._pageService.errorAnimation.subscribe((data: any) => {
@@ -44,7 +49,6 @@ export class ErrorPageComponent implements OnInit {
       top: window.innerHeight,
       behavior: 'smooth'
     });
-    console.log('Scroll down');
   }
 
   goBack() {

@@ -18,6 +18,9 @@
     height: 100%;
     padding: 10px; // Add padding to avoid text touching the edges
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    .text-end {
+        text-align: end;
+    }
 }
 
 // Cursor

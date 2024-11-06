@@ -30,10 +30,10 @@
                 background: none;
                 border: none;
                 z-index: 3;
-                color: $white-dark-txt; // Cambia el color según
                 .pi-arrow-down {
-                    font-size: 2.5rem;
+                    font-size: $icon-error-page;
                     animation: bounce 2s infinite;
+                    color: $primary-dark-txt;
                 }
             }
         }
