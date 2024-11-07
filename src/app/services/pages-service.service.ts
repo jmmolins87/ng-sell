@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { 
-  FormControl, 
-  FormGroup, 
-  ValidationErrors 
-} from '@angular/forms';
 
 import { Observable, of } from 'rxjs';
 
@@ -42,7 +37,7 @@ export class PagesService {
     });
   }
 
-  // About Page
+  // About Page ---- TEST
   getSlides(): Observable<any[]> {
     // Simula una llamada a la base de datos
     const slides = [
@@ -52,15 +47,5 @@ export class PagesService {
       { type: 'title', content: 'Slide 4' }
     ];
     return of(slides);
-  }
-
-  // 404 Page
-  get errorAnimation() {
-    return this._http.get('assets/img/404/animation_error.json');
-  }
-
-  // Contact Page
-  public isValidField( form: FormGroup, field: string ) {
-    return form.controls[field].errors && form.controls[field].touched
   }
 }
