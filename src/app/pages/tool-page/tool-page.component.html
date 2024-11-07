@@ -1,4 +1,13 @@
 
 
 
-<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool"></div>
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool">
+    <h1>{{ tool.title }}</h1>
+    <div class="wrap-button-back">
+        <p-button 
+            (click)="goBack()" 
+            [label]="'TOOL_PAGE.TOOL_BUTTON_BACK' | translate" 
+            [outlined]="true" 
+            severity="info" />
+    </div>
+</div>

@@ -40,8 +40,8 @@
                 </div>
                 <div class="wrap-description--footer">
                     <ul class="wrap-tags">
-                        <li *ngFor="let tag of tool.tags; let i = index">
-                            <p-tag severity="success" [value]="tag | translate"></p-tag>
+                        <li *ngFor="let categorie of tool.categories; let i = index" class="wrap-tag">
+                            <p-tag severity="success" [value]="categorie | translate"></p-tag>
                         </li>
                     </ul>
                 </div>

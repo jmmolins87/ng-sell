@@ -27,6 +27,17 @@ export class PagesService {
     });
   }
 
+  // Get tools by id
+  getToolById( id: string ) {
+    return new Observable<Tool>(observer => {
+      // Get items from db
+      const tool = toolsContent.find( tool => tool.id === Number(id) );
+      observer.next(tool);
+      // Complete observable
+      observer.complete();
+    });
+  }
+
   // Get data About Page
   get skills() {
     return new Observable<Skill[]>(observer => {

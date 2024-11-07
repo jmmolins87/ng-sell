@@ -64,6 +64,9 @@
         "RESET_BUTTON": "Reset form",
         "SEND_BUTTON": "Send form"
     },
+    "TOOL_PAGE": {
+        "TOOL_BUTTON_BACK": "Back to tools"
+    },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",
         "GO_BACK": "We rewind?"
@@ -119,7 +122,7 @@
         "ADOBE_PHOTOSHOP": {
             "TITLE": "Adobe Photoshop",
             "SUBTITLE": "Design",
-            "DESCRIPTION": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It is widely used by graphic designers, photographers, and artists to edit images, retouch photos, create digital art, and more. Photoshop is known for its wide range of tools and capabilities, including photo manipulation, color correction, digital painting, graphic design, and more. It is also part of Adobe Creative Cloud, allowing seamless integration with other Adobe applications.",
+            "DESCRIPTION": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It is widely used by graphic designers, photographers, and artists for image editing, photo retouching, creating digital art, and more. Photoshop is a very versatile graphic design and image editing tool. I use Photoshop for:",
             "TAGS": {
                 "EDIT_IMG": "Image editing",
                 "DESIGN": "Graphic design",

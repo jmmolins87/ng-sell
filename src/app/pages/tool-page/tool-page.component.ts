@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { switchMap } from 'rxjs';
 
 import { SharedService } from '../../shared/services/shared.service';
+import { PagesService } from '../../services/pages-service.service';
+
+import { Tool } from '../../interfaces/tool.interface';
 
 @Component({
   selector: 'app-tool-page',
@@ -11,11 +17,19 @@ export class ToolPageComponent implements OnInit {
 
   // Dark Theme
   public isDarkMode: boolean = false;
+  // Get Tool
+  public tool!: Tool;
 
-  constructor( private _sharedService: SharedService ) {}
+  constructor( 
+    private _sharedService: SharedService, 
+    private _activatedRoute: ActivatedRoute,
+    private _pagesService: PagesService,
+    private _router: Router 
+  ) {}
 
   ngOnInit() {
     this.darkMode();
+    this.getToolById();
   }
 
   // Function to get the dark mode status
@@ -24,6 +38,23 @@ export class ToolPageComponent implements OnInit {
     this._sharedService.darkMode$.subscribe((isDarkMode) => {
       this.isDarkMode = isDarkMode;
     });
+  }
+
+  // Tool by id
+  getToolById(): void {
+    this._activatedRoute.params.pipe(
+      switchMap(({ id }) => this._pagesService.getToolById(id))
+    ).subscribe(tool => {
+      if (!tool) return this._router.navigate(['/404']);
+      this.tool = tool;
+      console.log(this.tool);
+      return;
+    })
+  }
+
+  // Go back button
+  goBack() {
+    this._router.navigate(['/tools']); 
   }
 
 }

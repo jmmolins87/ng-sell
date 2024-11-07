@@ -64,6 +64,9 @@
         "RESET_BUTTON": "Resetear formulario",
         "SEND_BUTTON": "Enviar formulario"
     },
+    "TOOL_PAGE": {
+        "TOOL_BUTTON_BACK": "Volver a la lista de herramientas"
+    },
     "ERROR_PAGE": {
         "TITLE": "¡¡Este no es el camino correcto!!",
         "GO_BACK": "¿Rebobinamos?"
@@ -117,7 +120,7 @@
     "TOOLS": {
         "ADOBE_PHOTOSHOP": {
             "SUBTITLE": "Diseño",
-            "DESCRIPTION": "Adobe Photoshop es un editor de gráficos rasterizados desarrollado y publicado por Adobe Inc. para Windows y macOS. Es ampliamente utilizado por diseñadores gráficos, fotógrafos y artistas para editar imágenes, retocar fotos, crear arte digital y más. Photoshop es conocido por su amplia gama de herramientas y capacidades, que incluyen manipulación de fotos, corrección de color, pintura digital, diseño gráfico y más. También es parte de Adobe Creative Cloud, lo que permite una integración fluida con otras aplicaciones de Adobe.",
+            "DESCRIPTION": "Adobe Photoshop es un editor de gráficos rasterizados desarrollado y publicado por Adobe Inc. para Windows y macOS. Es ampliamente utilizado por diseñadores gráficos, fotógrafos y artistas para editar imágenes, retocar fotos, crear arte digital y más. Photoshop es una herramienta de diseño gráfico y edición de imágenes muy versátil. Uso Photoshop para:",
             "TAGS": {
                 "EDIT_IMG": "Edición de imágenes",
                 "DESIGN": "Diseño gráfico",

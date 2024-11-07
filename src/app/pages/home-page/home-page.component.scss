@@ -76,7 +76,7 @@
                 text-align: right;
             }
             @include min-responsive($desktop) {
-                top: 70%;   
+                top: 50vh;   
             }
         }
         .wrap-text {
