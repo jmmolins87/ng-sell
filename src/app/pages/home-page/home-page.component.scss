@@ -71,9 +71,12 @@
                 top: 50%;
                 width: 50%;
             }
-            @include min-responsive($desktop) {
+            @include min-responsive($desktop-laptop) {
                 top: 62%;   
                 text-align: right;
+            }
+            @include min-responsive($desktop) {
+                top: 70%;   
             }
         }
         .wrap-text {

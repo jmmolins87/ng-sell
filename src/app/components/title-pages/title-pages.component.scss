@@ -27,7 +27,7 @@
                 }
             }
             &.sizes-home {
-                font-size: 8rem;
+                font-size: 10rem;
                 @include min-responsive($tablet) {
                     font-size: 16rem;
                 }
