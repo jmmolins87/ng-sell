@@ -10,6 +10,7 @@
         .title {
             position: relative;
             padding-bottom: .5rem;
+            color: $black-light-txt;
             &.center-text {
                 text-align: center;
             }
@@ -48,6 +49,7 @@
 .dark-theme {
     &.wrap-title {
         .title {
+            color: $white-dark-txt;
             &.with-underline {
                 &::after {
                     background-color: $grey-light-border; /* Underline color */

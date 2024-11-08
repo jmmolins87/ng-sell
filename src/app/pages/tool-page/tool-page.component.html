@@ -1,8 +1,17 @@
 
 
 
-<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool">
-    <h1>{{ tool.title }}</h1>
+<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool animate__animated animate__fadeIn">
+    <div class="wrap-title">
+        <app-title-pages 
+            [text]="tool.title" 
+            [titleType]="titleType" 
+            [withUnderline]="false" />
+        <div *ngIf="tool.favorite" class="wrap-icon-favorite animate__animated animate__slideInDown">
+            <i [ngStyle]="{'color': tool.favorite === true ? '#e90502' : ''}"
+                style="font-size: 1.6rem;" class="pi pi-heart-fill"></i>
+        </div>
+    </div>
     <div class="wrap-button-back">
         <p-button 
             (click)="goBack()" 

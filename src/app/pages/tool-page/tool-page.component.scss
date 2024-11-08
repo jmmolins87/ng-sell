@@ -4,7 +4,24 @@
 
 .light-theme, .dark-theme {
     &.wrap-tool {
-        background-color: var(--background-color);
-        color: var(--text-color);
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;
+        gap: 2rem;
+        .wrap-title {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+        }
+        .wrap-button-back {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 }

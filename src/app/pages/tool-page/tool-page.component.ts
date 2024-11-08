@@ -7,6 +7,7 @@ import { SharedService } from '../../shared/services/shared.service';
 import { PagesService } from '../../services/pages-service.service';
 
 import { Tool } from '../../interfaces/tool.interface';
+import { titleTypes } from '../../components/title-pages/title.config';
 
 @Component({
   selector: 'app-tool-page',
@@ -19,6 +20,8 @@ export class ToolPageComponent implements OnInit {
   public isDarkMode: boolean = false;
   // Get Tool
   public tool!: Tool;
+  // Set the title of the page
+  public titleType: titleTypes = titleTypes.h1;
 
   constructor( 
     private _sharedService: SharedService, 
@@ -47,7 +50,6 @@ export class ToolPageComponent implements OnInit {
     ).subscribe(tool => {
       if (!tool) return this._router.navigate(['/404']);
       this.tool = tool;
-      console.log(this.tool);
       return;
     })
   }
