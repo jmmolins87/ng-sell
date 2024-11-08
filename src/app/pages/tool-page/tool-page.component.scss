@@ -1,6 +1,6 @@
 
 
-
+@import "/src/styles.scss";
 
 .light-theme, .dark-theme {
     &.wrap-tool {
@@ -16,6 +16,24 @@
             justify-content: flex-start;
             align-items: center;
             gap: 1rem;
+        }
+        .subtitle {
+            color: $grey-dark-txt;
+        }
+        .wrap-content {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: normal;
+            gap: 1rem;
+            .wrap-tags {
+                display: flex;
+                box-sizing: border-box;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+            }
         }
         .wrap-button-back {
             display: flex;

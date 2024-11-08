@@ -2,15 +2,27 @@
 
 
 <div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool animate__animated animate__fadeIn">
-    <div class="wrap-title">
-        <app-title-pages 
-            [text]="tool.title" 
-            [titleType]="titleType" 
-            [withUnderline]="false" />
-        <div *ngIf="tool.favorite" class="wrap-icon-favorite animate__animated animate__slideInDown">
-            <i [ngStyle]="{'color': tool.favorite === true ? '#e90502' : ''}"
-                style="font-size: 1.6rem;" class="pi pi-heart-fill"></i>
+    <div class="wrap-header">
+        <div class="wrap-title">
+            <app-title-pages 
+                [text]="tool.title" 
+                [titleType]="titleType" 
+                [withUnderline]="false"
+                [withoutMarginBottom]="true" />
+            <div *ngIf="tool.favorite" class="wrap-icon-favorite animate__animated animate__fadeIn animate__slideInDown">
+                <i [ngStyle]="{'color': tool.favorite === true ? '#e90502' : ''}"
+                    style="font-size: 1.6rem;" class="pi pi-heart-fill"></i>
+            </div>
         </div>
+        <p class="subtitle">{{ tool.subtitle | translate }}</p>
+    </div>
+    <div class="wrap-content">
+        <p class="description">{{ tool.description | translate }}</p>
+        <ul class="wrap-tags">
+            <li *ngFor="let tag of tool.tags; let i = index" class="wrap-tag">
+                <p-tag severity="success" [value]="tag | translate"></p-tag>
+            </li>
+        </ul>
     </div>
     <div class="wrap-button-back">
         <p-button 

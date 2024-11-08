@@ -42,6 +42,9 @@
                     font-size: 25rem;
                 }
             }
+            &.without-margin-bottom {
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -11,7 +11,8 @@
             [ngClass]="
                 [withUnderline ? 'with-underline' : '', 
                 titleHome ? 'sizes-home' : '', 
-                centerText ? 'center-text' : '']" 
+                centerText ? 'center-text' : '',
+                withoutMarginBottom ? 'without-margin-bottom' : '']" 
             class="title">{{ translatedTitle$ | async }}
         </h1>
         <h1 
@@ -19,7 +20,8 @@
             #typewriterText 
             [ngClass]="
                 [withUnderline ? 'with-underline' : '', 
-                centerText ? 'center-text' : '']" 
+                centerText ? 'center-text' : '',
+                withoutMarginBottom ? 'without-margin-bottom' : '']" 
             class="title">{{ translatedTitle$ | async }}
         </h1>
         <h2 
@@ -27,7 +29,8 @@
             #typewriterText 
             [ngClass]="
                 [withUnderline ? 'with-underline' : '', 
-                centerText ? 'center-text' : '']" 
+                centerText ? 'center-text' : '',
+                withoutMarginBottom ? 'without-margin-bottom' : '']" 
             class="title">{{ translatedTitle$ | async }}
         </h2>
         <h3 
@@ -35,7 +38,8 @@
             #typewriterText 
             [ngClass]="
                 [withUnderline ? 'with-underline' : '', 
-                centerText ? 'center-text' : '']" 
+                centerText ? 'center-text' : '',
+                withoutMarginBottom ? 'without-margin-bottom' : '']" 
             class="title">{{ translatedTitle$ | async }}
         </h3>
     </div>
