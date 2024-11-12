@@ -2,12 +2,6 @@
 
 
 <article [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-tool-component">
-    <!-- <div class="wrap-icon-favorite">
-        <i 
-            [ngStyle]="{'color': tool.favorite ? '#e90502' : ''}" 
-            class="pi pi-heart-fill">
-        </i>
-    </div> -->
     <p-card>
         <ng-template pTemplate="header">
             <div class="wrap-img-tool">
@@ -74,18 +68,5 @@
                 <p-skeleton width="5rem" height="2rem" />
             </div>
         </ng-template>
-        <!-- Button to go Site -->
-        <!-- <ng-template pTemplate="footer">
-            <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
-                <button 
-                    pButton
-                    pRipple
-                    [label]="'OTHERS.GO_WEB_TOOL' | translate" 
-                    [outlined]="true" 
-                    icon="pi pi-link" 
-                    severity="danger">
-                </button>
-            </a>
-        </ng-template> -->
     </p-card>
 </article>

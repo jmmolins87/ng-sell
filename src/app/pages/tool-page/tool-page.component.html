@@ -20,7 +20,8 @@
         <p class="description">{{ tool.description | translate }}</p>
         <ul class="wrap-tags">
             <li *ngFor="let tag of tool.tags; let i = index" class="wrap-tag">
-                <p-tag severity="success" [value]="tag | translate"></p-tag>
+                <!-- <p-tag severity="success" [value]="tag | translate"></p-tag> -->
+                 <app-skill-tool />
             </li>
         </ul>
     </div>

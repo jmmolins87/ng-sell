@@ -1,0 +1,16 @@
+
+
+
+.light-theme, .dark-theme {
+    &.wrap-skill-tool {
+        background: red;
+        width: 100px;
+        height: 20px;
+    }
+}
+
+.dark-theme {
+    &.wrap-skill-tool {
+        background: blue;
+    }
+}

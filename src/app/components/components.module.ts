@@ -10,6 +10,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { AntdGradientComponent } from './animations/antd-gradient/antd-gradient.component';
 import { AntdLinesComponent } from './animations/antd-lines/antd-lines.component';
 import { AntdTypewriterComponent } from './animations/antd-typewriter/antd-typewriter.component';
+import { SkillToolComponent } from './skill-tool/skill-tool.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TitlePagesComponent } from './title-pages/title-pages.component';
 import { ToolComponent } from './tool/tool.component';
@@ -24,11 +25,12 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
     AntdGradientComponent,
     AntdLinesComponent,
     AntdTypewriterComponent,
+    SkillToolComponent,
     TabsComponent,
     TitlePagesComponent,
     ToolComponent,
     WrapChartComponent,
-    WrapImgsComponent
+    WrapImgsComponent,
   ],
   imports: [
     CommonModule,
@@ -40,6 +42,7 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
     AntdGradientComponent,
     AntdLinesComponent,
     AntdTypewriterComponent,
+    SkillToolComponent,
     TabsComponent,
     TitlePagesComponent,
     ToolComponent,
