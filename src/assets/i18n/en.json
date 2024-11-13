@@ -65,7 +65,8 @@
         "SEND_BUTTON": "Send form"
     },
     "TOOL_PAGE": {
-        "TOOL_BUTTON_BACK": "Back to tools"
+        "TOOL_BUTTON_BACK": "Back to tools",
+        "GO_WEB_TOOL": "Go to official site"
     },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",
@@ -84,7 +85,6 @@
         "HELLO_HOME": "Hello!!",
         "READ_MORE_TOOL": "Continue reading",
         "CLOSE": "Close",
-        "GO_WEB_TOOL": "Go to site",
         "DOWNLOAD_CV": "Download CV",
         "ALT_TITLE_LOGO": "I sell myself",
         "BUTTON_THEME_LIGHT": "Change to light theme",

@@ -65,7 +65,8 @@
         "SEND_BUTTON": "Enviar formulario"
     },
     "TOOL_PAGE": {
-        "TOOL_BUTTON_BACK": "Volver a la lista de herramientas"
+        "TOOL_BUTTON_BACK": "Volver a la lista de herramientas",
+        "GO_WEB_TOOL": "Ir a la web oficial"
     },
     "ERROR_PAGE": {
         "TITLE": "¡¡Este no es el camino correcto!!",
@@ -83,7 +84,6 @@
     "OTHERS": {
         "READ_MORE_TOOL": "Seguir leyendo",
         "CLOSE": "Cerrar",
-        "GO_WEB_TOOL": "Ir a la web",
         "DOWNLOAD_CV": "Descargar CV",
         "ALT_TITLE_LOGO": "I sell myself",
         "BUTTON_THEME_LIGHT": "Cambiar tema a claro",

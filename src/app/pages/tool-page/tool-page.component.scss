@@ -57,10 +57,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: normal;
-            gap: 1rem;
-            @include min-responsive($tablet) {
-                gap: 3rem;
-            }
+            gap: 3rem;
             .wrap-chart-description {
                 display: flex;
                 box-sizing: border-box;
@@ -71,8 +68,41 @@
                 @include min-responsive($tablet) {
                     flex-direction: row;
                 }
-                .skeleton-description {
+                .wrap-description {
                     width: 100%;
+                    display: flex;
+                    box-sizing: border-box;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    gap: 2rem;
+                    .wrap-button-site {
+                        display: flex;
+                        box-sizing: border-box;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 100%;
+                        @include min-responsive($tablet-hor) {
+                            width: fit-content;
+                        }
+                        .button-site {
+                            flex: 1 1 100%;
+                            @include min-responsive($tablet-hor) {
+                                flex: 1 1 auto;
+                            }
+                            &::ng-deep {
+                                .p-button {
+                                    width: 100%;
+                                    @include min-responsive($tablet-hor) {
+                                        width: fit-content;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .skeleton-description {
+                        width: 100%;
+                    }
                 }
             }
             .wrap-skills {
@@ -95,6 +125,21 @@
             box-sizing: border-box;
             justify-content: flex-end;
             align-items: center;
+            width: 100%;
+            &::ng-deep {
+                p-button {
+                    width: 100%;
+                    @include min-responsive($tablet-hor) {
+                        width: fit-content;
+                    }
+                    button {
+                        width: 100%;
+                        @include min-responsive($tablet-hor) {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
         }
     }
 }

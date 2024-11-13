@@ -34,13 +34,26 @@
                 <app-wrap-chart *ngIf="!showSkeleton" [dataChart]="tool" />
                 <p-skeleton *ngIf="showSkeleton" shape="circle" size="30rem" />
             </div>
-            <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>
-            <div class="skeleton-description" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 2rem;">
-                <p-skeleton *ngIf="showSkeleton" height="2rem" />
-                <p-skeleton *ngIf="showSkeleton" height="2rem" />
-                <p-skeleton *ngIf="showSkeleton" height="2rem" />
-                <p-skeleton *ngIf="showSkeleton" height="2rem" />
-                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+            <div class="wrap-description">
+                <div class="wrap-button-site">
+                    <a [href]="tool.link" target="_blank" rel="noopener noreferrer" class="button-site">
+                        <p-button 
+                            *ngIf="!showSkeleton"
+                            icon="pi pi-link"
+                            iconPos="right"
+                            [label]="'TOOL_PAGE.GO_WEB_TOOL' | translate" 
+                            [outlined]="true" 
+                            severity="info" />
+                    </a>
+                </div>
+                <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>
+                <div *ngIf="showSkeleton" class="skeleton-description" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 2rem;">
+                    <p-skeleton height="2rem" />
+                    <p-skeleton height="2rem" />
+                    <p-skeleton height="2rem" />
+                    <p-skeleton height="2rem" />
+                    <p-skeleton height="2rem" />
+                </div>
             </div>
         </div>
         <ul class="wrap-skills">
@@ -53,6 +66,7 @@
     <div class="wrap-button-back">
         <p-button 
             (click)="goBack()" 
+            icon="pi pi-arrow-left"
             [label]="'TOOL_PAGE.TOOL_BUTTON_BACK' | translate" 
             [outlined]="true" 
             severity="info" />
