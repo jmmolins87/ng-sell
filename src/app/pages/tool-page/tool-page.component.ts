@@ -8,6 +8,7 @@ import { PagesService } from '../../services/pages-service.service';
 
 import { Tool } from '../../interfaces/tool.interface';
 import { titleTypes } from '../../components/title-pages/title.config';
+import { shapeSkeleton } from '../../components/wrap-imgs/img.config';
 
 @Component({
   selector: 'app-tool-page',
@@ -22,6 +23,12 @@ export class ToolPageComponent implements OnInit {
   public tool!: Tool;
   // Set the title of the page
   public titleType: titleTypes = titleTypes.h1;
+  // Skeleton loader
+  public showSkeleton: boolean = true;
+  // Shape of the skeleton loader
+  public shapeSkeleton: shapeSkeleton = shapeSkeleton.CIRCLE;
+
+  public nameTag!: string;
 
   constructor( 
     private _sharedService: SharedService, 
@@ -50,6 +57,7 @@ export class ToolPageComponent implements OnInit {
     ).subscribe(tool => {
       if (!tool) return this._router.navigate(['/404']);
       this.tool = tool;
+      this.showSkeleton = false;
       return;
     })
   }

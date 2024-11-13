@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 import { SharedService } from '../../shared/services/shared.service';
 
-import { Tool } from '../../interfaces/tool.interface';
+import { shapeSkeleton } from '../wrap-imgs/img.config';
 
 @Component({
   selector: 'app-skill-tool',
@@ -13,7 +13,7 @@ export class SkillToolComponent implements OnInit {
 
   // Get tools
   @Input()
-  public tool!: Tool;
+  nameTag!: string;
   
   // Dark Theme
   public isDarkMode: boolean = false;

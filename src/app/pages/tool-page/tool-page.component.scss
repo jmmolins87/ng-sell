@@ -9,16 +9,47 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: normal;
-        gap: 2rem;
-        .wrap-title {
+        gap: 3rem;
+        .wrap-header {
             display: flex;
             box-sizing: border-box;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
-            gap: 1rem;
-        }
-        .subtitle {
-            color: $grey-dark-txt;
+            .wrapper-title {
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .wrap-title {
+                    display: flex;
+                    box-sizing: border-box;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+                    .wrap-icon-favorite {
+                        position: absolute;
+                        right: 5rem;
+                        top: 2.5rem;
+                        @include min-responsive($tablet) {
+                            right: -1.5rem;
+                            top: 3rem;
+                        }
+                    }
+                }
+                .subtitle {
+                    margin: 0;
+                    color: $grey-dark-txt;
+                }
+            }
+            .wrap-logo {
+                display: flex;
+                box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
+                width: 10rem;
+                height: 10rem;
+            }
         }
         .wrap-content {
             display: flex;
@@ -27,12 +58,33 @@
             justify-content: flex-start;
             align-items: normal;
             gap: 1rem;
-            .wrap-tags {
+            @include min-responsive($tablet) {
+                gap: 3rem;
+            }
+            .wrap-chart-description {
                 display: flex;
                 box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                @include min-responsive($tablet) {
+                    flex-direction: row;
+                }
+            }
+            .wrap-skills {
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                gap: 1rem;
+                gap: 2.5rem;
+                @include min-responsive($tablet-hor) {
+                    @include grid(3, 2.5rem);
+                }
+                .skill {
+                    min-width: 100%;
+                }
             }
         }
         .wrap-button-back {

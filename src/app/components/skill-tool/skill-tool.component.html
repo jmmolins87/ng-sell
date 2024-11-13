@@ -1,6 +1,11 @@
 
 
-
-<div [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" class="wrap-skill-tool">
-    <div class="wrap-tag-skill"></div>
+<div 
+    [ngClass]="isDarkMode ? 'dark-theme' : 'light-theme'" 
+    class="wrap-skill-tool animate__animated animate__bounceIn">
+    <app-antd-gradient />
+    <div class="wrap-animation"></div>
+    <div class="wrap-tag">
+        <p-tag severity="info" [value]="nameTag | translate"></p-tag>
+    </div>
 </div>

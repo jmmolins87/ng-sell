@@ -1,16 +1,37 @@
 
 
+@import "/src/styles.scss";
+
 
 .light-theme, .dark-theme {
     &.wrap-skill-tool {
-        background: red;
-        width: 100px;
-        height: 20px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        background: rgba($primary-bg, .6);
+        backdrop-filter: blur(1.5rem);
+        border: .25rem solid $secondary-dark-border;
+        border-radius: $border-radius-05;
+        width: 100%;
+        height: 25rem;
+        padding: 2rem;
+        position: relative;
+        .wrap-animation {
+            width: 100%;
+            height: 100%;
+        }
+        .wrap-tag {
+            position: absolute;
+            bottom: -1.5rem;
+            left: .75rem;
+        }
     }
 }
 
 .dark-theme {
     &.wrap-skill-tool {
-        background: blue;
+        background: rgba($secondary-bg, .6);
+        border: .25rem solid $primary-dark-border;
     }
 }

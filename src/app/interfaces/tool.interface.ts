@@ -11,6 +11,10 @@ export interface Tool {
     favorite: boolean;
     image: string;
     skill: number;
-    restskill: number;
+    restSkill: number;
     web: string;
+    colorSkill: string;
+    colorRestSkill: string;
+    colorHoverSkill: string;
+    colorHoverRestSkill: string;
 }
