@@ -71,6 +71,9 @@
                 @include min-responsive($tablet) {
                     flex-direction: row;
                 }
+                .skeleton-description {
+                    width: 100%;
+                }
             }
             .wrap-skills {
                 display: flex;

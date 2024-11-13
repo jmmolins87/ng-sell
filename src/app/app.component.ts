@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, Event } from '@angular/router';
 
 import { CookieService } from 'ngx-cookie-service';
 
@@ -31,16 +31,21 @@ export class AppComponent implements OnInit {
   constructor( 
     private _router: Router, 
     private _sharedService: SharedService,  
-    private cookieService: CookieService, 
-    private primengConfig: PrimeNGConfig ) {}
+    private _cookieService: CookieService, 
+    private _primengConfig: PrimeNGConfig ) {}
 
   ngOnInit(): void {
     // Ripple Effect in buttons
-    this.primengConfig.ripple = true;
+    this._primengConfig.ripple = true;
     this.hideNavigation();
     this.containerCustom();
     this.getCookies();
     this.getItemsDial();
+    this._router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);  // Hace scroll al inicio de la página
+      }
+    });
   }
 
   // Get items dial
@@ -69,11 +74,11 @@ export class AppComponent implements OnInit {
 
   getCookies() {
      // Set a cookie
-     this.cookieService.set('user-visited', 'true', 7); // Cookie expires in 7 days
+     this._cookieService.set('user-visited', 'true', 7); // Cookie expires in 7 days
      // Get a cookie
-     const userVisited = this.cookieService.get('user-visited');
+     const userVisited = this._cookieService.get('user-visited');
      // Check if a cookie exists
-     const hasVisited = this.cookieService.check('user-visited');
+     const hasVisited = this._cookieService.check('user-visited');
   }
 
   // The container class will be applied to all pages except the home page and the error page.

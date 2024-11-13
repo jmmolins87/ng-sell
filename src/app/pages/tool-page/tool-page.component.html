@@ -28,16 +28,25 @@
                 [showSkeleton]="showSkeleton" />
         </div>
     </div>
-    <div class="wrap-content animate__fadeIn animate__slideInDown">
+    <div class="wrap-content">
         <div class="wrap-chart-description">
             <div class="char">
-                <app-wrap-chart [dataChart]="tool" />
+                <app-wrap-chart *ngIf="!showSkeleton" [dataChart]="tool" />
+                <p-skeleton *ngIf="showSkeleton" shape="circle" size="30rem" />
             </div>
-            <p class="description">{{ tool.description | translate }}</p>
+            <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>
+            <div class="skeleton-description" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 2rem;">
+                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+                <p-skeleton *ngIf="showSkeleton" height="2rem" />
+            </div>
         </div>
         <ul class="wrap-skills">
             <li *ngFor="let tag of tool.tags; let i = index" class="skill">
-                <app-skill-tool [nameTag]="tag"></app-skill-tool>
+                <app-skill-tool *ngIf="!showSkeleton" [nameTag]="tag"></app-skill-tool>
+                <p-skeleton *ngIf="showSkeleton" height="20rem" width="100%" />
             </li>
         </ul>
     </div>
@@ -49,3 +58,6 @@
             severity="info" />
     </div>
 </div>
+
+
+<p-scrollTop [icon]="'pi pi-arrow-up'" />

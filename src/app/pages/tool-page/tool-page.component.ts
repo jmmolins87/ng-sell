@@ -40,6 +40,9 @@ export class ToolPageComponent implements OnInit {
   ngOnInit() {
     this.darkMode();
     this.getToolById();
+    setTimeout(() => {
+      this.showSkeleton = false;
+    }, 500)
   }
 
   // Function to get the dark mode status
@@ -57,7 +60,6 @@ export class ToolPageComponent implements OnInit {
     ).subscribe(tool => {
       if (!tool) return this._router.navigate(['/404']);
       this.tool = tool;
-      this.showSkeleton = false;
       return;
     })
   }
