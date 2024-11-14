@@ -321,7 +321,7 @@ export const toolsContent: Tool[] = [
     },
     {
         id: 12,
-        title: "SASS",
+        title: "Sass",
         subtitle: "TOOLS.SASS.SUBTITLE",
         link: "https://sass-lang.com/",
         description: "TOOLS.SASS.DESCRIPTION",

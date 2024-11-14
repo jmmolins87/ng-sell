@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { Tool } from '../interfaces/tool.interface';
+
 
 @Pipe({
   name: 'noImage'

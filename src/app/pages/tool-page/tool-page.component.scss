@@ -29,12 +29,8 @@
                     position: relative;
                     .wrap-icon-favorite {
                         position: absolute;
-                        right: 5rem;
+                        right: -2rem;
                         top: 2.5rem;
-                        @include min-responsive($tablet) {
-                            right: -1.5rem;
-                            top: 3rem;
-                        }
                     }
                 }
                 .subtitle {

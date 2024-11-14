@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import { SharedService } from '../../shared/services/shared.service';
+import { skillContent } from '../../db/skills.db';
 
-import { shapeSkeleton } from '../wrap-imgs/img.config';
 
 @Component({
   selector: 'app-skill-tool',
@@ -10,10 +10,10 @@ import { shapeSkeleton } from '../wrap-imgs/img.config';
   styleUrls: ['./skill-tool.component.scss']
 })
 export class SkillToolComponent implements OnInit {
-
-  // Get tools
+  
+  // Get input
   @Input()
-  nameTag!: string;
+  public nameTag!: string;
   
   // Dark Theme
   public isDarkMode: boolean = false;
