@@ -341,7 +341,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.SASS.CATEGORIES.PROGRAMMING"
         ],
         favorite: true,
-        "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
+        image: "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",

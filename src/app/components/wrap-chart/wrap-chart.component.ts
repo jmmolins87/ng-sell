@@ -8,12 +8,12 @@ import { DataChart } from '../../interfaces/data-chart.interface';
 })
 export class WrapChartComponent {
 
-  public data: any;
-  public options: any;
-  public skills: string = 'Habilidades';
-
   @Input()
   public dataChart!: DataChart;
+
+  public data: any;
+  public options: any;
+  public skills: string = 'My Skills';
 
   ngOnInit() {
     this.configDataChart();
