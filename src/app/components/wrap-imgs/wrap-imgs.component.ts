@@ -34,23 +34,19 @@ export class WrapImgsComponent implements OnInit {
   // Show the skeleton loader
   @Input()
   public showSkeleton: boolean = true;
-  
-  public safeImgUrl: SafeUrl | undefined;
 
   constructor( private _sanitizer: DomSanitizer ) {}
 
   ngOnInit(): void {
-    // Sanitize image URL
-    this.safeImgUrl = this.sanitizeUrl(this.imageSrc);
-  }
-
-  sanitizeUrl(url: string): SafeUrl {
-    return this._sanitizer.bypassSecurityTrustUrl(url);
   }
 
   onLoad(): void {
     // Hidden loading skeleton
     this.showSkeleton = false;
+  }
+
+  onImageError(event: Event): void {
+    (event.target as HTMLImageElement).src = 'assets/img/no-image.png';
   }
 
 }

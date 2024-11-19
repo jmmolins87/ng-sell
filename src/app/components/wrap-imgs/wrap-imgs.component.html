@@ -6,9 +6,10 @@
         <p-skeleton *ngIf="shapeSkeleton === 'square'" shape="square" size="25rem" />
     </div>
     <img 
-        *ngIf="safeImgUrl && !showSkeleton" 
+        *ngIf="imageSrc && !showSkeleton" 
         (load)="onLoad()"
-        [src]="safeImgUrl" 
+        [src]="imageSrc | safeImageFallback" 
+        (error)="onImageError($event)"
         [alt]="altImg"
         [title]="altImg"
         [height]="height">

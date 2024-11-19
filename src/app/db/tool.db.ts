@@ -22,7 +22,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_PHOTOSHOP.CATEGORIES.DESIGN"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
+        image: "assets/img/tools/ps.png",
         skill: 60,
         restSkill: 40,
         colorSkill: "#0000",

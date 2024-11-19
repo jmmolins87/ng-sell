@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
-
+import { PipesModule } from '../pipes/pipes.module';
 
 import { AntdGradientComponent } from './animations/antd-gradient/antd-gradient.component';
 import { AntdLinesComponent } from './animations/antd-lines/antd-lines.component';
@@ -34,9 +34,10 @@ import { WrapImgsComponent } from './wrap-imgs/wrap-imgs.component';
   ],
   imports: [
     CommonModule,
+    PipesModule,
     RouterModule,
     PrimeNgModule,
-    TranslateModule
+    TranslateModule, 
 ],
   exports: [
     AntdGradientComponent,

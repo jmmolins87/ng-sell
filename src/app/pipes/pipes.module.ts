@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NoImagePipe } from './no-image.pipe';
+
+import { SafeImageFallbackPipe } from './safe-image-fallback/safe-image-fallback.pipe';
 
 
 
 @NgModule({
   declarations: [
-    NoImagePipe
+    SafeImageFallbackPipe
   ],
   imports: [
     CommonModule
   ], 
   exports: [
-    NoImagePipe
+    SafeImageFallbackPipe
   ]
 })
 export class PipesModule { }
