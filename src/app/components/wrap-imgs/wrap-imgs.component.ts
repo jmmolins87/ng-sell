@@ -35,7 +35,7 @@ export class WrapImgsComponent implements OnInit {
   @Input()
   public showSkeleton: boolean = true;
 
-  constructor( private _sanitizer: DomSanitizer ) {}
+  constructor() {}
 
   ngOnInit(): void {
   }
@@ -46,7 +46,7 @@ export class WrapImgsComponent implements OnInit {
   }
 
   onImageError(event: Event): void {
-    (event.target as HTMLImageElement).src = 'assets/img/no-image.png';
+    (event.target as HTMLImageElement).src = 'assets/img/no-image.svg';
   }
 
 }

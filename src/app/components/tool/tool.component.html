@@ -21,6 +21,13 @@
                 </div>
                 <div class="wrap-description--body">
                     <p>{{ tool.description | translate }}</p>
+                </div>
+                <div class="wrap-description--footer">
+                    <ul class="wrap-tags">
+                        <li *ngFor="let categorie of tool.categories; let i = index" class="wrap-tag">
+                            <p-tag severity="success" [value]="categorie | translate"></p-tag>
+                        </li>
+                    </ul>
                     <button 
                         pButton 
                         pRipple 
@@ -31,13 +38,6 @@
                         iconPos="right"
                         [routerLink]="['/tool', tool.id]">
                     </button>
-                </div>
-                <div class="wrap-description--footer">
-                    <ul class="wrap-tags">
-                        <li *ngFor="let categorie of tool.categories; let i = index" class="wrap-tag">
-                            <p-tag severity="success" [value]="categorie | translate"></p-tag>
-                        </li>
-                    </ul>
                 </div>
             </div>
 

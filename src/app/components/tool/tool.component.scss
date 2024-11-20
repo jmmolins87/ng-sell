@@ -36,7 +36,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: space-between;
-      gap: 1.5rem;
+      gap: 1rem;
       &--header {
         display: flex;
         box-sizing: border-box;
@@ -49,7 +49,7 @@
         }
         .subtitle {
           font-size: $txt-main;
-          color: $grey-dark-txt;
+          color: $secondary-dark-txt;
           margin: 0;
         }
       }
@@ -78,7 +78,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: .2rem;
+        gap: 1rem;
         .wrap-tags {
           display: flex;
           justify-content: flex-start;
@@ -124,6 +124,11 @@
     .wrap-icon-favorite {
       i {
         color: $grey-light-bg;
+      }
+    }
+    .wrap-description {
+      .subtitle {
+        color: $secondary-txt;
       }
     }
   }

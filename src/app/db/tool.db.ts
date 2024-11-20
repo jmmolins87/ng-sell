@@ -22,7 +22,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_PHOTOSHOP.CATEGORIES.DESIGN"
         ],
         favorite: true,
-        image: "assets/img/tools/ps.png",
+        image: "assets/img/tools/photoshop.svg",
         skill: 60,
         restSkill: 40,
         colorSkill: "#0000",
@@ -50,7 +50,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_ILLUSTRATOR.CATEGORIES.DESIGN"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png",
+        image: "assets/img/tools/illustrator.svg",
         skill: 55,
         restSkill: 45,
         colorSkill: "#0000",
@@ -78,7 +78,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_INDESIGN.CATEGORIES.EDITING"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png",
+        image: "assets/img/tools/indesign.svg",
         skill: 65,
         restSkill: 35,
         colorSkill: "#0000",
@@ -108,7 +108,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ADOBE_XD.CATEGORIES.COLLABORATION"
         ],
         favorite: true,
-        image: "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg",
+        image: "assets/img/tools/xd.svg",
         skill: 80,
         restSkill: 20,
         colorSkill: "#0000",
@@ -138,7 +138,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.FIGMA.CATEGORIES.COLLABORATION"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png",
+        image: "assets/img/tools/figma.svg",
         skill: 75,
         restSkill: 25,
         colorSkill: "#0000",
@@ -163,7 +163,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.VSC.CATEGORIES.DEVELOPMENT"
         ],
         favorite: true,
-        image: "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png",
+        image: "assets/img/tools/visual.svg",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",
@@ -193,7 +193,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NOTION.CATEGORIES.COLLABORATION"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
+        image: "assets/img/tools/notion.svg",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",
@@ -223,7 +223,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.TRELLO.CATEGORIES.COLLABORATION"
         ],
         favorite: false,
-        image: "https://cdn.worldvectorlogo.com/logos/trello-logo.svg",
+        image: "assets/img/tools/trello.svg",
         skill: 85,
         restSkill: 15,
         colorSkill: "#0000",
@@ -253,7 +253,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.JIRA.CATEGORIES.COLLABORATION"
         ],
         favorite: true,
-        image: "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
+        image: "assets/img/tools/jira.svg",
         skill: 70,
         restSkill: 30,
         colorSkill: "#0000",
@@ -281,7 +281,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.HTML.CATEGORIES.FRONTEND"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+        image: "assets/img/tools/html.svg",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",
@@ -310,7 +310,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.CSS.CATEGORIES.FRONTEND"
         ],
         favorite: true,
-        image: "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png",
+        image: "assets/img/tools/css.svg",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",
@@ -341,7 +341,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.SASS.CATEGORIES.PROGRAMMING"
         ],
         favorite: true,
-        "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
+        image: "assets/img/tools/sass.svg",
         skill: 90,
         restSkill: 10,
         colorSkill: "#0000",
@@ -371,7 +371,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.JAVASCRIPT.CATEGORIES.FUNCTIONALITY"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png",
+        image: "assets/img/tools/js.svg",
         skill: 55,
         restSkill: 45,
         colorSkill: "#0000",
@@ -405,7 +405,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.ANGULAR.CATEGORIES.COMPONENTS"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+        image: "assets/img/tools/angular.svg",
         skill: 70,
         restSkill: 30,
         colorSkill: "#0000",
@@ -439,7 +439,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.REACT.CATEGORIES.COMPONENTS"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+        image: "assets/img/tools/react.svg",
         skill: 40,
         restSkill: 60,
         colorSkill: "#0000",
@@ -470,7 +470,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.GITHUB.CATEGORIES.VERSION_CONTROL"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+        image: "assets/img/tools/github.svg",
         skill: 80,
         restSkill: 20,
         colorSkill: "#0000",
@@ -498,7 +498,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NODE.CATEGORIES.PROGRAMMING"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+        image: "assets/img/tools/node.svg",
         "skill": 30,
         "restSkill": 70,
         colorSkill: "#0000",
@@ -524,7 +524,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.POSTMAN.CATEGORIES.BACKEND"
         ],
         favorite: false,
-        image: "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
+        image: "assets/img/tools/postman.svg",
         skill: 30,
         restSkill: 70,
         colorSkill: "#0000",
@@ -553,7 +553,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.GIT.CATEGORIES.PROGRAMMING"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png",
+        image: "assets/img/tools/git.svg",
         skill: 85,
         restSkill: 15,
         colorSkill: "#0000",
@@ -586,7 +586,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.BOOTSTRAP.CATEGORIES.FRAMEWORK"
         ],
         favorite: true,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
+        image: "assets/img/tools/bootstrap.svg",
         skill: 75,
         restSkill: 25,
         colorSkill: "#0000",
@@ -623,7 +623,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.MATERIAL.CATEGORIES.PROGRAMMING"
         ],
         favorite: false,
-        image: "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png",
+        image: "assets/img/tools/material.svg",
         skill: 65,
         restSkill: 35,
         colorSkill: "#0000",
@@ -659,7 +659,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.PRIMENG.CATEGORIES.PROGRAMMING"
         ],
         favorite: true,
-        image: "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png",
+        image: "assets/img/tools/prime.svg",
         skill: 85,
         restSkill: 15,
         colorSkill: "#0000",
@@ -688,7 +688,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.MONGO.CATEGORIES.PROGRAMMING"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png",
+        image: "assets/img/tools/mongo.svg",
         skill: 55,
         restSkill: 45,
         colorSkill: "#0000",
@@ -718,7 +718,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.WORDPRESS.CATEGORIES.FUNCTIONALITY"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png",
+        image: "assets/img/tools/wordpress.svg",
         skill: 75,
         restSkill: 25,
         colorSkill: "#0000",
@@ -744,7 +744,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.DOCKER.CATEGORIES.BACKEND"
         ],
         favorite: false,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png",
+        image: "assets/img/tools/docker.svg",
         skill: 25,
         restSkill: 75,
         colorSkill: "#0000",
@@ -777,7 +777,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.TAILWIND.CATEGORIES.FRAMEWORK"
         ],
         favorite: false,
-        image: "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg",
+        image: "assets/img/tools/tailwind.svg",
         skill: 75,
         restSkill: 25,
         colorSkill: "#0000",
@@ -808,7 +808,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.STENCIL.CATEGORIES.FUNCTIONALITY"
         ],
         favorite: true,
-        image: "https://stenciljs.com/stencil-og.png",
+        image: "assets/img/tools/stencil.svg",
         skill: 65,
         restSkill: 45,
         colorSkill: "#0000",
@@ -837,7 +837,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.STORYBOOK.CATEGORIES.FRAMEWORK"
         ],
         favorite: true,
-        image: "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png",
+        image: "assets/img/tools/storybook.svg",
         skill: 75,
         restSkill: 25,
         colorSkill: "#0000",
@@ -869,7 +869,7 @@ export const toolsContent: Tool[] = [
             "TOOLS.NEST.CATEGORIES.DATA_BASE"
         ],
         favorite: false,
-        image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png",
+        image: "assets/img/tools/nestjs.svg",
         skill: 25,
         restSkill: 75,
         colorSkill: "#0000",

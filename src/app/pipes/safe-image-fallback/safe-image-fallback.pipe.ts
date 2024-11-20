@@ -9,7 +9,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 })
 export class SafeImageFallbackPipe implements PipeTransform {
 
-  private defaultImageUrl = 'assets/img/no-image.png';
+  private defaultImageUrl = 'assets/img/no-image.svg';
 
   constructor(private sanitizer: DomSanitizer) {}
 
