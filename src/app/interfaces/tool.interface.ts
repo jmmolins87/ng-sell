@@ -13,8 +13,4 @@ export interface Tool {
     skill: number;
     restSkill: number;
     web: string;
-    colorSkill: string;
-    colorRestSkill: string;
-    colorHoverSkill: string;
-    colorHoverRestSkill: string;
 }

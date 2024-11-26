@@ -25,10 +25,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/photoshop.svg",
         skill: 60,
         restSkill: 40,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -53,10 +49,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/illustrator.svg",
         skill: 55,
         restSkill: 45,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -81,10 +73,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/indesign.svg",
         skill: 65,
         restSkill: 35,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -111,10 +99,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/xd.svg",
         skill: 80,
         restSkill: 20,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -141,10 +125,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/figma.svg",
         skill: 75,
         restSkill: 25,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -166,10 +146,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/visual.svg",
         skill: 90,
         restSkill: 10,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -196,10 +172,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/notion.svg",
         skill: 90,
         restSkill: 10,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -226,10 +198,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/trello.svg",
         skill: 85,
         restSkill: 15,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -256,10 +224,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/jira.svg",
         skill: 70,
         restSkill: 30,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -284,10 +248,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/html.svg",
         skill: 90,
         restSkill: 10,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -313,10 +273,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/css.svg",
         skill: 90,
         restSkill: 10,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -344,10 +300,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/sass.svg",
         skill: 90,
         restSkill: 10,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -374,10 +326,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/js.svg",
         skill: 55,
         restSkill: 45,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -408,10 +356,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/angular.svg",
         skill: 70,
         restSkill: 30,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -442,10 +386,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/react.svg",
         skill: 40,
         restSkill: 60,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -473,10 +413,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/github.svg",
         skill: 80,
         restSkill: 20,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -501,10 +437,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/node.svg",
         "skill": 30,
         "restSkill": 70,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -527,10 +459,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/postman.svg",
         skill: 30,
         restSkill: 70,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -556,10 +484,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/git.svg",
         skill: 85,
         restSkill: 15,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -589,10 +513,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/bootstrap.svg",
         skill: 75,
         restSkill: 25,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -626,10 +546,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/material.svg",
         skill: 65,
         restSkill: 35,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -662,10 +578,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/prime.svg",
         skill: 85,
         restSkill: 15,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -691,10 +603,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/mongo.svg",
         skill: 55,
         restSkill: 45,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -721,10 +629,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/wordpress.svg",
         skill: 75,
         restSkill: 25,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -747,10 +651,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/docker.svg",
         skill: 25,
         restSkill: 75,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -780,10 +680,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/tailwind.svg",
         skill: 75,
         restSkill: 25,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -811,10 +707,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/stencil.svg",
         skill: 65,
         restSkill: 45,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -840,10 +732,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/storybook.svg",
         skill: 75,
         restSkill: 25,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     },
     {
@@ -872,10 +760,6 @@ export const toolsContent: Tool[] = [
         image: "assets/img/tools/nestjs.svg",
         skill: 25,
         restSkill: 75,
-        colorSkill: "#0000",
-        colorRestSkill: "#0000",
-        colorHoverSkill: "#0000",
-        colorHoverRestSkill: "#0000",
         web: "TOOLS.WEB"
     }
 ];

@@ -32,10 +32,6 @@ describe('ToolPageComponent', () => {
       skill: 0,
       restSkill: 0,
       web: 'Mock Web',
-      colorSkill: 'Mock Color Skill',
-      colorRestSkill: 'Mock Color Rest Skill',
-      colorHoverSkill: 'Mock Color Hover Skill',
-      colorHoverRestSkill: 'Mock Color Hover Rest Skill',
       // Add other required properties with mock data
       // Assuming the other properties are optional or can be mocked with default values
     }; // Provide mock tool data here

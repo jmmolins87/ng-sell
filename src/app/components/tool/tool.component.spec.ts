@@ -33,11 +33,7 @@ describe('ToolComponent', () => {
       image: '',
       skill: 0,
       restSkill: 0,
-      web: '',
-      colorSkill: '',
-      colorRestSkill: '',
-      colorHoverSkill: '',
-      colorHoverRestSkill: ''
+      web: ''
     }; // Provide mock tool data here
     fixture.detectChanges();
   });
