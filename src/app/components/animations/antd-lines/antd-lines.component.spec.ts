@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AntdLinesComponent } from './antd-lines.component';
 
-describe('BackgroundLinesComponent', () => {
+describe('AntdLinesComponent', () => {
   let component: AntdLinesComponent;
   let fixture: ComponentFixture<AntdLinesComponent>;
 

@@ -31,12 +31,17 @@
     <div class="wrap-content">
         <div class="wrap-chart-description">
             <div class="char">
-                <app-wrap-chart *ngIf="!showSkeleton" [dataChart]="tool" />
+                <app-wrap-chart *ngIf="!showSkeleton" [dataChart]="tool" [skill]="'TOOL_PAGE.SKILL' | translate" />
                 <p-skeleton *ngIf="showSkeleton" shape="circle" size="30rem" />
             </div>
             <div class="wrap-description">
+                <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>
                 <div class="wrap-button-site">
-                    <a [href]="tool.link" target="_blank" rel="noopener noreferrer" class="button-site">
+                    <a 
+                        [href]="tool.link" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="button-site">
                         <p-button 
                             *ngIf="!showSkeleton"
                             icon="pi pi-link"
@@ -46,7 +51,6 @@
                             severity="info" />
                     </a>
                 </div>
-                <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>
                 <div *ngIf="showSkeleton" class="skeleton-description" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 2rem;">
                     <p-skeleton height="2rem" />
                     <p-skeleton height="2rem" />

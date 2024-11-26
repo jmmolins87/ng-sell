@@ -66,7 +66,8 @@
     },
     "TOOL_PAGE": {
         "TOOL_BUTTON_BACK": "Back to tools",
-        "GO_WEB_TOOL": "Go to official site"
+        "GO_WEB_TOOL": "Go to official site",
+        "SKILL": "Skill"
     },
     "ERROR_PAGE": {
         "TITLE": "This is not the right way!!",

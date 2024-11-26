@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WrapLogoComponent } from './wrap-logo.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedService } from '../../services/shared.service';
+import { SkeletonModule } from 'primeng/skeleton';
 
 describe('WrapLogoComponent', () => {
   let component: WrapLogoComponent;
@@ -8,7 +10,9 @@ describe('WrapLogoComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [WrapLogoComponent]
+      imports: [HttpClientTestingModule, SkeletonModule],
+      declarations: [WrapLogoComponent],
+      providers: [SharedService]
     });
     fixture = TestBed.createComponent(WrapLogoComponent);
     component = fixture.componentInstance;

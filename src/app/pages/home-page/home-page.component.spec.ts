@@ -1,16 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomePageComponent } from './home-page.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedService } from '../../shared/services/shared.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { HomeComponent } from './home-page.component';
-
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('HomePageComponent', () => {
+  let component: HomePageComponent;
+  let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      imports: [HttpClientTestingModule, TranslateModule.forRoot()],
+      declarations: [HomePageComponent],
+      providers: [SharedService],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(HomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

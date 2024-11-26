@@ -8,12 +8,14 @@ import { DataChart } from '../../interfaces/data-chart.interface';
 })
 export class WrapChartComponent {
 
-  public data: any;
-  public options: any;
-  public skills: string = 'Habilidades';
-
   @Input()
   public dataChart!: DataChart;
+  @Input()
+  skill: { name: string; level: number } = { name: '', level: 0 };
+
+  public data: any;
+  public options: any;
+
 
   ngOnInit() {
     this.configDataChart();
@@ -24,7 +26,7 @@ export class WrapChartComponent {
     const textColor = documentStyle.getPropertyValue('--text-color');
 
     this.data = {
-      labels: [this.skills],
+      labels: [this.skill],
       datasets: [
         {
           data: [this.dataChart.skill, this.dataChart.restSkill],

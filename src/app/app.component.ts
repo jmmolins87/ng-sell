@@ -13,6 +13,7 @@ import { SharedService } from './shared/services/shared.service';
 })
 export class AppComponent implements OnInit {
 
+  public title = 'ng-sell';
   // Hide Navbar and footer component
   public showNavbarFooter: boolean = true;
   // The container class will be applied to all pages except the home page and the error page.

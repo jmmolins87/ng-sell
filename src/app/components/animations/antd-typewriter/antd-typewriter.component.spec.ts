@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AntdTypewriterComponent } from './antd-typewriter.component';
 
 describe('AntdTypewriterComponent', () => {

@@ -1,16 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AboutPageComponent } from './about-page.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedService } from '../../shared/services/shared.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { AboutComponent } from './about-page.component';
-
-describe('AboutComponent', () => {
-  let component: AboutComponent;
-  let fixture: ComponentFixture<AboutComponent>;
+describe('AboutPageComponent', () => {
+  let component: AboutPageComponent;
+  let fixture: ComponentFixture<AboutPageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AboutComponent]
+      imports: [HttpClientTestingModule],
+      declarations: [AboutPageComponent],
+      providers: [SharedService],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = TestBed.createComponent(AboutPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
