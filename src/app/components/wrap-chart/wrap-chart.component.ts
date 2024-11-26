@@ -11,7 +11,7 @@ export class WrapChartComponent {
   @Input()
   public dataChart!: DataChart;
   @Input()
-  skill: { name: string; level: number } = { name: '', level: 0 };
+  public skill!: string;
 
   public data: any;
   public options: any;
@@ -26,7 +26,7 @@ export class WrapChartComponent {
     const textColor = documentStyle.getPropertyValue('--text-color');
 
     this.data = {
-      labels: [this.skill],
+      labels: [this.skill, this.dataChart.restSkill + '%'],
       datasets: [
         {
           data: [this.dataChart.skill, this.dataChart.restSkill],

@@ -30,19 +30,19 @@
                     max-width: min-content;
                     .wrap-icon-favorite {
                         position: absolute;
-                        right: 5rem;
+                        right: -1.5rem;
                         top: 2.5rem;
-                        @include min-responsive($tablet) {
-                            right: 7.5em;
-                        }
-                        @include min-responsive($desktop-laptop) {
-                            right: 9rem;
-                        }
+                        // @include min-responsive($tablet) {
+                        //     right: 7.5em;
+                        // }
+                        // @include min-responsive($desktop-laptop) {
+                        //     right: 9rem;
+                        // }
                     }
                 }
                 .subtitle {
                     margin: 0;
-                    color: $grey-dark-txt;
+                    color: $secondary-dark-txt;
                 }
             }
             .wrap-logo {
@@ -69,8 +69,8 @@
                 display: flex;
                 box-sizing: border-box;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                justify-content: space-evenly;
+                align-items: stretch;
                 gap: 2rem;
                 @include min-responsive($tablet) {
                     flex-direction: row;
@@ -80,7 +80,7 @@
                     display: flex;
                     box-sizing: border-box;
                     flex-direction: column;
-                    justify-content: flex-end;
+                    justify-content: space-evenly;
                     align-items: flex-end;
                     gap: 2rem;
                     .wrap-button-site {

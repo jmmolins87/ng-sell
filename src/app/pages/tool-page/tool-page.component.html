@@ -31,8 +31,14 @@
     <div class="wrap-content">
         <div class="wrap-chart-description">
             <div class="char">
-                <app-wrap-chart *ngIf="!showSkeleton" [dataChart]="tool" [skill]="'TOOL_PAGE.SKILL' | translate" />
-                <p-skeleton *ngIf="showSkeleton" shape="circle" size="30rem" />
+                <app-wrap-chart 
+                    *ngIf="!showSkeleton" 
+                    [dataChart]="tool" 
+                    [skill]="'TOOL_PAGE.SKILL' | translate" />
+                <p-skeleton 
+                    *ngIf="showSkeleton" 
+                    shape="circle" 
+                    size="30rem" />
             </div>
             <div class="wrap-description">
                 <p *ngIf="!showSkeleton" class="description">{{ tool.description | translate }}</p>

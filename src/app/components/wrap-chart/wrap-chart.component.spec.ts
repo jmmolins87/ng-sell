@@ -15,7 +15,7 @@ describe('WrapChartComponent', () => {
     });
     fixture = TestBed.createComponent(WrapChartComponent);
     component = fixture.componentInstance;
-    component.skill = { name: 'Mock Skill', level: 5 }; // Provide mock skill data here
+    component.skill = 'Mock Skill'; // Provide mock skill data here
     component.dataChart = { 
       skill: 5, 
       restSkill: 95, 

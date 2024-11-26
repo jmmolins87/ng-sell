@@ -5,7 +5,7 @@ import { Tool } from "../interfaces/tool.interface";
 export const toolsContent: Tool[] = [
     {
         id: 1,
-        title: "Adobe Photoshop",
+        title: "Photoshop",
         subtitle: "TOOLS.ADOBE_PHOTOSHOP.SUBTITLE",
         link: "https://www.adobe.com/products/photoshop.html",
         description: "TOOLS.ADOBE_PHOTOSHOP.DESCRIPTION",
@@ -33,7 +33,7 @@ export const toolsContent: Tool[] = [
     },
     {
         id: 2,
-        title: "Adobe Illustrator",
+        title: "Illustrator",
         subtitle: "TOOLS.ADOBE_ILLUSTRATOR.SUBTITLE",
         link: "https://www.adobe.com/products/illustrator.html",
         description: "TOOLS.ADOBE_ILLUSTRATOR.DESCRIPTION",
@@ -61,7 +61,7 @@ export const toolsContent: Tool[] = [
     },
     {
         id: 3,
-        title: "Adobe Indesign",
+        title: "Indesign",
         subtitle: "TOOLS.ADOBE_INDESIGN.SUBTITLE",
         link: "https://www.adobe.com/products/indesign.html",
         description: "TOOLS.ADOBE_INDESIGN.DESCRIPTION",
