@@ -6,6 +6,8 @@
 .dark-theme {
     &.wrap-contact {
         overflow-x: hidden;
+        display: grid;
+        min-height: calc(100dvh - 260px);
         .wrap-form {
             margin-top: 30px;
             @include min-responsive($desktop-laptop) {
